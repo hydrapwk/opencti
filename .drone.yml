@@ -8,6 +8,29 @@ steps:
     commands:
     - echo DRONE_STAGE_MACHINE ${DRONE_STAGE_MACHINE}
 
+  - name: check-files-changes
+    image: alpine/git
+    commands:
+      - |
+        echo "🔍 Analyzing file changes..."
+        CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD)
+        
+        echo "📁 All changed files:"
+        echo "$CHANGED_FILES" | head -10
+        echo ""
+        if git diff --name-only HEAD~1 HEAD | grep -q "opencti-graphql"; then
+          echo "✅ backend files detected in changes"
+          echo "BACKEND_FILE_CHANGED=true" >> /tmp/env
+        else
+          echo "⏭️  No backend files changed - api-tests will be skipped"
+          echo "BACKEND_FILE_CHANGED=false" >> /tmp/env
+        fi
+      - cat /tmp/env # we store $BACKEND_FILE_CHANGED value in a temp file
+    volumes:
+      - name: temp
+        path: /tmp
+
+
   - name: dependencies-checkout
     image: nikolaik/python-nodejs:python3.11-nodejs22-alpine
     environment:
@@ -28,6 +51,8 @@ steps:
   - name: api-tests
     image: nikolaik/python-nodejs:python3.11-nodejs22-alpine
     volumes:
+    - name: temp
+      path: /tmp # we use the temp file from previous step
     - name: cache-node-backend
       path: /drone/src/opencti-platform/opencti-graphql/node_modules
     environment:
@@ -53,6 +78,12 @@ steps:
       SMTP__PASSWORD: frhJ2mSPTfaEutpbug
       PYTHONUNBUFFERED: 1
     commands:
+      - source /tmp/env
+      - |
+        if [ "$BACKEND_FILE_CHANGED" = "false" ]; then
+          echo "⏭️  Backend API tests skipped (no relevant file changes)"
+          exit 0
+        fi
       - apk add build-base git libffi-dev cargo
       - pip3 install --upgrade setuptools
       - cd "$DRONE_WORKSPACE/client-python"
@@ -68,13 +99,8 @@ steps:
       - if [ $(wget --server-response "http://opencti-direct-start:4300/health?health_access_key=cihealthkey" -O opencti-direct-start 2>&1 | grep -c "200 OK") != 1 ]; then echo "ERROR opencti-direct-start has not start correctly"; exit 1; fi
       - if [ $(wget --server-response "http://opencti-restore-start:4400/health?health_access_key=cihealthkey" -O opencti-restore-start 2>&1 | grep -c "200 OK") != 1 ]; then echo "ERROR opencti-restore-start has not start correctly"; exit 1; fi
       - NODE_OPTIONS=--max_old_space_size=8192 yarn test
-    when:
-      paths:
-        include:
-          - "**/*opencti-graphql*/**"
-          - "**/opencti-graphql*"
-          - "opencti-graphql*/**"
     depends_on:
+      - check-files-changes
       - dependencies-checkout
 
   - name: api-coverage
