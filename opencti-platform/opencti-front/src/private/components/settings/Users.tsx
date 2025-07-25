@@ -209,6 +209,8 @@ const Users = () => {
     setNumberOfElements: helpers.handleSetNumberOfElements,
   } as UsePreloadedPaginationFragment<UsersLinesPaginationQuery>;
 
+  // some changes on a tsx file to test CI
+
   return (
     <div
       style={{
