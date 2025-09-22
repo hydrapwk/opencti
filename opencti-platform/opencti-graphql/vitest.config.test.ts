@@ -1,11 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { defineConfig } from 'vitest/config';
 import graphql from '@rollup/plugin-graphql';
-import type { PluginOption } from 'vite';
 import { BaseSequencer, type TestSpecification } from 'vitest/node';
 
 export const buildTestConfig = (include: string[]) => defineConfig({
-  plugins: [graphql() as PluginOption],
+  plugins: [graphql()],
   test: {
     include,
     testTimeout: 1200000,
@@ -20,8 +19,8 @@ export const buildTestConfig = (include: string[]) => defineConfig({
     },
     poolOptions: {
       forks: {
-        singleFork: true,
-      },
+        maxForks: 1,
+      }
     },
     sequence: {
       shuffle: false,
