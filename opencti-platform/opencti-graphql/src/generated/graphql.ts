@@ -27847,6 +27847,7 @@ export enum StixDomainObjectsOrdering {
   Product = 'product',
   Published = 'published',
   Rating = 'rating',
+  RefreshedAt = 'refreshed_at',
   ReportTypes = 'report_types',
   ResultName = 'result_name',
   Severity = 'severity',
