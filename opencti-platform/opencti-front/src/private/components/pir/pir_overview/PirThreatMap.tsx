@@ -33,7 +33,6 @@ import { uniqueArray } from '../../../../utils/utils';
 const pirThreatMapFragment = graphql`
   fragment PirThreatMapFragment on Query {
     stixDomainObjects(
-      first: 100
       orderBy: refreshed_at
       orderMode: desc
       pirId: $pirId
@@ -163,7 +162,7 @@ const PirThreatMap = ({ data }: PirThreatMapProps) => {
             <WidgetScatter series={series} />
           </div>
           <div style={xLegendStyle}>
-            <span>{t_i18n('Two months ago')}</span>
+            <span>{t_i18n('One month ago')}</span>
             <span>{t_i18n('Today')}</span>
           </div>
           <div style={yLegendStyle}>

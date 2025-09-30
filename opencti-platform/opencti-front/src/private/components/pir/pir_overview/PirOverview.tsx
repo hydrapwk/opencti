@@ -120,15 +120,23 @@ const PirOverview = ({ data }: PirOverviewProps) => {
     filters: {
       mode: 'and',
       filterGroups: [],
-      filters: [{
-        key: ['regardingOf'],
-        operator: 'eq',
-        mode: 'and',
-        values: [
-          { key: 'id', values: [pir.id], operator: 'eq', mode: 'or' },
-          { key: 'relationship_type', values: ['in-pir'], operator: 'eq', mode: 'or' },
-        ],
-      }],
+      filters: [
+        {
+          key: ['regardingOf'],
+          operator: 'eq',
+          mode: 'and',
+          values: [
+            { key: 'id', values: [pir.id], operator: 'eq', mode: 'or' },
+            { key: 'relationship_type', values: ['in-pir'], operator: 'eq', mode: 'or' },
+          ],
+        },
+        {
+          key: ['refreshed_at'],
+          operator: 'within',
+          values: ['now-1M', 'now'],
+          mode: 'or',
+        },
+      ],
     },
   });
 
