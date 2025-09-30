@@ -86,7 +86,7 @@ const PirThreatMap = ({ data }: PirThreatMapProps) => {
         for (const group of groupedData) {
           const diffDate = Math.abs(minutesBetweenDates(group[0].date, item.date));
           const diffScore = Math.abs(group[0].score - item.score);
-          if (diffDate < 1440 && diffScore < 5) {
+          if (diffDate < 1080 && diffScore < 5) { // 1080 = 18h
             group.push(item);
             filled = true;
             break;
