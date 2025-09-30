@@ -17,6 +17,7 @@ const READ_QUERY = gql`
       id
       name
       description
+      updated_at
     }
   }
 `;
@@ -352,6 +353,11 @@ describe('Threat actor individual resolver standard behavior', () => {
     threatActorIndividualUpdatedAt = threatActorIndividual.updated_at;
   });
   it('should update threat actor individual core relationships', async () => {
+    const queryResult = await queryAsAdmin({
+      query: READ_QUERY,
+      variables: { id: threatActorIndividualInternalId },
+    });
+    const taiBeforeUpdate = queryResult.data?.threatActorIndividual;
     const getCoreRelationshipsAndFunctionalDates = gql`
       query threatActorIndivididualGetCoreRelationships($id: String!) {
         threatActorIndividual(id:$id) {
@@ -403,7 +409,7 @@ describe('Threat actor individual resolver standard behavior', () => {
     expect(stixCoreRelationships).toHaveLength(3);
     // should modify refreshed_at but not updated_at
     expect(threatActorIndividual.created_at).toEqual(threatActorIndividualCreatedAt);
-    expect(threatActorIndividual.updated_at).toEqual(threatActorIndividualUpdatedAt);
+    expect(threatActorIndividual.updated_at).toEqual(taiBeforeUpdate.updated_at);
     expect(threatActorIndividualCreatedAt < threatActorIndividual.refreshed_at).toBeTruthy();
     expect(threatActorIndividualUpdatedAt < threatActorIndividual.refreshed_at).toBeTruthy();
     expect(coreRelationshipCreationStartDatetime < threatActorIndividual.refreshed_at).toBeTruthy();
