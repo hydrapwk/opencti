@@ -94,7 +94,7 @@ interface IngestionCatalogConnectorCreationProps {
 }
 
 export interface ManagedConnectorValues extends BasicUserHandlingValues {
-  name: string;
+  identifier: string;
   display_name: string;
   user_id: string | FieldOption;
   automatic_user?: boolean;
@@ -303,10 +303,11 @@ const IngestionCatalogConnectorCreation = ({
           validationSchema={validationSchema}
           initialValues={{
             display_name: connectorName,
-            name: sanitizeContainerName(connectorName),
+            identifier: sanitizeContainerName(connectorName),
             confidence_level: connector.max_confidence_level.toString(),
             user_id: { label: '', value: '' },
             automatic_user: true,
+            name: '',
             ...configDefaults,
           }}
           onSubmit={() => {}}
@@ -336,6 +337,7 @@ const IngestionCatalogConnectorCreation = ({
                     fullWidth={true}
                     onChange={(_: string, value: string) => {
                       setFieldValue('name', sanitizeContainerName(value));
+                      setFieldValue('identifier', sanitizeContainerName(value));
                     }}
                   />
 
@@ -343,7 +345,7 @@ const IngestionCatalogConnectorCreation = ({
                     component={TextField}
                     style={fieldSpacingContainerStyle}
                     variant="standard"
-                    name="name"
+                    name="identifier"
                     label={t_i18n('Connector identifier')}
                     fullWidth={true}
                     disabled
