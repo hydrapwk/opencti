@@ -669,9 +669,9 @@ const ConnectorComponent: FunctionComponent<ConnectorComponentProps> = ({ connec
               {
                 connector.is_managed && (
                   <Grid item xs={6}>
-                    <Typography variant="h3" gutterBottom={true}>{t_i18n('Connector identifier')}</Typography>
+                    <Typography variant="h3" gutterBottom={true}>{t_i18n('Connector name')}</Typography>
                     <pre>
-                      <ItemCopy content={connector.identifier} />
+                      <ItemCopy content={connector.container_name} />
                     </pre>
                   </Grid>
                 )
@@ -838,7 +838,7 @@ export const connectorQuery = graphql`
     connector(id: $id) {
       id
       name
-      identifier
+      container_name
       ...Connector_connector
     }
   }
@@ -851,7 +851,7 @@ const Connector = createRefetchContainer(
       fragment Connector_connector on Connector {
         id
         name
-        identifier
+        container_name
         active
         auto
         only_contextual
