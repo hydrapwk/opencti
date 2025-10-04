@@ -6,11 +6,11 @@ import { Add } from '@mui/icons-material';
 import * as Yup from 'yup';
 import { userMutationFieldPatch } from '@private/components/settings/users/edition/UserEditionOverview';
 import ConfidenceOverrideField from '@private/components/settings/users/edition/ConfidenceOverrideField';
+import { IconButton, Typography } from '@components';
 import { fieldSpacingContainerStyle } from '../../../../../utils/field';
 import { useFormatter } from '../../../../../components/i18n';
 import { isEmptyField, isNotEmptyField } from '../../../../../utils/utils';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
-import { IconButton, Typography } from '@components';
 
 export interface OverrideFormData {
   max_confidence: string;

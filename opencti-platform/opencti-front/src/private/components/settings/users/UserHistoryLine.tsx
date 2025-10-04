@@ -6,11 +6,11 @@ import { LinkVariantPlus, LinkVariantRemove, Merge } from 'mdi-material-ui';
 import makeStyles from '@mui/styles/makeStyles';
 import { UserHistoryLine_node$key } from '@private/components/settings/users/__generated__/UserHistoryLine_node.graphql';
 import { useTheme } from '@mui/styles';
+import { Avatar, Button, Dialog, DialogActions, DialogContent, DialogTitle, Paper, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
 import type { Theme } from '../../../../components/Theme';
 import ItemIcon from '../../../../components/ItemIcon';
-import { Avatar, Button, Dialog, DialogActions, DialogContent, DialogTitle, Paper, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

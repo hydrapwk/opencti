@@ -6,12 +6,12 @@ import { MoreVert } from '@mui/icons-material';
 import { RssBox } from 'mdi-material-ui';
 import { compose } from 'ramda';
 import Slide from '@mui/material/Slide';
+import { ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import IngestionRssPopover from './IngestionRssPopover';
 import inject18n from '../../../../components/i18n';
 import ItemBoolean from '../../../../components/ItemBoolean';
 import Security from '../../../../utils/Security';
 import { INGESTION_SETINGESTIONS } from '../../../../utils/hooks/useGranted';
-import { ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide direction="up" ref={ref} {...props} />

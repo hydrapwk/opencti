@@ -17,6 +17,7 @@ import buildContractConfiguration from '@private/components/data/connectors/util
 import JsonFormUnsupportedType, { jsonFormUnsupportedTypeTester } from '@private/components/data/IngestionCatalog/utils/JsonFormUnsupportedType';
 import { Connector_connector$data } from '@private/components/data/connectors/__generated__/Connector_connector.graphql';
 import { JsonFormPasswordRenderer, jsonFormPasswordTester } from '@private/components/data/IngestionCatalog/utils/JsonFormPasswordRenderer';
+import { AccordionDetails, Alert, Button, Typography } from '@components';
 import TextField from '../../../../components/TextField';
 import { type FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
@@ -24,7 +25,6 @@ import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
 import { Accordion, AccordionSummary } from '../../../../components/Accordion';
 import { MESSAGING$ } from '../../../../relay/environment';
-import { AccordionDetails, Alert, Button, Typography } from '@components';
 
 type ManagerContractProperty = [string, IngestionTypedProperty];
 

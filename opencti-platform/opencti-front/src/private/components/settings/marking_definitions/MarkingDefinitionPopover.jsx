@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { graphql } from 'react-relay';
 import MoreVert from '@mui/icons-material/MoreVert';
+import { IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
 import MarkingDefinitionEdition from './MarkingDefinitionEdition';
@@ -9,7 +10,6 @@ import { deleteNode } from '../../../../utils/store';
 import useSensitiveModifications from '../../../../utils/hooks/useSensitiveModifications';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { IconButton, Menu, MenuItem } from '@components';
 
 const markingDefinitionPopoverDeletionMutation = graphql`
   mutation MarkingDefinitionPopoverDeletionMutation($id: ID!) {

@@ -4,6 +4,7 @@ import { ViewListOutlined, ViewModuleOutlined } from '@mui/icons-material';
 import { CampaignsCards_data$data } from '@private/components/threats/campaigns/__generated__/CampaignsCards_data.graphql';
 import { CampaignCardFragment } from '@private/components/threats/campaigns/CampaignCard';
 import StixCoreObjectForms from '@private/components/common/stix_core_objects/StixCoreObjectForms';
+import { Grid, ToggleButton, Tooltip } from '@components';
 import { CampaignsCardsPaginationQuery, CampaignsCardsPaginationQuery$variables } from './campaigns/__generated__/CampaignsCardsPaginationQuery.graphql';
 import ListCards from '../../../components/list_cards/ListCards';
 import CampaignsCards, { campaignsCardsFragment, campaignsCardsQuery } from './campaigns/CampaignsCards';
@@ -18,7 +19,6 @@ import DataTable from '../../../components/dataGrid/DataTable';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
 import { KNOWLEDGE_KNUPDATE } from '../../../utils/hooks/useGranted';
 import Security from '../../../utils/Security';
-import { Grid, ToggleButton, Tooltip } from '@components';
 
 const LOCAL_STORAGE_KEY = 'campaigns';
 

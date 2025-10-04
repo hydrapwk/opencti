@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
+import { Typography } from '@components';
 import inject18n from '../../../../components/i18n';
 import StixCoreRelationshipHistoryLines, { stixCoreObjectHistoryLinesQuery } from './StixCoreRelationshipHistoryLines';
 import { QueryRenderer } from '../../../../relay/environment';
-import { Typography } from '@components';
 
 class StixCoreRelationshipLatestHistory extends Component {
   render() {

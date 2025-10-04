@@ -1,10 +1,10 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
 import { useFormatter } from '../../components/i18n';
 import { formatSeconds, ONE_SECOND, secondsBetweenDates } from '../../utils/Time';
 import useAuth from '../../utils/hooks/useAuth';
 import { APP_BASE_PATH } from '../../relay/environment';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
 
 /**
  * Gets timeout and banner settings from react relay and return those values.

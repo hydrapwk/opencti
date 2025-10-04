@@ -4,10 +4,10 @@ import {
   StixCoreObjectHistoryLinesQuery,
   StixCoreObjectHistoryLinesQuery$variables,
 } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectHistoryLinesQuery.graphql';
+import { Avatar, List, ListItem, ListItemIcon, ListItemText, Paper, Skeleton, Typography } from '@components';
 import StixCoreObjectHistoryLines, { stixCoreObjectHistoryLinesQuery } from './StixCoreObjectHistoryLines';
 import { useFormatter } from '../../../../components/i18n';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
-import { Avatar, List, ListItem, ListItemIcon, ListItemText, Paper, Skeleton, Typography } from '@components';
 
 type StixCoreObjectLatestHistoryProps = {
   stixCoreObjectId: string;

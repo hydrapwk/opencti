@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import withStyles from '@mui/styles/withStyles';
 import { KeyboardArrowRightOutlined } from '@mui/icons-material';
 import { compose, map } from 'ramda';
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { DraftChip } from '../../common/draft/DraftChip';
 import inject18n from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const styles = (theme) => ({
   item: {},

@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import ContainerStixObjectsOrStixRelationships from '@private/components/common/containers/ContainerStixObjectsOrStixRelationships';
+import { Grid, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { useFormatter } from '../../../../components/i18n';
 import { CaseTaskOverview_task$data, CaseTaskOverview_task$key } from './__generated__/CaseTaskOverview_task.graphql';
@@ -8,7 +9,6 @@ import ItemDueDate from '../../../../components/ItemDueDate';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import ItemStatus from '../../../../components/ItemStatus';
 import ItemAssignees from '../../../../components/ItemAssignees';
-import { Grid, Typography } from '@components';
 
 const CaseTaskOverviewFragment = graphql`
   fragment CaseTaskOverview_task on Task {

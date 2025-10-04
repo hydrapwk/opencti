@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 import makeStyles from '@mui/styles/makeStyles';
 import { TaxiiCollectionEdition_taxiiCollection$data } from '@private/components/data/taxii/__generated__/TaxiiCollectionEdition_taxiiCollection.graphql';
 import { FormikConfig } from 'formik/dist/types';
+import { Alert, AlertTitle, Box, FormControlLabel, Switch } from '@components';
 import ObjectMembersField from '../../common/form/ObjectMembersField';
 import { useFormatter } from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
@@ -15,7 +16,6 @@ import FilterIconButton from '../../../../components/FilterIconButton';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import { convertAuthorizedMembers } from '../../../../utils/edition';
 import useFiltersState from '../../../../utils/filters/useFiltersState';
-import { Alert, AlertTitle, Box, FormControlLabel, Switch } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -2,6 +2,7 @@ import { graphql, loadQuery, useFragment, usePreloadedQuery } from 'react-relay'
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { OpenInNew, ContentCopy } from 'mdi-material-ui';
+import { Chip, IconButton, ListItem, ListItemIcon, ListItemText, Tooltip, Typography } from '@components';
 import { TaxiiLineDummy } from './TaxiiLine';
 import { PublicTaxiiLinesQuery } from './__generated__/PublicTaxiiLinesQuery.graphql';
 import { PublicTaxiiLines_node$key } from './__generated__/PublicTaxiiLines_node.graphql';
@@ -13,7 +14,6 @@ import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import { copyToClipboard } from '../../../../utils/utils';
 import ItemIcon from '../../../../components/ItemIcon';
-import { Chip, IconButton, ListItem, ListItemIcon, ListItemText, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

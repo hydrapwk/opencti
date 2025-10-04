@@ -2,8 +2,8 @@ import { FilterListOutlined } from '@mui/icons-material';
 import { RayEndArrow, RayStartArrow } from 'mdi-material-ui';
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
-import { useFormatter } from '../../../../components/i18n';
 import { Button, IconButton, Popover, Tooltip } from '@components';
+import { useFormatter } from '../../../../components/i18n';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

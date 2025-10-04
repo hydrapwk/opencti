@@ -5,11 +5,11 @@ import { AISummaryHistorySubscription, AISummaryHistorySubscription$data } from 
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import { AutoModeOutlined, ContentCopyOutlined } from '@mui/icons-material';
 import { AISummaryHistoryStixCoreObjectAskAiHistoryQuery$data } from '@private/components/common/ai/__generated__/AISummaryHistoryStixCoreObjectAskAiHistoryQuery.graphql';
+import { Alert, Divider, IconButton, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { getDefaultAiLanguage } from '../../../../utils/ai/Common';
 import { fetchQuery } from '../../../../relay/environment';
 import { copyToClipboard, cleanHtmlTags } from '../../../../utils/utils';
-import { Alert, Divider, IconButton, Tooltip, Typography } from '@components';
 
 const subscription = graphql`
     subscription AISummaryHistorySubscription($id: ID!) {

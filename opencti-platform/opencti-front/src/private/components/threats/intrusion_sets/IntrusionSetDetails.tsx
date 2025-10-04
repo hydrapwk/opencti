@@ -3,13 +3,13 @@ import { graphql, createFragmentContainer } from 'react-relay';
 import { BullseyeArrow, ArmFlexOutline } from 'mdi-material-ui';
 import { useTheme } from '@mui/material/styles';
 import { IntrusionSetDetails_intrusionSet$data } from '@private/components/threats/intrusion_sets/__generated__/IntrusionSetDetails_intrusionSet.graphql';
+import { Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { useFormatter } from '../../../../components/i18n';
 import IntrusionSetLocations from './IntrusionSetLocations';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
 import ImageCarousel, { ImagesData } from '../../../../components/ImageCarousel';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 
 type IntrusionSetDetailsProps = {
   intrusionSet: IntrusionSetDetails_intrusionSet$data

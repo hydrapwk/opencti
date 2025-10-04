@@ -3,8 +3,9 @@ import { useTheme } from '@mui/styles';
 import { Theme } from '@mui/material/styles/createTheme';
 import { UploadFileOutlined } from '@mui/icons-material';
 import ImportFilesDialog from '@private/components/common/files/import_files/ImportFilesDialog';
-import { useFormatter } from './i18n';
 import { Button, IconButton, Tooltip } from '@components';
+import { useFormatter } from './i18n';
+
 interface UploadImportProps {
   color?: 'primary' | 'inherit' | 'secondary' | 'success' | 'error' | 'info' | 'warning';
   size?: 'small' | 'medium' | 'large';

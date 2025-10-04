@@ -7,6 +7,7 @@ import { DraftPopoverDeleteMutation } from '@private/components/drafts/__generat
 import { draftContextBannerMutation } from '@private/components/drafts/DraftContextBanner';
 import { DraftContextBannerMutation, DraftContextBannerMutation$data } from '@private/components/drafts/__generated__/DraftContextBannerMutation.graphql';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
 import Transition from '../../../components/Transition';
 import { KNOWLEDGE } from '../../../utils/hooks/useGranted';
@@ -18,7 +19,6 @@ import { RelayError } from '../../../relay/relayTypes';
 import stopEvent from '../../../utils/domEvent';
 import DeleteDialog from '../../../components/DeleteDialog';
 import useDeletion from '../../../utils/hooks/useDeletion';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 
 const draftPopoverDeleteMutation = graphql`
     mutation DraftPopoverDeleteMutation($id: ID!) {

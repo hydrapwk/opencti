@@ -6,6 +6,7 @@ import withStyles from '@mui/styles/withStyles';
 import { Launch } from 'mdi-material-ui';
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
 import { createRefetchContainer, graphql } from 'react-relay';
+import { Collapse, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { yearFormat } from '../../../../utils/Time';
 import inject18n from '../../../../components/i18n';
 import StixCoreRelationshipPopover from '../stix_core_relationships/StixCoreRelationshipPopover';
@@ -14,7 +15,6 @@ import ItemIcon from '../../../../components/ItemIcon';
 import { stixDomainObjectThreatKnowledgeStixRelationshipsQuery } from './StixDomainObjectThreatKnowledgeQuery';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
-import { Collapse, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@components';
 
 const styles = (theme) => ({
   itemIcon: {

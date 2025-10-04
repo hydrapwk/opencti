@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import StixNestedRefRelationshipCreationFromEntityContainer from '@private/components/common/stix_nested_ref_relationships/StixNestedRefRelationshipCreationFromEntityContainer';
+import { Paper, Typography } from '@components';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import SearchInput from '../../../../components/SearchInput';
 import StixCyberObservableNestedEntitiesTable from './StixCyberObservableNestedEntitiesTable';
 import { useFormatter } from '../../../../components/i18n';
-import { Paper, Typography } from '@components';
+
 interface StixCyberObservableNestedEntitiesProps {
   entityId: string;
   entityType: string;

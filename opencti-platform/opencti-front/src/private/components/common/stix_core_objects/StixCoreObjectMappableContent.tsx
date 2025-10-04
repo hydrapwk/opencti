@@ -5,10 +5,13 @@ import * as Yup from 'yup';
 import { graphql } from 'react-relay';
 import { FormikConfig } from 'formik/dist/types';
 import { ExternalReferencesValues } from '@private/components/common/form/ExternalReferencesField';
-import { StixCoreObjectMappableContentFieldPatchMutation } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectMappableContentFieldPatchMutation.graphql';
+import {
+  StixCoreObjectMappableContentFieldPatchMutation,
+} from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectMappableContentFieldPatchMutation.graphql';
 import { ContainerMappingContent_container$data } from '@private/components/common/containers/__generated__/ContainerMappingContent_container.graphql';
 import makeStyles from '@mui/styles/makeStyles';
 import { createStyles } from '@mui/styles';
+import { Paper, Typography } from '@components';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import { SubscriptionFocus } from '../../../../components/Subscription';
 import RichTextField from '../../../../components/fields/RichTextField';
@@ -22,7 +25,6 @@ import { isNotEmptyField } from '../../../../utils/utils';
 import HtmlDisplay from '../../../../components/HtmlDisplay';
 import type { Theme } from '../../../../components/Theme';
 import { MESSAGING$ } from '../../../../relay/environment';
-import { Paper, Typography } from '@components';
 
 const useStyles = makeStyles<Theme>(() => createStyles({
   documentContainer: {

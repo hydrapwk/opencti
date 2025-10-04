@@ -8,6 +8,7 @@ import { useTheme } from '@mui/styles';
 import { getDraftModeColor } from '@private/components/common/draft/DraftChip';
 import ImportMenu from '@private/components/data/ImportMenu';
 import DraftWorkspaceDialogCreation from '@private/components/common/files/draftWorkspace/DraftWorkspaceDialogCreation';
+import { Chip } from '@components';
 import { usePaginationLocalStorage } from '../../../utils/hooks/useLocalStorage';
 import { useFormatter } from '../../../components/i18n';
 import { addFilter, emptyFilterGroup, useBuildEntityTypeBasedFilterContext } from '../../../utils/filters/filtersUtils';
@@ -22,7 +23,6 @@ import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocum
 import { defaultRender } from '../../../components/dataGrid/dataTableUtils';
 import { hexToRGB } from '../../../utils/Colors';
 import type { Theme } from '../../../components/Theme';
-import { Chip } from '@components';
 
 const DraftLineFragment = graphql`
     fragment Drafts_node on DraftWorkspace {

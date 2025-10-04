@@ -5,12 +5,12 @@ import PublicDashboardCreationForm from '@private/components/workspaces/dashboar
 import WorkspaceShareList, { workspaceShareListQuery } from '@private/components/workspaces/WorkspaceShareList';
 import { WorkspaceShareListQuery } from '@private/components/workspaces/__generated__/WorkspaceShareListQuery.graphql';
 import { graphql, useQueryLoader } from 'react-relay';
+import { Alert, ToggleButton, ToggleButtonGroup, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import Loader, { LoaderVariant } from '../../../components/Loader';
 import DeleteDialog from '../../../components/DeleteDialog';
 import useDeletion from '../../../utils/hooks/useDeletion';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
-import { Alert, ToggleButton, ToggleButtonGroup, Tooltip, Typography } from '@components';
 
 const workspaceShareButtonDeleteMutation = graphql`
   mutation WorkspaceShareButtonDeleteMutation($id: ID!) {

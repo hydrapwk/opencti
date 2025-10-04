@@ -3,12 +3,12 @@ import * as PropTypes from 'prop-types';
 import * as R from 'ramda';
 import { graphql, createFragmentContainer } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
+import { Chip, Divider, Grid, Paper, Typography } from '@components';
 import RelatedContainers from '../../common/containers/related_containers/RelatedContainers';
 import StixRelationshipsHorizontalBars from '../../common/stix_relationships/StixRelationshipsHorizontalBars';
 import inject18n from '../../../../components/i18n';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { emptyFilterGroup } from '../../../../utils/filters/filtersUtils';
-import { Chip, Divider, Grid, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

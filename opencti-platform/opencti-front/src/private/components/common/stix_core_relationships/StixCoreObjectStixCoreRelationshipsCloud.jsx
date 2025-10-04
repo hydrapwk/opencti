@@ -4,6 +4,7 @@ import { compose } from 'ramda';
 import { graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import { SettingsInputComponent } from '@mui/icons-material';
+import { Grid, IconButton, Paper, Typography } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
 import Security from '../../../../utils/Security';
@@ -11,7 +12,6 @@ import { EXPLORE_EXUPDATE } from '../../../../utils/hooks/useGranted';
 import Loader from '../../../../components/Loader';
 import { hexToRGB, itemColor } from '../../../../utils/Colors';
 import { NO_DATA_WIDGET_MESSAGE } from '../../../../components/dashboard/WidgetNoData';
-import { Grid, IconButton, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

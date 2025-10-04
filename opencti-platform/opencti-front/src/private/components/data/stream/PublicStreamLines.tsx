@@ -2,6 +2,7 @@ import { graphql, loadQuery, useFragment, usePreloadedQuery } from 'react-relay'
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { ContentCopy, OpenInNew } from 'mdi-material-ui';
+import { Chip, IconButton, ListItem, ListItemIcon, ListItemText, Tooltip, Typography } from '@components';
 import { environment } from '../../../../relay/environment';
 import { PublicStreamLinesQuery } from './__generated__/PublicStreamLinesQuery.graphql';
 import ListLines from '../../../../components/list_lines/ListLines';
@@ -12,7 +13,6 @@ import { useFormatter } from '../../../../components/i18n';
 import { PublicStreamLines_node$key } from './__generated__/PublicStreamLines_node.graphql';
 import { copyToClipboard } from '../../../../utils/utils';
 import ItemIcon from '../../../../components/ItemIcon';
-import { Chip, IconButton, ListItem, ListItemIcon, ListItemText, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

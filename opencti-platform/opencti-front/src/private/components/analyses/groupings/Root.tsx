@@ -11,6 +11,7 @@ import StixCoreObjectSimulationResultContainer from '@private/components/common/
 import Security from 'src/utils/Security';
 import StixCoreObjectContentRoot from '@private/components/common/stix_core_objects/StixCoreObjectContentRoot';
 import GroupingDeletion from '@private/components/analyses/groupings/GroupingDeletion';
+import { Box, Tab, Tabs } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import Grouping from './Grouping';
 import GroupingKnowledge from './GroupingKnowledge';
@@ -27,7 +28,6 @@ import useGranted, { KNOWLEDGE_KNUPDATE_KNBYPASSREFERENCE, KNOWLEDGE_KNUPDATE, K
 import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
 import GroupingEdition from './GroupingEdition';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootGroupingSubscription($id: ID!) {

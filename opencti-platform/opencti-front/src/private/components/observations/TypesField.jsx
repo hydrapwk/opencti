@@ -3,11 +3,11 @@ import * as PropTypes from 'prop-types';
 import { Field } from 'formik';
 import { assoc, compose, map, pipe, prop, sortBy, toLower } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
+import { MenuItem } from '@components';
 import inject18n from '../../../components/i18n';
 import SelectField from '../../../components/fields/SelectField';
 import { QueryRenderer } from '../../../relay/environment';
 import { stixCyberObservablesLinesSubTypesQuery } from './stix_cyber_observables/StixCyberObservablesLines';
-import { MenuItem } from '@components';
 
 const styles = () => ({
   container: {

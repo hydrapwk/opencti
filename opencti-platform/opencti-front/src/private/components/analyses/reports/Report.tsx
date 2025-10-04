@@ -2,12 +2,12 @@ import React from 'react';
 import StixDomainObjectOverview from '@private/components/common/stix_domain_objects/StixDomainObjectOverview';
 import StixCoreObjectLatestHistory from '@private/components/common/stix_core_objects/StixCoreObjectLatestHistory';
 import { graphql, useFragment } from 'react-relay';
+import { Grid } from '@components';
 import ReportDetails from './ReportDetails';
 import StixCoreObjectExternalReferences from '../external_references/StixCoreObjectExternalReferences';
 import StixCoreObjectOrStixCoreRelationshipNotes from '../notes/StixCoreObjectOrStixCoreRelationshipNotes';
 import { Report_report$key } from './__generated__/Report_report.graphql';
 import useOverviewLayoutCustomization from '../../../../utils/hooks/useOverviewLayoutCustomization';
-import { Grid } from '@components';
 
 const reportComponentFragment = graphql`
   fragment Report_report on Report {

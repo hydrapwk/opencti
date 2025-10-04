@@ -2,13 +2,13 @@ import MoreVert from '@mui/icons-material/MoreVert';
 import React, { useState } from 'react';
 import { PopoverProps } from '@mui/material/Popover';
 import { graphql } from 'react-relay';
+import { IconButton, Menu, MenuItem } from '@components';
 import SettingsMessageEdition from './SettingsMessageEdition';
 import { useFormatter } from '../../../../components/i18n';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
 import { SettingsMessagesLine_settingsMessage$data } from './__generated__/SettingsMessagesLine_settingsMessage.graphql';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { IconButton, Menu, MenuItem } from '@components';
 
 const settingsMessagesPopoverPatch = graphql`
   mutation SettingsMessagesPopoverPatchMutation(

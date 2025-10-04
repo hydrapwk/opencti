@@ -5,6 +5,7 @@ import type { FormikConfig } from 'formik/dist/types';
 import { knowledgeGraphQueryCheckObjectQuery } from '@private/components/common/containers/KnowledgeGraphQuery';
 import { KnowledgeGraphQueryCheckObjectQuery$data } from '@private/components/common/containers/__generated__/KnowledgeGraphQueryCheckObjectQuery.graphql';
 import { useTheme } from '@mui/material/styles';
+import { Alert, AlertTitle, Button, Checkbox, Dialog, DialogActions, DialogContent, FormControlLabel, FormGroup, LinearProgress, Typography } from '@components';
 import Transition from '../../Transition';
 import { useFormatter } from '../../i18n';
 import { containerTypes } from '../../../utils/hooks/useAttributes';
@@ -16,7 +17,7 @@ import useKnowledgeGraphDeleteObject from '../utils/useKnowledgeGraphDeleteObjec
 import { FieldOption } from '../../../utils/field';
 import type { Theme } from '../../Theme';
 import { isGraphNode } from '../graph.types';
-import { Alert, AlertTitle, Button, Checkbox, Dialog, DialogActions, DialogContent, FormControlLabel, FormGroup, LinearProgress, Typography } from '@components';
+
 interface ReferenceFormData {
   message: string,
   references: FieldOption[]

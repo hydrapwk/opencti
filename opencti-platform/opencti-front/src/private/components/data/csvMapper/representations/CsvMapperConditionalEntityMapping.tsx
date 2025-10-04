@@ -5,12 +5,13 @@ import { InformationOutline } from 'mdi-material-ui';
 import { alphabet } from '@private/components/data/csvMapper/representations/attributes/AttributeUtils';
 import { useCsvMapperContext } from '@private/components/data/csvMapper/CsvMapperContext';
 import { useTheme } from '@mui/styles';
+import { Autocomplete as MUIAutocomplete, TextField as MuiTextField, Tooltip } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import TextField from '../../../../../components/TextField';
 import SwitchField from '../../../../../components/fields/SwitchField';
 import type { Theme } from '../../../../../components/Theme';
 import { FieldOption } from '../../../../../utils/field';
-import { Autocomplete as MUIAutocomplete, TextField as MuiTextField, Tooltip } from '@components';
+
 interface CsvMapperConditionalEntityMappingProps
   extends FieldProps<CsvMapperColumnBasedFormData> {
   representation: CsvMapperRepresentationFormData;

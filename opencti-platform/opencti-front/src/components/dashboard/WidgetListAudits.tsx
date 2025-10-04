@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { useTheme } from '@mui/styles';
+import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { AuditsListComponentQuery$data } from '../../private/components/common/audits/__generated__/AuditsListComponentQuery.graphql';
 import MarkdownDisplay from '../MarkdownDisplay';
 import ItemIcon from '../ItemIcon';
@@ -8,7 +9,7 @@ import { resolveLink } from '../../utils/Entity';
 import { useGenerateAuditMessage } from '../../utils/history';
 import type { Theme } from '../Theme';
 import { useFormatter } from '../i18n';
-import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
+
 interface WidgetListAuditsProps {
   data: NonNullable<AuditsListComponentQuery$data['audits']>['edges']
 }

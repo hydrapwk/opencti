@@ -8,6 +8,7 @@ import {
   SettingsOrganizationUsersPaginationQuery$variables,
 } from '@private/components/settings/users/__generated__/SettingsOrganizationUsersPaginationQuery.graphql';
 import { SettingsOrganizationUsersLine_node$data } from '@private/components/settings/users/__generated__/SettingsOrganizationUsersLine_node.graphql';
+import { Grid, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import { usePaginationLocalStorage } from '../../../../utils/hooks/useLocalStorage';
@@ -16,7 +17,6 @@ import { DataTableProps } from '../../../../components/dataGrid/dataTableTypes';
 import { UsePreloadedPaginationFragment } from '../../../../utils/hooks/usePreloadedPaginationFragment';
 import DataTable from '../../../../components/dataGrid/DataTable';
 import useGranted, { SETTINGS_SETACCESSES, VIRTUAL_ORGANIZATION_ADMIN } from '../../../../utils/hooks/useGranted';
-import { Grid, Paper, Typography } from '@components';
 
 export const settingsOrganizationUsersQuery = graphql`
   query SettingsOrganizationUsersPaginationQuery(

@@ -3,13 +3,13 @@ import React, { FunctionComponent, useState } from 'react';
 import { useTheme } from '@mui/styles';
 import { useNavigate } from 'react-router-dom';
 import { ReportPopoverDeletionQuery$data } from '@private/components/analyses/reports/__generated__/ReportPopoverDeletionQuery.graphql';
+import { Alert, AlertTitle, Button, Checkbox, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControlLabel, FormGroup } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 
 import type { Theme } from '../../../../components/Theme';
 import Transition from '../../../../components/Transition';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Alert, AlertTitle, Button, Checkbox, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControlLabel, FormGroup } from '@components';
 
 const reportPopoverDeletionQuery = graphql`
   query ReportPopoverDeletionQuery($id: String) {

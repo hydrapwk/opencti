@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useState } from 'react';
 import { Field } from 'formik';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import type { ExternalReferencesValues } from './ExternalReferencesField';
@@ -8,7 +9,6 @@ import { ExternalReferencesField } from './ExternalReferencesField';
 import { KNOWLEDGE_KNUPDATE_KNBYPASSREFERENCE } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

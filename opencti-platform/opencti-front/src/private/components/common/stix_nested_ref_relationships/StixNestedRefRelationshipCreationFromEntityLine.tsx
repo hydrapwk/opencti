@@ -7,6 +7,7 @@ import {
   StixNestedRefRelationshipCreationFromEntityLine_node$key,
 } from '@private/components/common/stix_nested_ref_relationships/__generated__/StixNestedRefRelationshipCreationFromEntityLine_node.graphql';
 import { DraftChip } from '@private/components/common/draft/DraftChip';
+import { Checkbox, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import StixCoreObjectLabels from '../stix_core_objects/StixCoreObjectLabels';
 import { APP_BASE_PATH } from '../../../../relay/environment';
 import ItemIcon from '../../../../components/ItemIcon';
@@ -16,7 +17,6 @@ import type { Theme } from '../../../../components/Theme';
 import { DataColumns } from '../../../../components/list_lines';
 import { HandleAddFilter } from '../../../../utils/hooks/useLocalStorage';
 import ItemEntityType from '../../../../components/ItemEntityType';
-import { Checkbox, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

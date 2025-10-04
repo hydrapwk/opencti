@@ -5,6 +5,7 @@ import { graphql, useFragment } from 'react-relay';
 import EEChip from '@private/components/common/entreprise_edition/EEChip';
 import VisuallyHiddenInput from '@private/components/common/VisuallyHiddenInput';
 import { useNavigate } from 'react-router-dom';
+import { Grid, IconButton, Paper, Tooltip, Typography } from '@components';
 import FintelTemplatesLines, { TemplateType } from './FintelTemplatesLines';
 import { FintelTemplatesGrid_templates$key } from './__generated__/FintelTemplatesGrid_templates.graphql';
 import FintelTemplateFormDrawer from './FintelTemplateFormDrawer';
@@ -15,7 +16,6 @@ import useEnterpriseEdition from '../../../../../utils/hooks/useEnterpriseEditio
 import useFintelTemplateImport from './useFintelTemplateImport';
 import { handleError, MESSAGING$ } from '../../../../../relay/environment';
 import { resolveLink } from '../../../../../utils/Entity';
-import { Grid, IconButton, Paper, Tooltip, Typography } from '@components';
 
 export const fintelTemplatesFragmentParams = { orderBy: 'name', orderMode: 'asc' };
 

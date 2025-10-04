@@ -5,13 +5,13 @@ import withStyles from '@mui/styles/withStyles';
 import { KeyboardArrowRightOutlined } from '@mui/icons-material';
 import { compose } from 'ramda';
 import { Link } from 'react-router-dom';
+import { Box, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import inject18n from '../../../../components/i18n';
 import { groupsSearchQuery } from '../Groups';
 import { QueryRenderer } from '../../../../relay/environment';
 import ItemIcon from '../../../../components/ItemIcon';
 import useSensitiveModifications from '../../../../utils/hooks/useSensitiveModifications';
 import DangerZoneChip from '../../common/danger_zone/DangerZoneChip';
-import { Box, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const styles = (theme) => ({
   item: {

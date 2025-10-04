@@ -3,10 +3,10 @@ import * as PropTypes from 'prop-types';
 import { graphql, createPaginationContainer } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import { compose } from 'ramda';
+import { List } from '@components';
 import { SimpleStixObjectOrStixRelationshipStixCoreRelationshipLine } from './SimpleStixObjectOrStixRelationshipStixCoreRelationshipLine';
 import inject18n from '../../../../components/i18n';
 import { NO_DATA_WIDGET_MESSAGE } from '../../../../components/dashboard/WidgetNoData';
-import { List } from '@components';
 
 const styles = (theme) => ({
   paper: {

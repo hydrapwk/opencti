@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { Alert, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, InputLabel, MenuItem, Select, TextField, Typography } from '@components';
 import { useFormatter } from '../../i18n';
 import { splitMultilines } from '../../../utils/String';
-import { Alert, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, InputLabel, MenuItem, Select, TextField, Typography } from '@components';
+
 interface BulkTextModalProps {
   open: boolean
   onClose: () => void

@@ -6,6 +6,7 @@ import { graphql, createFragmentContainer } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import { StarBorderOutlined } from '@mui/icons-material';
 import withTheme from '@mui/styles/withTheme';
+import { Avatar, Card, CardActionArea, CardContent, CardHeader, IconButton, Skeleton } from '@components';
 import inject18n from '../../../../components/i18n';
 import { resolveLink } from '../../../../utils/Entity';
 import { commitMutation } from '../../../../relay/environment';
@@ -13,7 +14,6 @@ import { deleteNode, insertNode } from '../../../../utils/store';
 import ItemIcon from '../../../../components/ItemIcon';
 import { getFileUri } from '../../../../utils/utils';
 import { renderCardTitle } from '../../../../utils/Card';
-import { Avatar, Card, CardActionArea, CardContent, CardHeader, IconButton, Skeleton } from '@components';
 
 const stixDomainObjectBookmarkCreateMutation = graphql`
   mutation StixDomainObjectBookmarkreateMutation($id: ID!, $type: String!) {

@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { useTheme } from '@mui/styles';
-import type { Theme } from './Theme';
 import { Chip } from '@components';
+import type { Theme } from './Theme';
 
 const inlineStyles = {
   whiteDark: {

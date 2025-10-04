@@ -5,13 +5,14 @@ import { useTheme } from '@mui/material/styles';
 import StixCoreObjectLabels from '@private/components/common/stix_core_objects/StixCoreObjectLabels';
 import { graphql, useFragment } from 'react-relay';
 import { Theme } from '@mui/material/styles/createTheme';
+import { Checkbox, ListItem, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 import { NarrativeLine_node$data, NarrativeLine_node$key } from './__generated__/NarrativeLine_node.graphql';
 import { useFormatter } from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
 import { DataColumns } from '../../../../components/list_lines';
 import { HandleAddFilter } from '../../../../utils/hooks/useLocalStorage';
 import { emptyFilled } from '../../../../utils/String';
-import { Checkbox, ListItem, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
+
 interface NarrativeLineProps {
   node: NarrativeLine_node$key;
   dataColumns: DataColumns;

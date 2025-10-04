@@ -4,6 +4,7 @@ import { compose } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { graphql, createFragmentContainer } from 'react-relay';
 import { Link } from 'react-router-dom';
+import { ListItem, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { DraftChip } from '../draft/DraftChip';
 import inject18n from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
@@ -11,7 +12,6 @@ import StixNestedRefRelationshipPopover from '../stix_nested_ref_relationships/S
 import { resolveLink } from '../../../../utils/Entity';
 import { getMainRepresentative } from '../../../../utils/defaultRepresentatives';
 import ItemEntityType from '../../../../components/ItemEntityType';
-import { ListItem, ListItemButton, ListItemIcon, ListItemText } from '@components';
 
 const styles = (theme) => ({
   item: {

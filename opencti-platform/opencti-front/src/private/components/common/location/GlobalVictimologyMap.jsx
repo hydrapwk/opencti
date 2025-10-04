@@ -4,11 +4,11 @@ import * as R from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import CircularProgress from '@mui/material/CircularProgress';
 import { graphql } from 'react-relay';
+import { Typography } from '@components';
 import inject18n from '../../../../components/i18n';
 import LocationMiniMapTargets from './LocationMiniMapTargets';
 import { QueryRenderer } from '../../../../relay/environment';
 import { computeLevel } from '../../../../utils/Number';
-import { Typography } from '@components';
 
 export const globalVictimologyMapStixCoreRelationshipsDistributionQuery = graphql`
   query GlobalVictimologyMapStixCoreRelationshipsDistributionQuery(

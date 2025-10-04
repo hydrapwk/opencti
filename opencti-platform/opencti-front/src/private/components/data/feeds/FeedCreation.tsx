@@ -10,7 +10,26 @@ import makeStyles from '@mui/styles/makeStyles';
 import { FormikConfig } from 'formik/dist/types';
 import { FeedCreationAllTypesQuery$data } from '@private/components/data/feeds/__generated__/FeedCreationAllTypesQuery.graphql';
 import { FeedAttributeMappingInput } from '@private/components/data/feeds/__generated__/FeedEditionMutation.graphql';
-import { StixCyberObservablesLinesAttributesQuery$data } from '@private/components/observations/stix_cyber_observables/__generated__/StixCyberObservablesLinesAttributesQuery.graphql';
+import {
+  StixCyberObservablesLinesAttributesQuery$data,
+} from '@private/components/observations/stix_cyber_observables/__generated__/StixCyberObservablesLinesAttributesQuery.graphql';
+import {
+  Alert,
+  AlertTitle,
+  Box,
+  Button,
+  FormControl,
+  FormControlLabel,
+  Grid,
+  IconButton,
+  InputAdornment,
+  InputLabel,
+  MenuItem,
+  TextField as MuiTextField,
+  Select,
+  Switch,
+  Tooltip,
+} from '@components';
 import ObjectMembersField from '../../common/form/ObjectMembersField';
 import inject18n, { useFormatter } from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
@@ -38,7 +57,6 @@ import type { Theme } from '../../../../components/Theme';
 import { PaginationOptions } from '../../../../components/list_lines';
 import { FilterDefinition } from '../../../../utils/hooks/useAuth';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Alert, AlertTitle, Box, Button, FormControl, FormControlLabel, Grid, IconButton, InputAdornment, InputLabel, MenuItem, TextField as MuiTextField, Select, Switch, Tooltip } from '@components';
 
 export const feedCreationAllTypesQuery = graphql`
     query FeedCreationAllTypesQuery {

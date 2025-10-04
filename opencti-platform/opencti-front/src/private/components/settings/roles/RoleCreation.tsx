@@ -5,13 +5,13 @@ import { useTheme } from '@mui/material';
 import * as Yup from 'yup';
 import { ConnectionHandler, graphql } from 'react-relay';
 import { DataID, RecordProxy, RecordSourceSelectorProxy } from 'relay-runtime';
+import { Button } from '@components';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import { commitMutation, defaultCommitMutation } from '../../../../relay/environment';
 import { PaginationOptions } from '../../../../components/list_lines';
 import Drawer, { DrawerControlledDialProps } from '../../common/drawer/Drawer';
 import { useFormatter } from '../../../../components/i18n';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button } from '@components';
 
 const roleMutation = graphql`
   mutation RoleCreationMutation($input: RoleAddInput!) {

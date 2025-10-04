@@ -1,7 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { useParams } from 'react-router-dom';
 import { graphql } from 'react-relay';
-import { DraftSightingsLinesPaginationQuery, DraftSightingsLinesPaginationQuery$variables } from '@private/components/drafts/__generated__/DraftSightingsLinesPaginationQuery.graphql';
+import {
+  DraftSightingsLinesPaginationQuery,
+  DraftSightingsLinesPaginationQuery$variables,
+} from '@private/components/drafts/__generated__/DraftSightingsLinesPaginationQuery.graphql';
 import { DraftSightingsLines_data$data } from '@private/components/drafts/__generated__/DraftSightingsLines_data.graphql';
 import { usePaginationLocalStorage } from '../../../utils/hooks/useLocalStorage';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';

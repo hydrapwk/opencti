@@ -4,6 +4,7 @@ import React, { FunctionComponent, useState } from 'react';
 import { PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import SearchInput from 'src/components/SearchInput';
 import { useFormatter } from 'src/components/i18n';
+import { IconButton } from '@components';
 import AddPersonasThreatActorIndividualLines, { addPersonasThreatActorIndividualLinesQuery } from './AddPersonasThreatActorIndividualLines';
 import {
   AddPersonasThreatActorIndividualLinesQuery,
@@ -13,7 +14,7 @@ import { ThreatActorIndividualDetails_ThreatActorIndividual$data } from './__gen
 import StixCyberObservableCreation from '../../observations/stix_cyber_observables/StixCyberObservableCreation';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { IconButton } from '@components';
+
 interface AddPersonaThreatActorIndividualComponentProps {
   threatActorIndividual: ThreatActorIndividualDetails_ThreatActorIndividual$data,
   queryRef: PreloadedQuery<AddPersonasThreatActorIndividualLinesQuery>,

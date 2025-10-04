@@ -16,9 +16,9 @@ import BulkTextModalButton from 'src/components/fields/BulkTextField/BulkTextMod
 import StixDomainObjectCreation from '@private/components/common/stix_domain_objects/StixDomainObjectCreation';
 import { PaginationOptions } from 'src/components/list_lines';
 import StixCyberObservableCreation from '@private/components/observations/stix_cyber_observables/StixCyberObservableCreation';
+import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem, Select, TextField, Typography } from '@components';
 import { allEntitiesKeyList, type StixCoreResultsType } from '../utils/querySearchEntityByText';
 import { getRelationsFromOneEntityToAny, RelationsDataFromEntity, RelationsToEntity } from '../../../../../utils/Relation';
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem, Select, TextField, Typography } from '@components';
 
 export const searchStixCoreObjectsByRepresentativeQuery = graphql`
   query BulkRelationDialogQuery(

@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
-import { useFormatter } from './i18n';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, LinearProgress, Typography } from '@components';
+import { useFormatter } from './i18n';
+
 interface ProgressBarProps {
   open: boolean
   value: number

@@ -4,6 +4,23 @@ import { Field, Form, Formik } from 'formik';
 import Grid from '@mui/material/Grid2';
 import * as Yup from 'yup';
 import { useTheme } from '@mui/styles';
+import {
+  Alert,
+  Box,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  List,
+  ListItem,
+  ListItemText,
+  MenuItem,
+  Paper,
+  Switch,
+  Typography,
+} from '@components';
 import DangerZoneBlock from '../common/danger_zone/DangerZoneBlock';
 import EEChip from '../common/entreprise_edition/EEChip';
 import EnterpriseEditionButton from '../common/entreprise_edition/EnterpriseEditionButton';
@@ -28,7 +45,6 @@ import { SettingsQuery } from './__generated__/SettingsQuery.graphql';
 import type { Theme } from '../../../components/Theme';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
-import { Alert, Box, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, List, ListItem, ListItemText, MenuItem, Paper, Switch, Typography } from '@components';
 
 const settingsQuery = graphql`
   query SettingsQuery {

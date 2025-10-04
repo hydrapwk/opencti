@@ -5,6 +5,7 @@ import { SublistViewIcon } from 'filigran-icon';
 import { NarrativesLines_data$data } from '@private/components/techniques/narratives/__generated__/NarrativesLines_data.graphql';
 import { ViewListOutlined } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 import ExportContextProvider from '../../../utils/ExportContextProvider';
 import { narrativeLineFragment } from './narratives/NarrativeLine';
 import { narrativesLinesFragment, narrativesLinesQuery } from './narratives/NarrativesLines';
@@ -24,7 +25,6 @@ import DataTable from '../../../components/dataGrid/DataTable';
 import { UsePreloadedPaginationFragment } from '../../../utils/hooks/usePreloadedPaginationFragment';
 import type { Theme } from '../../../components/Theme';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
-import { ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 
 const LOCAL_STORAGE_KEY = 'narratives';
 

@@ -6,6 +6,7 @@ import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { FormikConfig } from 'formik/dist/types';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { ToolsLinesPaginationQuery$variables } from '@private/components/arsenal/__generated__/ToolsLinesPaginationQuery.graphql';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import KillChainPhasesField from '../../common/form/KillChainPhasesField';
@@ -31,7 +32,6 @@ import ProgressBar from '../../../../components/ProgressBar';
 import BulkTextField from '../../../../components/fields/BulkTextField/BulkTextField';
 import BulkTextModalButton from '../../../../components/fields/BulkTextField/BulkTextModalButton';
 import TextField from '../../../../components/TextField';
-import { Button } from '@components';
 
 const toolMutation = graphql`
   mutation ToolCreationMutation($input: ToolAddInput!) {

@@ -1,12 +1,13 @@
 import Filters from '@private/components/common/lists/Filters';
 import React, { FunctionComponent, useEffect } from 'react';
 import { useWidgetConfigContext } from '@private/components/widgets/WidgetConfigContext';
+import { Box } from '@components';
 import useFiltersState from '../../../utils/filters/useFiltersState';
 import { isFilterGroupNotEmpty, useAvailableFilterKeysForEntityTypes } from '../../../utils/filters/filtersUtils';
 import FilterIconButton from '../../../components/FilterIconButton';
 import { useFormatter } from '../../../components/i18n';
 import type { WidgetDataSelection, WidgetPerspective } from '../../../utils/widget/widget';
-import { Box } from '@components';
+
 interface WidgetFiltersProps {
   perspective: WidgetPerspective | null;
   type: string;

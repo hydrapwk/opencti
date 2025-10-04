@@ -10,6 +10,7 @@ import StixCoreObjectSimulationResultContainer from '@private/components/common/
 import StixCoreObjectContentRoot from '@private/components/common/stix_core_objects/StixCoreObjectContentRoot';
 import Security from 'src/utils/Security';
 import AIInsights from '@private/components/common/ai/AIInsights';
+import { Box, Tab, Tabs } from '@components';
 import ErrorNotFound from '../../../../components/ErrorNotFound';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
@@ -30,7 +31,6 @@ import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
 import CaseIncidentEdition from './CaseIncidentEdition';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
 import CaseIncidentDeletion from './CaseIncidentDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootIncidentCaseSubscription($id: ID!) {

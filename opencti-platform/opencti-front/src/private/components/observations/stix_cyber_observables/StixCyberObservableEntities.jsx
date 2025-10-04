@@ -3,6 +3,7 @@ import * as PropTypes from 'prop-types';
 import { compose } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { ArrowDropDown, ArrowDropUp } from '@mui/icons-material';
+import { List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
 import StixCyberObservableEntitiesLines, { stixCyberObservableEntitiesLinesQuery } from './StixCyberObservableEntitiesLines';
@@ -10,7 +11,6 @@ import StixCoreRelationshipCreationFromEntity from '../../common/stix_core_relat
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import SearchInput from '../../../../components/SearchInput';
-import { List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

@@ -1,8 +1,8 @@
 import React, { UIEvent } from 'react';
+import { Alert, AlertTitle, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
 import Transition from './Transition';
 import { useFormatter } from './i18n';
 import { Deletion } from '../utils/hooks/useDeletion';
-import { Alert, AlertTitle, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
 
 type DeleteDialogProps = {
   deletion: Deletion

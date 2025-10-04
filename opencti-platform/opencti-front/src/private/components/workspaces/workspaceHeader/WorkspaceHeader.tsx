@@ -15,8 +15,8 @@ import WorkspaceKebabMenu from '@private/components/workspaces/WorkspaceKebabMen
 import WorkspaceHeaderTagManager from '@private/components/workspaces/workspaceHeader/WorkspaceHeaderTagManager';
 import WorkspaceEditionContainer from '@private/components/workspaces/WorkspaceEditionContainer';
 import { WorkspaceHeaderFragment$key } from '@private/components/workspaces/workspaceHeader/__generated__/WorkspaceHeaderFragment.graphql';
-import { useFormatter } from '../../../../components/i18n';
 import { Button, Tooltip, Typography } from '@components';
+import { useFormatter } from '../../../../components/i18n';
 
 const workspaceHeaderFragment = graphql`
   fragment WorkspaceHeaderFragment on Workspace {

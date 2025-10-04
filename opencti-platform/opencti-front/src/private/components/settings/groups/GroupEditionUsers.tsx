@@ -4,11 +4,11 @@ import { GroupEditionContainer_group$data } from '@private/components/settings/g
 import { GroupUsersLinesQuery$variables } from '@private/components/settings/users/__generated__/GroupUsersLinesQuery.graphql';
 import { toolBarUsersLinesSearchQuery } from '@private/components/data/DataTableToolBar';
 import { DataTableToolBarUsersLinesSearchQuery } from '@private/components/data/__generated__/DataTableToolBarUsersLinesSearchQuery.graphql';
+import { Checkbox } from '@components';
 import { deleteNodeFromId, insertNode } from '../../../../utils/store';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import DataTableWithoutFragment from '../../../../components/dataGrid/DataTableWithoutFragment';
 import { DataTableVariant } from '../../../../components/dataGrid/dataTableTypes';
-import { Checkbox } from '@components';
 
 const userMutationRelationAdd = graphql`
   mutation GroupEditionUsersRelationAddMutation(

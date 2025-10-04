@@ -1,8 +1,9 @@
 import React, { FunctionComponent, ReactNode, useMemo } from 'react';
 import { CogOutline } from 'mdi-material-ui';
 import { JsonMapperRepresentationAttributeFormData } from '@private/components/data/jsonMapper/representations/attributes/Attribute';
-import { useFormatter } from '../../../../../../components/i18n';
 import { Badge, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton } from '@components';
+import { useFormatter } from '../../../../../../components/i18n';
+
 interface JsonMapperRepresentationDialogOptionProps {
   children: ReactNode
   configuration?: JsonMapperRepresentationAttributeFormData

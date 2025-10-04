@@ -6,12 +6,12 @@ import { EventRepeatOutlined, UpdateOutlined } from '@mui/icons-material';
 import type { Theme } from 'src/components/Theme';
 import { interval } from 'rxjs';
 import CircularProgress from '@mui/material/CircularProgress';
+import { Grid, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { TEN_SECONDS } from '../../../../utils/Time';
 import useConnectedDocumentModifier from '../../../../utils/hooks/useConnectedDocumentModifier';
 import ItemBoolean from '../../../../components/ItemBoolean';
-import { Grid, Paper, Typography } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

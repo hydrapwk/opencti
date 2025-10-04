@@ -14,6 +14,23 @@ import ConnectorsState, { connectorsStateQuery } from '@private/components/data/
 import { ConnectorsListQuery } from '@private/components/data/connectors/__generated__/ConnectorsListQuery.graphql';
 import { ConnectorsStateQuery } from '@private/components/data/connectors/__generated__/ConnectorsStateQuery.graphql';
 import { getConnectorMetadata, IngestionConnectorType } from '@private/components/data/IngestionCatalog/utils/ingestionConnectorTypeMetadata';
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Paper,
+  Tooltip,
+  Typography,
+} from '@components';
 import Transition from '../../../../components/Transition';
 import { FIVE_SECONDS } from '../../../../utils/Time';
 import { useFormatter } from '../../../../components/i18n';
@@ -27,7 +44,6 @@ import type { Theme } from '../../../../components/Theme';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import SortConnectorsHeader from './SortConnectorsHeader';
 import useSensitiveModifications from '../../../../utils/hooks/useSensitiveModifications';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Tooltip, Typography } from '@components';
 
 const interval$ = interval(FIVE_SECONDS);
 

@@ -8,10 +8,10 @@ import { useEmailTemplateContext } from '@private/components/settings/email_temp
 import EmailTemplatePopover from '@private/components/settings/email_template/EmailTemplatePopover';
 import EmailTemplateFormDrawer from '@private/components/settings/email_template/EmailTemplateFormDrawer';
 import EmailTemplateTestSend from '@private/components/settings/email_template/EmailTemplateTestSend';
+import { Button, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import { EmailTemplateHeader_template$key } from './__generated__/EmailTemplateHeader_template.graphql';
-import { Button, Typography } from '@components';
 
 const headerFragment = graphql`
     fragment EmailTemplateHeader_template on EmailTemplate {

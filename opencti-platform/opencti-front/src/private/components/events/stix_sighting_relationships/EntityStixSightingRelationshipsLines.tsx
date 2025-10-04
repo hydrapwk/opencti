@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, PreloadedQuery } from 'react-relay';
-import { EntityStixSightingRelationshipsLines_data$key } from '@private/components/events/stix_sighting_relationships/__generated__/EntityStixSightingRelationshipsLines_data.graphql';
+import {
+  EntityStixSightingRelationshipsLines_data$key,
+} from '@private/components/events/stix_sighting_relationships/__generated__/EntityStixSightingRelationshipsLines_data.graphql';
 import {
   EntityStixSightingRelationshipsLinesPaginationQuery,
   EntityStixSightingRelationshipsLinesPaginationQuery$variables,

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { graphql, useFragment } from 'react-relay';
 import { useTheme } from '@mui/styles';
+import { Button, Typography } from '@components';
 import FintelTemplatePopover from './FintelTemplatePopover';
 import { FintelTemplateHeader_template$key } from './__generated__/FintelTemplateHeader_template.graphql';
 import FintelTemplateFormDrawer from './FintelTemplateFormDrawer';
@@ -12,7 +13,6 @@ import { useFormatter } from '../../../../../components/i18n';
 import ErrorNotFound from '../../../../../components/ErrorNotFound';
 import type { Theme } from '../../../../../components/Theme';
 import ItemBoolean from '../../../../../components/ItemBoolean';
-import { Button, Typography } from '@components';
 
 const headerFragment = graphql`
   fragment FintelTemplateHeader_template on FintelTemplate {

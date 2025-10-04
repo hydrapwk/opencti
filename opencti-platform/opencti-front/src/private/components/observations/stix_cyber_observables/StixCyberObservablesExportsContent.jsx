@@ -6,13 +6,13 @@ import Slide from '@mui/material/Slide';
 import { graphql, createRefetchContainer } from 'react-relay';
 import { interval } from 'rxjs';
 import { Close } from '@mui/icons-material';
+import { IconButton, List, Typography } from '@components';
 import StixCyberObservablesExportCreation from './StixCyberObservablesExportCreation';
 import { FIVE_SECONDS } from '../../../../utils/Time';
 import FileLine from '../../common/files/FileLine';
 import inject18n from '../../../../components/i18n';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNGETEXPORT_KNASKEXPORT } from '../../../../utils/hooks/useGranted';
-import { IconButton, List, Typography } from '@components';
 
 const interval$ = interval(FIVE_SECONDS);
 

@@ -5,6 +5,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { useTheme } from '@mui/styles';
 import { Link } from 'react-router-dom';
 import { OpenInNewOutlined } from '@mui/icons-material';
+import { Drawer, FormControl, IconButton, InputLabel, MenuItem, Tooltip, Typography } from '@components';
 import EntityDetails from './EntityDetails';
 import RelationshipDetails from './RelationshipDetails';
 import { useFormatter } from '../../i18n';
@@ -14,7 +15,6 @@ import BasicRelationshipDetails from './BasicRelationshipDetails';
 import { GraphLink, GraphNode, isGraphLink, isGraphNode } from '../graph.types';
 import { useGraphContext } from '../GraphContext';
 import useGraphInteractions from '../utils/useGraphInteractions';
-import { Drawer, FormControl, IconButton, InputLabel, MenuItem, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

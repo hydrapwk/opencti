@@ -1,12 +1,12 @@
 import { AccountBalanceOutlined, CenterFocusStrongOutlined, DateRangeOutlined, FilterAltOffOutlined, FilterListOutlined } from '@mui/icons-material';
 import React, { useState } from 'react';
+import { Badge } from '@components';
 import GraphToolbarOptionsList from './GraphToolbarOptionsList';
 import GraphToolbarItem from './GraphToolbarItem';
 import { useFormatter } from '../../i18n';
 import { useGraphContext } from '../GraphContext';
 import useGraphInteractions from '../utils/useGraphInteractions';
 import { minutesBetweenDates } from '../../../utils/Time';
-import { Badge } from '@components';
 
 const GraphToolbarFilterTools = () => {
   const { t_i18n } = useFormatter();

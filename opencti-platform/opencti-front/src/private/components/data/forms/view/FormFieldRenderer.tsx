@@ -3,6 +3,7 @@ import { Field } from 'formik';
 import { CloudUpload } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
 // Custom field components
+import { Box, Checkbox, Chip, FormControlLabel, FormHelperText, IconButton, InputLabel, MenuItem } from '@components';
 import TextField from '../../../../../components/TextField';
 import SelectField from '../../../../../components/fields/SelectField';
 import SwitchField from '../../../../../components/fields/SwitchField';
@@ -15,7 +16,6 @@ import { FormFieldDefinition } from '../Form.d';
 import { useFormatter } from '../../../../../components/i18n';
 import type { Theme } from '../../../../../components/Theme';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../../utils/field';
-import { Box, Checkbox, Chip, FormControlLabel, FormHelperText, IconButton, InputLabel, MenuItem } from '@components';
 
 // Styles
 const useStyles = makeStyles<Theme>(() => ({

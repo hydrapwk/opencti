@@ -4,10 +4,10 @@ import MenuList from '@mui/material/MenuList';
 import { styled } from '@mui/material/styles';
 import EEChip from '@private/components/common/entreprise_edition/EEChip';
 import { Stack } from '@mui/material';
+import { Box, Drawer, ListItemIcon, ListItemText, MenuItem, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { useSettingsMessagesBannerHeight } from '../../settings/settings_messages/SettingsMessagesBanner';
-import { Box, Drawer, ListItemIcon, ListItemText, MenuItem, Tooltip } from '@components';
 
 const StyledDrawer = styled(Drawer)(() => ({
   '& .MuiDrawer-paper': {

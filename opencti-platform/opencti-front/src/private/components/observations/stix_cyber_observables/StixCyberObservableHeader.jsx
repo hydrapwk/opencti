@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
+import { Box, MenuItem, Typography } from '@components';
 import StixCoreObjectSharingList from '../../common/stix_core_objects/StixCoreObjectSharingList';
 import { DraftChip } from '../../common/draft/DraftChip';
 import StixCoreObjectEnrollPlaybook from '../../common/stix_core_objects/StixCoreObjectEnrollPlaybook';
@@ -13,7 +14,6 @@ import Security from '../../../../utils/Security';
 import PopoverMenu from '../../../../components/PopoverMenu';
 import StixCoreObjectMenuItemUnderEE from '../../common/stix_core_objects/StixCoreObjectMenuItemUnderEE';
 import { useFormatter } from '../../../../components/i18n';
-import { Box, MenuItem, Typography } from '@components';
 
 const StixCyberObservableHeaderComponent = ({ stixCyberObservable, DeleteComponent }) => {
   const [openSharing, setOpenSharing] = useState(false);

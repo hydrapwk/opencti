@@ -3,6 +3,7 @@ import { Field } from 'formik';
 import { graphql } from 'react-relay';
 import { Link } from 'react-router-dom';
 import { OpenInNewOutlined } from '@mui/icons-material';
+import { Box, IconButton } from '@components';
 import { fetchQuery } from '../../../../relay/environment';
 import AutocompleteField from '../../../../components/AutocompleteField';
 import { useFormatter } from '../../../../components/i18n';
@@ -10,7 +11,7 @@ import { CreatorFieldSearchQuery$data } from './__generated__/CreatorFieldSearch
 import ItemIcon from '../../../../components/ItemIcon';
 import useGranted, { SETTINGS_SETACCESSES } from '../../../../utils/hooks/useGranted';
 import { FieldOption } from '../../../../utils/field';
-import { Box, IconButton } from '@components';
+
 interface CreatorFieldProps {
   name: string;
   label: string;

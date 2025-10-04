@@ -2,8 +2,8 @@ import React from 'react';
 import { Group_group$data } from '@private/components/settings/groups/__generated__/Group_group.graphql';
 import { InformationOutline } from 'mdi-material-ui';
 import GroupConfidenceOverrides from '@private/components/settings/groups/GroupConfidenceOverrides';
-import { useFormatter } from '../../../../components/i18n';
 import { Alert, AlertTitle, Box, Tooltip } from '@components';
+import { useFormatter } from '../../../../components/i18n';
 
 type Data_GroupConfidenceLevel = Group_group$data['group_confidence_level'];
 

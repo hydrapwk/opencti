@@ -2,12 +2,12 @@ import React, { FunctionComponent } from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { Link } from 'react-router-dom';
 import { LinkOff, SourceOutlined } from '@mui/icons-material';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import AddDataComponents from './AddDataComponents';
 import { addDataComponentsMutationRelationDelete } from './AddDataComponentsLines';
 import { DataSourceDataComponents_dataSource$data } from './__generated__/DataSourceDataComponents_dataSource.graphql';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 
 const DataSourceDataComponentsComponent: FunctionComponent<{
   dataSource: DataSourceDataComponents_dataSource$data;

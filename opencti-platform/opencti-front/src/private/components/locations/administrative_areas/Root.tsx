@@ -6,6 +6,7 @@ import { Link, Navigate, Route, Routes, useLocation, useParams } from 'react-rou
 import { graphql, usePreloadedQuery, useSubscription } from 'react-relay';
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import AdministrativeArea from './AdministrativeArea';
 import AdministrativeAreaKnowledge from './AdministrativeAreaKnowledge';
@@ -27,7 +28,6 @@ import AdministrativeAreaEdition from './AdministrativeAreaEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import AdministrativeAreaDeletion from './AdministrativeAreaDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootAdministrativeAreasSubscription($id: ID!) {

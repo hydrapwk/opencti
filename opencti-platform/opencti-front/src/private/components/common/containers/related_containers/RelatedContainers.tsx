@@ -11,12 +11,12 @@ import {
 } from '@private/components/common/containers/related_containers/__generated__/RelatedContainersFragment_container_connection.graphql';
 import { useTheme } from '@mui/styles';
 import Loader from 'src/components/Loader';
+import { IconButton, Tooltip, Typography } from '@components';
 import type { Theme } from '../../../../../components/Theme';
 import { resolveLink } from '../../../../../utils/Entity';
 import { useFormatter } from '../../../../../components/i18n';
 import DataTableWithoutFragment from '../../../../../components/dataGrid/DataTableWithoutFragment';
 import { DataTableVariant } from '../../../../../components/dataGrid/dataTableTypes';
-import { IconButton, Tooltip, Typography } from '@components';
 
 export const RelatedContainersFragment = graphql`
   fragment RelatedContainersFragment_container_connection on ContainerConnection {

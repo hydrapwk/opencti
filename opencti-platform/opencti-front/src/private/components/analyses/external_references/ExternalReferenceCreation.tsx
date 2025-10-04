@@ -8,6 +8,7 @@ import { FormikConfig } from 'formik/dist/types';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import useApiMutation from 'src/utils/hooks/useApiMutation';
 import { useTheme } from '@mui/material/styles';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import { ExternalReferencesLinesPaginationQuery$variables } from '../__generated__/ExternalReferencesLinesPaginationQuery.graphql';
 import { handleErrorInForm } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
@@ -17,7 +18,6 @@ import { insertNode } from '../../../../utils/store';
 import { ExternalReferenceAddInput, ExternalReferenceCreationMutation, ExternalReferenceCreationMutation$data } from './__generated__/ExternalReferenceCreationMutation.graphql';
 import CustomFileUploader from '../../common/files/CustomFileUploader';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 const externalReferenceCreationMutation = graphql`
   mutation ExternalReferenceCreationMutation(

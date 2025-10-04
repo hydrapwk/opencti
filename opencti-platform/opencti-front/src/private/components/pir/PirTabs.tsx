@@ -16,9 +16,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { graphql, useFragment } from 'react-relay';
+import { Box, Tab, Tabs } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import { PirTabsFragment$key } from './__generated__/PirTabsFragment.graphql';
-import { Box, Tab, Tabs } from '@components';
 
 const tabsFragment = graphql`
   fragment PirTabsFragment on Pir {

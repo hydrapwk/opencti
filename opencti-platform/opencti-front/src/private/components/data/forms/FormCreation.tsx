@@ -7,6 +7,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { FormikHelpers } from 'formik/dist/types';
 import { FormLinesPaginationQuery$variables } from '@private/components/data/forms/__generated__/FormLinesPaginationQuery.graphql';
 import { FormCreationQuery } from '@private/components/data/forms/__generated__/FormCreationQuery.graphql';
+import { Button } from '@components';
 import TextField from '../../../../components/TextField';
 import { useFormatter } from '../../../../components/i18n';
 import { commitMutation, handleError } from '../../../../relay/environment';
@@ -16,7 +17,6 @@ import type { Theme } from '../../../../components/Theme';
 import { convertFormBuilderDataToSchema } from './FormUtils';
 import FormSchemaEditor from './FormSchemaEditor';
 import type { FormBuilderData, FormAddInput } from './Form.d';
-import { Button } from '@components';
 
 const useStyles = makeStyles<Theme>((theme) => ({
   buttons: {

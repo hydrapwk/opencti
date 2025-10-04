@@ -7,6 +7,7 @@ import {
 } from '@private/components/threats/threat_actors_individual/__generated__/AddLocationsThreatActorIndividualLinesQuery.graphql';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { ThreatActorIndividualLocations_locations$data } from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorIndividualLocations_locations.graphql';
+import { IconButton } from '@components';
 import Drawer from '../../common/drawer/Drawer';
 import { useFormatter } from '../../../../components/i18n';
 import SearchInput from '../../../../components/SearchInput';
@@ -15,7 +16,7 @@ import LocationCreation from '../../common/location/LocationCreation';
 import { insertNode } from '../../../../utils/store';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { IconButton } from '@components';
+
 interface AddLocationsThreatActorIndividualComponentProps {
   threatActorIndividual: ThreatActorIndividualLocations_locations$data,
   queryRef: PreloadedQuery<AddLocationsThreatActorIndividualLinesQuery>,

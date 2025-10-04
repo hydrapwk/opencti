@@ -5,10 +5,10 @@ import { map, filter, head, compose } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { CheckCircle } from '@mui/icons-material';
 import { ConnectionHandler } from 'relay-runtime';
+import { Avatar, List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { truncate } from '../../../../utils/String';
 import inject18n from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
-import { Avatar, List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 
 const styles = (theme) => ({
   avatar: {

@@ -1,11 +1,11 @@
 import { graphql } from 'react-relay';
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { Field } from 'formik';
+import { MenuItem } from '@components';
 import { DisseminationListFieldQuery$data } from './__generated__/DisseminationListFieldQuery.graphql';
 import { fetchQuery } from '../../relay/environment';
 import SelectField from './SelectField';
 import { useFormatter } from '../i18n';
-import { MenuItem } from '@components';
 
 export const disseminationListFieldQuery = graphql`
     query DisseminationListFieldQuery(

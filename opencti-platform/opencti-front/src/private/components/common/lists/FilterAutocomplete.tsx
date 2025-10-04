@@ -1,12 +1,12 @@
-import React, { Dispatch, FunctionComponent, SyntheticEvent, useState } from 'react';
+import React, { type Dispatch, type FunctionComponent, type SyntheticEvent, useState } from 'react';
 import { useTheme } from '@mui/styles';
-import ItemIcon from '../../../../components/ItemIcon';
-import { useFormatter } from '../../../../components/i18n';
+import { Autocomplete as MUIAutocomplete, TextField } from '@components';
+import ItemIcon from '@components/ItemIcon';
+import { useFormatter } from '@components/i18n';
+import type { Theme } from '@components/Theme';
 import useSearchEntities from '../../../../utils/filters/useSearchEntities';
-import type { Theme } from '../../../../components/Theme';
 import SearchScopeElement from './SearchScopeElement';
 import { HandleAddFilter } from '../../../../utils/hooks/useLocalStorage';
-import { Autocomplete as MUIAutocomplete, TextField } from '@components';
 
 export interface FilterOption {
   id?: string;

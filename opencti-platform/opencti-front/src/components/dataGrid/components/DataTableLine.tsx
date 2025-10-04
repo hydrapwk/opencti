@@ -2,13 +2,13 @@ import React, { CSSProperties, useMemo } from 'react';
 import { KeyboardArrowRightOutlined } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
 import { useNavigate } from 'react-router-dom';
+import { Box, Checkbox, IconButton, Skeleton } from '@components';
 import type { DataTableCellProps, DataTableLineProps } from '../dataTableTypes';
 import { DataTableVariant } from '../dataTableTypes';
 import type { Theme } from '../../Theme';
 import { getMainRepresentative } from '../../../utils/defaultRepresentatives';
 import { SELECT_COLUMN_SIZE } from './DataTableHeader';
 import { useDataTableContext } from './DataTableContext';
-import { Box, Checkbox, IconButton, Skeleton } from '@components';
 
 const cellContainerStyle = (theme: Theme) => ({
   display: 'flex',

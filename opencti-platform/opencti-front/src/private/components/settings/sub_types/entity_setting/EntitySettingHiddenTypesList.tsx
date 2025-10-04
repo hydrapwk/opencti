@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
+import { List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import ItemIcon from '../../../../../components/ItemIcon';
 import FieldOrEmpty from '../../../../../components/FieldOrEmpty';
-import { List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 export interface Entity {
   readonly id: string;

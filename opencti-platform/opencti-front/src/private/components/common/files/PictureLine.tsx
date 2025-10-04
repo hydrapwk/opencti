@@ -4,6 +4,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { React } from 'mdi-material-ui';
 import { NorthEastOutlined } from '@mui/icons-material';
 import Drawer from '@private/components/common/drawer/Drawer';
+import { ListItemButton, ListItemIcon, ListItemText } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { getFileUri } from '../../../../utils/utils';
 import { DataColumns } from '../../../../components/list_lines';
@@ -12,7 +13,6 @@ import { pictureManagementUtilsFragment } from './PictureManagementUtils';
 import { PictureManagementUtils_node$key } from './__generated__/PictureManagementUtils_node.graphql';
 import ItemBoolean from '../../../../components/ItemBoolean';
 import { useFormatter } from '../../../../components/i18n';
-import { ListItemButton, ListItemIcon, ListItemText } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

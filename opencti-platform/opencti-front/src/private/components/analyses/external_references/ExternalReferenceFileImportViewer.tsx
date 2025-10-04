@@ -11,6 +11,7 @@ import ObjectMarkingField from '@private/components/common/form/ObjectMarkingFie
 import ManageImportConnectorMessage from '@private/components/data/import/ManageImportConnectorMessage';
 import { CsvMapperFieldOption } from '@private/components/common/form/CsvMapperField';
 import { FileManagerAskJobImportMutation$variables } from '@private/components/common/files/__generated__/FileManagerAskJobImportMutation.graphql';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, List, MenuItem, Paper, Typography } from '@components';
 import FileLine from '../../common/files/FileLine';
 import { TEN_SECONDS } from '../../../../utils/Time';
 import inject18n, { useFormatter } from '../../../../components/i18n';
@@ -25,7 +26,6 @@ import { resolveHasUserChoiceParsedCsvMapper } from '../../../../utils/csvMapper
 import { KNOWLEDGE_KNUPLOAD } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
 import UploadImport from '../../../../components/UploadImport';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, List, MenuItem, Paper, Typography } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

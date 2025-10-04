@@ -11,6 +11,7 @@ import { OPEN_BAR_WIDTH, SMALL_BAR_WIDTH } from '@private/components/nav/LeftBar
 import DraftContextBanner from '@private/components/drafts/DraftContextBanner';
 import { getDraftModeColor } from '@private/components/common/draft/DraftChip';
 import { TopBarAskAINLQMutation, TopBarAskAINLQMutation$data } from '@private/components/nav/__generated__/TopBarAskAINLQMutation.graphql';
+import { Badge, Box, Grid, IconButton, Menu, MenuItem, Popover, Tooltip } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import SearchInput from '../../../components/SearchInput';
 import { APP_BASE_PATH, fileUri, MESSAGING$ } from '../../../relay/environment';
@@ -38,7 +39,6 @@ import useApiMutation from '../../../utils/hooks/useApiMutation';
 import { RelayError } from '../../../relay/relayTypes';
 import { isFilterGroupNotEmpty } from '../../../utils/filters/filtersUtils';
 import UploadImport from '../../../components/UploadImport';
-import { Badge, Box, Grid, IconButton, Menu, MenuItem, Popover, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

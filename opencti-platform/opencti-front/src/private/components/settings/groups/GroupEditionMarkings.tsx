@@ -6,6 +6,7 @@ import { Field, Form, Formik } from 'formik';
 import MaxShareableMarkingsSelectField from '@private/components/common/form/MaxShareableMarkingsSelectField';
 import { MarkingDefinitionsQuerySearchQuery$data } from '@private/components/settings/__generated__/MarkingDefinitionsQuerySearchQuery.graphql';
 import { useTheme } from '@mui/material/styles';
+import { Checkbox, List, ListItem, ListItemIcon, ListItemText, Typography } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 import { GroupEditionMarkings_group$data } from './__generated__/GroupEditionMarkings_group.graphql';
@@ -17,7 +18,6 @@ import { checkIsMarkingAllowed } from '../../../../utils/markings/markingsFilter
 import { markingDefinitionsLinesSearchQuery } from '../MarkingDefinitionsQuery';
 import type { Theme } from '../../../../components/Theme';
 import MarkingIcon from '../../../../utils/MarkingIcon';
-import { Checkbox, List, ListItem, ListItemIcon, ListItemText, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import { Alert, AlertTitle, Button, Dialog, DialogActions, DialogContent, DialogTitle, Paper, Typography } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import Transition from '../../../components/Transition';
-import { Alert, AlertTitle, Button, Dialog, DialogActions, DialogContent, DialogTitle, Paper, Typography } from '@components';
 
 const ProfileLocalStorage: React.FC = () => {
   const { t_i18n } = useFormatter();

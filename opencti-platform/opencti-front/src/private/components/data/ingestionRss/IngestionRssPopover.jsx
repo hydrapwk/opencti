@@ -5,11 +5,11 @@ import { graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import Slide from '@mui/material/Slide';
 import MoreVert from '@mui/icons-material/MoreVert';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 import inject18n from '../../../../components/i18n';
 import { commitMutation, QueryRenderer } from '../../../../relay/environment';
 import IngestionRssEdition, { ingestionRssMutationFieldPatch } from './IngestionRssEdition';
 import { deleteNode } from '../../../../utils/store';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 
 const styles = (theme) => ({
   container: {

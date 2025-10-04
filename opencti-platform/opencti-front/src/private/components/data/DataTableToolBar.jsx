@@ -31,6 +31,42 @@ import {
 import { BankMinus, BankPlus, CloudRefreshOutline, LabelOutline } from 'mdi-material-ui';
 import Slide from '@mui/material/Slide';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+import {
+  Alert,
+  Autocomplete,
+  Avatar,
+  Button,
+  Checkbox,
+  Chip,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Drawer,
+  FormControl,
+  FormControlLabel,
+  Grid,
+  IconButton,
+  InputLabel,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  MenuItem,
+  Switch as MuiSwitch,
+  Radio,
+  Select,
+  Switch,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  TextField,
+  Tooltip,
+  Typography,
+} from '@components';
 import UserEmailSend from '../settings/users/UserEmailSend';
 import { objectParticipantFieldMembersSearchQuery } from '../common/form/ObjectParticipantField';
 import { objectAssigneeFieldMembersSearchQuery } from '../common/form/ObjectAssigneeField';
@@ -65,7 +101,6 @@ import { getEntityTypeTwoFirstLevelsFilterValues, removeIdAndIncorrectKeysFromFi
 import { getMainRepresentative } from '../../../utils/defaultRepresentatives';
 import EETooltip from '../common/entreprise_edition/EETooltip';
 import { killChainPhasesSearchQuery } from '../settings/KillChainPhases';
-import { Alert, Autocomplete, Avatar, Button, Checkbox, Chip, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, FormControl, FormControlLabel, Grid, IconButton, InputLabel, List, ListItem, ListItemIcon, ListItemText, MenuItem, Switch as MuiSwitch, Radio, Select, Switch, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField, Tooltip, Typography } from '@components';
 
 const styles = (theme) => ({
   drawerPaper: {

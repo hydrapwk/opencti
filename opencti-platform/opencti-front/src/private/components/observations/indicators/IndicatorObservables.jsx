@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
+import { Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import IndicatorAddObservables from './IndicatorAddObservables';
 import IndicatorObservablePopover from './IndicatorObservablePopover';
@@ -7,7 +8,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import DataTableWithoutFragment from '../../../../components/dataGrid/DataTableWithoutFragment';
 import { DataTableVariant } from '../../../../components/dataGrid/dataTableTypes';
-import { Typography } from '@components';
 
 const IndicatorObservablesComponent = ({ indicator }) => {
   const [deleted, setDeleted] = useState([]);

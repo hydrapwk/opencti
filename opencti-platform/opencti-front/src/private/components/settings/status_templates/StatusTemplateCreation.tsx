@@ -6,6 +6,7 @@ import { RecordSourceSelectorProxy } from 'relay-runtime';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { useTheme } from '@mui/styles';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import TextField from '../../../../components/TextField';
 import ColorPickerField from '../../../../components/ColorPickerField';
 import { commitMutation, defaultCommitMutation, handleErrorInForm } from '../../../../relay/environment';
@@ -15,7 +16,6 @@ import CreateEntityControlledDial from '../../../../components/CreateEntityContr
 import type { Theme } from '../../../../components/Theme';
 import { StatusTemplatesLinesPaginationQuery$variables } from './__generated__/StatusTemplatesLinesPaginationQuery.graphql';
 import { StatusTemplateAddInput, StatusTemplateCreationContextualMutation$data } from './__generated__/StatusTemplateCreationContextualMutation.graphql';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -8,6 +8,7 @@ import { useCookies } from 'react-cookie';
 import { graphql } from 'react-relay';
 import { useTheme } from '@mui/styles';
 import { Theme } from '@mui/material/styles/createTheme';
+import { Alert, Button } from '@components';
 import { useFormatter } from '../../components/i18n';
 import useApiMutation from '../../utils/hooks/useApiMutation';
 import { handleErrorInForm } from '../../relay/environment';
@@ -15,7 +16,7 @@ import OTPForm from './OTPForm';
 import { ResetPasswordVerifyOtpMutation, ResetPasswordVerifyOtpMutation$data } from './__generated__/ResetPasswordVerifyOtpMutation.graphql';
 import { ResetPasswordAskSendOtpMutation } from './__generated__/ResetPasswordAskSendOtpMutation.graphql';
 import { ResetPasswordChangePasswordMutation } from './__generated__/ResetPasswordChangePasswordMutation.graphql';
-import { Alert, Button } from '@components';
+
 interface ResetProps {
   onCancel: () => void;
   email: string;

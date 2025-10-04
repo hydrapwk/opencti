@@ -4,10 +4,10 @@ import { compose, pathOr } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { graphql, createRefetchContainer } from 'react-relay';
 import { interval } from 'rxjs';
+import { Paper } from '@components';
 import inject18n from '../../../../components/i18n';
 import StixCoreRelationshipHistoryLine from './StixCoreRelationshipHistoryLine';
 import { FIVE_SECONDS } from '../../../../utils/Time';
-import { Paper } from '@components';
 
 const interval$ = interval(FIVE_SECONDS);
 

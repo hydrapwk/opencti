@@ -12,6 +12,7 @@ import { CsvMapperFormData } from '@private/components/data/csvMapper/CsvMapper'
 import classNames from 'classnames';
 import { formDataToCsvMapper } from '@private/components/data/csvMapper/CsvMapperUtils';
 import { CsvMapperProvider } from '@private/components/data/csvMapper/CsvMapperContext';
+import { Button, FormControlLabel, IconButton, Radio, Tooltip, Typography } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
@@ -19,7 +20,6 @@ import SwitchField from '../../../../components/fields/SwitchField';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { representationInitialization } from './representations/RepresentationUtils';
 import CsvMapperTestDialog from './CsvMapperTestDialog';
-import { Button, FormControlLabel, IconButton, Radio, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

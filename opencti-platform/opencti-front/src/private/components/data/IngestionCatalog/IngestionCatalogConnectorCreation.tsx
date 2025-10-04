@@ -24,6 +24,7 @@ import JsonFormArrayRenderer, { jsonFormArrayTester } from '@private/components/
 import buildContractConfiguration from '@private/components/data/connectors/utils/buildContractConfiguration';
 import JsonFormUnsupportedType, { jsonFormUnsupportedTypeTester } from '@private/components/data/IngestionCatalog/utils/JsonFormUnsupportedType';
 import { JsonFormPasswordRenderer, jsonFormPasswordTester } from '@private/components/data/IngestionCatalog/utils/JsonFormPasswordRenderer';
+import { AccordionDetails, Alert, Button, IconButton, Tooltip, Typography } from '@components';
 import { MESSAGING$ } from '../../../../relay/environment';
 import { RelayError } from '../../../../relay/relayTypes';
 import type { Theme } from '../../../../components/Theme';
@@ -32,7 +33,6 @@ import { type FieldOption, fieldSpacingContainerStyle } from '../../../../utils/
 import TextField from '../../../../components/TextField';
 import { Accordion, AccordionSummary } from '../../../../components/Accordion';
 import { resolveLink } from '../../../../utils/Entity';
-import { AccordionDetails, Alert, Button, IconButton, Tooltip, Typography } from '@components';
 
 const ingestionCatalogConnectorCreationMutation = graphql`
   mutation IngestionCatalogConnectorCreationMutation($input: AddManagedConnectorInput) {

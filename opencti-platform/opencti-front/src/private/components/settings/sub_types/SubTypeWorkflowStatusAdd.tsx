@@ -4,12 +4,12 @@ import { Add } from '@mui/icons-material';
 import { graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { FormikConfig } from 'formik/dist/types';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Fab } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
 import StatusTemplateField from '../../common/form/StatusTemplateField';
 import { StatusForm, statusValidation } from './statusFormUtils';
-import useApiMutation from '../../../../utils/hooks/useApiMutation';import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Fab } from '@components';
-
+import useApiMutation from '../../../../utils/hooks/useApiMutation';
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.
 const useStyles = makeStyles({

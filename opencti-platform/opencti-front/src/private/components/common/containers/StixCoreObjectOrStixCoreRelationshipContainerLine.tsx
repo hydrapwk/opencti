@@ -4,6 +4,7 @@ import { createFragmentContainer, graphql } from 'react-relay';
 import { KeyboardArrowRightOutlined } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
 import { typesWithFintelTemplates } from 'src/utils/hooks/useAttributes';
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import StixCoreObjectLabels from '../stix_core_objects/StixCoreObjectLabels';
 import ItemIcon from '../../../../components/ItemIcon';
@@ -15,7 +16,6 @@ import type { Theme } from '../../../../components/Theme';
 import { DataColumns } from '../../../../components/list_lines';
 import { StixCoreObjectOrStixCoreRelationshipContainerLine_node$data } from './__generated__/StixCoreObjectOrStixCoreRelationshipContainerLine_node.graphql';
 import ItemEntityType from '../../../../components/ItemEntityType';
-import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

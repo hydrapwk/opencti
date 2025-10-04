@@ -3,6 +3,7 @@ import { graphql } from 'react-relay';
 import { MoreVertOutlined } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import MoreVert from '@mui/icons-material/MoreVert';
+import { IconButton, Menu, MenuItem, ToggleButton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
 import ExternalReferenceEditionContainer from './ExternalReferenceEditionContainer';
@@ -11,7 +12,6 @@ import { deleteNodeFromId } from '../../../../utils/store';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import useDeletion from '../../../../utils/hooks/useDeletion';
 import DeleteDialog from '../../../../components/DeleteDialog';
-import { IconButton, Menu, MenuItem, ToggleButton } from '@components';
 
 export const externalReferencePopoverDeletionMutation = graphql`
   mutation ExternalReferencePopoverDeletionMutation($id: ID!) {

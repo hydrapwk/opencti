@@ -1,8 +1,8 @@
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
+import { Chip } from '@components';
 import { useFormatter } from './i18n';
 import { chipInListBasicStyle } from '../utils/chipStyle';
-import { Chip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

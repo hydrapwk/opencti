@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { Alert, Button, List, Typography } from '@components';
 import FintelTemplateWidgetDefault from './FintelTemplateWidgetDefault';
 import FintelTemplateWidgetAttribute from './FintelTemplateWidgetAttribute';
 import { useFormatter } from '../../../../../components/i18n';
 import type { Widget } from '../../../../../utils/widget/widget';
 import { SELF_ID } from '../../../../../utils/filters/filtersUtils';
-import { Alert, Button, List, Typography } from '@components';
 
 export interface FintelTemplateWidget {
   variable_name: string

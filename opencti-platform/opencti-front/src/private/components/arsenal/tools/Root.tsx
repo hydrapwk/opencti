@@ -5,6 +5,7 @@ import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
 import ToolEdition from '@private/components/arsenal/tools/ToolEdition';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Tool from './Tool';
 import StixDomainObjectHeader from '../../common/stix_domain_objects/StixDomainObjectHeader';
@@ -23,7 +24,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import ToolKnowledge from './ToolKnowledge';
 import ToolDeletion from './ToolDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootToolSubscription($id: ID!) {

@@ -4,6 +4,7 @@ import { ViewListOutlined, ViewModuleOutlined } from '@mui/icons-material';
 import { IntrusionSetCardFragment } from '@private/components/threats/intrusion_sets/IntrusionSetCard';
 import { IntrusionSetsCards_data$data } from '@private/components/threats/intrusion_sets/__generated__/IntrusionSetsCards_data.graphql';
 import StixCoreObjectForms from '@private/components/common/stix_core_objects/StixCoreObjectForms';
+import { Grid, ToggleButton, Tooltip } from '@components';
 import { IntrusionSetsCardsPaginationQuery, IntrusionSetsCardsPaginationQuery$variables } from './intrusion_sets/__generated__/IntrusionSetsCardsPaginationQuery.graphql';
 import ListCards from '../../../components/list_cards/ListCards';
 import IntrusionSetsCards, { intrusionSetsCardsFragment, intrusionSetsCardsQuery } from './intrusion_sets/IntrusionSetsCards';
@@ -18,7 +19,6 @@ import DataTable from '../../../components/dataGrid/DataTable';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
 import { KNOWLEDGE_KNUPDATE } from '../../../utils/hooks/useGranted';
 import Security from '../../../utils/Security';
-import { Grid, ToggleButton, Tooltip } from '@components';
 
 const LOCAL_STORAGE_KEY = 'intrusionSets';
 

@@ -19,6 +19,7 @@ import IngestionCsvInlineMapperForm from '@private/components/data/ingestionCsv/
 import { CsvMapperAddInput } from '@private/components/data/csvMapper/CsvMapperUtils';
 import IngestionCsvEditionUserHandling from '@private/components/data/ingestionCsv/IngestionCsvEditionUserHandling';
 import { useTheme } from '@mui/styles';
+import { Alert, Box, Button, MenuItem, Tab, Tabs } from '@components';
 import { convertMapper, convertUser } from '../../../../utils/edition';
 import { useFormatter } from '../../../../components/i18n';
 import { useSchemaEditionValidation } from '../../../../utils/hooks/useEntitySettings';
@@ -49,7 +50,6 @@ import PasswordTextField from '../../../../components/PasswordTextField';
 import SwitchField from '../../../../components/fields/SwitchField';
 import { RootMe_data$data } from '../../../__generated__/RootMe_data.graphql';
 import IngestionCsvInlineWrapper from './IngestionCsvInlineWrapper';
-import { Alert, Box, Button, MenuItem, Tab, Tabs } from '@components';
 
 export const initIngestionValue = (ingestionCsvData: IngestionCsvEditionFragment_ingestionCsv$data, me : RootMe_data$data) => {
   return {

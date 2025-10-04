@@ -5,12 +5,12 @@ import * as Yup from 'yup';
 import ConfidenceOverrideField from '@private/components/settings/users/edition/ConfidenceOverrideField';
 import { createFragmentContainer, graphql } from 'react-relay';
 import ConfidenceField from '@private/components/common/form/ConfidenceField';
+import { IconButton, Typography } from '@components';
 import { GroupEditionConfidence_group$data } from './__generated__/GroupEditionConfidence_group.graphql';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import { useFormatter } from '../../../../components/i18n';
 import { isEmptyField, isNotEmptyField } from '../../../../utils/utils';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { IconButton, Typography } from '@components';
 
 export const groupConfidenceMutationFieldPatch = graphql`
   mutation GroupEditionConfidenceFieldPatchMutation(

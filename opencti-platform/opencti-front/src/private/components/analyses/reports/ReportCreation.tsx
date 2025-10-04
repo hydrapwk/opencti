@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { ReportsLinesPaginationQuery$variables } from '@private/components/analyses/__generated__/ReportsLinesPaginationQuery.graphql';
 import AuthorizedMembersField from '@private/components/common/form/AuthorizedMembersField';
+import { AccordionDetails, Button, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import TextField from '../../../../components/TextField';
@@ -36,7 +37,6 @@ import useGranted, { KNOWLEDGE_KNUPDATE_KNMANAGEAUTHMEMBERS } from '../../../../
 import Security from '../../../../utils/Security';
 import { Accordion, AccordionSummary } from '../../../../components/Accordion';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
-import { AccordionDetails, Button, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

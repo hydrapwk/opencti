@@ -1,10 +1,10 @@
 import React, { memo } from 'react';
 import * as R from 'ramda';
 import { NodeProps, Position } from 'reactflow';
+import { Typography } from '@components';
 import NodeContainer from './NodeContainer';
 import { useFormatter } from '../../../../../../../components/i18n';
 import { emptyFilled } from '../../../../../../../utils/String';
-import { Typography } from '@components';
 
 const NodeVictimology = ({ data }: NodeProps) => {
   const { t_i18n } = useFormatter();

@@ -4,12 +4,12 @@ import { KeyboardArrowRightOutlined } from '@mui/icons-material';
 import { graphql, useFragment } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { DraftChip } from '@private/components/common/draft/DraftChip';
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { RegionLine_node$key } from './__generated__/RegionLine_node.graphql';
 import type { Theme } from '../../../../components/Theme';
 import { DataColumns } from '../../../../components/list_lines';
 import ItemIcon from '../../../../components/ItemIcon';
-import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

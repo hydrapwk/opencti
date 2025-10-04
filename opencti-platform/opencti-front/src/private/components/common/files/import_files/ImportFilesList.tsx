@@ -5,9 +5,10 @@ import { CSV_MAPPER_NAME } from '@private/components/common/files/import_files/I
 import { useTheme } from '@mui/styles';
 import { useImportFilesContext } from '@private/components/common/files/import_files/ImportFilesContext';
 import { ImportFilesContextQuery$data } from '@private/components/common/files/import_files/__generated__/ImportFilesContextQuery.graphql';
+import { Alert, Box, Collapse, Grid, IconButton, List, ListItem, MenuItem, Select, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import type { Theme } from '../../../../../components/Theme';
-import { Alert, Box, Collapse, Grid, IconButton, List, ListItem, MenuItem, Select, Tooltip, Typography } from '@components';
+
 interface ImportFilesListProps {
   connectorsForImport: ImportFilesContextQuery$data['connectorsForImport'];
 }

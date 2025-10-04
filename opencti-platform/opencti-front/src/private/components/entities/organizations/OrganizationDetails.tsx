@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { OrganizationDetails_organization$data } from '@private/components/entities/organizations/__generated__/OrganizationDetails_organization.graphql';
+import { Chip, Grid, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
@@ -9,7 +10,6 @@ import MarkdownDisplay from '../../../../components/MarkdownDisplay';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import type { Theme } from '../../../../components/Theme';
 import ItemScore from '../../../../components/ItemScore';
-import { Chip, Grid, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

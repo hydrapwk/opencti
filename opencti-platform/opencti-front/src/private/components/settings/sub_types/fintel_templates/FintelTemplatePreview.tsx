@@ -2,6 +2,7 @@ import React, { CSSProperties, useEffect, useState } from 'react';
 import { useTheme } from '@mui/styles';
 import { graphql, useFragment } from 'react-relay';
 import { FintelDesign } from '@private/components/common/form/FintelDesignField';
+import { Paper, Typography } from '@components';
 import { useFintelTemplateContext } from './FintelTemplateContext';
 import type { Theme } from '../../../../../components/Theme';
 import { useFormatter } from '../../../../../components/i18n';
@@ -10,7 +11,6 @@ import useFileFromTemplate from '../../../../../utils/outcome_template/engine/us
 import { htmlToPdfReport } from '../../../../../utils/htmlToPdf/htmlToPdf';
 import PdfViewer from '../../../../../components/PdfViewer';
 import { FintelTemplatePreview_template$key } from './__generated__/FintelTemplatePreview_template.graphql';
-import { Paper, Typography } from '@components';
 
 const previewFragment = graphql`
   fragment FintelTemplatePreview_template on FintelTemplate {

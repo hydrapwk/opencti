@@ -4,13 +4,13 @@ import {
   StixCoreObjectHistoryLinesQuery,
   StixCoreObjectHistoryLinesQuery$variables,
 } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectHistoryLinesQuery.graphql';
+import { Grid, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import StixCoreObjectHistoryLines, { stixCoreObjectHistoryLinesQuery } from './StixCoreObjectHistoryLines';
 import SearchInput from '../../../../components/SearchInput';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import type { Theme } from '../../../../components/Theme';
-import { Grid, Typography } from '@components';
 
 type StixCoreObjectHistoryProps = {
   stixCoreObjectId: string;

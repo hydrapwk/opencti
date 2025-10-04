@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import { useInvestigationState } from '../utils/useInvestigationState';
 import { useFormatter } from '../../../../../components/i18n';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 type InvestigationRollBackExpandDialogProps = {
   closeDialog: () => void;

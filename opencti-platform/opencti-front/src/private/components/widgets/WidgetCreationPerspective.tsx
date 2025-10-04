@@ -3,12 +3,12 @@ import { LibraryBooksOutlined } from '@mui/icons-material';
 import React from 'react';
 import { v4 as uuid } from 'uuid';
 import { getDefaultWidgetColumns } from '@private/components/widgets/WidgetListsDefaultColumns';
+import { Card, CardActionArea, CardContent, Grid, Typography } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import { indexedVisualizationTypes } from '../../../utils/widget/widgetUtils';
 import { useWidgetConfigContext } from './WidgetConfigContext';
 import type { WidgetPerspective } from '../../../utils/widget/widget';
 import { emptyFilterGroup, SELF_ID } from '../../../utils/filters/filtersUtils';
-import { Card, CardActionArea, CardContent, Grid, Typography } from '@components';
 
 const WidgetCreationPerspective = () => {
   const { t_i18n } = useFormatter();

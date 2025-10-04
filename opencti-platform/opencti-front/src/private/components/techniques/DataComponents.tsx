@@ -1,6 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import { graphql } from 'react-relay';
-import { DataComponentsLinesPaginationQuery, DataComponentsLinesPaginationQuery$variables } from '@private/components/techniques/__generated__/DataComponentsLinesPaginationQuery.graphql';
+import {
+  DataComponentsLinesPaginationQuery,
+  DataComponentsLinesPaginationQuery$variables,
+} from '@private/components/techniques/__generated__/DataComponentsLinesPaginationQuery.graphql';
 import { DataComponentsLines_data$data } from '@private/components/techniques/__generated__/DataComponentsLines_data.graphql';
 import Security from '../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../utils/hooks/useGranted';

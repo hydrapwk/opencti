@@ -2,6 +2,7 @@ import React, { CSSProperties } from 'react';
 import { RestartAlt } from '@mui/icons-material';
 import { useFragment } from 'react-relay';
 import { useTheme } from '@mui/styles';
+import { Box, Grid, IconButton, Paper, Tooltip, Typography } from '@components';
 import EntitySettingsOverviewLayoutCustomization, {
   EntitySettingsOverviewLayoutCustomizationData,
   entitySettingsOverviewLayoutCustomizationEdit,
@@ -12,7 +13,7 @@ import useApiMutation from '../../../../../utils/hooks/useApiMutation';
 import { EntitySettingsOverviewLayoutCustomization_entitySetting$key } from './__generated__/EntitySettingsOverviewLayoutCustomization_entitySetting.graphql';
 import ErrorNotFound from '../../../../../components/ErrorNotFound';
 import type { Theme } from '../../../../../components/Theme';
-import { Box, Grid, IconButton, Paper, Tooltip, Typography } from '@components';
+
 interface EntitySettingCustomOverviewProps {
   entitySettingsData: EntitySettingsOverviewLayoutCustomization_entitySetting$key;
 }

@@ -18,6 +18,7 @@ import { graphql, PreloadedQuery, usePreloadedQuery, useQueryLoader } from 'reac
 import FileIndexingConfigurationAndMonitoring from '@private/components/settings/file_indexing/FileIndexingConfigurationAndMonitoring';
 import EnterpriseEdition from '@private/components/common/entreprise_edition/EnterpriseEdition';
 import { interval } from 'rxjs';
+import { Alert } from '@components';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { FILE_INDEX_MANAGER } from '../../../../utils/platformModulesHelper';
@@ -27,7 +28,6 @@ import { TEN_SECONDS } from '../../../../utils/Time';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import useConnectedDocumentModifier from '../../../../utils/hooks/useConnectedDocumentModifier';
-import { Alert } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

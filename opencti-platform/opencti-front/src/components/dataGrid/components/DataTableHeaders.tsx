@@ -3,11 +3,11 @@ import { DragIndicatorOutlined } from '@mui/icons-material';
 import { DragDropContext, Draggable, DraggableLocation, Droppable } from '@hello-pangea/dnd';
 import { PopoverProps } from '@mui/material/Popover/Popover';
 import { useTheme } from '@mui/styles';
+import { Box, Checkbox, Menu, MenuItem } from '@components';
 import { DataTableColumn, DataTableColumns, DataTableHeadersProps } from '../dataTableTypes';
 import DataTableHeader, { SELECT_COLUMN_SIZE } from './DataTableHeader';
 import type { Theme } from '../../Theme';
 import { useDataTableContext } from './DataTableContext';
-import { Box, Checkbox, Menu, MenuItem } from '@components';
 
 const DataTableHeaders: FunctionComponent<DataTableHeadersProps> = ({
   dataTableToolBarComponent,

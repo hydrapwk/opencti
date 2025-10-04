@@ -14,13 +14,13 @@ import { SchemaAttribute } from '@private/components/data/jsonMapper/representat
 import { TextField } from 'formik-mui';
 import { useTheme } from '@mui/styles';
 import { SelectChangeEvent } from '@mui/material/Select';
+import { Autocomplete as MUIAutocomplete, TextField as MuiTextField } from '@components';
 import { isEmptyField } from '../../../../../../utils/utils';
 import useAuth from '../../../../../../utils/hooks/useAuth';
 import { resolveTypesForRelationship, resolveTypesForRelationshipRef } from '../../../../../../utils/Relation';
 import { useFormatter } from '../../../../../../components/i18n';
 import { isStixCoreObjects } from '../../../../../../utils/stixTypeUtils';
 import type { Theme } from '../../../../../../components/Theme';
-import { Autocomplete as MUIAutocomplete, TextField as MuiTextField } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

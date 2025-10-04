@@ -4,13 +4,13 @@ import { Domain, LinkOff } from '@mui/icons-material';
 import { graphql, createFragmentContainer } from 'react-relay';
 import { AutoFix } from 'mdi-material-ui';
 import { Link } from 'react-router-dom';
+import { IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import AddSubSector from './AddSubSector';
 import { addSubSectorsMutationRelationDelete } from './AddSubSectorsLines';
 import { commitMutation } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 const SectorSubSectorsComponent = ({ sector }) => {
   const { t_i18n } = useFormatter();

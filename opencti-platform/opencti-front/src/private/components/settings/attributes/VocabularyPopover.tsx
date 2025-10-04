@@ -5,6 +5,7 @@ import { PopoverProps } from '@mui/material/Popover';
 import { graphql } from 'react-relay';
 import Drawer from '@private/components/common/drawer/Drawer';
 import { VocabulariesLinesPaginationQuery$variables } from '@private/components/settings/__generated__/VocabulariesLinesPaginationQuery.graphql';
+import { IconButton, Menu, MenuItem } from '@components';
 import VocabularyEdition from './VocabularyEdition';
 import { useFormatter } from '../../../../components/i18n';
 import { useVocabularyCategory_Vocabularynode$data } from '../../../../utils/hooks/__generated__/useVocabularyCategory_Vocabularynode.graphql';
@@ -12,7 +13,6 @@ import useDeletion from '../../../../utils/hooks/useDeletion';
 import { deleteNode } from '../../../../utils/store';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import DeleteDialog from '../../../../components/DeleteDialog';
-import { IconButton, Menu, MenuItem } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

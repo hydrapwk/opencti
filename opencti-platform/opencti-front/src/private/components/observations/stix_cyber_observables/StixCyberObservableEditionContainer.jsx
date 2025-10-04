@@ -2,11 +2,11 @@ import React from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { Close } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
+import { IconButton, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { SubscriptionAvatars } from '../../../../components/Subscription';
 import StixCyberObservableEditionOverview from './StixCyberObservableEditionOverview';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
-import { IconButton, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

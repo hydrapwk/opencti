@@ -8,6 +8,7 @@ import withTheme from '@mui/styles/withTheme';
 import MoreVert from '@mui/icons-material/MoreVert';
 import { ConnectionHandler } from 'relay-runtime';
 import { Form, Formik } from 'formik';
+import { Alert, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 import CommitMessage from '../form/CommitMessage';
 import inject18n from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
@@ -16,7 +17,6 @@ import Security from '../../../../utils/Security';
 import { deleteElementByValue } from '../../../../utils/utils';
 import Transition from '../../../../components/Transition';
 import { serializeObjectB64 } from '../../../../utils/object';
-import { Alert, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 
 const styles = (theme) => ({
   container: {

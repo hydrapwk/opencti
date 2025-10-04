@@ -9,6 +9,7 @@ import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import StixCoreObjectContentRoot from '@private/components/common/stix_core_objects/StixCoreObjectContentRoot';
 import Security from 'src/utils/Security';
 import AIInsights from '@private/components/common/ai/AIInsights';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectSimulationResultContainer from '../../common/stix_core_objects/StixCoreObjectSimulationResultContainer';
 import { QueryRenderer } from '../../../../relay/environment';
 import Report from './Report';
@@ -29,7 +30,6 @@ import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
 import ReportEdition from './ReportEdition';
 import ReportDeletion from './ReportDeletion';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootReportSubscription($id: ID!) {

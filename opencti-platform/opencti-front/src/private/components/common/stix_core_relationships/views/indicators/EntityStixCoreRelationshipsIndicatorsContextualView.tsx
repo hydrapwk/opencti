@@ -5,6 +5,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import {
   EntityStixCoreRelationshipsIndicatorsContextualViewLinesQuery$variables,
 } from '@private/components/common/stix_core_relationships/views/indicators/__generated__/EntityStixCoreRelationshipsIndicatorsContextualViewLinesQuery.graphql';
+import { Chip } from '@components';
 import ItemPatternType from '../../../../../../components/ItemPatternType';
 import EntityStixCoreRelationshipsIndicatorsContextualViewLines from './EntityStixCoreRelationshipsIndicatorsContextualViewLines';
 import { DataColumns, PaginationOptions } from '../../../../../../components/list_lines';
@@ -31,7 +32,6 @@ import { resolveLink } from '../../../../../../utils/Entity';
 import type { Theme } from '../../../../../../components/Theme';
 import { isFilterGroupNotEmpty, useRemoveIdAndIncorrectKeysFromFilterGroupObject } from '../../../../../../utils/filters/filtersUtils';
 import { FilterGroup } from '../../../../../../utils/filters/filtersHelpers-types';
-import { Chip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

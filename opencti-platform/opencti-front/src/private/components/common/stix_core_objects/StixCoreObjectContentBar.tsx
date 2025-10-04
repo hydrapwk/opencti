@@ -3,10 +3,10 @@ import { ZoomInOutlined, ZoomOutOutlined, SaveOutlined } from '@mui/icons-materi
 import Slide, { SlideProps } from '@mui/material/Slide';
 import makeStyles from '@mui/styles/makeStyles';
 import { createStyles, useTheme } from '@mui/styles';
+import { Drawer, FormControlLabel, FormGroup, IconButton } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { useFormatter } from '../../../../components/i18n';
-import { Drawer, FormControlLabel, FormGroup, IconButton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

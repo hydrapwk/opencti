@@ -27,6 +27,7 @@ import FileIndexingConfiguration from '@private/components/settings/file_indexin
 import { FileIndexingConfigurationQuery$data } from '@private/components/settings/file_indexing/__generated__/FileIndexingConfigurationQuery.graphql';
 import DangerZoneBlock from '@private/components/common/danger_zone/DangerZoneBlock';
 import { useTheme } from '@mui/styles';
+import { Button, Grid, List, ListItem, ListItemText, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import { handleError, MESSAGING$ } from '../../../../relay/environment';
@@ -34,7 +35,6 @@ import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { TEN_SECONDS } from '../../../../utils/Time';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import ItemBoolean from '../../../../components/ItemBoolean';
-import { Button, Grid, List, ListItem, ListItemText, Paper, Typography } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

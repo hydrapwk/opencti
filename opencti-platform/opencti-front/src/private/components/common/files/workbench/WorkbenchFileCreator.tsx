@@ -7,6 +7,7 @@ import * as Yup from 'yup';
 import makeStyles from '@mui/styles/makeStyles';
 import { WorkbenchFileCreatorStixCoreObjectQuery$data } from '@private/components/common/files/workbench/__generated__/WorkbenchFileCreatorStixCoreObjectQuery.graphql';
 import ObjectMarkingField from '@private/components/common/form/ObjectMarkingField';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import TextField from '../../../../../components/TextField';
 import AutocompleteFreeSoloField from '../../../../../components/AutocompleteFreeSoloField';
 import ItemIcon from '../../../../../components/ItemIcon';
@@ -17,7 +18,6 @@ import { WorkbenchFileCreatorMutation } from './__generated__/WorkbenchFileCreat
 import { fetchQuery } from '../../../../../relay/environment';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../../utils/field';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -8,6 +8,7 @@ import { graphql, usePreloadedQuery, useSubscription } from 'react-relay';
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import StixCoreObjectContentRoot from '@private/components/common/stix_core_objects/StixCoreObjectContentRoot';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import InfrastructureKnowledge from './InfrastructureKnowledge';
 import StixDomainObjectHeader from '../../common/stix_domain_objects/StixDomainObjectHeader';
 import FileManager from '../../common/files/FileManager';
@@ -26,7 +27,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import InfrastructureEdition from './InfrastructureEdition';
 import InfrastructureDeletion from './InfrastructureDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootInfrastructureSubscription($id: ID!) {

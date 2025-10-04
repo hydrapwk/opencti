@@ -4,9 +4,9 @@ import SimpleDraggrable from 'react-draggable';
 import makeStyles from '@mui/styles/makeStyles';
 import { createStyles } from '@mui/styles';
 import { Theme as MuiTheme } from '@mui/material/styles/createTheme';
+import { IconButton, Tooltip } from '@components';
 import { DataTableColumn, DataTableHeaderProps, DataTableVariant } from '../dataTableTypes';
 import { useDataTableContext } from './DataTableContext';
-import { IconButton, Tooltip } from '@components';
 
 export const SELECT_COLUMN_SIZE = 42;
 export const ICON_COLUMN_SIZE = 56;

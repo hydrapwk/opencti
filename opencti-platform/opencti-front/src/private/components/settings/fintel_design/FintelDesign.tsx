@@ -9,6 +9,7 @@ import CustomizationMenu from '@private/components/settings/CustomizationMenu';
 import FintelDesignForm from '@private/components/settings/fintel_design/FintelDesignForm';
 import FintelDesignEdition from '@private/components/settings/fintel_design/FintelDesignEdition';
 import { styled } from '@mui/material';
+import { Box, MenuItem, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import PageContainer from '../../../../components/PageContainer';
@@ -21,7 +22,6 @@ import PdfViewer from '../../../../components/PdfViewer';
 import PopoverMenu from '../../../../components/PopoverMenu';
 import FintelDesignDeletion from './FintelDesignDeletion';
 import useGranted, { KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
-import { Box, MenuItem, Paper, Typography } from '@components';
 
 const fintelDesignQuery = graphql`
   query FintelDesignQuery($id: String!) {

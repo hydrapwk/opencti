@@ -1,10 +1,11 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 import { Field, FieldArray } from 'formik';
 import { AddOutlined, DeleteOutlined } from '@mui/icons-material';
+import { Button, IconButton, MenuItem, Paper } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
 import SelectField from '../../../../components/fields/SelectField';
-import { Button, IconButton, MenuItem, Paper } from '@components';
+
 interface QueryAttributeFieldAddProps {
   id: string;
   name: string;

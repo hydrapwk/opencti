@@ -3,11 +3,11 @@ import * as PropTypes from 'prop-types';
 import { compose } from 'ramda';
 import { graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
+import { Drawer } from '@components';
 import inject18n from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
 import StixDomainObjectEditionOverview from './StixDomainObjectEditionOverview';
 import Loader from '../../../../components/Loader';
-import { Drawer } from '@components';
 
 const styles = (theme) => ({
   drawerPaperInGraph: {

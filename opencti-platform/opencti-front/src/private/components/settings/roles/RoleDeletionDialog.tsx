@@ -1,10 +1,10 @@
 import React, { FunctionComponent, useState } from 'react';
 import { graphql } from 'react-relay';
 import { useNavigate } from 'react-router-dom';
+import { Button, Dialog, DialogActions, DialogTitle } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import Transition from '../../../../components/Transition';
-import { Button, Dialog, DialogActions, DialogTitle } from '@components';
 
 export const roleDeletionMutation = graphql`
   mutation RoleDeletionDialogMutation($id: ID!) {

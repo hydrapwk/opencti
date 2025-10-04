@@ -4,13 +4,13 @@ import { compose, filter } from 'ramda';
 import { Link } from 'react-router-dom';
 import { SpeakerNotesOutlined, LinkOff } from '@mui/icons-material';
 import { graphql, createFragmentContainer } from 'react-relay';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import AddSubNarrative from './AddSubNarrative';
 import { addSubNarrativesMutationRelationDelete } from './AddSubNarrativesLines';
 import { commitMutation } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 class NarrativeSubNarrativesComponent extends Component {
   removeSubNarrative(subNarrativeEdge) {

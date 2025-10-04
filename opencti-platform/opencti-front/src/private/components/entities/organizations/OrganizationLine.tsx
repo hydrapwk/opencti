@@ -6,12 +6,12 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Theme } from '@mui/material/styles/createTheme';
 import { OrganizationLine_node$key } from '@private/components/entities/organizations/__generated__/OrganizationLine_node.graphql';
 import { DraftChip } from '@private/components/common/draft/DraftChip';
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import StixCoreObjectLabels from '../../common/stix_core_objects/StixCoreObjectLabels';
 import ItemIcon from '../../../../components/ItemIcon';
 import { DataColumns } from '../../../../components/list_lines';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -1,8 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import { useTheme } from '@mui/material/styles';
+import { Button } from '@components';
 import { useFormatter } from '../i18n';
 import { Filter, handleFilterHelpers } from '../../utils/filters/filtersHelpers-types';
-import { Button } from '@components';
+
 interface QuickRelativeDateFiltersButtonsProps {
   filter?: Filter;
   helpers?: handleFilterHelpers;

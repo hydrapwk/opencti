@@ -6,6 +6,7 @@ import * as Yup from 'yup';
 import { graphql } from 'react-relay';
 import * as R from 'ramda';
 
+import { Button } from '@components';
 import IngestionSchedulingField from '../IngestionSchedulingField';
 import Drawer from '../../common/drawer/Drawer';
 import inject18n from '../../../../components/i18n';
@@ -19,7 +20,6 @@ import ObjectMarkingField from '../../common/form/ObjectMarkingField';
 import { insertNode } from '../../../../utils/store';
 import DateTimePickerField from '../../../../components/DateTimePickerField';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button } from '@components';
 
 const styles = (theme) => ({
   createButton: {

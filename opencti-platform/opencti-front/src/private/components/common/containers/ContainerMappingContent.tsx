@@ -2,7 +2,9 @@ import React, { FunctionComponent, useEffect, useRef, useState } from 'react';
 import { graphql, PreloadedQuery, useFragment, usePreloadedQuery, useQueryLoader, UseQueryLoaderLoadQueryOptions } from 'react-relay';
 import StixCoreObjectMappableContent from '@private/components/common/stix_core_objects/StixCoreObjectMappableContent';
 import { Link } from 'react-router-dom';
-import ContainerStixCoreObjectsSuggestedMapping, { containerStixCoreObjectsSuggestedMappingQuery } from '@private/components/common/containers/ContainerStixCoreObjectsSuggestedMapping';
+import ContainerStixCoreObjectsSuggestedMapping, {
+  containerStixCoreObjectsSuggestedMappingQuery,
+} from '@private/components/common/containers/ContainerStixCoreObjectsSuggestedMapping';
 import {
   ContainerStixCoreObjectsSuggestedMappingQuery,
   ContainerStixCoreObjectsSuggestedMappingQuery$data,
@@ -23,11 +25,14 @@ import {
   ContainerMappingContentAddSuggestedMappingRelationsMutation,
 } from '@private/components/common/containers/__generated__/ContainerMappingContentAddSuggestedMappingRelationsMutation.graphql';
 import { ContainerMappingContentAskSuggestedMappingMutation } from '@private/components/common/containers/__generated__/ContainerMappingContentAskSuggestedMappingMutation.graphql';
-import { ContainerMappingContentClearSuggestedMappingMutation } from '@private/components/common/containers/__generated__/ContainerMappingContentClearSuggestedMappingMutation.graphql';
+import {
+  ContainerMappingContentClearSuggestedMappingMutation,
+} from '@private/components/common/containers/__generated__/ContainerMappingContentClearSuggestedMappingMutation.graphql';
 import {
   ContainerStixCoreObjectsSuggestedMappingLine_mappedEntity$data,
 } from '@private/components/common/containers/__generated__/ContainerStixCoreObjectsSuggestedMappingLine_mappedEntity.graphql';
 import ContainerStixCoreObjectsMappingHeader from '@private/components/common/containers/ContainerStixCoreObjectsMappingHeader';
+import { Grid, Paper } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { MESSAGING$ } from '../../../../relay/environment';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
@@ -35,7 +40,6 @@ import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings
 import { usePaginationLocalStorage } from '../../../../utils/hooks/useLocalStorage';
 import { emptyFilterGroup } from '../../../../utils/filters/filtersUtils';
 import { deserializeObjectB64, serializeObjectB64 } from '../../../../utils/object';
-import { Grid, Paper } from '@components';
 
 const OPEN$ = new Subject().pipe(debounce(() => timer(500)));
 

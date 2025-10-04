@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import { makeStyles } from '@mui/styles';
+import { List, ListItem, ListItemIcon, ListItemText, Typography } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import { useFormatter } from '../../../../components/i18n';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { List, ListItem, ListItemIcon, ListItemText, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

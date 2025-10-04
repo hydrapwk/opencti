@@ -5,6 +5,7 @@ import { graphql } from 'react-relay';
 import { Formik } from 'formik';
 import { PopoverProps } from '@mui/material/Popover';
 import { OpinionEditionContainerQuery$data } from '@private/components/analyses/opinions/__generated__/OpinionEditionContainerQuery.graphql';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem, ToggleButton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
 import { opinionEditionQuery } from './OpinionEdition';
@@ -13,7 +14,6 @@ import { KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted'
 import OpinionEditionContainer from './OpinionEditionContainer';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import Transition from '../../../../components/Transition';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem, ToggleButton } from '@components';
 
 const OpinionPopoverDeletionMutation = graphql`
   mutation OpinionPopoverDeletionMutation($id: ID!) {

@@ -9,6 +9,7 @@ import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import StixCoreObjectContentRoot from '@private/components/common/stix_core_objects/StixCoreObjectContentRoot';
 import Security from 'src/utils/Security';
 import AIInsights from '@private/components/common/ai/AIInsights';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectSimulationResultContainer from '../../common/stix_core_objects/StixCoreObjectSimulationResultContainer';
 import ErrorNotFound from '../../../../components/ErrorNotFound';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
@@ -29,7 +30,6 @@ import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
 import CaseRftEdition from './CaseRftEdition';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
 import CaseRftDeletion from './CaseRftDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootCaseRftCaseSubscription($id: ID!) {

@@ -5,10 +5,10 @@ import TableViewIcon from '@mui/icons-material/TableView';
 import JsonMapperPopover from '@private/components/data/jsonMapper/JsonMapperPopover';
 import { JsonMapperLine_jsonMapper$key } from '@private/components/data/jsonMapper/__generated__/JsonMapperLine_jsonMapper.graphql';
 import { jsonMappers_MappersQuery$variables } from '@private/components/data/jsonMapper/__generated__/jsonMappers_MappersQuery.graphql';
+import { ListItem, ListItemIcon, ListItemText } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { DataColumns } from '../../../../components/list_lines';
 import ErrorNotFound from '../../../../components/ErrorNotFound';
-import { ListItem, ListItemIcon, ListItemText } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

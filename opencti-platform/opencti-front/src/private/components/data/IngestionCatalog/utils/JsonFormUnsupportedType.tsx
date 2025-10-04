@@ -1,8 +1,8 @@
 import React from 'react';
 import { ControlProps, isControl, and, schemaMatches, RankedTester, rankWith } from '@jsonforms/core';
 import { withJsonFormsControlProps } from '@jsonforms/react';
-import { useFormatter } from '../../../../../components/i18n';
 import { Alert, Box, Typography } from '@components';
+import { useFormatter } from '../../../../../components/i18n';
 
 const SUPPORTED_TYPES = [
   'string',

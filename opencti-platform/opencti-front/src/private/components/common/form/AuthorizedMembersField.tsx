@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import * as Yup from 'yup';
 import { FormikHelpers } from 'formik/dist/types';
 import AuthorizedMembersFieldListItem from '@private/components/common/form/AuthorizedMembersFieldListItem';
+import { AccordionDetails, Alert, AlertTitle, FormHelperText, IconButton, List, MenuItem, Typography } from '@components';
 import SelectField from '../../../../components/fields/SelectField';
 import { useFormatter } from '../../../../components/i18n';
 import { AccessRight, ALL_MEMBERS_AUTHORIZED_CONFIG, AuthorizedMemberOption, Creator, CREATOR_AUTHORIZED_CONFIG } from '../../../../utils/authorizedMembers';
@@ -15,7 +16,6 @@ import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field
 import { Accordion, AccordionSummary } from '../../../../components/Accordion';
 import { OPENCTI_ADMIN_UUID } from '../../../../utils/hooks/useGranted';
 import useHelper from '../../../../utils/hooks/useHelper';
-import { AccordionDetails, Alert, AlertTitle, FormHelperText, IconButton, List, MenuItem, Typography } from '@components';
 
 /**
  * Returns true if the authorized member option is generic.

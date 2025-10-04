@@ -6,11 +6,11 @@ import withStyles from '@mui/styles/withStyles';
 import Slide from '@mui/material/Slide';
 import { MoreVertOutlined } from '@mui/icons-material';
 import { ConnectionHandler } from 'relay-runtime';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 import inject18n from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
 import StixNestedRefRelationshipEdition from './StixNestedRefRelationshipEdition';
 import stopEvent from '../../../../utils/domEvent';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 
 const styles = (theme) => ({
   container: {

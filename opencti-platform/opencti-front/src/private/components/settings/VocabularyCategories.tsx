@@ -1,5 +1,6 @@
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
+import { Chip } from '@components';
 import ListLines from '../../../components/list_lines/ListLines';
 import { useFormatter } from '../../../components/i18n';
 import LabelsVocabulariesMenu from './LabelsVocabulariesMenu';
@@ -8,7 +9,6 @@ import ListLinesContent from '../../../components/list_lines/ListLinesContent';
 import { VocabularyCategoryLine, VocabularyCategoryLineDummy } from './attributes/VocabularyCategoryLine';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
-import { Chip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -6,6 +6,7 @@ import { FormikConfig, FormikHelpers } from 'formik/dist/types';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { DataComponentsLinesPaginationQuery$variables } from '@private/components/techniques/__generated__/DataComponentsLinesPaginationQuery.graphql';
+import { Button, Dialog, DialogContent, DialogTitle } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import CreatedByField from '../../common/form/CreatedByField';
@@ -28,7 +29,6 @@ import BulkTextModal from '../../../../components/fields/BulkTextField/BulkTextM
 import ProgressBar from '../../../../components/ProgressBar';
 import BulkTextField from '../../../../components/fields/BulkTextField/BulkTextField';
 import BulkTextModalButton from '../../../../components/fields/BulkTextField/BulkTextModalButton';
-import { Button, Dialog, DialogContent, DialogTitle } from '@components';
 
 const dataComponentMutation = graphql`
   mutation DataComponentCreationMutation($input: DataComponentAddInput!) {

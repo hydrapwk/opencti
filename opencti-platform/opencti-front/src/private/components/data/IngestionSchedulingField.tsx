@@ -1,9 +1,10 @@
 import { Field } from 'formik';
 import React from 'react';
+import { MenuItem } from '@components';
 import SelectField from '../../../components/fields/SelectField';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../utils/field';
 import { useFormatter } from '../../../components/i18n';
-import { MenuItem } from '@components';
+
 interface IngestionSchedulingProps {
   handleSubmitField?: (name: string, value: FieldOption[]) => void | null;
 }

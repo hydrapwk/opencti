@@ -17,6 +17,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { CSVLink } from 'react-csv';
 import { graphql } from 'react-relay';
+import { Alert, Checkbox, FormControlLabel } from '@components';
 import ActivityMenu from '../../ActivityMenu';
 import type { Theme } from '../../../../../components/Theme';
 import ListLines from '../../../../../components/list_lines/ListLines';
@@ -34,7 +35,6 @@ import { fetchQuery } from '../../../../../relay/environment';
 import Breadcrumbs from '../../../../../components/Breadcrumbs';
 import useGranted, { KNOWLEDGE, SETTINGS_SECURITYACTIVITY } from '../../../../../utils/hooks/useGranted';
 import useConnectedDocumentModifier from '../../../../../utils/hooks/useConnectedDocumentModifier';
-import { Alert, Checkbox, FormControlLabel } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

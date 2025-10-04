@@ -5,12 +5,12 @@ import { createFragmentContainer, graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import { KeyboardArrowRightOutlined } from '@mui/icons-material';
 import { compose } from 'ramda';
+import { Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import inject18n from '../../../../components/i18n';
 import StixCoreObjectLabels from '../../common/stix_core_objects/StixCoreObjectLabels';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import ItemIcon from '../../../../components/ItemIcon';
 import ItemStatus from '../../../../components/ItemStatus';
-import { Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const styles = (theme) => ({
   item: {

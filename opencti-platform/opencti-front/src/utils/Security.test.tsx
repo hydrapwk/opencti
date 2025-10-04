@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest';
 import React from 'react';
 import { screen } from '@testing-library/react';
+import { Alert } from '@components';
 import Security from './Security';
 import { BYPASS, EXPLORE_EXUPDATE, KNOWLEDGE_KNUPDATE } from './hooks/useGranted';
 import testRender, { createMockUserContext } from './tests/test-render';
-import { Alert } from '@components';
 
 describe('Component: Security validations', () => {
   it('admin with BYPASS should be allowed whatever the required permission is.', () => {

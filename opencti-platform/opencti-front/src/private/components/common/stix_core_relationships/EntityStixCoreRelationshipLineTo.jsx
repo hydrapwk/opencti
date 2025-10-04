@@ -7,6 +7,7 @@ import withStyles from '@mui/styles/withStyles';
 import { MoreVertOutlined } from '@mui/icons-material';
 import { AutoFix } from 'mdi-material-ui';
 import withTheme from '@mui/styles/withTheme';
+import { Box, Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 import inject18n from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
 import ItemConfidence from '../../../../components/ItemConfidence';
@@ -15,7 +16,6 @@ import { getMainRepresentative } from '../../../../utils/defaultRepresentatives'
 import ItemMarkings from '../../../../components/ItemMarkings';
 import ItemEntityType from '../../../../components/ItemEntityType';
 import { DraftChip, getDraftModeColor } from '../draft/DraftChip';
-import { Box, Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 
 const styles = (theme) => ({
   item: {

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import ReactMde from 'react-mde';
 import { useField } from 'formik';
 import * as R from 'ramda';
+import { FormHelperText, InputLabel } from '@components';
 import { useFormatter } from './i18n';
 import MarkdownDisplay from './MarkdownDisplay';
-import { FormHelperText, InputLabel } from '@components';
 
 const MarkdownField = (props) => {
   const {

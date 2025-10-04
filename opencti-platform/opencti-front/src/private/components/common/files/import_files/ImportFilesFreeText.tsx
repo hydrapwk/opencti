@@ -2,11 +2,11 @@ import React from 'react';
 import { useTheme } from '@mui/styles';
 import { Field, Formik } from 'formik';
 import { FormikHelpers } from 'formik/dist/types';
+import { Box, Button, TextField } from '@components';
 import type { Theme } from '../../../../../components/Theme';
 import { useFormatter } from '../../../../../components/i18n';
 import { isValidStixBundle } from '../../../../../utils/String';
 import { now } from '../../../../../utils/Time';
-import { Box, Button, TextField } from '@components';
 
 type FileFreeTextType = { content: string };
 

@@ -7,13 +7,13 @@ import { DraftCreationMutation, DraftCreationMutation$variables } from '@private
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { DraftsLinesPaginationQuery$variables } from '@private/components/drafts/__generated__/DraftsLinesPaginationQuery.graphql';
 import { FormikConfig } from 'formik/dist/types';
+import { Button } from '@components';
 import CreateEntityControlledDial from '../../../components/CreateEntityControlledDial';
 import { insertNode } from '../../../utils/store';
 import { handleErrorInForm } from '../../../relay/environment';
 import TextField from '../../../components/TextField';
 import { useFormatter } from '../../../components/i18n';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 export const draftCreationMutation = graphql`
     mutation DraftCreationMutation($input: DraftWorkspaceAddInput!) {

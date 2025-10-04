@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { MoreVert } from '@mui/icons-material';
+import { Box, Checkbox, IconButton, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import { DeleteOperationsLinesPaginationQuery$variables } from './__generated__/DeleteOperationsLinesPaginationQuery.graphql';
 import { DeleteOperationLine_node$data, DeleteOperationLine_node$key } from './__generated__/DeleteOperationLine_node.graphql';
@@ -9,7 +10,6 @@ import { useFormatter } from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
 import { DataColumns } from '../../../../components/list_lines';
 import ItemEntityType from '../../../../components/ItemEntityType';
-import { Box, Checkbox, IconButton, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const DeleteOperationFragment = graphql`
   fragment DeleteOperationLine_node on DeleteOperation {

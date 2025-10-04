@@ -9,7 +9,9 @@ import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import { GlobeModel, HexagonOutline } from 'mdi-material-ui';
-import { StixCoreRelationshipCreationFromEntityQuery$data } from '@private/components/common/stix_core_relationships/__generated__/StixCoreRelationshipCreationFromEntityQuery.graphql';
+import {
+  StixCoreRelationshipCreationFromEntityQuery$data,
+} from '@private/components/common/stix_core_relationships/__generated__/StixCoreRelationshipCreationFromEntityQuery.graphql';
 import { FormikConfig } from 'formik/dist/types';
 import { UsePreloadedPaginationFragment } from 'src/utils/hooks/usePreloadedPaginationFragment';
 import { usePaginationLocalStorage } from 'src/utils/hooks/useLocalStorage';
@@ -24,6 +26,7 @@ import { PaginationOptions } from 'src/components/list_lines';
 import Drawer from '@private/components/common/drawer/Drawer';
 import { getMainRepresentative } from 'src/utils/defaultRepresentatives';
 import Loader, { LoaderVariant } from 'src/components/Loader';
+import { Fab, IconButton } from '@components';
 import { commitMutation, handleErrorInForm, QueryRenderer } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 import { formatDate } from '../../../../utils/Time';
@@ -44,7 +47,6 @@ import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import DataTable from '../../../../components/dataGrid/DataTable';
 import { DataTableVariant } from '../../../../components/dataGrid/dataTableTypes';
 import { FieldOption } from '../../../../utils/field';
-import { Fab, IconButton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

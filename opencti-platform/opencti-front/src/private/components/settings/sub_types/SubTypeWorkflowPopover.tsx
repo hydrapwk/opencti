@@ -1,12 +1,13 @@
 import React, { FunctionComponent, useState } from 'react';
 import { Edit } from '@mui/icons-material';
 import { InformationOutline } from 'mdi-material-ui';
+import { IconButton, Tooltip } from '@components';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import SubTypeWorkflow, { subTypeWorkflowEditionQuery } from './SubTypeWorkflow';
 import { SubTypeWorkflowEditionQuery } from './__generated__/SubTypeWorkflowEditionQuery.graphql';
 import { useFormatter } from '../../../../components/i18n';
-import { IconButton, Tooltip } from '@components';
+
 interface SubTypeStatusPopoverProps {
   subTypeId: string
   scope: string

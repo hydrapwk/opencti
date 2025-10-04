@@ -6,6 +6,7 @@ import { FileUploadOutlined } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@mui/styles';
 import { FormikConfig } from 'formik/dist/types';
+import { Button, ToggleButton } from '@components';
 import { WorkspacesLinesPaginationQuery$variables } from './__generated__/WorkspacesLinesPaginationQuery.graphql';
 import { WorkspaceCreationImportMutation } from './__generated__/WorkspaceCreationImportMutation.graphql';
 import VisuallyHiddenInput from '../common/VisuallyHiddenInput';
@@ -24,7 +25,6 @@ import { UserContext } from '../../../utils/hooks/useAuth';
 import Security from '../../../utils/Security';
 import { EXPLORE_EXUPDATE, INVESTIGATION_INUPDATE } from '../../../utils/hooks/useGranted';
 import type { Theme } from '../../../components/Theme';
-import { Button, ToggleButton } from '@components';
 
 const workspaceMutation = graphql`
   mutation WorkspaceCreationMutation($input: WorkspaceAddInput!) {

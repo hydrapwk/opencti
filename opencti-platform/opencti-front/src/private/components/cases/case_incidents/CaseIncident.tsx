@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useFragment } from 'react-relay';
 import { CaseUtils_case$key } from '@private/components/cases/__generated__/CaseUtils_case.graphql';
 import { useTheme } from '@mui/material/styles';
+import { Grid, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { convertMarkings } from '../../../../utils/edition';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
@@ -21,7 +22,7 @@ import { CaseTasksLineDummy } from '../tasks/CaseTasksLine';
 import { isFilterGroupNotEmpty, useRemoveIdAndIncorrectKeysFromFilterGroupObject } from '../../../../utils/filters/filtersUtils';
 import { FilterGroup } from '../../../../utils/filters/filtersHelpers-types';
 import useOverviewLayoutCustomization from '../../../../utils/hooks/useOverviewLayoutCustomization';
-import { Grid, Paper, Typography } from '@components';
+
 interface CaseIncidentProps {
   caseIncidentData: CaseUtils_case$key;
   enableReferences: boolean;

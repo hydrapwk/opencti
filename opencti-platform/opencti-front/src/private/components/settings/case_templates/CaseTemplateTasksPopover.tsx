@@ -6,6 +6,7 @@ import { graphql } from 'react-relay';
 import { useParams } from 'react-router-dom';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import Drawer from '@private/components/common/drawer/Drawer';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Transition from '../../../../components/Transition';
 import { commitMutation } from '../../../../relay/environment';
@@ -16,7 +17,6 @@ import { CaseTemplateTasksLinesPaginationQuery$data } from './__generated__/Case
 import CaseTemplateTasksEdition from './CaseTemplateTasksEdition';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import DeleteDialog from '../../../../components/DeleteDialog';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

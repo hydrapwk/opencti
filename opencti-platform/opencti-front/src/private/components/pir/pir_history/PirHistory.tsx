@@ -15,6 +15,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 import React, { useState } from 'react';
 import { graphql, useFragment } from 'react-relay';
+import { Tooltip } from '@components';
 import { PirHistoryLogsFragment$data } from './__generated__/PirHistoryLogsFragment.graphql';
 import { PirHistoryLogsQuery, PirHistoryLogsQuery$variables } from './__generated__/PirHistoryLogsQuery.graphql';
 import { PirHistoryFragment$key } from './__generated__/PirHistoryFragment.graphql';
@@ -29,7 +30,6 @@ import { DataTableProps } from '../../../../components/dataGrid/dataTableTypes';
 import DataTable from '../../../../components/dataGrid/DataTable';
 import { displayEntityTypeForTranslation } from '../../../../utils/String';
 import ItemIcon from '../../../../components/ItemIcon';
-import { Tooltip } from '@components';
 
 const pirHistoryLogFragment = graphql`
   fragment PirHistoryLogFragment on Log {

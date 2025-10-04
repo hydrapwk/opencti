@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { useImportFilesContext } from '@private/components/common/files/import_files/ImportFilesContext';
 import { ImportFilesFormSelectorQuery } from '@private/components/common/files/import_files/__generated__/ImportFilesFormSelectorQuery.graphql';
+import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import useQueryLoading from '../../../../../utils/hooks/useQueryLoading';
 import SearchInput from '../../../../../components/SearchInput';
 import ItemIcon from '../../../../../components/ItemIcon';
 import Loader from '../../../../../components/Loader';
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 
 const importFilesFormSelectorQuery = graphql`
   query ImportFilesFormSelectorQuery(

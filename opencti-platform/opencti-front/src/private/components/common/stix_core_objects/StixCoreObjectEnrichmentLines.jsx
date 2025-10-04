@@ -6,12 +6,12 @@ import { CheckCircleOutlined, DeleteOutlined, ExtensionOutlined, RefreshOutlined
 import CircularProgress from '@mui/material/CircularProgress';
 import withStyles from '@mui/styles/withStyles';
 import { v4 as uuid } from 'uuid';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 import { FIVE_SECONDS } from '../../../../utils/Time';
 import { commitMutation, MESSAGING$ } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNENRICHMENT } from '../../../../utils/hooks/useGranted';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 
 const interval$ = interval(FIVE_SECONDS);
 

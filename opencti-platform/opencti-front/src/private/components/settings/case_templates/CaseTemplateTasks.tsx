@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { graphql, PreloadedQuery } from 'react-relay';
 import { styled } from '@mui/material';
 import { useTheme } from '@mui/styles';
+import { Box, MenuItem, Typography } from '@components';
 import ListLines from '../../../../components/list_lines/ListLines';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { usePaginationLocalStorage } from '../../../../utils/hooks/useLocalStorage';
@@ -26,7 +27,6 @@ import useDeletion from '../../../../utils/hooks/useDeletion';
 import type { Theme } from '../../../../components/Theme';
 import PopoverMenu from '../../../../components/PopoverMenu';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Box, MenuItem, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

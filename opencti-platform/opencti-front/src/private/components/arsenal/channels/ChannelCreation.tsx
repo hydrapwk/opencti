@@ -6,6 +6,7 @@ import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { FormikConfig } from 'formik/dist/types';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { ChannelsLinesPaginationQuery$variables } from '@private/components/arsenal/__generated__/ChannelsLinesPaginationQuery.graphql';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import CreatedByField from '../../common/form/CreatedByField';
@@ -29,7 +30,6 @@ import useBulkCommit from '../../../../utils/hooks/useBulkCommit';
 import { splitMultilines } from '../../../../utils/String';
 import ProgressBar from '../../../../components/ProgressBar';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button } from '@components';
 
 const channelMutation = graphql`
   mutation ChannelCreationMutation($input: ChannelAddInput!) {

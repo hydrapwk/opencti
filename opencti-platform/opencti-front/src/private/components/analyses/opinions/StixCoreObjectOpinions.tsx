@@ -2,6 +2,7 @@ import React, { FunctionComponent, useCallback, useEffect, useState } from 'reac
 import { graphql, PreloadedQuery, usePreloadedQuery, useQueryLoader } from 'react-relay';
 import StixCoreObjectOpinionsList, { stixCoreObjectOpinionsListQuery } from '@private/components/analyses/opinions/StixCoreObjectOpinionsList';
 import StixCoreObjectOpinionsRadarDialog from '@private/components/analyses/opinions/StixCoreObjectOpinionsRadarDialog';
+import { Typography } from '@components';
 import StixCoreObjectOpinionsRadar, { stixCoreObjectOpinionsRadarDistributionQuery } from './StixCoreObjectOpinionsRadar';
 import useVocabularyCategory from '../../../../utils/hooks/useVocabularyCategory';
 import {
@@ -12,7 +13,7 @@ import { StixCoreObjectOpinionsListQuery, StixCoreObjectOpinionsListQuery$variab
 import { useFormatter } from '../../../../components/i18n';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import { StixCoreObjectOpinionsOpenVocabQuery } from './__generated__/StixCoreObjectOpinionsOpenVocabQuery.graphql';
-import { Typography } from '@components';
+
 interface StixCoreObjectOpinionsProps {
   stixCoreObjectId: string
   queryVocabulariesRef: PreloadedQuery<StixCoreObjectOpinionsOpenVocabQuery>

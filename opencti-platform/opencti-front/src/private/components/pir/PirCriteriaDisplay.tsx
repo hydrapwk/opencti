@@ -17,6 +17,7 @@ import React, { PropsWithChildren } from 'react';
 import { PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import Chip, { ChipProps } from '@mui/material/Chip';
 import { useTheme } from '@mui/material/styles';
+import { Tooltip } from '@components';
 import { FilterGroup } from '../../../utils/filters/filtersHelpers-types';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
 import { FilterValuesContentQuery } from '../../../components/__generated__/FilterValuesContentQuery.graphql';
@@ -24,7 +25,7 @@ import { filterValuesContentQuery } from '../../../components/FilterValuesConten
 import { GqlFilterGroup, removeIdFromFilterGroupObject } from '../../../utils/filters/filtersUtils';
 import { useFormatter } from '../../../components/i18n';
 import type { Theme } from '../../../components/Theme';
-import { Tooltip } from '@components';
+
 interface PirFiltersDisplayComponentProps extends PropsWithChildren {
   size?: ChipProps['size']
   full?: boolean

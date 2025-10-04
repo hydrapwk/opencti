@@ -7,6 +7,7 @@ import { RecordSourceSelectorProxy } from 'relay-runtime';
 import CustomFileUploader from '@private/components/common/files/CustomFileUploader';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { DataSourcesLinesPaginationQuery$variables } from '@private/components/techniques/__generated__/DataSourcesLinesPaginationQuery.graphql';
+import { Button, Dialog, DialogContent, DialogTitle } from '@components';
 import CreatedByField from '../../common/form/CreatedByField';
 import ObjectLabelField from '../../common/form/ObjectLabelField';
 import ObjectMarkingField from '../../common/form/ObjectMarkingField';
@@ -29,7 +30,6 @@ import BulkTextModal from '../../../../components/fields/BulkTextField/BulkTextM
 import ProgressBar from '../../../../components/ProgressBar';
 import BulkTextField from '../../../../components/fields/BulkTextField/BulkTextField';
 import BulkTextModalButton from '../../../../components/fields/BulkTextField/BulkTextModalButton';
-import { Button, Dialog, DialogContent, DialogTitle } from '@components';
 
 const dataSourceMutation = graphql`
   mutation DataSourceCreationMutation($input: DataSourceAddInput!) {

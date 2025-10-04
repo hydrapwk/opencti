@@ -1,11 +1,12 @@
 import React, { FunctionComponent, useState } from 'react';
 import { InfoOutlined } from '@mui/icons-material';
 import { ParsedWorkMessage, ResolvedEntity } from '@private/components/data/connectors/parseWorkErrors';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Paper, TableCell, TableRow, Tooltip, Typography } from '@components';
 import ItemCopy from '../../../../components/ItemCopy';
 import Transition from '../../../../components/Transition';
 import { useFormatter } from '../../../../components/i18n';
 import { truncate } from '../../../../utils/String';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Paper, TableCell, TableRow, Tooltip, Typography } from '@components';
+
 interface ConnectorWorksErrorLineProps {
   error: ParsedWorkMessage;
 }

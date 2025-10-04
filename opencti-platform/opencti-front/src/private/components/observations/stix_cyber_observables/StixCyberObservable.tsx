@@ -1,6 +1,7 @@
 import { graphql } from 'relay-runtime';
 import React from 'react';
 import { useFragment } from 'react-relay';
+import { Grid } from '@components';
 import { StixCyberObservable_stixCyberObservable$key } from './__generated__/StixCyberObservable_stixCyberObservable.graphql';
 import StixCyberObservableDetails from './StixCyberObservableDetails';
 import StixCyberObservableOverview from './StixCyberObservableOverview';
@@ -9,7 +10,6 @@ import StixCoreObjectOrStixRelationshipLastContainers from '../../common/contain
 import StixCoreObjectExternalReferences from '../../analyses/external_references/StixCoreObjectExternalReferences';
 import StixCoreObjectLatestHistory from '../../common/stix_core_objects/StixCoreObjectLatestHistory';
 import StixCoreObjectOrStixCoreRelationshipNotes from '../../analyses/notes/StixCoreObjectOrStixCoreRelationshipNotes';
-import { Grid } from '@components';
 
 const stixCyberObservableFragment = graphql`
   fragment StixCyberObservable_stixCyberObservable on StixCyberObservable {

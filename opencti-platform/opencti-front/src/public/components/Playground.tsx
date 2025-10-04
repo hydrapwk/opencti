@@ -2,10 +2,10 @@ import React from 'react';
 import { GraphiQL } from 'graphiql';
 import { createGraphiQLFetcher } from '@graphiql/toolkit';
 import 'graphiql/graphiql.css';
+import { Box } from '@components';
 import { APP_BASE_PATH } from '../../relay/environment';
 import { useFormatter } from '../../components/i18n';
 import PublicTopBar from './PublicTopBar';
-import { Box } from '@components';
 
 const defaultQuery = `query ExampleQuery {
   intrusionSets {

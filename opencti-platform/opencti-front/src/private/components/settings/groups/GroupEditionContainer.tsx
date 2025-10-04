@@ -9,6 +9,7 @@ import {
   DataTableToolBarUsersLinesSearchQuery,
   DataTableToolBarUsersLinesSearchQuery$variables,
 } from '@private/components/data/__generated__/DataTableToolBarUsersLinesSearchQuery.graphql';
+import { Box, Tab, Tabs } from '@components';
 import GroupEditionConfidence from './GroupEditionConfidence';
 import GroupEditionOverview from './GroupEditionOverview';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
@@ -26,7 +27,6 @@ import useGranted, { SETTINGS_SETACCESSES } from '../../../../utils/hooks/useGra
 import SearchInput from '../../../../components/SearchInput';
 import { useDataTablePaginationLocalStorage } from '../../../../components/dataGrid/dataTableHooks';
 import EditEntityControlledDial from '../../../../components/EditEntityControlledDial';
-import { Box, Tab, Tabs } from '@components';
 
 export const groupEditionContainerQuery = graphql`
   query GroupEditionContainerQuery($id: String!) {

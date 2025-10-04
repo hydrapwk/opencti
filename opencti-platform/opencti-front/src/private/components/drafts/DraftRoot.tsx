@@ -13,6 +13,7 @@ import { graphql, useFragment, usePreloadedQuery, useQueryLoader } from 'react-r
 import { interval } from 'rxjs';
 import ConnectorWorkLine from '@private/components/data/connectors/ConnectorWorkLine';
 import ImportFilesContent from '@private/components/data/import/ImportFilesContent';
+import { Box, Paper, Tab, Tabs } from '@components';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
 import useDraftContext from '../../../utils/hooks/useDraftContext';
 import Loader, { LoaderVariant } from '../../../components/Loader';
@@ -23,7 +24,6 @@ import { MESSAGING$ } from '../../../relay/environment';
 import { RelayError } from '../../../relay/relayTypes';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import { TEN_SECONDS } from '../../../utils/Time';
-import { Box, Paper, Tab, Tabs } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

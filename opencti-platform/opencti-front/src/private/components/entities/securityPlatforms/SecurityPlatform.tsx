@@ -3,13 +3,13 @@ import React from 'react';
 import { useFragment } from 'react-relay';
 import { SecurityPlatform_securityPlatform$key } from '@private/components/entities/securityPlatforms/__generated__/SecurityPlatform_securityPlatform.graphql';
 import SecurityPlatformDetails from '@private/components/entities/securityPlatforms/SecurityPlatformDetails';
+import { Grid } from '@components';
 import StixDomainObjectOverview from '../../common/stix_domain_objects/StixDomainObjectOverview';
 import SimpleStixObjectOrStixRelationshipStixCoreRelationships from '../../common/stix_core_relationships/SimpleStixObjectOrStixRelationshipStixCoreRelationships';
 import StixCoreObjectOrStixRelationshipLastContainers from '../../common/containers/StixCoreObjectOrStixRelationshipLastContainers';
 import StixCoreObjectExternalReferences from '../../analyses/external_references/StixCoreObjectExternalReferences';
 import StixCoreObjectLatestHistory from '../../common/stix_core_objects/StixCoreObjectLatestHistory';
 import StixCoreObjectOrStixCoreRelationshipNotes from '../../analyses/notes/StixCoreObjectOrStixCoreRelationshipNotes';
-import { Grid } from '@components';
 
 export const securityPlatformFragment = graphql`
   fragment SecurityPlatform_securityPlatform on SecurityPlatform {

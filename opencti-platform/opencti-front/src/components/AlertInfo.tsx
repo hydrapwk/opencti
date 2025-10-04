@@ -1,7 +1,7 @@
 import React, { CSSProperties, ReactNode } from 'react';
 import { useTheme } from '@mui/styles';
-import type { Theme } from './Theme';
 import { Alert, Typography } from '@components';
+import type { Theme } from './Theme';
 
 type AlertInfoProps = {
   content: string | ReactNode

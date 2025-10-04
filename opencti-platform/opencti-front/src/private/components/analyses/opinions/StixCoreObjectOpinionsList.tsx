@@ -2,13 +2,13 @@ import React, { FunctionComponent } from 'react';
 import { graphql, usePreloadedQuery } from 'react-relay';
 import { PreloadedQuery } from 'react-relay/relay-hooks/EntryPointTypes';
 import { Link } from 'react-router-dom';
+import { Dialog, DialogContent, DialogTitle, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 import OpinionPopover from './OpinionPopover';
 import { truncate } from '../../../../utils/String';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import { StixCoreObjectOpinionsListQuery } from './__generated__/StixCoreObjectOpinionsListQuery.graphql';
 import { useFormatter } from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
-import { Dialog, DialogContent, DialogTitle, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 
 export const stixCoreObjectOpinionsListQuery = graphql`
   query StixCoreObjectOpinionsListQuery(

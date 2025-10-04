@@ -1,11 +1,12 @@
 import React, { FunctionComponent, useState } from 'react';
 import { CloudRefreshOutline } from 'mdi-material-ui';
+import { IconButton, Tooltip } from '@components';
 import { ExternalReferenceEnrichmentLinesQuery$data } from './__generated__/ExternalReferenceEnrichmentLinesQuery.graphql';
 import { QueryRenderer } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 import ExternalReferenceEnrichmentLines, { externalReferenceEnrichmentLinesQuery } from './ExternalReferenceEnrichmentLines';
 import Drawer from '../../common/drawer/Drawer';
-import { IconButton, Tooltip } from '@components';
+
 interface ExternalReferenceEnrichmentProps {
   externalReferenceId: string,
 }

@@ -1,4 +1,5 @@
-import React from 'react';import { Checkbox, List, ListItemButton, ListItemIcon, ListItemText, Popover } from '@components';
+import React from 'react'; import { Checkbox, List, ListItemButton, ListItemIcon, ListItemText, Popover } from '@components';
+
 interface GraphToolbarOptionsListProps<T> {
   onClose: () => void
   onSelect: (o: T) => void

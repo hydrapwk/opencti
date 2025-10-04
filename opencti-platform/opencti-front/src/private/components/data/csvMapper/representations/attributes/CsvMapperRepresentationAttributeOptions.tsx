@@ -4,9 +4,10 @@ import DefaultValueField from '@private/components/common/form/DefaultValueField
 import { CsvMapperFormData } from '@private/components/data/csvMapper/CsvMapper';
 import { SchemaAttribute } from '@private/components/data/csvMapper/representations/attributes/CsvMapperRepresentationAttributesForm';
 import CsvMapperDefaultMarking from '@private/components/data/csvMapper/representations/attributes/CsvMapperDefaultMarking';
+import { DialogContentText } from '@components';
 import CsvMapperRepresentationAttributeOption from './CsvMapperRepresentationAttributeOption';
 import { useFormatter } from '../../../../../../components/i18n';
-import { DialogContentText } from '@components';
+
 interface CsvMapperRepresentationAttributeOptionsProps {
   schemaAttribute: SchemaAttribute;
   attributeName: string;

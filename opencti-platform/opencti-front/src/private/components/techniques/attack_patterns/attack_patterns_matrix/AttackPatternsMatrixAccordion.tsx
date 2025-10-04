@@ -10,8 +10,9 @@ import {
 } from '@private/components/techniques/attack_patterns/attack_patterns_matrix/AttackPatternsMatrixColumns';
 import AttackPatternsMatrixColumnsElement from '@private/components/techniques/attack_patterns/attack_patterns_matrix/AttackPatternsMatrixColumsElement';
 import AttackPatternsMatrixShouldCoverIcon from '@private/components/techniques/attack_patterns/attack_patterns_matrix/AttackPatternsMatrixShouldCoverIcon';
-import type { Theme } from '../../../../../components/Theme';
 import { AccordionDetails, IconButton, Accordion as MuiAccordion, AccordionSummary as MuiAccordionSummary, Typography } from '@components';
+import type { Theme } from '../../../../../components/Theme';
+
 interface AccordionAttackPatternProps {
   attackPattern: FilteredAttackPattern;
   handleOpen: (element: MinimalAttackPattern, event: React.MouseEvent) => void;

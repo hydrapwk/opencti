@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
-import withStyles from '@mui/styles/withStyles';import { Chip } from '@components';
+import withStyles from '@mui/styles/withStyles'; import { Chip } from '@components';
 
 const styles = () => ({
   chip: {

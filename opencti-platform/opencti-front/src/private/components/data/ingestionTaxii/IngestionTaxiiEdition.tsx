@@ -4,8 +4,12 @@ import * as Yup from 'yup';
 import { Field, Form, Formik } from 'formik';
 import { FormikConfig } from 'formik/dist/types';
 import { ExternalReferencesValues } from '@private/components/common/form/ExternalReferencesField';
-import { IngestionTaxiiEditionFragment_ingestionTaxii$data } from '@private/components/data/ingestionTaxii/__generated__/IngestionTaxiiEditionFragment_ingestionTaxii.graphql';
+import {
+  IngestionTaxiiEditionFragment_ingestionTaxii$data,
+  IngestionTaxiiEditionFragment_ingestionTaxii$key,
+} from '@private/components/data/ingestionTaxii/__generated__/IngestionTaxiiEditionFragment_ingestionTaxii.graphql';
 import CommitMessage from '@private/components/common/form/CommitMessage';
+import { MenuItem } from '@components';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import CreatorField from '../../common/form/CreatorField';
 import { convertUser } from '../../../../utils/edition';
@@ -27,11 +31,9 @@ import SwitchField from '../../../../components/fields/SwitchField';
 import PasswordTextField from '../../../../components/PasswordTextField';
 import TextField from '../../../../components/TextField';
 import { useFormatter } from '../../../../components/i18n';
-import { IngestionTaxiiEditionFragment_ingestionTaxii$key } from './__generated__/IngestionTaxiiEditionFragment_ingestionTaxii.graphql';
 import { useSchemaEditionValidation } from '../../../../utils/hooks/useEntitySettings';
 import { adaptFieldValue } from '../../../../utils/String';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { MenuItem } from '@components';
 
 export const initIngestionValue = (ingestionTaxiiData: IngestionTaxiiEditionFragment_ingestionTaxii$data) => {
   return {

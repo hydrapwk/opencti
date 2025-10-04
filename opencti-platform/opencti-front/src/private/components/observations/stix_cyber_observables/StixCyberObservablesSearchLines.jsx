@@ -5,11 +5,11 @@ import { map, keys, groupBy, assoc, compose } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { ExpandMore } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import { Accordion, AccordionDetails, AccordionSummary, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import { truncate } from '../../../../utils/String';
 import ItemIcon from '../../../../components/ItemIcon';
 import inject18n from '../../../../components/i18n';
 import StixCoreObjectLabels from '../../common/stix_core_objects/StixCoreObjectLabels';
-import { Accordion, AccordionDetails, AccordionSummary, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 const styles = (theme) => ({
   container: {

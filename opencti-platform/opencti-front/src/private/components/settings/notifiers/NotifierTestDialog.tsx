@@ -1,11 +1,11 @@
 import makeStyles from '@mui/styles/makeStyles';
 import React, { FunctionComponent, useState } from 'react';
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
+import { Button, Chip, Dialog, DialogContent, DialogTitle, MenuItem, Select, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import type { Theme } from '../../../../components/Theme';
 import { NotifierTestDialogQuery } from './__generated__/NotifierTestDialogQuery.graphql';
-import { Button, Chip, Dialog, DialogContent, DialogTitle, MenuItem, Select, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

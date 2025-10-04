@@ -7,6 +7,7 @@ import { RootIndividualQuery } from '@private/components/entities/individuals/__
 import { RootIndicatorSubscription } from '@private/components/observations/indicators/__generated__/RootIndicatorSubscription.graphql';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Individual from './Individual';
 import IndividualKnowledge from './IndividualKnowledge';
@@ -26,7 +27,6 @@ import IndividualEdition from './IndividualEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import IndividualDeletion from './IndividualDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootIndividualsSubscription($id: ID!) {

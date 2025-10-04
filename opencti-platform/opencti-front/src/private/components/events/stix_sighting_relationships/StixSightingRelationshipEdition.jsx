@@ -1,10 +1,10 @@
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { graphql } from 'react-relay';
+import { Drawer } from '@components';
 import StixSightingRelationshipEditionOverview, { stixSightingRelationshipEditionOverviewQuery } from './StixSightingRelationshipEditionOverview';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
-import { Drawer } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

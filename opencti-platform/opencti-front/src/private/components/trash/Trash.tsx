@@ -3,6 +3,7 @@ import DeleteOperationsLines, { deleteOperationsLinesQuery } from '@private/comp
 import { DeleteOperationLineDummy } from '@private/components/trash/all/DeleteOperationLine';
 import ToolBar from '@private/components/data/ToolBar';
 import { InformationOutline } from 'mdi-material-ui';
+import { Box, Tooltip } from '@components';
 import { DeleteOperationLine_node$data } from './all/__generated__/DeleteOperationLine_node.graphql';
 import ListLines from '../../../components/list_lines/ListLines';
 import ExportContextProvider from '../../../utils/ExportContextProvider';
@@ -17,7 +18,6 @@ import useEntityToggle from '../../../utils/hooks/useEntityToggle';
 import useHelper from '../../../utils/hooks/useHelper';
 import { GARBAGE_COLLECTION_MANAGER } from '../../../utils/platformModulesHelper';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
-import { Box, Tooltip } from '@components';
 
 const LOCAL_STORAGE_KEY = 'trash';
 

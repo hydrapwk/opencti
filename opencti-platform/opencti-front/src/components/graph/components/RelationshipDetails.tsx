@@ -3,6 +3,7 @@ import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { Link } from 'react-router-dom';
 import { ExpandLessOutlined, ExpandMoreOutlined } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button, List, ListItemButton, ListItemIcon, ListItemText, Tooltip, Typography } from '@components';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../Loader';
 import { useFormatter } from '../../i18n';
@@ -18,7 +19,6 @@ import ItemCreators from '../../ItemCreators';
 import { RelationshipDetailsQuery } from './__generated__/RelationshipDetailsQuery.graphql';
 import ItemEntityType from '../../ItemEntityType';
 import { GraphLink } from '../graph.types';
-import { Button, List, ListItemButton, ListItemIcon, ListItemText, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

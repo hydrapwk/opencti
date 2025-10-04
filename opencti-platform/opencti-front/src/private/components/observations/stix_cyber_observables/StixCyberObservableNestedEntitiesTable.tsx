@@ -8,6 +8,7 @@ import {
 } from '@private/components/observations/stix_cyber_observables/__generated__/StixCyberObservableNestedEntitiesTable_data.graphql';
 import StixNestedRefRelationshipPopover from '@private/components/common/stix_nested_ref_relationships/StixNestedRefRelationshipPopover';
 import { DraftChip } from '@private/components/common/draft/DraftChip';
+import { Box } from '@components';
 import DataTable from '../../../../components/dataGrid/DataTable';
 import { usePaginationLocalStorage } from '../../../../utils/hooks/useLocalStorage';
 import { UsePreloadedPaginationFragment } from '../../../../utils/hooks/usePreloadedPaginationFragment';
@@ -18,7 +19,6 @@ import ItemIcon from '../../../../components/ItemIcon';
 import { StixCyberObservableNestedEntitiesTable_node$data } from './__generated__/StixCyberObservableNestedEntitiesTable_node.graphql';
 import { useBuildEntityTypeBasedFilterContext } from '../../../../utils/filters/filtersUtils';
 import stopEvent from '../../../../utils/domEvent';
-import { Box } from '@components';
 
 const LOCAL_STORAGE_KEY = 'StixCyberObservableNestedEntitiesTable';
 

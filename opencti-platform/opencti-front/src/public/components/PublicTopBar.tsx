@@ -2,8 +2,8 @@ import { useTheme } from '@mui/styles';
 import AppBar from '@mui/material/AppBar';
 import React from 'react';
 import Toolbar from '@mui/material/Toolbar';
-import type { Theme } from '../../components/Theme';
 import { Button } from '@components';
+import type { Theme } from '../../components/Theme';
 
 const PublicTopBar = ({ title }: { title: string }) => {
   const theme = useTheme<Theme>();

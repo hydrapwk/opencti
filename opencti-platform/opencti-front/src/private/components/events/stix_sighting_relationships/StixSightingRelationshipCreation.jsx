@@ -6,6 +6,7 @@ import withTheme from '@mui/styles/withTheme';
 import withStyles from '@mui/styles/withStyles';
 import CircularProgress from '@mui/material/CircularProgress';
 import { ArrowRightAlt, Close } from '@mui/icons-material';
+import { Drawer, IconButton, Tooltip, Typography } from '@components';
 import { MESSAGING$, commitMutation, fetchQuery } from '../../../../relay/environment';
 import inject18n, { isNone } from '../../../../components/i18n';
 import { itemColor } from '../../../../utils/Colors';
@@ -14,7 +15,6 @@ import ItemIcon from '../../../../components/ItemIcon';
 import { truncate } from '../../../../utils/String';
 import { getMainRepresentative } from '../../../../utils/defaultRepresentatives';
 import StixSightingRelationshipCreationForm from './StixSightingRelationshipCreationForm';
-import { Drawer, IconButton, Tooltip, Typography } from '@components';
 
 const styles = (theme) => ({
   drawerPaper: {

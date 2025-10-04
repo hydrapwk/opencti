@@ -4,9 +4,9 @@ import { compose } from 'ramda';
 import { Link } from 'react-router-dom';
 import { Domain } from '@mui/icons-material';
 import { graphql, createFragmentContainer } from 'react-relay';
+import { List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import { truncate } from '../../../../utils/String';
 import inject18n from '../../../../components/i18n';
-import { List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 class SectorParentSectorsComponent extends Component {
   render() {

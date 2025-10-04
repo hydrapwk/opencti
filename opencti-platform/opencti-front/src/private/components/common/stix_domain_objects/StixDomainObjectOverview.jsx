@@ -4,6 +4,7 @@ import { InformationOutline } from 'mdi-material-ui';
 import { Add, BrushOutlined, Delete } from '@mui/icons-material';
 import { Formik } from 'formik';
 import { useTheme } from '@mui/material/styles';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, IconButton, List, ListItem, ListItemText, Paper, Tooltip, Typography } from '@components';
 import ProcessingStatusOverview from '../../cases/case_rfis/ProcessingStatusOverview';
 import ObjectAssigneeField from '../form/ObjectAssigneeField';
 import ObjectParticipantField from '../form/ObjectParticipantField';
@@ -27,7 +28,6 @@ import ItemOpenVocab from '../../../../components/ItemOpenVocab';
 import ItemParticipants from '../../../../components/ItemParticipants';
 import Transition from '../../../../components/Transition';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, IconButton, List, ListItem, ListItemText, Paper, Tooltip, Typography } from '@components';
 
 const StixDomainObjectOverview = ({
   stixDomainObject,

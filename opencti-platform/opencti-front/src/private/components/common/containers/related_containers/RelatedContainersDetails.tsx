@@ -6,6 +6,7 @@ import {
   RelatedContainersDetailsQuery$variables,
 } from '@private/components/common/containers/related_containers/__generated__/RelatedContainersDetailsQuery.graphql';
 import RelatedContainersDetailsTable from '@private/components/common/containers/related_containers/RelatedContainersDetailsTable';
+import { Grid, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import ExpandableMarkdown from '../../../../../components/ExpandableMarkdown';
 import ItemMarkings from '../../../../../components/ItemMarkings';
@@ -16,7 +17,6 @@ import ItemStatus from '../../../../../components/ItemStatus';
 import ItemEntityType from '../../../../../components/ItemEntityType';
 import ItemCreators from '../../../../../components/ItemCreators';
 import ItemAuthor from '../../../../../components/ItemAuthor';
-import { Grid, Typography } from '@components';
 
 export const relatedContainersDetailsQuery = graphql`
   query RelatedContainersDetailsQuery(

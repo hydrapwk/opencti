@@ -3,11 +3,12 @@ import { useTheme } from '@mui/styles';
 import {
   StixNestedRefRelationshipEditionOverviewQuery,
 } from '@private/components/common/stix_nested_ref_relationships/__generated__/StixNestedRefRelationshipEditionOverviewQuery.graphql';
+import { Drawer } from '@components';
 import StixNestedRefRelationshipEditionOverview, { stixNestedRefRelationshipEditionQuery } from './StixNestedRefRelationshipEditionOverview';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import type { Theme } from '../../../../components/Theme';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
-import { Drawer } from '@components';
+
 interface StixNestedRefRelationshipEditionProps {
   stixNestedRefRelationshipId: string,
   open: boolean,

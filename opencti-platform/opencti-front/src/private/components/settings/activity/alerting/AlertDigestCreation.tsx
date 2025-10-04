@@ -5,6 +5,7 @@ import { Field, Form, Formik } from 'formik';
 import { Close } from '@mui/icons-material';
 import * as Yup from 'yup';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, IconButton, MenuItem, Typography } from '@components';
 import MarkdownField from '../../../../../components/fields/MarkdownField';
 import { handleErrorInForm } from '../../../../../relay/environment';
 import { insertNode } from '../../../../../utils/store';
@@ -20,7 +21,6 @@ import AlertsField from './AlertsField';
 import { AlertingPaginationQuery$variables } from './__generated__/AlertingPaginationQuery.graphql';
 import ObjectMembersField from '../../../common/form/ObjectMembersField';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, IconButton, MenuItem, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -5,6 +5,7 @@ import * as R from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { ExpandLess, ExpandMore, Flag, LocalPlayOutlined } from '@mui/icons-material';
 import { AutoFix } from 'mdi-material-ui';
+import { Collapse, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 import { yearFormat } from '../../../../utils/Time';
 import inject18n from '../../../../components/i18n';
 import StixCoreRelationshipPopover from '../stix_core_relationships/StixCoreRelationshipPopover';
@@ -12,7 +13,6 @@ import ItemYears from '../../../../components/ItemYears';
 import ItemIcon from '../../../../components/ItemIcon';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
-import { Collapse, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 
 const styles = (theme) => ({
   container: {

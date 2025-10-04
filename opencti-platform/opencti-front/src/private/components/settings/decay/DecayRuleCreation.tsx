@@ -8,6 +8,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { AddOutlined, Delete } from '@mui/icons-material';
 import { InformationOutline } from 'mdi-material-ui';
 import ObservableTypesField from '@private/components/common/form/ObservableTypesField';
+import { Box, Button, IconButton, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import TextField from '../../../../components/TextField';
@@ -20,7 +21,6 @@ import decayRuleValidator from './DecayRuleValidator';
 import { DecayRulesLinesPaginationQuery$variables } from './__generated__/DecayRulesLinesPaginationQuery.graphql';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Box, Button, IconButton, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

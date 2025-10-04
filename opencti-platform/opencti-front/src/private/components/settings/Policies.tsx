@@ -7,6 +7,23 @@ import { VpnKeyOutlined } from '@mui/icons-material';
 import GroupSetDefaultGroupForIngestionUsers from '@private/components/settings/groups/GroupSetDefaultGroupForIngestionUsers';
 import EEChip from '@private/components/common/entreprise_edition/EEChip';
 import EETooltip from '@private/components/common/entreprise_edition/EETooltip';
+import {
+  Alert,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  MenuItem,
+  Paper,
+  Typography,
+} from '@components';
 import DangerZoneBlock from '../common/danger_zone/DangerZoneBlock';
 import AccessesMenu from './AccessesMenu';
 import ObjectOrganizationField from '../common/form/ObjectOrganizationField';
@@ -27,7 +44,6 @@ import Transition from '../../../components/Transition';
 import type { Theme } from '../../../components/Theme';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
 import { FieldOption } from '../../../utils/field';
-import { Alert, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, List, ListItem, ListItemIcon, ListItemText, MenuItem, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

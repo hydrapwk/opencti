@@ -3,6 +3,7 @@ import * as R from 'ramda';
 import { Link } from 'react-router-dom';
 import { StarBorderOutlined } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
+import { Card, CardActionArea, CardContent, CardHeader, IconButton, Skeleton, Typography } from '@components';
 import { getFileUri } from '../../../../utils/utils';
 import ItemIcon from '../../../../components/ItemIcon';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
@@ -12,7 +13,6 @@ import StixCoreObjectLabels from '../stix_core_objects/StixCoreObjectLabels';
 import { addBookmark, deleteBookMark } from '../stix_domain_objects/StixDomainObjectBookmark';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
-import { Card, CardActionArea, CardContent, CardHeader, IconButton, Skeleton, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

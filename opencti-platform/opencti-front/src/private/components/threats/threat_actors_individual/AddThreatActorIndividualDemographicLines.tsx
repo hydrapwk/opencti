@@ -7,9 +7,11 @@ import useApiMutation from 'src/utils/hooks/useApiMutation';
 import {
   AddThreatActorIndividualDemographicLines_data$key,
 } from '@private/components/threats/threat_actors_individual/__generated__/AddThreatActorIndividualDemographicLines_data.graphql';
-import { ThreatActorIndividual_ThreatActorIndividual$data } from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorIndividual_ThreatActorIndividual.graphql';
-import { deleteNodeFromEdge } from '../../../../utils/store';
+import {
+  ThreatActorIndividual_ThreatActorIndividual$data,
+} from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorIndividual_ThreatActorIndividual.graphql';
 import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
+import { deleteNodeFromEdge } from '../../../../utils/store';
 
 export const scoRelationshipAdd = graphql`
   mutation AddThreatActorIndividualDemographicLinesRelationAddMutation(

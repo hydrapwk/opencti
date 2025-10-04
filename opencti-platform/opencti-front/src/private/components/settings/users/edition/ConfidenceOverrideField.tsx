@@ -5,6 +5,7 @@ import { FieldProps } from 'formik';
 import { OverrideFormData } from '@private/components/settings/users/edition/UserEditionConfidence';
 import ConfidenceField from '@private/components/common/form/ConfidenceField';
 import { useTheme } from '@mui/styles';
+import { Accordion, AccordionDetails, AccordionSummary, Button, IconButton, Autocomplete as MUIAutocomplete, TextField, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import useDeletion from '../../../../../utils/hooks/useDeletion';
 import DeleteDialog from '../../../../../components/DeleteDialog';
@@ -12,7 +13,7 @@ import ItemIcon from '../../../../../components/ItemIcon';
 import type { Theme } from '../../../../../components/Theme';
 import { isEmptyField } from '../../../../../utils/utils';
 import useSchema, { AvailableEntityOption } from '../../../../../utils/hooks/useSchema';
-import { Accordion, AccordionDetails, AccordionSummary, Button, IconButton, Autocomplete as MUIAutocomplete, TextField, Tooltip, Typography } from '@components';
+
 interface UserConfidenceOverridesFieldComponentProps
   extends FieldProps<OverrideFormData> {
   index: number;

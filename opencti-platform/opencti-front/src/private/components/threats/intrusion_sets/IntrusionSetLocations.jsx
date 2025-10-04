@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { LinkOff } from '@mui/icons-material';
 import { graphql, createFragmentContainer } from 'react-relay';
 import * as R from 'ramda';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import AddLocations from './AddLocations';
 import { addLocationsMutationRelationDelete } from './AddLocationsLines';
 import { APP_BASE_PATH, commitMutation } from '../../../../relay/environment';
@@ -15,7 +16,6 @@ import ItemIcon from '../../../../components/ItemIcon';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 const styles = (theme) => ({
   avatar: {

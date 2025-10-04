@@ -4,6 +4,7 @@ import { graphql, useSubscription, usePreloadedQuery, PreloadedQuery } from 'rea
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Vulnerability from './Vulnerability';
 import VulnerabilityKnowledge from './VulnerabilityKnowledge';
@@ -23,7 +24,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import VulnerabilityEdition from './VulnerabilityEdition';
 import VulnerabilityDeletion from './VulnerabilityDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootVulnerabilitySubscription($id: ID!) {

@@ -5,6 +5,7 @@ import { graphql } from 'react-relay';
 import { ConnectionHandler, RecordProxy, RecordSourceSelectorProxy } from 'relay-runtime';
 import makeStyles from '@mui/styles/makeStyles';
 import { FormikConfig } from 'formik/dist/types';
+import { Alert, AlertTitle, Box, Button, FormControlLabel, Switch } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import ObjectMembersField from '../../common/form/ObjectMembersField';
 import { useFormatter } from '../../../../components/i18n';
@@ -18,7 +19,7 @@ import Drawer, { DrawerControlledDialProps } from '../../common/drawer/Drawer';
 import useFiltersState from '../../../../utils/filters/useFiltersState';
 import { PaginationOptions } from '../../../../components/list_lines';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Alert, AlertTitle, Box, Button, FormControlLabel, Switch } from '@components';
+
 interface TaxiiCollectionCreationProps {
   paginationOptions: PaginationOptions
 }

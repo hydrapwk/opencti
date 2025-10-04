@@ -2,6 +2,7 @@ import { TextFieldProps, TextFieldVariants } from '@mui/material';
 import React, { Suspense, useMemo, useState } from 'react';
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { useTheme } from '@mui/styles';
+import { Autocomplete, Checkbox, Chip, TextField } from '@components';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import { EntitySelectSearchQuery, FilterMode, FilterOperator } from './__generated__/EntitySelectSearchQuery.graphql';
 import useDebounceCallback from '../../../../utils/hooks/useDebounceCallback';
@@ -11,7 +12,6 @@ import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
 import { FieldOption } from '../../../../utils/field';
 import { truncate } from '../../../../utils/String';
-import { Autocomplete, Checkbox, Chip, TextField } from '@components';
 
 const entitySelectSearchQuery = graphql`
   query EntitySelectSearchQuery($search: String, $filters: FilterGroup) {

@@ -3,13 +3,13 @@ import { FormikHelpers } from 'formik/dist/types';
 import { useTheme } from '@mui/styles';
 import { Field, Formik } from 'formik';
 import { disseminationListValidator } from '@private/components/settings/dissemination_lists/DisseminationListUtils';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import TextField from '../../../../components/TextField';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import { parseEmailList } from '../../../../utils/email';
 import { MESSAGING$ } from '../../../../relay/environment';
-import { Button } from '@components';
 
 export interface DisseminationListFormData {
   name: string;

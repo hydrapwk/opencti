@@ -18,6 +18,7 @@ import React from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { useTheme } from '@mui/material/styles';
 import { pirLogRedirectUri } from '@private/components/pir/pir-history-utils';
+import { Box, Tooltip, Typography } from '@components';
 import PirHistoryMessage from '../PirHistoryMessage';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
@@ -26,7 +27,6 @@ import ItemIcon from '../../../../components/ItemIcon';
 import { PirOverviewHistoryPirFragment$key } from './__generated__/PirOverviewHistoryPirFragment.graphql';
 import { PirOverviewHistoryFragment$key } from './__generated__/PirOverviewHistoryFragment.graphql';
 import Paper from '../../../../components/Paper';
-import { Box, Tooltip, Typography } from '@components';
 
 const pirFragment = graphql`
   fragment PirOverviewHistoryPirFragment on Pir {

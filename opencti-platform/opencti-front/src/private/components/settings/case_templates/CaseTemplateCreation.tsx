@@ -5,6 +5,7 @@ import { RecordSourceSelectorProxy } from 'relay-runtime';
 import * as Yup from 'yup';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { useTheme } from '@mui/styles';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import TextField from '../../../../components/TextField';
@@ -14,7 +15,6 @@ import CaseTemplateTasks from '../../common/form/CaseTemplateTasks';
 import { CaseTemplateLinesPaginationQuery$variables } from './__generated__/CaseTemplateLinesPaginationQuery.graphql';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
 import { commitMutation, defaultCommitMutation } from '../../../../relay/environment';
-import { Button } from '@components';
 
 const caseTemplateMutation = graphql`
   mutation CaseTemplateCreationMutation($input: CaseTemplateAddInput!) {

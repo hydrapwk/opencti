@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { LockPattern } from 'mdi-material-ui';
 import { LinkOff } from '@mui/icons-material';
 import { createFragmentContainer, graphql } from 'react-relay';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
 import AddSubAttackPattern from './AddSubAttackPattern';
 import { addSubAttackPatternsMutationRelationDelete } from './AddSubAttackPatternsLines';
@@ -11,7 +12,6 @@ import { commitMutation } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 const AttackPatternSubAttackPatternsComponent = ({ attackPattern }) => {
   const { t_i18n } = useFormatter();

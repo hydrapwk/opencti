@@ -2,6 +2,7 @@ import { InformationOutline } from 'mdi-material-ui';
 import React from 'react';
 import { FieldProps } from 'formik';
 import { Alert, TextField as MuiTextField, Tooltip } from '@components';
+
 interface JsonMapperRepresentationAttributeOptionProps extends FieldProps<string> {
   placeholder: string
   info?: string

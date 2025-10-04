@@ -1,13 +1,13 @@
-import React, { FunctionComponent, useEffect, useRef } from 'react';
-import { ChipOwnProps } from '@mui/material/Chip/Chip';
-import { DataColumns } from './list_lines';
-import { GqlFilterGroup, isFilterGroupNotEmpty, removeIdFromFilterGroupObject, FiltersRestrictions, FilterSearchContext } from '../utils/filters/filtersUtils';
+import React, { type FunctionComponent, useEffect, useRef } from 'react';
+import { type ChipOwnProps } from '@mui/material/Chip/Chip';
+import { type DataColumns } from './list_lines';
+import { type GqlFilterGroup, isFilterGroupNotEmpty, removeIdFromFilterGroupObject, type FiltersRestrictions, type FilterSearchContext } from '../utils/filters/filtersUtils';
 import useQueryLoading from '../utils/hooks/useQueryLoading';
 // eslint-disable-next-line import/no-cycle
 import FilterIconButtonContainer from './FilterIconButtonContainer';
 import { filterValuesContentQuery } from './FilterValuesContent';
 import { FilterValuesContentQuery } from './__generated__/FilterValuesContentQuery.graphql';
-import { Filter, FilterGroup, handleFilterHelpers } from '../utils/filters/filtersHelpers-types';
+import { type Filter, type FilterGroup, handleFilterHelpers } from '../utils/filters/filtersHelpers-types';
 
 export interface FilterIconButtonProps {
   availableFilterKeys?: string[];

@@ -3,12 +3,12 @@ import * as R from 'ramda';
 import { createRefetchContainer, graphql } from 'react-relay';
 import { PlayCircleOutlined } from '@mui/icons-material';
 import withStyles from '@mui/styles/withStyles';
+import { Alert, IconButton, List, ListItem, ListItemIcon, ListItemText, Tooltip } from '@components';
 import inject18n, { useFormatter } from '../../../../components/i18n';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNENRICHMENT } from '../../../../utils/hooks/useGranted';
 import ItemIcon from '../../../../components/ItemIcon';
 import { commitMutation, MESSAGING$ } from '../../../../relay/environment';
-import { Alert, IconButton, List, ListItem, ListItemIcon, ListItemText, Tooltip } from '@components';
 
 export const stixCoreObjectEnrollPlaybookLinesQuery = graphql`
   query StixCoreObjectEnrollPlaybookLinesQuery($id: String!) {

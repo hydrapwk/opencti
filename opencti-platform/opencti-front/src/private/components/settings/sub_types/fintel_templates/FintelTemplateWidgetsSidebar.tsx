@@ -6,6 +6,7 @@ import { graphql, useFragment } from 'react-relay';
 import { useFintelTemplateContext } from '@private/components/settings/sub_types/fintel_templates/FintelTemplateContext';
 import { useParams } from 'react-router-dom';
 import { fintelTemplateVariableNameChecker } from '@private/components/widgets/useWidgetConfigValidateForm';
+import { Drawer } from '@components';
 import useFintelTemplateEdit from './useFintelTemplateEdit';
 import { FintelTemplateWidgetsSidebar_template$key } from './__generated__/FintelTemplateWidgetsSidebar_template.graphql';
 import FintelTemplateWidgetsList, { FintelTemplateWidget } from './FintelTemplateWidgetsList';
@@ -18,7 +19,6 @@ import { deserializeFilterGroupForFrontend, emptyFilterGroup, removeIdFromFilter
 import DeleteDialog from '../../../../../components/DeleteDialog';
 import useDeletion from '../../../../../utils/hooks/useDeletion';
 import { toCamelCase } from '../../../../../utils/String';
-import { Drawer } from '@components';
 
 export const FINTEL_TEMPLATE_SIDEBAR_WIDTH = 350;
 

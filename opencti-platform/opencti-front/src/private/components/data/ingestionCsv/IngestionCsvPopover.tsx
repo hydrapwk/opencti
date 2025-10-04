@@ -8,6 +8,7 @@ import { IngestionCsvLinesPaginationQuery$variables } from '@private/components/
 import { IngestionCsvEditionContainerQuery } from '@private/components/data/ingestionCsv/__generated__/IngestionCsvEditionContainerQuery.graphql';
 import { IngestionCsvCreationContainer } from '@private/components/data/ingestionCsv/IngestionCsvCreation';
 import fileDownload from 'js-file-download';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { deleteNode } from '../../../../utils/store';
 import { useFormatter } from '../../../../components/i18n';
@@ -18,7 +19,6 @@ import useDeletion from '../../../../utils/hooks/useDeletion';
 import stopEvent from '../../../../utils/domEvent';
 import { fetchQuery } from '../../../../relay/environment';
 import { IngestionCsvPopoverExportQuery$data } from './__generated__/IngestionCsvPopoverExportQuery.graphql';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 
 const ingestionCsvPopoverDeletionMutation = graphql`
   mutation IngestionCsvPopoverDeletionMutation($id: ID!) {

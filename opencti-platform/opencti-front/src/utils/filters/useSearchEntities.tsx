@@ -1,35 +1,35 @@
 import * as R from 'ramda';
-import { BaseSyntheticEvent, Dispatch, useState } from 'react';
+import { type BaseSyntheticEvent, type Dispatch, useState } from 'react';
 import { graphql } from 'react-relay';
 import { identitySearchCreatorsSearchQuery, identitySearchIdentitiesSearchQuery } from '@private/components/common/identities/IdentitySearch';
 import { stixDomainObjectsLinesSearchQuery } from '@private/components/common/stix_domain_objects/StixDomainObjectsLines';
 import { labelsSearchQuery } from '@private/components/settings/LabelsQuery';
 import { vocabularySearchQuery } from '@private/components/settings/VocabularyQuery';
 import { objectAssigneeFieldAssigneesSearchQuery, objectAssigneeFieldMembersSearchQuery } from '@private/components/common/form/ObjectAssigneeField';
-import { IdentitySearchIdentitiesSearchQuery$data } from '@private/components/common/identities/__generated__/IdentitySearchIdentitiesSearchQuery.graphql';
-import { IdentitySearchCreatorsSearchQuery$data } from '@private/components/common/identities/__generated__/IdentitySearchCreatorsSearchQuery.graphql';
-import { ObjectAssigneeFieldAssigneesSearchQuery$data } from '@private/components/common/form/__generated__/ObjectAssigneeFieldAssigneesSearchQuery.graphql';
-import { StixDomainObjectsLinesSearchQuery$data } from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectsLinesSearchQuery.graphql';
-import { LabelsQuerySearchQuery$data } from '@private/components/settings/__generated__/LabelsQuerySearchQuery.graphql';
-import { VocabularyQuery$data } from '@private/components/settings/__generated__/VocabularyQuery.graphql';
-import { ObjectAssigneeFieldMembersSearchQuery$data } from '@private/components/common/form/__generated__/ObjectAssigneeFieldMembersSearchQuery.graphql';
-import { ObjectParticipantFieldParticipantsSearchQuery$data } from '@private/components/common/form/__generated__/ObjectParticipantFieldParticipantsSearchQuery.graphql';
+import { type IdentitySearchIdentitiesSearchQuery$data } from '@private/components/common/identities/__generated__/IdentitySearchIdentitiesSearchQuery.graphql';
+import { type IdentitySearchCreatorsSearchQuery$data } from '@private/components/common/identities/__generated__/IdentitySearchCreatorsSearchQuery.graphql';
+import { type ObjectAssigneeFieldAssigneesSearchQuery$data } from '@private/components/common/form/__generated__/ObjectAssigneeFieldAssigneesSearchQuery.graphql';
+import { type StixDomainObjectsLinesSearchQuery$data } from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectsLinesSearchQuery.graphql';
+import { type LabelsQuerySearchQuery$data } from '@private/components/settings/__generated__/LabelsQuerySearchQuery.graphql';
+import { type VocabularyQuery$data } from '@private/components/settings/__generated__/VocabularyQuery.graphql';
+import { type ObjectAssigneeFieldMembersSearchQuery$data } from '@private/components/common/form/__generated__/ObjectAssigneeFieldMembersSearchQuery.graphql';
+import { type ObjectParticipantFieldParticipantsSearchQuery$data } from '@private/components/common/form/__generated__/ObjectParticipantFieldParticipantsSearchQuery.graphql';
 import { objectParticipantFieldParticipantsSearchQuery } from '@private/components/common/form/ObjectParticipantField';
 import { useTheme } from '@mui/styles';
 import { StatusTemplateFieldQuery } from '@private/components/common/form/StatusTemplateField';
-import { StatusTemplateFieldSearchQuery$data } from '@private/components/common/form/__generated__/StatusTemplateFieldSearchQuery.graphql';
+import { type StatusTemplateFieldSearchQuery$data } from '@private/components/common/form/__generated__/StatusTemplateFieldSearchQuery.graphql';
 import { externalReferencesQueriesSearchQuery } from '@private/components/analyses/external_references/ExternalReferencesQueries';
-import { ExternalReferencesQueriesSearchQuery$data } from '@private/components/analyses/external_references/__generated__/ExternalReferencesQueriesSearchQuery.graphql';
+import { type ExternalReferencesQueriesSearchQuery$data } from '@private/components/analyses/external_references/__generated__/ExternalReferencesQueriesSearchQuery.graphql';
 import { NotifierFieldQuery } from '@private/components/common/form/NotifierField';
-import { NotifierFieldSearchQuery$data } from '@private/components/common/form/__generated__/NotifierFieldSearchQuery.graphql';
+import { type NotifierFieldSearchQuery$data } from '@private/components/common/form/__generated__/NotifierFieldSearchQuery.graphql';
 import { killChainPhasesSearchQuery } from '@private/components/settings/KillChainPhases';
-import { KillChainPhasesSearchQuery$data } from '@private/components/settings/__generated__/KillChainPhasesSearchQuery.graphql';
+import { type KillChainPhasesSearchQuery$data } from '@private/components/settings/__generated__/KillChainPhasesSearchQuery.graphql';
 import { triggersQueriesSearchQuery } from '@private/components/profile/triggers/TriggersQueries';
-import { TriggersQueriesSearchQuery$data } from '@private/components/profile/triggers/__generated__/TriggersQueriesSearchQuery.graphql';
-import { FilterOptionValue } from '@private/components/common/lists/FilterAutocomplete';
+import { type TriggersQueriesSearchQuery$data } from '@private/components/profile/triggers/__generated__/TriggersQueriesSearchQuery.graphql';
+import { type FilterOptionValue } from '@private/components/common/lists/FilterAutocomplete';
 import { toolBarUsersLinesSearchQuery } from '@private/components/data/DataTableToolBar';
-import { DataTableToolBarUsersLinesSearchQuery$data } from '@private/components/data/__generated__/DataTableToolBarUsersLinesSearchQuery.graphql';
-import useAuth, { FilterDefinition } from '../hooks/useAuth';
+import { type DataTableToolBarUsersLinesSearchQuery$data } from '@private/components/data/__generated__/DataTableToolBarUsersLinesSearchQuery.graphql';
+import useAuth, { type FilterDefinition } from '../hooks/useAuth';
 import { useSearchEntitiesStixCoreObjectsSearchQuery$data } from './__generated__/useSearchEntitiesStixCoreObjectsSearchQuery.graphql';
 import { useFormatter } from '../../components/i18n';
 import { getMainRepresentative } from '../defaultRepresentatives';
@@ -37,7 +37,7 @@ import { fetchQuery } from '../../relay/environment';
 import { useSearchEntitiesSchemaSCOSearchQuery$data } from './__generated__/useSearchEntitiesSchemaSCOSearchQuery.graphql';
 import type { Theme } from '../../components/Theme';
 import useAttributes, { containerTypes } from '../hooks/useAttributes';
-import { contextFilters, entityTypesFilters, FilterSearchContext, getFilterDefinitionFromFilterKeysMap, ME_FILTER_VALUE } from './filtersUtils';
+import { contextFilters, entityTypesFilters, type FilterSearchContext, getFilterDefinitionFromFilterKeysMap, ME_FILTER_VALUE } from './filtersUtils';
 import { useSearchEntitiesDashboardsQuery$data } from './__generated__/useSearchEntitiesDashboardsQuery.graphql';
 import { convertMarking } from '../edition';
 import useGranted, { SETTINGS_SETACCESSES, VIRTUAL_ORGANIZATION_ADMIN } from '../hooks/useGranted';
@@ -100,7 +100,7 @@ const filtersStixCoreObjectsSearchQuery = graphql`
           ... on Organization {
             name
             description
-          }          
+          }
           ... on SecurityPlatform {
             name
             description

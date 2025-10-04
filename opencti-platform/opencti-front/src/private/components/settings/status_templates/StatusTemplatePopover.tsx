@@ -6,6 +6,7 @@ import { PopoverProps } from '@mui/material/Popover';
 import Drawer from '@private/components/common/drawer/Drawer';
 import { StatusTemplatesLinesPaginationQuery$variables } from '@private/components/settings/status_templates/__generated__/StatusTemplatesLinesPaginationQuery.graphql';
 import { StatusTemplatesLine_node$data } from '@private/components/settings/status_templates/__generated__/StatusTemplatesLine_node.graphql';
+import { IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { commitMutation, QueryRenderer } from '../../../../relay/environment';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
@@ -14,7 +15,6 @@ import { deleteNode } from '../../../../utils/store';
 import { StatusTemplatePopoverEditionQuery$data } from './__generated__/StatusTemplatePopoverEditionQuery.graphql';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { IconButton, Menu, MenuItem } from '@components';
 
 const statusTemplatePopoverDeletionMutation = graphql`
   mutation StatusTemplatePopoverDeletionMutation($id: ID!) {

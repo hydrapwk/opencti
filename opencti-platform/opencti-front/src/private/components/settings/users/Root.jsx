@@ -4,6 +4,7 @@ import { Link, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { graphql, useLazyLoadQuery, usePreloadedQuery, useQueryLoader, useSubscription } from 'react-relay';
 import { styled } from '@mui/material';
 import { useTheme } from '@mui/styles';
+import { Box, MenuItem, Tab, Tabs, Typography } from '@components';
 import ConvertUser from './ConvertUser';
 import UserDeletionDialog from './UserDeletionDialog';
 import UserEmailSend from './UserEmailSend';
@@ -19,7 +20,6 @@ import Breadcrumbs from '../../../../components/Breadcrumbs';
 import UserEdition from './UserEdition';
 import PopoverMenu from '../../../../components/PopoverMenu';
 import UserHistoryTab from './UserHistoryTab';
-import { Box, MenuItem, Tab, Tabs, Typography } from '@components';
 
 const userEditionQuery = graphql`
   query RootUserEditionQuery($id: String!) {

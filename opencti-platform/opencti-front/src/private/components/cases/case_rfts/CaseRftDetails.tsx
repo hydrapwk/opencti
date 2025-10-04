@@ -2,12 +2,12 @@ import makeStyles from '@mui/styles/makeStyles';
 import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import RelatedContainers from '@private/components/common/containers/related_containers/RelatedContainers';
+import { Chip, Divider, Grid, Paper, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { useFormatter } from '../../../../components/i18n';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
 import type { Theme } from '../../../../components/Theme';
 import { CaseRftDetails_case$key } from './__generated__/CaseRftDetails_case.graphql';
-import { Chip, Divider, Grid, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

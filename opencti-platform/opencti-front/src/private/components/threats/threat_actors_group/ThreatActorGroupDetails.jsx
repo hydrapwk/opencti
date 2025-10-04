@@ -4,6 +4,7 @@ import { compose } from 'ramda';
 import { graphql, createFragmentContainer } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import { BullseyeArrow, ArmFlexOutline, DramaMasks } from 'mdi-material-ui';
+import { Chip, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Tooltip, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import inject18n from '../../../../components/i18n';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
@@ -11,7 +12,6 @@ import FieldOrEmpty from '../../../../components/FieldOrEmpty';
 import ImageCarousel from '../../../../components/ImageCarousel';
 import ThreatActorGroupLocation from './ThreatActorGroupLocation';
 import { truncate } from '../../../../utils/String';
-import { Chip, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Tooltip, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

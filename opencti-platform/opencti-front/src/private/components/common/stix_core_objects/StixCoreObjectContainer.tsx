@@ -9,13 +9,27 @@ import {
 } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectContainerTaskAddMutation.graphql';
 import { AutocompleteInputChangeReason } from '@mui/material/useAutocomplete/useAutocomplete';
 import { StixCoreObjectContainerContainersQuery$data } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectContainerContainersQuery.graphql';
+import {
+  Autocomplete,
+  Button,
+  Checkbox,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  FormControlLabel,
+  IconButton,
+  InputAdornment,
+  TextField,
+  ToggleButton,
+  Tooltip,
+} from '@components';
 import StixDomainObjectCreation from '../stix_domain_objects/StixDomainObjectCreation';
 import { useFormatter } from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
 import Transition from '../../../../components/Transition';
 import { fetchQuery, MESSAGING$ } from '../../../../relay/environment';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
-import { Autocomplete, Button, Checkbox, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, IconButton, InputAdornment, TextField, ToggleButton, Tooltip } from '@components';
 
 const stixCoreObjectContainerTaskAddMutation = graphql`
   mutation StixCoreObjectContainerTaskAddMutation($input: ListTaskAddInput!) {

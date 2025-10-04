@@ -3,9 +3,9 @@ import * as PropTypes from 'prop-types';
 import { compose } from 'ramda';
 import { graphql, createFragmentContainer } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
+import { Grid, Paper, Typography } from '@components';
 import StixCoreObjectsDonut from '../../common/stix_core_objects/StixCoreObjectsDonut';
 import inject18n from '../../../../components/i18n';
-import { Grid, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

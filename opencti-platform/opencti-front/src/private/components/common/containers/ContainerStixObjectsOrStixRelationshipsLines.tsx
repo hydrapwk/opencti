@@ -1,12 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import { createPaginationContainer, graphql } from 'react-relay';
+import { List } from '@components';
 import { ContainerStixObjectOrStixRelationshipLine } from './ContainerStixObjectOrStixRelationshipLine';
 import { DataColumns } from '../../../../components/list_lines';
 import { ContainerStixObjectsOrStixRelationshipsLines_container$data } from './__generated__/ContainerStixObjectsOrStixRelationshipsLines_container.graphql';
 import { ContainerStixObjectsOrStixRelationshipsLinesQuery$variables } from './__generated__/ContainerStixObjectsOrStixRelationshipsLinesQuery.graphql';
 import { useFormatter } from '../../../../components/i18n';
 import { NO_DATA_WIDGET_MESSAGE } from '../../../../components/dashboard/WidgetNoData';
-import { List } from '@components';
+
 interface ContainerStixObjectsOrStixRelationshipsLinesProps {
   dataColumns: DataColumns;
   container: ContainerStixObjectsOrStixRelationshipsLines_container$data;

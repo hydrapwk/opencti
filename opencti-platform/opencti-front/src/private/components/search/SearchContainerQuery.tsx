@@ -3,6 +3,7 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import EEChip from '@private/components/common/entreprise_edition/EEChip';
 import { graphql, PreloadedQuery, usePreloadedQuery, useQueryLoader } from 'react-relay';
 import { useTheme } from '@mui/styles';
+import { Badge, Box, Tab, Tabs } from '@components';
 import ExportContextProvider from '../../../utils/ExportContextProvider';
 import { useFormatter } from '../../../components/i18n';
 import { decodeSearchKeyword } from '../../../utils/SearchUtils';
@@ -11,7 +12,6 @@ import { SearchContainerQueryFilesCountQuery } from './__generated__/SearchConta
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import type { Theme } from '../../../components/Theme';
 import Loader from '../../../components/Loader';
-import { Badge, Box, Tab, Tabs } from '@components';
 
 const searchContainerQueryFilesCountQuery = graphql`
   query SearchContainerQueryFilesCountQuery($search: String) {

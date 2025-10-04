@@ -1,10 +1,11 @@
 import React, { FunctionComponent, useState } from 'react';
 import { graphql } from 'react-relay';
+import { Autocomplete, TextField } from '@components';
 import { AssociatedEntityFieldQuery$data } from './__generated__/AssociatedEntityFieldQuery.graphql';
 import ItemIcon from '../../../../components/ItemIcon';
 import { useFormatter } from '../../../../components/i18n';
 import { fetchQuery } from '../../../../relay/environment';
-import { Autocomplete, TextField } from '@components';
+
 interface AssociatedEntityFieldProps {
   name: string;
   label: string;

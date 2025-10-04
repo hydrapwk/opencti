@@ -1,6 +1,7 @@
 import React, { Suspense, useRef } from 'react';
 import { graphql, PreloadedQuery, usePreloadedQuery, useQueryLoader } from 'react-relay';
 import CustomizationMenu from '@private/components/settings/CustomizationMenu';
+import { Alert } from '@components';
 import RulesHeader from './RulesHeader';
 import { RulesQuery } from './__generated__/RulesQuery.graphql';
 import { useFormatter } from '../../../../components/i18n';
@@ -12,7 +13,6 @@ import useConnectedDocumentModifier from '../../../../utils/hooks/useConnectedDo
 import RulesList from './RulesList';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import useInterval from '../../../../utils/hooks/useInterval';
-import { Alert } from '@components';
 
 export const rulesQuery = graphql`
   query RulesQuery($startDate: DateTime!, $endDate: DateTime) {

@@ -2,10 +2,10 @@ import React, { FunctionComponent } from 'react';
 import { createFragmentContainer, graphql, usePreloadedQuery } from 'react-relay';
 import { Security } from '@mui/icons-material';
 import { PreloadedQuery } from 'react-relay/relay-hooks/EntryPointTypes';
+import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@components';
 import { GroupEditionRoles_group$data } from './__generated__/GroupEditionRoles_group.graphql';
 import { GroupEditionRolesLinesSearchQuery } from './__generated__/GroupEditionRolesLinesSearchQuery.graphql';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@components';
 
 const groupEditionAddRoles = graphql`
     mutation GroupEditionRolesRelationAddMutation(

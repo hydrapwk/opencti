@@ -5,6 +5,7 @@ import { FormikConfig, FormikHelpers } from 'formik/dist/types';
 import React, { FunctionComponent } from 'react';
 import { graphql } from 'react-relay';
 import * as Yup from 'yup';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, IconButton, MenuItem, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import SelectField from '../../../../components/fields/SelectField';
@@ -19,7 +20,6 @@ import NotifierField from '../../common/form/NotifierField';
 import { TriggersLinesPaginationQuery$variables } from './__generated__/TriggersLinesPaginationQuery.graphql';
 import TriggersField from './TriggersField';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, IconButton, MenuItem, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

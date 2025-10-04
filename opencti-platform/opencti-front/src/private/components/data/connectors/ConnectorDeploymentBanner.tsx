@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
+import { Alert, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
-import { Alert, Typography } from '@components';
 
 const URL = 'https://docs.opencti.io/latest/deployment/integration-manager/';
 

@@ -1,5 +1,6 @@
 import React, { CSSProperties, FunctionComponent, ReactNode } from 'react';
 import { Paper, Typography } from '@components';
+
 interface WidgetContainerProps {
   children: ReactNode
   height?: CSSProperties['height']

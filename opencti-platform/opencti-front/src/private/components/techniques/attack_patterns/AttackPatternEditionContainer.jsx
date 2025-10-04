@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
+import { Box, Tab, Tabs } from '@components';
 import AttackPatternEditionOverview from './AttackPatternEditionOverview';
 import AttackPatternEditionDetails from './AttackPatternEditionDetails';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import { useFormatter } from '../../../../components/i18n';
 import Drawer from '../../common/drawer/Drawer';
-import { Box, Tab, Tabs } from '@components';
 
 const AttackPatternEditionContainer = (props) => {
   const { t_i18n } = useFormatter();

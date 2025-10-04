@@ -6,11 +6,11 @@ import { InformationOutline } from 'mdi-material-ui';
 import EEChip from '@private/components/common/entreprise_edition/EEChip';
 import EETooltip from '@private/components/common/entreprise_edition/EETooltip';
 import { makeStyles } from '@mui/styles';
+import { Paper, Tooltip, Typography } from '@components';
 import { SettingsQuery$data } from '../__generated__/SettingsQuery.graphql';
 import { useFormatter } from '../../../../components/i18n';
 import { SubscriptionFocus } from '../../../../components/Subscription';
 import TextField from '../../../../components/TextField';
-import { Paper, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

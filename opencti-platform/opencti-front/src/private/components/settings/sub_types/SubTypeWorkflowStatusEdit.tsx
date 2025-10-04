@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { graphql, PreloadedQuery } from 'react-relay';
 import { Field, Form, Formik } from 'formik';
 import { FormikConfig } from 'formik/dist/types';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
 import StatusTemplateField from '../../common/form/StatusTemplateField';
@@ -11,7 +12,6 @@ import { SubTypeWorkflowStatusEditQuery } from './__generated__/SubTypeWorkflowS
 import { StatusForm, statusValidation } from './statusFormUtils';
 import Transition from '../../../../components/Transition';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 const statusEditFieldPatchMutation = graphql`
   mutation SubTypeWorkflowStatusEditFieldPatchMutation(

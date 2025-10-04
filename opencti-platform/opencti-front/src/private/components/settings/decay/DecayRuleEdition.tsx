@@ -7,6 +7,7 @@ import { AddOutlined, Delete } from '@mui/icons-material';
 import { InformationOutline } from 'mdi-material-ui';
 import { FormikConfig } from 'formik/dist/types';
 import ObservableTypesField from '@private/components/common/form/ObservableTypesField';
+import { Box, IconButton, Tooltip, Typography } from '@components';
 import decayRuleValidator from './DecayRuleValidator';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
@@ -17,7 +18,6 @@ import { handleError } from '../../../../relay/environment';
 import { DecayRule_decayRule$data } from './__generated__/DecayRule_decayRule.graphql';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import EditEntityControlledDial from '../../../../components/EditEntityControlledDial';
-import { Box, IconButton, Tooltip, Typography } from '@components';
 
 export const decayRuleEditionMutation = graphql`
   mutation DecayRuleEditionMutation($id: ID!, $input: [EditInput!]!) {

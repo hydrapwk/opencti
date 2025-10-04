@@ -2,11 +2,11 @@ import React from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { Link } from 'react-router-dom';
 import makeStyles from '@mui/styles/makeStyles';
+import { List, ListItemButton, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 import { truncate } from '../../../../utils/String';
 import ItemIcon from '../../../../components/ItemIcon';
 import { useFormatter } from '../../../../components/i18n';
 import { computeLink } from '../../../../utils/Entity';
-import { List, ListItemButton, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -4,6 +4,7 @@ import { ArrowRightAlt } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
 import * as Yup from 'yup';
 import * as R from 'ramda';
+import { Button, MenuItem } from '@components';
 import SelectField from '../../../../components/fields/SelectField';
 import ConfidenceField from '../form/ConfidenceField';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
@@ -21,7 +22,6 @@ import { useSchemaCreationValidation } from '../../../../utils/hooks/useEntitySe
 import useDefaultValues from '../../../../utils/hooks/useDefaultValues';
 import { getMainRepresentative } from '../../../../utils/defaultRepresentatives';
 import { minutesBefore, now } from '../../../../utils/Time';
-import { Button, MenuItem } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

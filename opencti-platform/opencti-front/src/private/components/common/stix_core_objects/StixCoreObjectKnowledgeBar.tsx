@@ -8,12 +8,12 @@ import {
   StixCoreObjectKnowledgeBar_stixCoreObject$key,
 } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectKnowledgeBar_stixCoreObject.graphql';
 import { useTheme } from '@mui/styles';
+import { Box, Drawer, ListItemIcon, ListItemText, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { useSettingsMessagesBannerHeight } from '../../settings/settings_messages/SettingsMessagesBanner';
 import ItemIcon from '../../../../components/ItemIcon';
 import type { Theme } from '../../../../components/Theme';
-import { Box, Drawer, ListItemIcon, ListItemText, MenuItem } from '@components';
 
 const stixCoreObjectKnowledgeBarFragment = graphql`
   fragment StixCoreObjectKnowledgeBar_stixCoreObject on StixCoreObject

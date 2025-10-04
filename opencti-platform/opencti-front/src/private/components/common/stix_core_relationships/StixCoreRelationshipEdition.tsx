@@ -3,10 +3,10 @@ import { graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { Theme } from 'src/components/Theme';
 import { StixCoreRelationshipEditionOverviewQuery } from '@private/components/common/stix_core_relationships/__generated__/StixCoreRelationshipEditionOverviewQuery.graphql';
+import { Drawer } from '@components';
 import StixCoreRelationshipEditionOverview, { stixCoreRelationshipEditionOverviewQuery } from './StixCoreRelationshipEditionOverview';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
-import { Drawer } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -3,6 +3,7 @@ import { graphql, PreloadedQuery, useFragment, usePreloadedQuery } from 'react-r
 import { DraftWorksQuery } from '@private/components/drafts/__generated__/DraftWorksQuery.graphql';
 import { DraftWorksFragment$data } from '@private/components/drafts/__generated__/DraftWorksFragment.graphql';
 import { useTheme } from '@mui/styles';
+import { Chip } from '@components';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
 import { DataTableProps, DataTableVariant } from '../../../components/dataGrid/dataTableTypes';
 import { defaultRender } from '../../../components/dataGrid/dataTableUtils';
@@ -10,7 +11,6 @@ import Loader, { LoaderVariant } from '../../../components/Loader';
 import DataTableWithoutFragment from '../../../components/dataGrid/DataTableWithoutFragment';
 import { hexToRGB } from '../../../utils/Colors';
 import type { Theme } from '../../../components/Theme';
-import { Chip } from '@components';
 
 export const draftWorksFragment = graphql`
     fragment DraftWorksFragment on DraftWorkspace {

@@ -2,14 +2,27 @@ import React, { FunctionComponent, useState } from 'react';
 import { LogoXtmOneIcon } from 'filigran-icon';
 import { v4 as uuid } from 'uuid';
 import { graphql } from 'react-relay';
-import { TextFieldAskAIFixSpellingMutation, TextFieldAskAIFixSpellingMutation$data } from '@private/components/common/form/__generated__/TextFieldAskAIFixSpellingMutation.graphql';
-import { TextFieldAskAIMakeShorterMutation, TextFieldAskAIMakeShorterMutation$data } from '@private/components/common/form/__generated__/TextFieldAskAIMakeShorterMutation.graphql';
-import { TextFieldAskAIMakeLongerMutation, TextFieldAskAIMakeLongerMutation$data } from '@private/components/common/form/__generated__/TextFieldAskAIMakeLongerMutation.graphql';
-import { TextFieldAskAIChangeToneMutation, TextFieldAskAIChangeToneMutation$data } from '@private/components/common/form/__generated__/TextFieldAskAIChangeToneMutation.graphql';
-import { TextFieldAskAISummarizeMutation, TextFieldAskAISummarizeMutation$data } from '@private/components/common/form/__generated__/TextFieldAskAISummarizeMutation.graphql';
-import { TextFieldAskAIExplainMutation, TextFieldAskAIExplainMutation$data } from '@private/components/common/form/__generated__/TextFieldAskAIExplainMutation.graphql';
+import type {
+  TextFieldAskAIFixSpellingMutation,
+  TextFieldAskAIFixSpellingMutation$data,
+} from '@private/components/common/form/__generated__/TextFieldAskAIFixSpellingMutation.graphql';
+import type {
+  TextFieldAskAIMakeShorterMutation,
+  TextFieldAskAIMakeShorterMutation$data,
+} from '@private/components/common/form/__generated__/TextFieldAskAIMakeShorterMutation.graphql';
+import type {
+  TextFieldAskAIMakeLongerMutation,
+  TextFieldAskAIMakeLongerMutation$data,
+} from '@private/components/common/form/__generated__/TextFieldAskAIMakeLongerMutation.graphql';
+import type {
+  TextFieldAskAIChangeToneMutation,
+  TextFieldAskAIChangeToneMutation$data,
+} from '@private/components/common/form/__generated__/TextFieldAskAIChangeToneMutation.graphql';
+import type { TextFieldAskAISummarizeMutation, TextFieldAskAISummarizeMutation$data } from '@private/components/common/form/__generated__/TextFieldAskAISummarizeMutation.graphql';
+import type { TextFieldAskAIExplainMutation, TextFieldAskAIExplainMutation$data } from '@private/components/common/form/__generated__/TextFieldAskAIExplainMutation.graphql';
 import { useTheme } from '@mui/styles';
 import FiligranIcon from '@private/components/common/FiligranIcon';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, IconButton, InputAdornment, InputLabel, Menu, MenuItem, Select } from '@components';
 import EETooltip from '../entreprise_edition/EETooltip';
 import { useFormatter } from '../../../../components/i18n';
 // eslint-disable-next-line import/no-cycle
@@ -18,7 +31,6 @@ import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import type { Theme } from '../../../../components/Theme';
 import useAI from '../../../../utils/hooks/useAI';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, IconButton, InputAdornment, InputLabel, Menu, MenuItem, Select } from '@components';
 
 // region types
 interface TextFieldAskAiProps {

@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useState, useMemo, useCallback, useEffect } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { Add, DeleteOutlined, AddCircleOutlined } from '@mui/icons-material';
+import { Alert, Box, Button, FormControl, FormControlLabel, IconButton, InputLabel, MenuItem, Select, Switch, Tab, Tabs, TextField, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import {
@@ -17,7 +18,6 @@ import {
 import { resolveRelationsTypes } from '../../../../utils/Relation';
 import type { FormFieldAttribute, AdditionalEntity, EntityRelationship, FormBuilderData, RelationshipTypeOption } from './Form.d';
 import useAuth from '../../../../utils/hooks/useAuth';
-import { Alert, Box, Button, FormControl, FormControlLabel, IconButton, InputLabel, MenuItem, Select, Switch, Tab, Tabs, TextField, Typography } from '@components';
 
 const useStyles = makeStyles<Theme>((theme) => ({
   container: {

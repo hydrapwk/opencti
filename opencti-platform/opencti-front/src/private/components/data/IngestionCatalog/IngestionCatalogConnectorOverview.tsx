@@ -3,10 +3,10 @@ import React from 'react';
 import { useTheme } from '@mui/styles';
 import { IngestionConnector } from '@private/components/data/IngestionCatalog';
 import { LibraryBooksOutlined } from '@mui/icons-material';
+import { Button, Grid, Paper, Typography } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
-import { Button, Grid, Paper, Typography } from '@components';
 
 const IngestionCatalogConnectorOverview = ({ connector }: { connector: IngestionConnector }) => {
   const { t_i18n } = useFormatter();

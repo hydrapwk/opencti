@@ -5,6 +5,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { ObjectMarkingFieldAllowedMarkingQuery$data } from '@private/components/common/form/__generated__/ObjectMarkingFieldAllowedMarkingQuery.graphql';
 import { ObjectMarkingFieldOtherUserAllowedMarkingsQuery$data } from '@private/components/common/form/__generated__/ObjectMarkingFieldOtherUserAllowedMarkingsQuery.graphql';
 import { useTheme } from '@mui/material/styles';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
 import useAuth from '../../../../utils/hooks/useAuth';
 import Transition from '../../../../components/Transition';
 import AutocompleteField from '../../../../components/AutocompleteField';
@@ -17,7 +18,6 @@ import { fetchQuery } from '../../../../relay/environment';
 import { FieldOption } from '../../../../utils/field';
 import type { Theme } from '../../../../components/Theme';
 import MarkingIcon from '../../../../utils/MarkingIcon';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

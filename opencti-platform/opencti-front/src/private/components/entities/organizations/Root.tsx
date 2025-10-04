@@ -7,6 +7,7 @@ import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
 import { RootOrganizationSubscription } from '@private/components/entities/organizations/__generated__/RootOrganizationSubscription.graphql';
 import { propOr } from 'ramda';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Organization from './Organization';
 import OrganizationKnowledge from './OrganizationKnowledge';
@@ -26,7 +27,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import OrganizationEdition from './OrganizationEdition';
 import OrganizationDeletion from './OrganizationDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootOrganizationSubscription($id: ID!) {

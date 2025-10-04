@@ -3,6 +3,7 @@ import React from 'react';
 import { graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { createStyles } from '@mui/styles';
+import { FormControl, InputLabel, ListItemIcon, ListItemText, MenuItem, Select } from '@components';
 import { useFormatter } from '../../components/i18n';
 import { QueryRenderer } from '../../relay/environment';
 import useAuth from '../../utils/hooks/useAuth';
@@ -10,7 +11,6 @@ import useGranted, { EXPLORE, KNOWLEDGE } from '../../utils/hooks/useGranted';
 import Security from '../../utils/Security';
 import ItemIcon from '../../components/ItemIcon';
 import useApiMutation from '../../utils/hooks/useApiMutation';
-import { FormControl, InputLabel, ListItemIcon, ListItemText, MenuItem, Select } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

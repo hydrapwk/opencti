@@ -5,6 +5,7 @@ import React, { FunctionComponent, MutableRefObject, useState } from 'react';
 import { graphql, PreloadedQuery } from 'react-relay';
 import { GridTypeMap } from '@mui/material';
 import Drawer from '@private/components/common/drawer/Drawer';
+import { Button, Dialog, DialogContent, DialogTitle, IconButton, Paper, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import { handleErrorInForm } from '../../../../relay/environment';
@@ -20,7 +21,6 @@ import { CaseTasksLines_data$key } from './__generated__/CaseTasksLines_data.gra
 import { CaseTasksLinesQuery, CaseTasksLinesQuery$variables } from './__generated__/CaseTasksLinesQuery.graphql';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { FieldOption } from '../../../../utils/field';
-import { Button, Dialog, DialogContent, DialogTitle, IconButton, Paper, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

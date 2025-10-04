@@ -5,6 +5,7 @@ import { createRefetchContainer, graphql } from 'react-relay';
 import { interval } from 'rxjs';
 import withStyles from '@mui/styles/withStyles';
 import { Add } from '@mui/icons-material';
+import { Grid, IconButton, List, Paper, Typography } from '@components';
 import { TEN_SECONDS } from '../../../../../utils/Time';
 import inject18n from '../../../../../components/i18n';
 import WorkbenchFileLine from './WorkbenchFileLine';
@@ -12,7 +13,6 @@ import WorkbenchFileCreator from './WorkbenchFileCreator';
 import { KNOWLEDGE_KNASKIMPORT } from '../../../../../utils/hooks/useGranted';
 import Security from '../../../../../utils/Security';
 import useDraftContext from '../../../../../utils/hooks/useDraftContext';
-import { Grid, IconButton, List, Paper, Typography } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

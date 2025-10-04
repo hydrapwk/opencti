@@ -7,11 +7,12 @@ import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { QueryRenderer } from 'src/relay/environment';
 import { insertNode } from 'src/utils/store';
 import { NotesLinesPaginationQuery$variables } from '@private/components/analyses/__generated__/NotesLinesPaginationQuery.graphql';
+import { Button, Dialog, DialogContent, DialogTitle, IconButton, List, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import AddNotesLines, { addNotesLinesQuery } from './AddNotesLines';
 import { AddNotesLinesQuery$data } from './__generated__/AddNotesLinesQuery.graphql';
 import { NoteCreationForm } from './NoteCreation';
 import { StixCoreObjectOrStixCoreRelationshipNotesCards_data$data } from './__generated__/StixCoreObjectOrStixCoreRelationshipNotesCards_data.graphql';
-import { Button, Dialog, DialogContent, DialogTitle, IconButton, List, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
+
 interface AddNotesFunctionalComponentProps {
   stixCoreObjectOrStixCoreRelationshipId: string,
   stixCoreObjectOrStixCoreRelationshipNotes: StixCoreObjectOrStixCoreRelationshipNotesCards_data$data,

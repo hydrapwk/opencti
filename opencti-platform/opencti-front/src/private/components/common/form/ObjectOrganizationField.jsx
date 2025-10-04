@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Field } from 'formik';
 import { graphql } from 'react-relay';
 import { makeStyles } from '@mui/styles';
+import { Alert, AlertTitle } from '@components';
 import { fetchQuery } from '../../../../relay/environment';
 import AutocompleteField from '../../../../components/AutocompleteField';
 import { useFormatter } from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
-import { Alert, AlertTitle } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

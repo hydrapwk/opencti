@@ -1,13 +1,13 @@
 import { graphql } from 'react-relay';
 import React, { ChangeEvent, HTMLAttributes, useState } from 'react';
 import { Field } from 'formik';
+import { ListItem, ListItemText } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { FieldOption } from '../../../../utils/field';
 import { fetchQuery } from '../../../../relay/environment';
 import AutocompleteField from '../../../../components/AutocompleteField';
 import { SectorFieldSearchQuery$data } from './__generated__/SectorFieldSearchQuery.graphql';
 import ItemIcon from '../../../../components/ItemIcon';
-import { ListItem, ListItemText } from '@components';
 
 const sectorFieldSearchQuery = graphql`
   query SectorFieldSearchQuery($search: String) {

@@ -3,7 +3,10 @@ import React, { CSSProperties, useMemo, useRef } from 'react';
 import { useTheme } from '@mui/material/styles';
 import { useSettingsMessagesBannerHeight } from '@private/components/settings/settings_messages/SettingsMessagesBanner';
 import { stixDomainObjectMutationFieldPatch } from '@private/components/common/stix_domain_objects/StixDomainObjectEditionOverview';
-import { StixDomainObjectEditionOverviewFieldPatchMutation } from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectEditionOverviewFieldPatchMutation.graphql';
+import {
+  StixDomainObjectEditionOverviewFieldPatchMutation,
+} from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectEditionOverviewFieldPatchMutation.graphql';
+import { Alert } from '@components';
 import { GraphProvider } from '../../../../components/graph/GraphContext';
 import { getObjectsToParse } from '../../../../components/graph/utils/graphUtils';
 import { StixCoreObjectOrStixCoreRelationshipContainersGraph_fragment$key } from './__generated__/StixCoreObjectOrStixCoreRelationshipContainersGraph_fragment.graphql';
@@ -14,7 +17,6 @@ import GraphToolbar from '../../../../components/graph/GraphToolbar';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { serializeObjectB64 } from '../../../../utils/object';
 import { useFormatter } from '../../../../components/i18n';
-import { Alert } from '@components';
 
 export const containersObjectsQuery = graphql`
   query StixCoreObjectOrStixCoreRelationshipContainersGraphQuery(

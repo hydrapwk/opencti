@@ -3,10 +3,14 @@ import { indigo } from '@mui/material/colors';
 import { CheckCircleOutlined, DeleteOutlined, UnpublishedOutlined } from '@mui/icons-material';
 import { graphql } from 'react-relay';
 import { NotificationsLine_node$data } from '@private/components/profile/__generated__/NotificationsLine_node.graphql';
-import { NotificationsLinesPaginationQuery, NotificationsLinesPaginationQuery$variables } from '@private/components/profile/__generated__/NotificationsLinesPaginationQuery.graphql';
+import {
+  NotificationsLinesPaginationQuery,
+  NotificationsLinesPaginationQuery$variables,
+} from '@private/components/profile/__generated__/NotificationsLinesPaginationQuery.graphql';
 import { NotificationsLines_data$data } from '@private/components/profile/__generated__/NotificationsLines_data.graphql';
 import DigestNotificationDrawer from '@private/components/profile/notifications/DigestNotificationDrawer';
 import { useNavigate } from 'react-router-dom';
+import { Badge, Button, Chip, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Tooltip } from '@components';
 import { usePaginationLocalStorage } from '../../../utils/hooks/useLocalStorage';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
 import useAuth from '../../../utils/hooks/useAuth';
@@ -26,7 +30,6 @@ import { isNotEmptyField } from '../../../utils/utils';
 import { defaultRender } from '../../../components/dataGrid/dataTableUtils';
 import { colors, getFirstOperation, iconSelector } from './notifications/notificationUtils';
 import { chipInListBasicStyle } from '../../../utils/chipStyle';
-import { Badge, Button, Chip, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Tooltip } from '@components';
 
 export const LOCAL_STORAGE_KEY = 'notifiers';
 

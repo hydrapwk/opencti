@@ -1,8 +1,8 @@
 import React from 'react';
 import { DraftChip } from '@private/components/common/draft/DraftChip';
-import { DraftVersion } from '@private/components/common/cards/GenericAttackCard';
-import { APP_BASE_PATH } from '../relay/environment';
+import { type DraftVersion } from '@private/components/common/cards/GenericAttackCard';
 import { Tooltip } from '@components';
+import { APP_BASE_PATH } from '../relay/environment';
 
 export interface toEdgesLocated {
   edges: ReadonlyArray<{ node: { to: { x_opencti_aliases?: ReadonlyArray<string | null> | null; name?: string } | null } }>;

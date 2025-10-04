@@ -2,10 +2,14 @@ import makeStyles from '@mui/styles/makeStyles';
 import React, { useContext } from 'react';
 import IngestionMenu from '@private/components/data/IngestionMenu';
 import IngestionCsvLines, { ingestionCsvLinesQuery } from '@private/components/data/ingestionCsv/IngestionCsvLines';
-import { IngestionCsvLinesPaginationQuery, IngestionCsvLinesPaginationQuery$variables } from '@private/components/data/ingestionCsv/__generated__/IngestionCsvLinesPaginationQuery.graphql';
+import {
+  IngestionCsvLinesPaginationQuery,
+  IngestionCsvLinesPaginationQuery$variables,
+} from '@private/components/data/ingestionCsv/__generated__/IngestionCsvLinesPaginationQuery.graphql';
 import { IngestionCsvLineDummy } from '@private/components/data/ingestionCsv/IngestionCsvLine';
 import { IngestionCsvCreationContainer } from '@private/components/data/ingestionCsv/IngestionCsvCreation';
 import IngestionCsvImport from '@private/components/data/ingestionCsv/IngestionCsvImport';
+import { Alert } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import useAuth, { UserContext } from '../../../utils/hooks/useAuth';
 import { usePaginationLocalStorage } from '../../../utils/hooks/useLocalStorage';
@@ -18,7 +22,6 @@ import Breadcrumbs from '../../../components/Breadcrumbs';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
 import { isNotEmptyField } from '../../../utils/utils';
 import GradientButton from '../../../components/GradientButton';
-import { Alert } from '@components';
 
 const LOCAL_STORAGE_KEY = 'ingestionCsvs';
 

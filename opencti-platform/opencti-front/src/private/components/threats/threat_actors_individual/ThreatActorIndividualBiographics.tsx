@@ -1,6 +1,7 @@
 import React from 'react';
 import { InformationOutline } from 'mdi-material-ui';
 import { makeStyles } from '@mui/styles';
+import { Box, Grid, IconButton, List, ListItem, ListItemText, Paper, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { ThreatActorIndividual_ThreatActorIndividual$data } from './__generated__/ThreatActorIndividual_ThreatActorIndividual.graphql';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
@@ -9,7 +10,6 @@ import useUserMetric from '../../../../utils/hooks/useUserMetric';
 import type { Theme } from '../../../../components/Theme';
 import CardLabel from '../../../../components/CardLabel';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { Box, Grid, IconButton, List, ListItem, ListItemText, Paper, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

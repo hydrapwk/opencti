@@ -12,6 +12,7 @@ import CreatedByField from '@private/components/common/form/CreatedByField';
 import ObjectLabelField from '@private/components/common/form/ObjectLabelField';
 import ObjectMarkingField from '@private/components/common/form/ObjectMarkingField';
 import { getSecurityPlatformValidator, SECURITY_PLATFORM_TYPE } from '@private/components/entities/securityPlatforms/SecurityPlatformUtils';
+import { Button } from '@components';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import { useFormatter } from '../../../../components/i18n';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
@@ -24,7 +25,7 @@ import ProgressBar from '../../../../components/ProgressBar';
 import BulkTextField from '../../../../components/fields/BulkTextField/BulkTextField';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import { useIsMandatoryAttribute } from '../../../../utils/hooks/useEntitySettings';
-import { Button } from '@components';
+
 interface SecurityPlatformCreationFormData {
   name: string;
   description: string

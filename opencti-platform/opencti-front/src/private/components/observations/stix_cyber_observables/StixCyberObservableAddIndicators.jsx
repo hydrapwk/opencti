@@ -3,12 +3,12 @@ import * as PropTypes from 'prop-types';
 import { compose } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { Close } from '@mui/icons-material';
+import { Drawer, IconButton, Typography } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
 import SearchInput from '../../../../components/SearchInput';
 import StixCyberObservableAddIndicatorsLines, { stixCyberObservableAddIndicatorsLinesQuery } from './StixCyberObservableAddIndicatorsLines';
 import IndicatorCreation from '../indicators/IndicatorCreation';
-import { Drawer, IconButton, Typography } from '@components';
 
 const styles = (theme) => ({
   drawerPaper: {

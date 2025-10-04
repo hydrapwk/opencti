@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { CircularProgress,  } from '@mui/material';
+import { CircularProgress } from '@mui/material';
 import { AddTaskOutlined, AssistantOutlined } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { Badge, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, List, ListItem, ListItemText, MenuItem, Select, ToggleButton, Tooltip } from '@components';
 import { getMainRepresentative } from '../../../../utils/defaultRepresentatives';
 import { commitMutation, MESSAGING$, QueryRenderer } from '../../../../relay/environment';
 import { stixCoreRelationshipCreationMutation } from '../stix_core_relationships/StixCoreRelationshipCreation';
@@ -10,7 +11,6 @@ import MarkdownDisplay from '../../../../components/MarkdownDisplay';
 import Transition from '../../../../components/Transition';
 import { useFormatter } from '../../../../components/i18n';
 import useGranted, { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { Badge, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, List, ListItem, ListItemText, MenuItem, Select, ToggleButton, Tooltip } from '@components';
 
 const StixCoreObjectsSuggestionsComponent = (props) => {
   const { t_i18n } = useFormatter();

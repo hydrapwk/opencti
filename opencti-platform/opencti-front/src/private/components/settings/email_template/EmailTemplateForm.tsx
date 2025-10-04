@@ -3,11 +3,11 @@ import { FormikHelpers } from 'formik/dist/types';
 import { useTheme } from '@mui/styles';
 import { Field, Formik } from 'formik';
 import * as Yup from 'yup';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import TextField from '../../../../components/TextField';
 import MarkdownField from '../../../../components/fields/MarkdownField';
-import { Button } from '@components';
 
 export interface EmailTemplateFormInputs {
   name: string;

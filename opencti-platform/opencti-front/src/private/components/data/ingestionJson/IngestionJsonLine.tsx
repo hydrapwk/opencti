@@ -7,13 +7,13 @@ import TableViewIcon from '@mui/icons-material/TableView';
 import { IngestionJsonLine_node$key } from '@private/components/data/ingestionJson/__generated__/IngestionJsonLine_node.graphql';
 import { IngestionJsonLinesPaginationQuery$variables } from '@private/components/data/ingestionJson/__generated__/IngestionJsonLinesPaginationQuery.graphql';
 import { Link } from 'react-router-dom';
+import { ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import ItemBoolean from '../../../../components/ItemBoolean';
 import { useFormatter } from '../../../../components/i18n';
 import { DataColumns } from '../../../../components/list_lines';
 import type { Theme } from '../../../../components/Theme';
 import { INGESTION_SETINGESTIONS } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
-import { ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

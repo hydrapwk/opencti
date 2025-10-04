@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import LaunchImportDialog from '@private/components/common/files/LaunchImportDialog';
 import { ImportWorkbenchesContentFileLine_file$data } from '@private/components/data/import/__generated__/ImportWorkbenchesContentFileLine_file.graphql';
 import { ImportFilesContentFileLine_file$data } from '@private/components/data/import/__generated__/ImportFilesContentFileLine_file.graphql';
+import { Alert, Button, Chip, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import type { Theme } from '../../../../components/Theme';
@@ -19,7 +20,6 @@ import { ImportWorksDrawerQuery, ImportWorksDrawerQuery$variables } from './__ge
 import { commitMutation, defaultCommitMutation } from '../../../../relay/environment';
 import Transition from '../../../../components/Transition';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
-import { Alert, Button, Chip, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Tooltip } from '@components';
 
 export const importConnectorsFragment = graphql`
   fragment ImportWorksDrawer_connectorsImport on Connector

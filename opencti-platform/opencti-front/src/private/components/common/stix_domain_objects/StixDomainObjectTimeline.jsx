@@ -13,13 +13,13 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import { graphql, createRefetchContainer } from 'react-relay';
 import { Link } from 'react-router-dom';
 import Slide from '@mui/material/Slide';
+import { Paper, Tooltip, Typography } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import inject18n from '../../../../components/i18n';
 import { stixDomainObjectThreatKnowledgeStixRelationshipsQuery } from './StixDomainObjectThreatKnowledgeQuery';
 import { truncate } from '../../../../utils/String';
 import { getSecondaryRepresentative, getMainRepresentative } from '../../../../utils/defaultRepresentatives';
 import { itemColor } from '../../../../utils/Colors';
-import { Paper, Tooltip, Typography } from '@components';
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide direction="up" ref={ref} {...props} />

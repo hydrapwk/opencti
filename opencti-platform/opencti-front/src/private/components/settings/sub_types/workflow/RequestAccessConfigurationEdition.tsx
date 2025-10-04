@@ -5,13 +5,13 @@ import { Form, Formik } from 'formik';
 import { FormikConfig } from 'formik/dist/types';
 import StatusTemplateFieldScoped from '@private/components/settings/sub_types/workflow/StatusTemplateFieldScoped';
 import GroupField, { GroupFieldOption } from '@private/components/common/form/GroupField';
+import { Button } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
 import { handleErrorInForm } from '../../../../../relay/environment';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../../utils/field';
 import { RequestAccessConfigurationEdition_requestAccess$key } from './__generated__/RequestAccessConfigurationEdition_requestAccess.graphql';
 import { RequestAccessConfigurationEditionMutation, RequestAccessConfigureInput } from './__generated__/RequestAccessConfigurationEditionMutation.graphql';
-import { Button } from '@components';
 
 const requestAccessConfigurationMutation = graphql`
     mutation RequestAccessConfigurationEditionMutation($input: RequestAccessConfigureInput!) {

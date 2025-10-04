@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react';
 import { graphql, usePreloadedQuery } from 'react-relay';
+import { Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import LocationMiniMapTargets from '../location/LocationMiniMapTargets';
 import { computeLevel } from '../../../../utils/Number';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { Paper, Typography } from '@components';
 
 const stixDomainObjectVictimologyMapQuery = graphql`
   query StixDomainObjectVictimologyMapQuery(

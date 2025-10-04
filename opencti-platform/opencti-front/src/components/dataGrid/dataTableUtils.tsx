@@ -6,6 +6,7 @@ import { useTheme } from '@mui/styles';
 import { DraftChip } from '@private/components/common/draft/DraftChip';
 import { HorizontalRule, Security } from '@mui/icons-material';
 import { Pirs_PirFragment$data } from '@private/components/pir/__generated__/Pirs_PirFragment.graphql';
+import { Chip, Tooltip } from '@components';
 import ItemCvssScore from '../ItemCvssScore';
 import type { DataTableColumn } from './dataTableTypes';
 import { DataTableProps, DataTableVariant } from './dataTableTypes';
@@ -30,7 +31,6 @@ import { APP_BASE_PATH } from '../../relay/environment';
 import FieldOrEmpty from '../FieldOrEmpty';
 import ItemHistory from '../ItemHistory';
 import { useFormatter } from '../i18n';
-import { Chip, Tooltip } from '@components';
 
 const chipStyle: CSSProperties = {
   fontSize: '12px',

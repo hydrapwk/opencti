@@ -7,6 +7,7 @@ import * as Yup from 'yup';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import { useTheme } from '@mui/styles';
+import { Box, Button, FormControlLabel, Switch } from '@components';
 import DisseminationListField from '../../../../components/fields/DisseminationListField';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import TextField from '../../../../components/TextField';
@@ -15,7 +16,7 @@ import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import type { Theme } from '../../../../components/Theme';
-import { Box, Button, FormControlLabel, Switch } from '@components';
+
 interface StixCoreObjectContentFilesDisseminationProps {
   entityId: string;
   fileId: string;

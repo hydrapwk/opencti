@@ -7,12 +7,12 @@ import Toolbar from '@mui/material/Toolbar';
 import { CenterFocusStrongOutlined, ClearOutlined, DeleteOutlined } from '@mui/icons-material';
 import Slide from '@mui/material/Slide';
 import { Form, Formik } from 'formik';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Drawer, IconButton, Typography } from '@components';
 import inject18n from '../../../../../components/i18n';
 import ObjectMarkingField from '../../form/ObjectMarkingField';
 import { UserContext } from '../../../../../utils/hooks/useAuth';
 import withHooksSettingsMessagesBannerHeight from '../../../settings/settings_messages/withHooksSettingsMessagesBannerHeight';
 import { MESSAGING$ } from '../../../../../relay/environment';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Drawer, IconButton, Typography } from '@components';
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide direction="up" ref={ref} {...props} />

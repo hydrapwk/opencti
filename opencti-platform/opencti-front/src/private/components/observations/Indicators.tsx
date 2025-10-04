@@ -3,6 +3,7 @@ import { graphql } from 'react-relay';
 import { IndicatorsLinesPaginationQuery, IndicatorsLinesPaginationQuery$variables } from '@private/components/observations/__generated__/IndicatorsLinesPaginationQuery.graphql';
 import { IndicatorsLines_data$data } from '@private/components/observations/__generated__/IndicatorsLines_data.graphql';
 import StixCoreObjectForms from '@private/components/common/stix_core_objects/StixCoreObjectForms';
+import { Tooltip } from '@components';
 import IndicatorCreation from './indicators/IndicatorCreation';
 import Security from '../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../utils/hooks/useGranted';
@@ -16,7 +17,6 @@ import { UsePreloadedPaginationFragment } from '../../../utils/hooks/usePreloade
 import DataTable from '../../../components/dataGrid/DataTable';
 import { DataTableProps } from '../../../components/dataGrid/dataTableTypes';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
-import { Tooltip } from '@components';
 
 const LOCAL_STORAGE_KEY = 'indicators-list';
 

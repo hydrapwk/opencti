@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import { Field } from 'formik';
 import makeStyles from '@mui/styles/makeStyles';
+import { Alert } from '@components';
 import InputSliderField from '../../../../components/InputSliderField';
 import { useFormatter } from '../../../../components/i18n';
 import { GenericContext } from '../model/GenericContextModel';
 import useConfidenceLevel from '../../../../utils/hooks/useConfidenceLevel';
-import { Alert } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

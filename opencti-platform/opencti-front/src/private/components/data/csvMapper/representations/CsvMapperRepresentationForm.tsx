@@ -8,13 +8,13 @@ import classNames from 'classnames';
 import { representationLabel } from '@private/components/data/csvMapper/representations/RepresentationUtils';
 import { CsvMapperRepresentationFormData } from '@private/components/data/csvMapper/representations/Representation';
 import CsvMapperConditionalEntityMapping from '@private/components/data/csvMapper/representations/CsvMapperConditionalEntityMapping';
+import { Accordion, AccordionDetails, AccordionSummary, Button, IconButton, Autocomplete as MUIAutocomplete, TextField, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import ItemIcon from '../../../../../components/ItemIcon';
 import type { Theme } from '../../../../../components/Theme';
 import useDeletion from '../../../../../utils/hooks/useDeletion';
 import DeleteDialog from '../../../../../components/DeleteDialog';
 import { FieldOption } from '../../../../../utils/field';
-import { Accordion, AccordionDetails, AccordionSummary, Button, IconButton, Autocomplete as MUIAutocomplete, TextField, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

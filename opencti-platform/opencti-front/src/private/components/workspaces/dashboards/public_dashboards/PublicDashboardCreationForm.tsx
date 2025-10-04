@@ -5,7 +5,10 @@ import { FormikConfig } from 'formik/dist/types';
 import * as Yup from 'yup';
 import { graphql, PreloadedQuery, usePreloadedQuery, useQueryLoader } from 'react-relay';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
-import { PublicDashboardCreationFormDashboardsQuery } from '@private/components/workspaces/dashboards/public_dashboards/__generated__/PublicDashboardCreationFormDashboardsQuery.graphql';
+import {
+  PublicDashboardCreationFormDashboardsQuery,
+} from '@private/components/workspaces/dashboards/public_dashboards/__generated__/PublicDashboardCreationFormDashboardsQuery.graphql';
+import { Alert, Button, InputAdornment, MenuItem } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import TextField from '../../../../../components/TextField';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../../utils/field';
@@ -17,7 +20,6 @@ import Loader, { LoaderVariant } from '../../../../../components/Loader';
 import useAuth from '../../../../../utils/hooks/useAuth';
 import { ME_FILTER_VALUE } from '../../../../../utils/filters/filtersUtils';
 import { fromB64 } from '../../../../../utils/String';
-import { Alert, Button, InputAdornment, MenuItem } from '@components';
 
 const publicDashboardCreateMutation = graphql`
   mutation PublicDashboardCreationFormCreateMutation($input: PublicDashboardAddInput!) {

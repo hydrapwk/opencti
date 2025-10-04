@@ -7,9 +7,9 @@ import { FormikConfig } from 'formik/dist/types';
 import { RelayResponsePayload } from 'relay-runtime/lib/store/RelayStoreTypes';
 import { useTheme } from '@mui/styles';
 import { Theme } from '@mui/material/styles/createTheme';
+import { Button } from '@components';
 import { useFormatter } from '../../components/i18n';
 import useApiMutation from '../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 const loginMutation = graphql`
   mutation LoginFormMutation($input: UserLoginInput!) {

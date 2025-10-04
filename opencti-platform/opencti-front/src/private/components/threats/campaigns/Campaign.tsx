@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useFragment } from 'react-relay';
+import { Grid } from '@components';
 import CampaignDetails from './CampaignDetails';
 import StixCoreObjectOrStixCoreRelationshipNotes from '../../analyses/notes/StixCoreObjectOrStixCoreRelationshipNotes';
 import StixDomainObjectOverview from '../../common/stix_domain_objects/StixDomainObjectOverview';
@@ -9,7 +10,6 @@ import SimpleStixObjectOrStixRelationshipStixCoreRelationships from '../../commo
 import { Campaign_campaign$key } from './__generated__/Campaign_campaign.graphql';
 import StixCoreObjectOrStixRelationshipLastContainers from '../../common/containers/StixCoreObjectOrStixRelationshipLastContainers';
 import useOverviewLayoutCustomization from '../../../../utils/hooks/useOverviewLayoutCustomization';
-import { Grid } from '@components';
 
 const campaignFragment = graphql`
   fragment Campaign_campaign on Campaign {

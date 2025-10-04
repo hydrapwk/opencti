@@ -2,10 +2,10 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import withStyles from '@mui/styles/withStyles';
 import { compose } from 'ramda';
+import { Chip } from '@components';
 import inject18n from './i18n';
 import { hexToRGB } from '../utils/Colors';
 import { chipInListBasicStyle } from '../utils/chipStyle';
-import { Chip } from '@components';
 
 const styles = () => ({
   chip: {

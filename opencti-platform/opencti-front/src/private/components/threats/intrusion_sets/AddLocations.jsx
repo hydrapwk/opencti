@@ -3,6 +3,7 @@ import * as PropTypes from 'prop-types';
 import { compose } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { Add } from '@mui/icons-material';
+import { IconButton } from '@components';
 import Drawer from '../../common/drawer/Drawer';
 import inject18n from '../../../../components/i18n';
 import SearchInput from '../../../../components/SearchInput';
@@ -10,7 +11,6 @@ import { QueryRenderer } from '../../../../relay/environment';
 import AddLocationsLines, { addLocationsLinesQuery } from './AddLocationsLines';
 import LocationCreation from '../../common/location/LocationCreation';
 import { insertNode } from '../../../../utils/store';
-import { IconButton } from '@components';
 
 const styles = () => ({
   createButton: {

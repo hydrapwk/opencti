@@ -2,6 +2,7 @@ import { makeStyles } from '@mui/styles';
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { graphql } from 'react-relay';
 import qrcode from 'qrcode';
+import { Alert } from '@components';
 import Loader from '../../components/Loader';
 import { QueryRenderer } from '../../relay/environment';
 import { useFormatter } from '../../components/i18n';
@@ -9,7 +10,6 @@ import { OtpActivationQuery$data } from './__generated__/OtpActivationQuery.grap
 import type { Theme } from '../../components/Theme';
 import OtpInputField, { OTP_CODE_SIZE } from './OtpInputField';
 import useApiMutation from '../../utils/hooks/useApiMutation';
-import { Alert } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

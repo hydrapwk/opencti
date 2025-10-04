@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { makeStyles } from '@mui/styles';
+import { Alert, AlertTitle } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { PasswordPolicies$key } from './__generated__/PasswordPolicies.graphql';
 import useAuth from '../../../../utils/hooks/useAuth';
-import { Alert, AlertTitle } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

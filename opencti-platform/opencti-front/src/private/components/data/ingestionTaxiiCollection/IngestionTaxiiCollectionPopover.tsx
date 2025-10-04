@@ -3,10 +3,13 @@ import { graphql } from 'react-relay';
 import MoreVert from '@mui/icons-material/MoreVert';
 
 import { PopoverProps } from '@mui/material/Popover';
-import { IngestionTaxiiCollectionPopoverEditionQuery$data } from '@private/components/data/ingestionTaxiiCollection/__generated__/IngestionTaxiiCollectionPopoverEditionQuery.graphql';
+import {
+  IngestionTaxiiCollectionPopoverEditionQuery$data,
+} from '@private/components/data/ingestionTaxiiCollection/__generated__/IngestionTaxiiCollectionPopoverEditionQuery.graphql';
 import {
   IngestionTaxiiCollectionLinesPaginationQuery$variables,
 } from '@private/components/data/ingestionTaxiiCollection/__generated__/IngestionTaxiiCollectionLinesPaginationQuery.graphql';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
 import { deleteNode } from '../../../../utils/store';
@@ -15,7 +18,6 @@ import Transition from '../../../../components/Transition';
 import IngestionTaxiiCollectionEdition, { ingestionTaxiiCollectionMutationFieldPatch } from './IngestionTaxiiCollectionEdition';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem } from '@components';
 
 const ingestionTaxiiPopoverDeletionMutation = graphql`
   mutation IngestionTaxiiCollectionPopoverDeletionMutation($id: ID!) {

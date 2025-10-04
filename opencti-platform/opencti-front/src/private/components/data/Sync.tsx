@@ -2,6 +2,7 @@ import React from 'react';
 import { useTheme } from '@mui/styles';
 import { Theme } from 'src/components/Theme';
 import { SyncLinesPaginationQuery$data, SyncLinesPaginationQuery$variables } from '@private/components/data/sync/__generated__/SyncLinesPaginationQuery.graphql';
+import { Alert } from '@components';
 import { QueryRenderer } from '../../../relay/environment';
 import ListLines from '../../../components/list_lines/ListLines';
 import SyncLines, { SyncLinesQuery } from './sync/SyncLines';
@@ -17,7 +18,6 @@ import Security from '../../../utils/Security';
 import { INGESTION_SETINGESTIONS } from '../../../utils/hooks/useGranted';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
 import PageContainer from '../../../components/PageContainer';
-import { Alert } from '@components';
 
 const LOCAL_STORAGE_KEY = 'sync';
 

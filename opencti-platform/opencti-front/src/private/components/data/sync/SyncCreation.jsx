@@ -5,6 +5,7 @@ import { graphql } from 'react-relay';
 import * as R from 'ramda';
 import { InformationOutline } from 'mdi-material-ui';
 import makeStyles from '@mui/styles/makeStyles';
+import { AccordionDetails, Alert, AlertTitle, Button, Grid, MenuItem, Tooltip, Typography } from '@components';
 import Drawer from '../../common/drawer/Drawer';
 import { useFormatter } from '../../../../components/i18n';
 import { commitMutation, fetchQuery, handleErrorInForm, MESSAGING$ } from '../../../../relay/environment';
@@ -22,7 +23,6 @@ import { Accordion, AccordionSummary } from '../../../../components/Accordion';
 import { deserializeFilterGroupForFrontend } from '../../../../utils/filters/filtersUtils';
 import PasswordTextField from '../../../../components/PasswordTextField';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { AccordionDetails, Alert, AlertTitle, Button, Grid, MenuItem, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

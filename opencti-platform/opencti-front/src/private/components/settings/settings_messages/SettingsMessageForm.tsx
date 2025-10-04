@@ -6,6 +6,7 @@ import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import Drawer from '@private/components/common/drawer/Drawer';
 import ObjectMembersField from '@private/components/common/form/ObjectMembersField';
+import { Button } from '@components';
 import ColorPickerField from '../../../../components/ColorPickerField';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
@@ -14,7 +15,6 @@ import SwitchField from '../../../../components/fields/SwitchField';
 import { SettingsMessagesLine_settingsMessage$data } from './__generated__/SettingsMessagesLine_settingsMessage.graphql';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

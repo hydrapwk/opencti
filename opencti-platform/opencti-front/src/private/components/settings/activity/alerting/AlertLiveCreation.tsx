@@ -6,6 +6,7 @@ import { FormikConfig, FormikHelpers } from 'formik/dist/types';
 import React, { FunctionComponent } from 'react';
 import { graphql } from 'react-relay';
 import * as Yup from 'yup';
+import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, IconButton, Typography } from '@components';
 import FilterIconButton from '../../../../../components/FilterIconButton';
 import { useFormatter } from '../../../../../components/i18n';
 import MarkdownField from '../../../../../components/fields/MarkdownField';
@@ -22,7 +23,6 @@ import { TriggersLinesPaginationQuery$variables } from '../../../profile/trigger
 import { AlertLiveCreationActivityMutation, AlertLiveCreationActivityMutation$data } from './__generated__/AlertLiveCreationActivityMutation.graphql';
 import useFiltersState from '../../../../../utils/filters/useFiltersState';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, IconButton, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -7,6 +7,7 @@ import * as R from 'ramda';
 import { compose } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { AutoFix } from 'mdi-material-ui';
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import { getMainRepresentative } from '../../../../utils/defaultRepresentatives';
 import inject18n from '../../../../components/i18n';
@@ -17,7 +18,6 @@ import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import StixCoreRelationshipPopover from '../../common/stix_core_relationships/StixCoreRelationshipPopover';
 import ItemConfidence from '../../../../components/ItemConfidence';
 import ItemEntityType from '../../../../components/ItemEntityType';
-import { ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

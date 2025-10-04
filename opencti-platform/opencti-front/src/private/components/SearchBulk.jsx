@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { Subject, timer } from 'rxjs';
 import { debounce } from 'rxjs/operators';
 import { graphql } from 'react-relay';
+import { Box, Chip, Grid, LinearProgress, List, ListItem, ListItemButton, ListItemIcon, ListItemText, TextField, ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 import { allEntitiesKeyList } from './common/bulk/utils/querySearchEntityByText';
 import ItemIcon from '../../components/ItemIcon';
 import { fetchQuery } from '../../relay/environment';
@@ -21,7 +22,6 @@ import { export_max_size } from '../../utils/utils';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import useConnectedDocumentModifier from '../../utils/hooks/useConnectedDocumentModifier';
 import { chipInListBasicStyle } from '../../utils/chipStyle';
-import { Box, Chip, Grid, LinearProgress, List, ListItem, ListItemButton, ListItemIcon, ListItemText, TextField, ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 
 const SEARCH$ = new Subject().pipe(debounce(() => timer(500)));
 

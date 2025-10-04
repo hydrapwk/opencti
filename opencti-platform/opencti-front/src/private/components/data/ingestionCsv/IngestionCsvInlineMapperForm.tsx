@@ -10,13 +10,13 @@ import CsvMapperRepresentationForm, { RepresentationFormEntityOption } from '@pr
 import { CsvMapperFormData } from '@private/components/data/csvMapper/CsvMapper';
 import { CsvMapperProvider } from '@private/components/data/csvMapper/CsvMapperContext';
 import { csvFeedCsvMapperToFormData } from '@private/components/data/ingestionCsv/IngestionCSVFeedUtils';
+import { Box, FormControlLabel, IconButton, Radio, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
 import SwitchField from '../../../../components/fields/SwitchField';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { representationInitialization } from '../csvMapper/representations/RepresentationUtils';
 import { CsvMapperAddInput, formDataToCsvMapper } from '../csvMapper/CsvMapperUtils';
-import { Box, FormControlLabel, IconButton, Radio, Tooltip, Typography } from '@components';
 
 const csvMapperValidation = (t_i18n: (s: string) => string) => Yup.object().shape({
   has_header: Yup.boolean().required(t_i18n('This field is required')),

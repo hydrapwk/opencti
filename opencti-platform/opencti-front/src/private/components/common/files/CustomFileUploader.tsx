@@ -3,10 +3,11 @@ import { Theme } from '@mui/material/styles/createTheme';
 import makeStyles from '@mui/styles/makeStyles';
 import classNames from 'classnames';
 import { FieldProps } from 'formik';
+import { Box, Button, InputLabel } from '@components';
 import VisuallyHiddenInput from '../VisuallyHiddenInput';
 import { useFormatter } from '../../../../components/i18n';
 import { truncate } from '../../../../utils/String';
-import { Box, Button, InputLabel } from '@components';
+
 interface CustomFileUploadProps extends Partial<FieldProps<File | null | undefined>> {
   setFieldValue: (
     field: string,

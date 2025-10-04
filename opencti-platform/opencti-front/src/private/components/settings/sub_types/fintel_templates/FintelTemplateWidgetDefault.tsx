@@ -1,13 +1,14 @@
 import React from 'react';
 import { ContentCopy, Edit, DeleteOutline, WarningAmber } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { IconButton, ListItem, ListItemText, Tooltip, Typography } from '@components';
 import { renderWidgetIcon } from '../../../../../utils/widget/widgetUtils';
 import { useFormatter } from '../../../../../components/i18n';
 import { useFintelTemplateContext } from './FintelTemplateContext';
 import type { Theme } from '../../../../../components/Theme';
 import { MESSAGING$ } from '../../../../../relay/environment';
 import type { Widget } from '../../../../../utils/widget/widget';
-import { IconButton, ListItem, ListItemText, Tooltip, Typography } from '@components';
+
 interface FintelTemplateWidgetDefaultProps {
   widget: Widget
   variableName: string

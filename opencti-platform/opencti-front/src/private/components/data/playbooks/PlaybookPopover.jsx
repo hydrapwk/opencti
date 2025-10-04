@@ -18,6 +18,7 @@ import { graphql } from 'react-relay';
 import MoreVert from '@mui/icons-material/MoreVert';
 import { useNavigate } from 'react-router-dom';
 import fileDownload from 'js-file-download';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem, ToggleButton } from '@components';
 import { commitMutation, fetchQuery } from '../../../../relay/environment';
 import { playbookMutationFieldPatch } from './PlaybookEditionForm';
 import { deleteNode } from '../../../../utils/store';
@@ -28,7 +29,6 @@ import useDeletion from '../../../../utils/hooks/useDeletion';
 import stopEvent from '../../../../utils/domEvent';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { resolveLink } from '../../../../utils/Entity';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem, ToggleButton } from '@components';
 
 const playbookPopoverDeletionMutation = graphql`
   mutation PlaybookPopoverDeletionMutation($id: ID!) {

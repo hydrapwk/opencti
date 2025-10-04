@@ -4,6 +4,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import * as R from 'ramda';
 import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
+import { Alert, Box, Button, FormControl, Grid, IconButton, InputLabel, List, ListItemButton, ListItemIcon, ListItemText, MenuItem, Select, Tooltip } from '@components';
 import AuthorizedMembersField from '../../common/form/AuthorizedMembersField';
 import CaseTemplateField from '../../common/form/CaseTemplateField';
 import KillChainPhasesField from '../../common/form/KillChainPhasesField';
@@ -40,7 +41,6 @@ import SelectField from '../../../../components/fields/SelectField';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import TimePickerField from '../../../../components/TimePickerField';
 import { parse } from '../../../../utils/Time';
-import { Alert, Box, Button, FormControl, Grid, IconButton, InputLabel, List, ListItemButton, ListItemIcon, ListItemText, MenuItem, Select, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

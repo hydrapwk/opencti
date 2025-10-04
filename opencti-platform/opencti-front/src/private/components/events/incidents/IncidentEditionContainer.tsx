@@ -3,13 +3,14 @@ import { createFragmentContainer, graphql, PreloadedQuery, usePreloadedQuery } f
 import Drawer, { DrawerControlledDialType } from '@private/components/common/drawer/Drawer';
 import { IncidentEditionOverview_incident$key } from '@private/components/events/incidents/__generated__/IncidentEditionOverview_incident.graphql';
 import { IncidentEditionDetails_incident$key } from '@private/components/events/incidents/__generated__/IncidentEditionDetails_incident.graphql';
+import { Box, Tab, Tabs } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import IncidentEditionOverview from './IncidentEditionOverview';
 import IncidentEditionDetails from './IncidentEditionDetails';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import ErrorNotFound from '../../../../components/ErrorNotFound';
 import { IncidentEditionContainerQuery } from './__generated__/IncidentEditionContainerQuery.graphql';
-import { Box, Tab, Tabs } from '@components';
+
 interface IncidentEditionContainerProps {
   queryRef: PreloadedQuery<IncidentEditionContainerQuery>
   handleClose: () => void

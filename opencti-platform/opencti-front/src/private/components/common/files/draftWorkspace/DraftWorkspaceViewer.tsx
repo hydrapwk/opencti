@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Add } from '@mui/icons-material';
 import Drafts from '@private/components/drafts/Drafts';
+import { Grid, IconButton } from '@components';
 import { KNOWLEDGE_KNASKIMPORT } from '../../../../../utils/hooks/useGranted';
 import Security from '../../../../../utils/Security';
 import useDraftContext from '../../../../../utils/hooks/useDraftContext';
 import { useFormatter } from '../../../../../components/i18n';
 import Paper from '../../../../../components/Paper';
-import { Grid, IconButton } from '@components';
+
 interface DraftWorkspaceViewerProps {
   entityId: string
 }

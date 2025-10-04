@@ -3,13 +3,13 @@ import { createFragmentContainer, graphql } from 'react-relay';
 import { Link } from 'react-router-dom';
 import { LockPattern } from 'mdi-material-ui';
 import { LinkOff } from '@mui/icons-material';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 import { deleteNodeFromEdge } from '../../../../utils/store';
 import { useFormatter } from '../../../../components/i18n';
 import AddAttackPatterns from './AddAttackPatterns';
 import { addAttackPatternsMutationRelationDelete } from './AddAttackPatternsLines';
 import { DataComponentAttackPatterns_dataComponent$data } from './__generated__/DataComponentAttackPatterns_dataComponent.graphql';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 
 const DataComponentAttackPatternsComponent: FunctionComponent<{
   dataComponent: DataComponentAttackPatterns_dataComponent$data;

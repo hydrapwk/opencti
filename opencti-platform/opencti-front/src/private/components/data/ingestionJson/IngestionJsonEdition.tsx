@@ -15,6 +15,7 @@ import { HeaderFieldAdd } from '@private/components/common/form/HeaderField';
 import { IngestionJsonAttributes, IngestionJsonHeader } from '@private/components/data/ingestionJson/IngestionJsonCreation';
 import IngestionSchedulingField from '@private/components/data/IngestionSchedulingField';
 import { useTheme } from '@mui/styles';
+import { Alert, Box, Button, FormControlLabel, MenuItem, Switch } from '@components';
 import { convertMapper, convertUser } from '../../../../utils/edition';
 import { useFormatter } from '../../../../components/i18n';
 import { useSchemaEditionValidation } from '../../../../utils/hooks/useEntitySettings';
@@ -40,7 +41,6 @@ import {
   updateAuthenticationFields,
 } from '../../../../utils/ingestionAuthentificationUtils';
 import PasswordTextField from '../../../../components/PasswordTextField';
-import { Alert, Box, Button, FormControlLabel, MenuItem, Switch } from '@components';
 
 const ingestionJsonEditionPatch = graphql`
   mutation IngestionJsonEditionPatchMutation($id: ID!, $input: IngestionJsonAddInput!) {

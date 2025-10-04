@@ -9,6 +9,7 @@ import { Field, Form, Formik } from 'formik';
 import { useTheme } from '@mui/material';
 import { FintelDesignCreationAddMutation } from '@private/components/settings/fintel_design/__generated__/FintelDesignCreationAddMutation.graphql';
 import { useNavigate } from 'react-router-dom';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { insertNode } from '../../../../utils/store';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
@@ -18,7 +19,6 @@ import TextField from '../../../../components/TextField';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import { resolveLink } from '../../../../utils/Entity';
 import type { Theme } from '../../../../components/Theme';
-import { Button } from '@components';
 
 const fintelDesignCreationMutation = graphql`
   mutation FintelDesignCreationAddMutation($input: FintelDesignAddInput!) {

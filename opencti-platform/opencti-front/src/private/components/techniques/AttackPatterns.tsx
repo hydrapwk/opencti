@@ -1,6 +1,9 @@
 import React from 'react';
 import { graphql } from 'react-relay';
-import { AttackPatternsLinesPaginationQuery, AttackPatternsLinesPaginationQuery$variables } from '@private/components/techniques/__generated__/AttackPatternsLinesPaginationQuery.graphql';
+import {
+  AttackPatternsLinesPaginationQuery,
+  AttackPatternsLinesPaginationQuery$variables,
+} from '@private/components/techniques/__generated__/AttackPatternsLinesPaginationQuery.graphql';
 import { AttackPatternsLines_data$data } from '@private/components/techniques/__generated__/AttackPatternsLines_data.graphql';
 import AttackPatternCreation from './attack_patterns/AttackPatternCreation';
 import Security from '../../../utils/Security';

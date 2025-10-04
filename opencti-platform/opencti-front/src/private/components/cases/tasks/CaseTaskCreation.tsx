@@ -5,6 +5,7 @@ import React, { FunctionComponent } from 'react';
 import { graphql } from 'react-relay';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import * as Yup from 'yup';
+import { Button } from '@components';
 import DateTimePickerField from '../../../../components/DateTimePickerField';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
@@ -20,7 +21,6 @@ import ObjectMarkingField from '../../common/form/ObjectMarkingField';
 import { CaseTasksLinesQuery$variables } from './__generated__/CaseTasksLinesQuery.graphql';
 import ObjectParticipantField from '../../common/form/ObjectParticipantField';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

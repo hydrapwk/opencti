@@ -2,13 +2,13 @@ import React, { FunctionComponent, useState } from 'react';
 import { graphql } from 'react-relay';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@mui/styles';
+import { Alert, AlertTitle, Button, Checkbox, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControlLabel, FormGroup } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import Transition from '../../../../components/Transition';
 import { QueryRenderer } from '../../../../relay/environment';
 import type { Theme } from '../../../../components/Theme';
 import { ReportDeletionQuery$data } from './__generated__/ReportDeletionQuery.graphql';
-import { Alert, AlertTitle, Button, Checkbox, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControlLabel, FormGroup } from '@components';
 
 const reportDeletionQuery = graphql`
   query ReportDeletionQuery($id: String) {

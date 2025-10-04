@@ -5,6 +5,7 @@ import { Field, Form, Formik } from 'formik';
 import { graphql, usePreloadedQuery, useQueryLoader } from 'react-relay';
 import { PreloadedQuery } from 'react-relay/relay-hooks/EntryPointTypes';
 import { FormikHelpers } from 'formik/dist/types';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Slider } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Security from '../../../../utils/Security';
 import useGranted, { KNOWLEDGE_KNPARTICIPATE, KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
@@ -23,7 +24,6 @@ import { MESSAGING$ } from '../../../../relay/environment';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { yupShapeConditionalRequired, useDynamicSchemaCreationValidation, useIsMandatoryAttribute } from '../../../../utils/hooks/useEntitySettings';
 import useDefaultValues from '../../../../utils/hooks/useDefaultValues';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Slider } from '@components';
 
 export const stixCoreObjectOpinionsRadarDialogMyOpinionQuery = graphql`
   query StixCoreObjectOpinionsRadarDialogMyOpinionQuery($id: String!) {

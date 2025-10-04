@@ -9,13 +9,13 @@ import {
 import { stixCoreObjectTriggersFragment } from '@private/components/common/stix_core_objects/stixCoreObjectTriggersUtils';
 import { useRefetchableFragment } from 'react-relay';
 import { stixCoreObjectTriggersUtils_triggers$key as FragmentKey } from '@private/components/common/stix_core_objects/__generated__/stixCoreObjectTriggersUtils_triggers.graphql';
+import { Button, List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useGranted, { SETTINGS_SETACCESSES } from '../../../../utils/hooks/useGranted';
 import ItemIcon from '../../../../components/ItemIcon';
 import Drawer from '../drawer/Drawer';
 import { computeLink } from '../../../../utils/Entity';
 import type { Theme } from '../../../../components/Theme';
-import { Button, List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 
 // region types
 interface ContainerHeaderSharedProps {

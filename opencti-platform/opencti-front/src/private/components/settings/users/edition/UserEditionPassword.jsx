@@ -5,11 +5,11 @@ import { Formik, Form, Field } from 'formik';
 import { compose } from 'ramda';
 import * as Yup from 'yup';
 import withStyles from '@mui/styles/withStyles';
+import { Button } from '@components';
 import { commitMutation, MESSAGING$ } from '../../../../../relay/environment';
 import inject18n from '../../../../../components/i18n';
 import TextField from '../../../../../components/TextField';
 import PasswordPolicies from '../../../common/form/PasswordPolicies';
-import { Button } from '@components';
 
 const styles = (theme) => ({
   buttons: {

@@ -7,6 +7,7 @@ import type { FormikHelpers } from 'formik/dist/types';
 import { Form, Formik } from 'formik';
 import EETooltip from '@private/components/common/entreprise_edition/EETooltip';
 import EEChip from '@private/components/common/entreprise_edition/EEChip';
+import { Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Tooltip, Typography } from '@components';
 import ObjectOrganizationField from '../../common/form/ObjectOrganizationField';
 import { StixSightingRelationshipSharingQuery$data } from './__generated__/StixSightingRelationshipSharingQuery.graphql';
 import { commitMutation, QueryRenderer } from '../../../../relay/environment';
@@ -16,7 +17,6 @@ import useGranted, { KNOWLEDGE_KNUPDATE_KNORGARESTRICT } from '../../../../utils
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
 import Transition from '../../../../components/Transition';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
-import { Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Tooltip, Typography } from '@components';
 
 // region types
 interface ContainerHeaderSharedProps {

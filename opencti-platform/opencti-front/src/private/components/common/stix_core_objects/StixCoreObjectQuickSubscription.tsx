@@ -16,6 +16,7 @@ import {
 } from '@private/components/common/stix_core_objects/__generated__/stixCoreObjectTriggersUtilsPaginationQuery.graphql';
 import { stixCoreObjectTriggersUtils_triggers$key as FragmentKey } from '@private/components/common/stix_core_objects/__generated__/stixCoreObjectTriggersUtils_triggers.graphql';
 import { SvgIconPropsColorOverrides } from '@mui/material';
+import { Alert, Button, Checkbox, Collapse, IconButton, List, ListItem, ListItemButton, ListItemText, MenuItem, ToggleButton, Tooltip } from '@components';
 import AutocompleteField from '../../../../components/AutocompleteField';
 import FilterIconButton from '../../../../components/FilterIconButton';
 import { useFormatter } from '../../../../components/i18n';
@@ -34,7 +35,7 @@ import NotifierField from '../form/NotifierField';
 import { deserializeFilterGroupForFrontend, findFilterFromKey, serializeFilterGroupForBackend } from '../../../../utils/filters/filtersUtils';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Alert, Button, Checkbox, Collapse, IconButton, List, ListItem, ListItemButton, ListItemText, MenuItem, ToggleButton, Tooltip } from '@components';
+
 interface InstanceTriggerEditionFormValues {
   id: string;
   name: string;

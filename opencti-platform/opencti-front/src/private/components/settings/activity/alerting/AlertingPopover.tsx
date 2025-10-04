@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MoreVert from '@mui/icons-material/MoreVert';
 import makeStyles from '@mui/styles/makeStyles';
 import { graphql, useQueryLoader } from 'react-relay';
+import { Drawer, IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import type { Theme } from '../../../../../components/Theme';
 import { deleteNode } from '../../../../../utils/store';
@@ -15,7 +16,6 @@ import AlertDigestEdition from './AlertDigestEdition';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
 import DeleteDialog from '../../../../../components/DeleteDialog';
 import useDeletion from '../../../../../utils/hooks/useDeletion';
-import { Drawer, IconButton, Menu, MenuItem } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

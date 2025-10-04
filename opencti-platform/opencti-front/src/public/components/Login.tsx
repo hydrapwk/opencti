@@ -4,6 +4,7 @@ import { useTheme } from '@mui/styles';
 import { Facebook, Github, Google, KeyOutline } from 'mdi-material-ui';
 import Markdown from 'react-markdown';
 import makeStyles from '@mui/styles/makeStyles';
+import { Alert, AlertTitle, Box, Button, Checkbox, Paper, Typography } from '@components';
 import { APP_BASE_PATH, fileUri } from '../../relay/environment';
 import logoDark from '../../static/images/logo_text_dark.png';
 import logoLight from '../../static/images/logo_text_light.png';
@@ -21,7 +22,6 @@ import { isNotEmptyField } from '../../utils/utils';
 import useDimensions from '../../utils/hooks/useDimensions';
 import SystemBanners from './SystemBanners';
 import ResetPassword from './ResetPassword';
-import { Alert, AlertTitle, Box, Button, Checkbox, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

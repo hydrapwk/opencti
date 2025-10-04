@@ -5,6 +5,7 @@ import withStyles from '@mui/styles/withStyles';
 import * as Yup from 'yup';
 import { graphql } from 'react-relay';
 import * as R from 'ramda';
+import { Button } from '@components';
 import Drawer from '../../common/drawer/Drawer';
 import inject18n from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
@@ -15,7 +16,6 @@ import { insertNode } from '../../../../utils/store';
 import ObjectMembersField from '../../common/form/ObjectMembersField';
 import SwitchField from '../../../../components/fields/SwitchField';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button } from '@components';
 
 const styles = (theme) => ({
   buttons: {

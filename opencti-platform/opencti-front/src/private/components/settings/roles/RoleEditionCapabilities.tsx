@@ -5,6 +5,7 @@ import { PreloadedQuery } from 'react-relay/relay-hooks/EntryPointTypes';
 import LocalPoliceOutlined from '@mui/icons-material/LocalPoliceOutlined';
 import { useTheme } from '@mui/styles';
 import DangerZoneChip from '@private/components/common/danger_zone/DangerZoneChip';
+import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@components';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { useFormatter } from '../../../../components/i18n';
 import { RoleEditionCapabilitiesLinesSearchQuery } from './__generated__/RoleEditionCapabilitiesLinesSearchQuery.graphql';
@@ -13,7 +14,6 @@ import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { SETTINGS } from '../../../../utils/hooks/useGranted';
 import useSensitiveModifications from '../../../../utils/hooks/useSensitiveModifications';
 import type { Theme } from '../../../../components/Theme';
-import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@components';
 
 const roleEditionAddCapability = graphql`
   mutation RoleEditionCapabilitiesAddCapabilityMutation(

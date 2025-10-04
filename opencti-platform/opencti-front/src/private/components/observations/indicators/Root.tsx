@@ -6,6 +6,7 @@ import { RootIndicatorQuery } from '@private/components/observations/indicators/
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import { RootIndicatorSubscription } from '@private/components/observations/indicators/__generated__/RootIndicatorSubscription.graphql';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import StixCoreRelationship from '../../common/stix_core_relationships/StixCoreRelationship';
 import Indicator from './Indicator';
@@ -25,7 +26,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import IndicatorEdition from './IndicatorEdition';
 import IndicatorDeletion from './IndicatorDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootIndicatorSubscription($id: ID!) {

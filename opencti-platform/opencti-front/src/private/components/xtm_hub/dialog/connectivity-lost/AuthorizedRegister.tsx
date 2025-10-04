@@ -1,6 +1,7 @@
 import React from 'react';
-import { useFormatter } from '../../../../../components/i18n';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
+import { useFormatter } from '../../../../../components/i18n';
+
 interface Props {
   open: boolean
   onConfirm: () => void

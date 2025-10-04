@@ -3,9 +3,10 @@ import { CloudUploadOutlined } from '@mui/icons-material';
 import React, { useState } from 'react';
 import { useTheme } from '@mui/styles';
 import { useImportFilesContext } from '@private/components/common/files/import_files/ImportFilesContext';
+import { Box, Button, Typography } from '@components';
 import type { Theme } from '../../../../../components/Theme';
 import { useFormatter } from '../../../../../components/i18n';
-import { Box, Button, Typography } from '@components';
+
 interface ImportFilesDropzoneProps {
   fullSize?: boolean;
   onChange: (files: File[]) => void;

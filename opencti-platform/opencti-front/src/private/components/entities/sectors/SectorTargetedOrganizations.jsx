@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 import { graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import { AccountBalanceOutlined } from '@mui/icons-material';
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Skeleton, Typography } from '@components';
 import inject18n from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import { NO_DATA_WIDGET_MESSAGE } from '../../../../components/dashboard/WidgetNoData';
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Skeleton, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

@@ -5,13 +5,13 @@ import { compose, filter, head, map } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import { CheckCircle } from '@mui/icons-material';
 import { ConnectionHandler } from 'relay-runtime';
+import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { truncate } from '../../../../utils/String';
 import inject18n from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
 import ExternalReferenceCreation from './ExternalReferenceCreation';
 import { isNotEmptyField } from '../../../../utils/utils';
 import ItemIcon from '../../../../components/ItemIcon';
-import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 
 const styles = (theme) => ({
   icon: {

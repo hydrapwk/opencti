@@ -22,6 +22,7 @@ import IngestionSchedulingField from '@private/components/data/IngestionScheduli
 import IngestionCsvInlineMapperForm from '@private/components/data/ingestionCsv/IngestionCsvInlineMapperForm';
 import { IngestionCsvCreationUsersQuery$data } from '@private/components/data/ingestionCsv/__generated__/IngestionCsvCreationUsersQuery.graphql';
 import IngestionCreationUserHandling, { BasicUserHandlingValues } from '@private/components/data/IngestionCreationUserHandling';
+import { Alert, Box, Button, MenuItem, Tab, Tabs } from '@components';
 import Drawer, { DrawerControlledDialProps } from '../../common/drawer/Drawer';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
@@ -43,7 +44,6 @@ import SwitchField from '../../../../components/fields/SwitchField';
 import { fetchQuery } from '../../../../relay/environment';
 import { CsvMapperAddInput } from '../csvMapper/CsvMapperUtils';
 import IngestionCsvInlineWrapper from './IngestionCsvInlineWrapper';
-import { Alert, Box, Button, MenuItem, Tab, Tabs } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

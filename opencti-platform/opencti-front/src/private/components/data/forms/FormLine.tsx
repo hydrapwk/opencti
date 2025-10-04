@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MoreVert } from '@mui/icons-material';
 import { graphql, useFragment } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { DataColumns } from '../../../../components/list_lines';
 import type { Theme } from '../../../../components/Theme';
 import { FormLine_node$key } from './__generated__/FormLine_node.graphql';
@@ -11,7 +12,6 @@ import { useFormatter } from '../../../../components/i18n';
 import FormPopover from './FormPopover';
 import ItemBoolean from '../../../../components/ItemBoolean';
 import ItemIcon from '../../../../components/ItemIcon';
-import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Styles
 const useStyles = makeStyles<Theme>((theme) => ({

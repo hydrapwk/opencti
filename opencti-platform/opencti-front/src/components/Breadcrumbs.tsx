@@ -2,9 +2,10 @@ import React, { Fragment, FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '@mui/styles';
 import DangerZoneChip from '@private/components/common/danger_zone/DangerZoneChip';
+import { Typography } from '@components';
 import { truncate } from '../utils/String';
 import type { Theme } from './Theme';
-import { Typography } from '@components';
+
 interface element {
   label: string;
   link?: string;

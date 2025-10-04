@@ -1,11 +1,11 @@
-import React, { FunctionComponent } from 'react';
+import React, { type FunctionComponent } from 'react';
 import { useTheme } from '@mui/material/styles';
-import { useFormatter } from '../../../../components/i18n';
+import { Grid, TextField } from '@components';
+import { useFormatter } from '@components/i18n';
 import { FiltersVariant, getFilterDefinitionFromFilterKeysMap, useBuildFilterKeysMapFromEntityType } from '../../../../utils/filters/filtersUtils';
 import FilterDate from './FilterDate';
 import FilterAutocomplete from './FilterAutocomplete';
 import { HandleAddFilter } from '../../../../utils/hooks/useLocalStorage';
-import { Grid, TextField } from '@components';
 
 export type FilterElementsInputValue = {
   key: string;

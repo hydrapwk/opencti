@@ -9,6 +9,7 @@ import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 import { LockOutlined, NoEncryptionOutlined, Visibility, VisibilityOff } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { Alert, Box, Button, Dialog, DialogContent, DialogTitle, IconButton, ListItem, ListItemText, MenuItem, Paper, Switch, Typography } from '@components';
 import NotifierField from '../common/form/NotifierField';
 import inject18n, { useFormatter } from '../../../components/i18n';
 import TextField from '../../../components/TextField';
@@ -28,7 +29,6 @@ import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocum
 import ProfileLocalStorage from './ProfileLocalStorage';
 import useHelper from '../../../utils/hooks/useHelper';
 import DashboardSettings from '../DashboardSettings';
-import { Alert, Box, Button, Dialog, DialogContent, DialogTitle, IconButton, ListItem, ListItemText, MenuItem, Paper, Switch, Typography } from '@components';
 
 const styles = () => ({
   container: {

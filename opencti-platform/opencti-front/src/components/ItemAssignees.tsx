@@ -2,12 +2,12 @@ import React, { FunctionComponent } from 'react';
 import { CancelOutlined, PersonOutline } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
 import { stixDomainObjectMutation } from '@private/components/common/stix_domain_objects/StixDomainObjectHeader';
+import { Chip, Tooltip } from '@components';
 import { truncate } from '../utils/String';
 import useGranted, { KNOWLEDGE_KNUPDATE } from '../utils/hooks/useGranted';
 import type { Theme } from './Theme';
 import FieldOrEmpty from './FieldOrEmpty';
 import { commitMutation, defaultCommitMutation } from '../relay/environment';
-import { Chip, Tooltip } from '@components';
 
 type Node = {
   readonly entity_type: string;

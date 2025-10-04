@@ -7,6 +7,7 @@ import { FormikHelpers } from 'formik/dist/types';
 import React, { createRef, FunctionComponent, useRef, useState } from 'react';
 import { graphql, PreloadedQuery, useFragment, usePreloadedQuery, useQueryLoader } from 'react-relay';
 import * as Yup from 'yup';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
 import type { Theme } from '../../../../components/Theme';
@@ -22,7 +23,6 @@ import notifierValidator from './NotifierValidator';
 import { handleErrorInForm } from '../../../../relay/environment';
 import { convertAuthorizedMembers } from '../../../../utils/edition';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

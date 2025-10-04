@@ -6,6 +6,7 @@ import { Field, Form, Formik } from 'formik';
 import { Add, CancelOutlined } from '@mui/icons-material';
 import { Label } from 'mdi-material-ui';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Tooltip } from '@components';
 import { commitMutation, fetchQuery } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 import { labelsSearchQuery } from '../../settings/LabelsQuery';
@@ -19,7 +20,6 @@ import CommitMessage from '../form/CommitMessage';
 import Transition from '../../../../components/Transition';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
 import CardLabel from '../../../../components/CardLabel';
-import { Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

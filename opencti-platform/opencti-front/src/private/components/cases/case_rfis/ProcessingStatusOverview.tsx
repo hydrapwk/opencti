@@ -1,11 +1,12 @@
 import React from 'react';
 import { declineRequestAccessMutation, validateRequestAccessMutation } from '@private/components/cases/CaseUtils';
+import { Button, Divider, Grid, Tooltip, Typography } from '@components';
 import ItemStatus from '../../../../components/ItemStatus';
 import { useFormatter } from '../../../../components/i18n';
 import { CaseRfi_caseRfi$data } from './__generated__/CaseRfi_caseRfi.graphql';
 import { commitMutation, MESSAGING$ } from '../../../../relay/environment';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
-import { Button, Divider, Grid, Tooltip, Typography } from '@components';
+
 interface CaseRfiRequestAccessOverviewProps {
   data: CaseRfi_caseRfi$data;
 }

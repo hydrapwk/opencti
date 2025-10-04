@@ -4,6 +4,7 @@ import { Field, Form, Formik } from 'formik';
 import { FormikConfig } from 'formik/dist/types';
 import React, { FunctionComponent } from 'react';
 import { graphql, PreloadedQuery, useFragment, usePreloadedQuery } from 'react-relay';
+import { IconButton, MenuItem, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import MarkdownField from '../../../../../components/fields/MarkdownField';
 import SelectField from '../../../../../components/fields/SelectField';
@@ -22,7 +23,7 @@ import { digestTriggerValidation } from './AlertDigestCreation';
 import { alertEditionQuery } from './AlertEditionQuery';
 import AlertsField from './AlertsField';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
-import { IconButton, MenuItem, Typography } from '@components';
+
 interface AlertDigestEditionProps {
   handleClose: () => void
   paginationOptions?: AlertingPaginationQuery$variables

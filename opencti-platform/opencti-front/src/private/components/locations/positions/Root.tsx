@@ -6,6 +6,7 @@ import { RootPositionQuery } from '@private/components/locations/positions/__gen
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import { RootPositionsSubscription } from '@private/components/locations/positions/__generated__/RootPositionsSubscription.graphql';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Position from './Position';
 import PositionKnowledge from './PositionKnowledge';
@@ -24,7 +25,6 @@ import PositionEdition from './PositionEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import PositionDeletion from './PositionDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootPositionsSubscription($id: ID!) {

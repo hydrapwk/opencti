@@ -18,6 +18,7 @@ import {
 import StixDomainObjectDiamond from '@private/components/common/stix_domain_objects/StixDomainObjectDiamond';
 import { stixDomainObjectThreatDiamondQuery } from '@private/components/common/stix_domain_objects/StixDomainObjectThreatDiamondQuery';
 import { StixDomainObjectThreatDiamondQuery$data } from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectThreatDiamondQuery.graphql';
+import { Card, CardContent, FormControl, FormControlLabel, Grid, IconButton, InputLabel, MenuItem, Popover, Switch, Tab, Tabs } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import { monthsAgo } from '../../../../utils/Time';
 import { useFormatter } from '../../../../components/i18n';
@@ -41,7 +42,6 @@ import {
 import FilterIconButton from '../../../../components/FilterIconButton';
 import { FilterGroup } from '../../../../utils/filters/filtersHelpers-types';
 import StixCoreObjectReportsHorizontalBar from '../../analyses/reports/StixCoreObjectReportsHorizontalBar';
-import { Card, CardContent, FormControl, FormControlLabel, Grid, IconButton, InputLabel, MenuItem, Popover, Switch, Tab, Tabs } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

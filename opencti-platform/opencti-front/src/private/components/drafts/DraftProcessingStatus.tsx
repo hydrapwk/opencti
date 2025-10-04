@@ -2,11 +2,12 @@ import React, { FunctionComponent, useState } from 'react';
 import Drawer from '@private/components/common/drawer/Drawer';
 import CircularProgress from '@mui/material/CircularProgress';
 import { CheckCircleOutlined } from '@mui/icons-material';
+import { Alert, Badge, Tab, Tabs, Tooltip } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import useDraftContext from '../../../utils/hooks/useDraftContext';
 import DraftWorks from './DraftWorks';
 import DraftTasks from './DraftTasks';
-import { Alert, Badge, Tab, Tabs, Tooltip } from '@components';
+
 interface DraftProcessingStatusProps {
   forceRefetch: () => void;
 }

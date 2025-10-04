@@ -3,10 +3,10 @@ import Carousel from 'react-material-ui-carousel';
 import makeStyles from '@mui/styles/makeStyles';
 import { ImageListItem, ImageListItemBar } from '@mui/material';
 import { ZoomOutMapOutlined } from '@mui/icons-material';
+import { Box, IconButton, Modal, Paper, Skeleton } from '@components';
 import { convertImagesToCarousel } from '../utils/edition';
 import type { Theme } from './Theme';
 import { isNotEmptyField } from '../utils/utils';
-import { Box, IconButton, Modal, Paper, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

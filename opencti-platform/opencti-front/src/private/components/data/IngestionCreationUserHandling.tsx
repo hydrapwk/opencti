@@ -7,13 +7,13 @@ import ConfidenceField from '@private/components/common/form/ConfidenceField';
 import {
   IngestionCreationUserHandlingDefaultGroupForIngestionUsersQuery,
 } from '@private/components/data/__generated__/IngestionCreationUserHandlingDefaultGroupForIngestionUsersQuery.graphql';
+import { Alert, Box, FormControlLabel, Switch } from '@components';
 import { type FieldOption, fieldSpacingContainerStyle } from '../../../utils/field';
 import SwitchField from '../../../components/fields/SwitchField';
 import useGranted, { SETTINGS_SETACCESSES } from '../../../utils/hooks/useGranted';
 import { useFormatter } from '../../../components/i18n';
 import Loader from '../../../components/Loader';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
-import { Alert, Box, FormControlLabel, Switch } from '@components';
 
 const ingestionCreationUserHandlingDefaultGroupForIngestionUsersQuery = graphql`
   query IngestionCreationUserHandlingDefaultGroupForIngestionUsersQuery {

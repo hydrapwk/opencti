@@ -9,12 +9,12 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { ArchitectureOutlined, CheckCircleOutlined, DeleteOutlined, WarningOutlined } from '@mui/icons-material';
 import Slide from '@mui/material/Slide';
 import { useNavigate } from 'react-router-dom';
+import { IconButton, List, ListItem, ListItemIcon, ListItemText, Tooltip } from '@components';
 import { commitMutation } from '../../../../relay/environment';
 import inject18n, { useFormatter } from '../../../../components/i18n';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { IconButton, List, ListItem, ListItemIcon, ListItemText, Tooltip } from '@components';
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide direction="up" ref={ref} {...props} />

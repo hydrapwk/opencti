@@ -2,12 +2,12 @@ import { Field } from 'formik';
 import { Delete, InfoOutlined } from '@mui/icons-material';
 import React from 'react';
 import { isGenericOption } from '@private/components/common/form/AuthorizedMembersField';
+import { IconButton, ListItem, ListItemIcon, ListItemText, MenuItem, Tooltip } from '@components';
 import SelectField from '../../../../components/fields/SelectField';
 import ItemIcon from '../../../../components/ItemIcon';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { useFormatter } from '../../../../components/i18n';
 import { AccessRight, AuthorizedMemberOption } from '../../../../utils/authorizedMembers';
-import { IconButton, ListItem, ListItemIcon, ListItemText, MenuItem, Tooltip } from '@components';
 
 // Common style applied in JSX.
 const smallText = {

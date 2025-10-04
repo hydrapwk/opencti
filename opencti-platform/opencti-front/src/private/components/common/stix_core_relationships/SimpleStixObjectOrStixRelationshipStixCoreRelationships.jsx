@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
 import withStyles from '@mui/styles/withStyles';
 import { compose } from 'ramda';
+import { List, ListItem, ListItemIcon, ListItemText, Paper, Skeleton, Typography } from '@components';
 import inject18n from '../../../../components/i18n';
 import SimpleStixObjectOrStixRelationshipStixCoreRelationshipsLines, {
   simpleStixObjectOrStixRelationshipStixCoreRelationshipsLinesQuery,
 } from './SimpleStixObjectOrStixRelationshipStixCoreRelationshipsLines';
 import { QueryRenderer } from '../../../../relay/environment';
-import { List, ListItem, ListItemIcon, ListItemText, Paper, Skeleton, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

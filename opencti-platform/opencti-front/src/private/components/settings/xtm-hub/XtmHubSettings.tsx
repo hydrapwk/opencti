@@ -3,6 +3,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import { Theme } from '@mui/material/styles/createTheme';
 import XtmHubTab from '@private/components/settings/xtm-hub/XtmHubTab';
 import makeStyles from '@mui/styles/makeStyles';
+import { List, ListItem, ListItemText, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { XtmHubSettingsQuery } from './__generated__/XtmHubSettingsQuery.graphql';
 import ItemBoolean from '../../../../components/ItemBoolean';
@@ -11,7 +12,6 @@ import GradientButton from '../../../../components/GradientButton';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { UserContext } from '../../../../utils/hooks/useAuth';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { List, ListItem, ListItemText, Paper, Typography } from '@components';
 
 const useStyles = makeStyles<Theme>((theme) => ({
   paper: {

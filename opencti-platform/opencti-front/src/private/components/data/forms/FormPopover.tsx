@@ -4,6 +4,7 @@ import MoreVert from '@mui/icons-material/MoreVert';
 import makeStyles from '@mui/styles/makeStyles';
 import { FormLinesPaginationQuery$variables } from '@private/components/data/forms/__generated__/FormLinesPaginationQuery.graphql';
 import { ConnectionHandler } from 'relay-runtime';
+import { IconButton, Menu, MenuItem } from '@components';
 import { FormEditionContainerQuery } from './__generated__/FormEditionContainerQuery.graphql';
 import FormEditionContainer, { formEditionContainerQuery } from './FormEditionContainer';
 import { FormCreationContainer } from './FormCreationContainer';
@@ -14,7 +15,6 @@ import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
 import handleExportJson from './FormExportHandler';
-import { IconButton, Menu, MenuItem } from '@components';
 
 const useStyles = makeStyles(() => ({
   container: {

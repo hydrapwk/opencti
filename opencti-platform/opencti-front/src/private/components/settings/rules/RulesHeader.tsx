@@ -6,6 +6,7 @@ import { useTheme } from '@mui/material/styles';
 import { SettingsSuggestOutlined } from '@mui/icons-material';
 import Chart from '@private/components/common/charts/Chart';
 import { ApexOptions } from 'apexcharts';
+import { Paper } from '@components';
 import RulesHeaderGridCard from './RulesHeaderGridCard';
 import { RULES_LOCAL_STORAGE_KEY } from './rules-utils';
 import { RulesHeader_data$key } from './__generated__/RulesHeader_data.graphql';
@@ -19,7 +20,6 @@ import { parse } from '../../../../utils/Time';
 import { areaChartOptions } from '../../../../utils/Charts';
 import { simpleNumberFormat } from '../../../../utils/Number';
 import useAuth from '../../../../utils/hooks/useAuth';
-import { Paper } from '@components';
 
 const fragmentData = graphql`
   fragment RulesHeader_data on Query 

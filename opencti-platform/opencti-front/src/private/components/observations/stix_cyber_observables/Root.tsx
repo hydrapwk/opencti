@@ -6,6 +6,7 @@ import { RootStixCyberObservableQuery } from '@private/components/observations/s
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import { RootStixCyberObservableSubscription } from '@private/components/observations/stix_cyber_observables/__generated__/RootStixCyberObservableSubscription.graphql';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import StixCoreRelationship from '../../common/stix_core_relationships/StixCoreRelationship';
 import StixCyberObservable from './StixCyberObservable';
@@ -24,7 +25,6 @@ import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import StixCyberObservableDeletion from './StixCyberObservableDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootStixCyberObservableSubscription($id: ID!) {

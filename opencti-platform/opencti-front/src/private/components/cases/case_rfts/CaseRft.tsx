@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { useFragment } from 'react-relay';
 import { useTheme } from '@mui/material/styles';
+import { Grid, Paper, Typography } from '@components';
 import { convertMarkings } from '../../../../utils/edition';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import StixCoreObjectExternalReferences from '../../analyses/external_references/StixCoreObjectExternalReferences';
@@ -21,7 +22,7 @@ import { CaseTasksLineDummy } from '../tasks/CaseTasksLine';
 import { isFilterGroupNotEmpty, useRemoveIdAndIncorrectKeysFromFilterGroupObject } from '../../../../utils/filters/filtersUtils';
 import { FilterGroup } from '../../../../utils/filters/filtersHelpers-types';
 import useOverviewLayoutCustomization from '../../../../utils/hooks/useOverviewLayoutCustomization';
-import { Grid, Paper, Typography } from '@components';
+
 interface CaseRftProps {
   caseRftData: CaseUtils_case$key;
   enableReferences: boolean;

@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
-import MarkdownDisplay from './MarkdownDisplay';
 import { Tooltip } from '@components';
+import MarkdownDisplay from './MarkdownDisplay';
+
 interface ItemHistoryProps {
   username: string,
   message: string,

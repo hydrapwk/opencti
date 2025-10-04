@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { TaxiiLinesPaginationQuery$data } from '@private/components/data/taxii/__generated__/TaxiiLinesPaginationQuery.graphql';
+import { Box } from '@components';
 import { QueryRenderer } from '../../../relay/environment';
 import { buildViewParamsFromUrlAndStorage, saveViewParameters } from '../../../utils/ListParameters';
 import ListLines from '../../../components/list_lines/ListLines';
@@ -13,7 +14,6 @@ import { useFormatter } from '../../../components/i18n';
 import { TAXIIAPI_SETCOLLECTIONS } from '../../../utils/hooks/useGranted';
 import Security from '../../../utils/Security';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
-import { Box } from '@components';
 
 const Taxii = () => {
   const { t_i18n } = useFormatter();

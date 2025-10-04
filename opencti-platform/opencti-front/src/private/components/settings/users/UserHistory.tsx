@@ -5,13 +5,13 @@ import { LogsOrdering, OrderingMode, UserHistoryLinesQuery, UserHistoryLinesQuer
 import { StorageOutlined } from '@mui/icons-material';
 import { VectorRadius } from 'mdi-material-ui';
 import { Link } from 'react-router-dom';
+import { IconButton, Tooltip, Typography } from '@components';
 import { GqlFilterGroup } from '../../../../utils/filters/filtersUtils';
 import { useFormatter } from '../../../../components/i18n';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import SearchInput from '../../../../components/SearchInput';
 import UserHistoryLines, { userHistoryLinesQuery } from './UserHistoryLines';
 import useGranted, { KNOWLEDGE, SETTINGS_SECURITYACTIVITY } from '../../../../utils/hooks/useGranted';
-import { IconButton, Tooltip, Typography } from '@components';
 
 const createdByUserRedirectButton = {
   float: 'left',

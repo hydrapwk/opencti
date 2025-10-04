@@ -1,7 +1,8 @@
 import React from 'react';
+import { LinearProgress } from '@components';
 import { Work } from './RulesList';
 import { useFormatter } from '../../../../components/i18n';
-import { LinearProgress } from '@components';
+
 interface RuleListItemProgressBarProps {
   taskEnable: boolean
   work: NonNullable<Work>

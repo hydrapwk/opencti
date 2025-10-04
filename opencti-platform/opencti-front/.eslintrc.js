@@ -15,6 +15,7 @@ module.exports = {
       typescript: {
         project: './tsconfig.json',
       },
+      node: {},
     },
   },
   parserOptions: {
@@ -109,6 +110,7 @@ module.exports = {
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
     'react/jsx-closing-bracket-location': 'error',
-    'import/no-cycle': 'off',
+    'import/no-cycle': 'off', // TODO REMOVE AND FIX THE FIRE
+    'react/react-in-jsx-scope': 'off',
   },
 };

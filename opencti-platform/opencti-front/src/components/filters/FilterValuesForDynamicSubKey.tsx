@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { ChipOwnProps } from '@mui/material/Chip/Chip';
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { WarningOutlined } from '@mui/icons-material';
+import { Box, Chip, Tooltip } from '@components';
 import TasksFilterValueContainer from '../TasksFilterValueContainer';
 import { FilterGroup } from '../../utils/filters/filtersHelpers-types';
 import { useFormatter } from '../i18n';
@@ -9,7 +10,6 @@ import useQueryLoading from '../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../Loader';
 import { FilterValuesForDynamicSubKeyQuery } from './__generated__/FilterValuesForDynamicSubKeyQuery.graphql';
 import { sanitizeFilterGroupKeysForBackend } from '../../utils/filters/filtersUtils';
-import { Box, Chip, Tooltip } from '@components';
 
 // TODO, use MAX_RUNTIME_RESOLUTION_SIZE from backend
 const MAX_NUMBER_DYNAMIC_IDS_RESULT = 5000;

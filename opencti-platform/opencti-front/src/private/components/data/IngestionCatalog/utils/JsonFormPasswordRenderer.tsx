@@ -1,8 +1,8 @@
 import React from 'react';
 import { and, ControlProps, isStringControl, RankedTester, rankWith, schemaMatches } from '@jsonforms/core';
 import { withJsonFormsControlProps } from '@jsonforms/react';
-import PasswordTextField from '../../../../../components/PasswordTextField';
 import { Box } from '@components';
+import PasswordTextField from '../../../../../components/PasswordTextField';
 
 export const JsonFormPasswordRenderer = ({ uischema, schema }: ControlProps) => {
   const scope = uischema?.scope || ''; // eg: uischema?.scope: '#/properties/SOME_KEY';

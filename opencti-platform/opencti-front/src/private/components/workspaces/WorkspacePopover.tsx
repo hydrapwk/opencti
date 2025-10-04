@@ -3,6 +3,7 @@ import MoreVert from '@mui/icons-material/MoreVert';
 import { useNavigate } from 'react-router-dom';
 import { graphql, useFragment } from 'react-relay';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
+import { Box, IconButton, Menu, MenuItem } from '@components';
 import PublicDashboardCreationForm from './dashboards/public_dashboards/PublicDashboardCreationForm';
 import Drawer from '../common/drawer/Drawer';
 import { useFormatter } from '../../../components/i18n';
@@ -20,7 +21,6 @@ import useDeletion from '../../../utils/hooks/useDeletion';
 import WorkspacePopoverDeletionMutation from './WorkspacePopoverDeletionMutation';
 import { WorkspacesLinesPaginationQuery$variables } from './__generated__/WorkspacesLinesPaginationQuery.graphql';
 import { WorkspacePopoverFragment$key } from './__generated__/WorkspacePopoverFragment.graphql';
-import { Box, IconButton, Menu, MenuItem } from '@components';
 
 const workspacePopoverFragment = graphql`
   fragment WorkspacePopoverFragment on Workspace {

@@ -1,8 +1,8 @@
 import React from 'react';
+import { Alert, Typography } from '@components';
 import TextField, { TextFieldProps } from '../../TextField';
 import { useFormatter } from '../../i18n';
 import { splitMultilines } from '../../../utils/String';
-import { Alert, Typography } from '@components';
 
 type BulkTextFieldProps = TextFieldProps & {
   bulkType?: 'entities' | 'observables'

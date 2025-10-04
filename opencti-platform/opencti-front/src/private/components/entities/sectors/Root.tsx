@@ -7,6 +7,7 @@ import { RootSectorSubscription } from '@private/components/entities/sectors/__g
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
 import AIInsights from '@private/components/common/ai/AIInsights';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Sector from './Sector';
 import SectorKnowledge from './SectorKnowledge';
@@ -25,7 +26,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import SectorEdition from './SectorEdition';
 import SectorDeletion from './SectorDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootSectorSubscription($id: ID!) {

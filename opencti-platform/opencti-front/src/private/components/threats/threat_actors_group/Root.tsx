@@ -7,6 +7,7 @@ import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import { RootThreatActorsGroupSubscription } from '@private/components/threats/threat_actors_group/__generated__/RootThreatActorsGroupSubscription.graphql';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
 import AIInsights from '@private/components/common/ai/AIInsights';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import StixCoreObjectSimulationResultContainer from '../../common/stix_core_objects/StixCoreObjectSimulationResultContainer';
 import ThreatActorGroup from './ThreatActorGroup';
@@ -25,7 +26,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import ThreatActorGroupEdition from './ThreatActorGroupEdition';
 import ThreatActorGroupDeletion from './ThreatActorGroupDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootThreatActorsGroupSubscription($id: ID!) {

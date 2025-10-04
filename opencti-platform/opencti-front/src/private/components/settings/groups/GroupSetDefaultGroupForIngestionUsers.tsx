@@ -3,11 +3,11 @@ import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import GroupField from '@private/components/common/form/GroupField';
 import { GroupSetDefaultGroupForIngestionUsersQuery } from '@private/components/settings/groups/__generated__/GroupSetDefaultGroupForIngestionUsersQuery.graphql';
 import { useFormikContext } from 'formik';
+import { Alert, Grid, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader from '../../../../components/Loader';
-import { Alert, Grid, Paper, Typography } from '@components';
 
 export const groupSetDefaultGroupForIngestionUsersFragment = graphql`
   fragment GroupSetDefaultGroupForIngestionUsersFragment on Group {

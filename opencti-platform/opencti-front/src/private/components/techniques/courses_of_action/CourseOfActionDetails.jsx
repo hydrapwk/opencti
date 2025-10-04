@@ -4,11 +4,11 @@ import { compose } from 'ramda';
 import { graphql, createFragmentContainer } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import { PostOutline } from 'mdi-material-ui';
+import { Chip, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import CoursesOfActionAttackPatterns from './CourseOfActionAttackPatterns';
 import inject18n from '../../../../components/i18n';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { Chip, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

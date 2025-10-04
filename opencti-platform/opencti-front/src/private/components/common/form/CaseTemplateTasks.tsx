@@ -4,6 +4,7 @@ import { FormikConfig } from 'formik/dist/types';
 import * as R from 'ramda';
 import React, { FunctionComponent, useState } from 'react';
 import { graphql } from 'react-relay';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import AutocompleteField from '../../../../components/AutocompleteField';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
@@ -14,7 +15,6 @@ import { CaseTemplateTasksCreationMutation, TaskTemplateAddInput } from './__gen
 import { CaseTemplateTasksSearchQuery$data } from './__generated__/CaseTemplateTasksSearchQuery.graphql';
 import ItemIcon from '../../../../components/ItemIcon';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { useTheme } from '@mui/material';
+import { Chip } from '@components';
 import ThemeDark from './ThemeDark';
 import ThemeLight from './ThemeLight';
 import { chipInListBasicStyle } from '../utils/chipStyle';
-import { Chip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

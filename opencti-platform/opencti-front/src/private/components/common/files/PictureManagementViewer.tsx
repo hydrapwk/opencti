@@ -1,11 +1,11 @@
 import makeStyles from '@mui/styles/makeStyles';
 import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
+import { Grid, List, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import PictureLine from './PictureLine';
 import { PictureManagementViewer_entity$data, PictureManagementViewer_entity$key } from './__generated__/PictureManagementViewer_entity.graphql';
 import ColumnsLinesTitles from '../../../../components/ColumnsLinesTitles';
-import { Grid, List, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

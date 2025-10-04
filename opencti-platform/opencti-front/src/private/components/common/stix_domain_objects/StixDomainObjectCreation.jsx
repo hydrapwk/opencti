@@ -3,6 +3,7 @@ import * as R from 'ramda';
 import { graphql, usePreloadedQuery, useQueryLoader } from 'react-relay';
 import { ConnectionHandler } from 'relay-runtime';
 import Alert from '@mui/lab/Alert';
+import { Dialog, DialogContent, DialogTitle, MenuItem, Select } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { MalwareAnalysisCreationForm } from '../../analyses/malware_analyses/MalwareAnalysisCreation';
 import { MalwareCreationForm } from '../../arsenal/malwares/MalwareCreation';
@@ -44,7 +45,6 @@ import { CaseRftCreationForm } from '../../cases/case_rfts/CaseRftCreation';
 import { ThreatActorIndividualCreationForm } from '../../threats/threat_actors_individual/ThreatActorIndividualCreation';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
 import BulkTextModalButton from '../../../../components/fields/BulkTextField/BulkTextModalButton';
-import { Dialog, DialogContent, DialogTitle, MenuItem, Select } from '@components';
 
 export const stixDomainObjectCreationAllTypesQuery = graphql`
   query StixDomainObjectCreationAllTypesQuery {

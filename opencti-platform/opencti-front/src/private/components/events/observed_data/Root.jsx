@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import { graphql } from 'react-relay';
 import * as R from 'ramda';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreRelationship from '../../common/stix_core_relationships/StixCoreRelationship';
 import withRouter from '../../../../utils/compat_router/withRouter';
 import { QueryRenderer, requestSubscription } from '../../../../relay/environment';
@@ -18,7 +19,6 @@ import ObservedDataEdition from './ObservedDataEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import ObservedDataDeletion from './ObservedDataDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootObservedDataSubscription($id: ID!) {

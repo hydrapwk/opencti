@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MoreVert from '@mui/icons-material/MoreVert';
 import { graphql } from 'react-relay';
+import { Menu, MenuItem, ToggleButton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { commitMutation, QueryRenderer } from '../../../../relay/environment';
 import { observedDataEditionQuery } from './ObservedDataEdition';
@@ -10,7 +11,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { Menu, MenuItem, ToggleButton } from '@components';
 
 const ObservedDataPopoverDeletionMutation = graphql`
   mutation ObservedDataPopoverDeletionMutation($id: ID!) {

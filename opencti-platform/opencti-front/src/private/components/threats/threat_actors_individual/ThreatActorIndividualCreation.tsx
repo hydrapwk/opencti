@@ -8,6 +8,7 @@ import Drawer, { DrawerControlledDialProps } from '@private/components/common/dr
 import { styled } from '@mui/material/styles';
 import { BadgeProps } from '@mui/material';
 import CountryField from '@private/components/common/form/CountryField';
+import { Badge, Box, Button, Tab, Tabs } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import TextField from '../../../../components/TextField';
@@ -41,7 +42,7 @@ import BulkTextModal from '../../../../components/fields/BulkTextField/BulkTextM
 import BulkTextModalButton from '../../../../components/fields/BulkTextField/BulkTextModalButton';
 import BulkTextField from '../../../../components/fields/BulkTextField/BulkTextField';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Badge, Box, Button, Tab, Tabs } from '@components';
+
 interface ErrorBadgeProps extends BadgeProps {
   errors?: FormikErrors<ThreatActorIndividualAddInput>;
   width?: number;

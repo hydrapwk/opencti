@@ -3,11 +3,11 @@ import * as PropTypes from 'prop-types';
 import * as R from 'ramda';
 import { graphql, createFragmentContainer } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
+import { Grid, Paper, Typography } from '@components';
 import inject18n from '../../../../components/i18n';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
-import { Grid, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

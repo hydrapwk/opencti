@@ -3,11 +3,11 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Add, Close, Edit } from '@mui/icons-material';
 import classNames from 'classnames';
 import { createStyles } from '@mui/styles';
+import { Drawer as DrawerMUI, Fab, IconButton, Typography } from '@components';
 import { GenericContext } from '../model/GenericContextModel';
 import type { Theme } from '../../../../components/Theme';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { SubscriptionAvatars } from '../../../../components/Subscription';
-import { Drawer as DrawerMUI, Fab, IconButton, Typography } from '@components';
 
 export enum DrawerVariant {
   create = 'create',

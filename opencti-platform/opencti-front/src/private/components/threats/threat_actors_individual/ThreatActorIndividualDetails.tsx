@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { BullseyeArrow, ArmFlexOutline, DramaMasks } from 'mdi-material-ui';
 import makeStyles from '@mui/styles/makeStyles';
+import { Chip, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { useFormatter } from '../../../../components/i18n';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
@@ -15,7 +16,6 @@ import ImageCarousel, { ImagesData } from '../../../../components/ImageCarousel'
 import ThreatActorIndividualLocation from './ThreatActorIndividualLocation';
 import ThreatActorIndividualDetailsChips from './ThreatActorIndividualDetailsChips';
 import CardLabel from '../../../../components/CardLabel';
-import { Chip, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

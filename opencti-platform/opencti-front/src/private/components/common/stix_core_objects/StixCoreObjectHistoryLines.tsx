@@ -5,11 +5,11 @@ import {
   StixCoreObjectHistoryLinesQuery$variables,
 } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectHistoryLinesQuery.graphql';
 import { StixCoreObjectHistoryLines_data$key } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectHistoryLines_data.graphql';
+import { Paper } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import StixCoreObjectHistoryLine from './StixCoreObjectHistoryLine';
 import { FIVE_SECONDS } from '../../../../utils/Time';
 import useInterval from '../../../../utils/hooks/useInterval';
-import { Paper } from '@components';
 
 export const stixCoreObjectHistoryLinesQuery = graphql`
   query StixCoreObjectHistoryLinesQuery(

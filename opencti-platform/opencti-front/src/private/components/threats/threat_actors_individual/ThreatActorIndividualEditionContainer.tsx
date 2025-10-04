@@ -13,6 +13,7 @@ import {
 import {
   ThreatActorIndividualEditionBiographics_ThreatActorIndividual$key,
 } from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorIndividualEditionBiographics_ThreatActorIndividual.graphql';
+import { Box, Tab, Tabs } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import ErrorNotFound from '../../../../components/ErrorNotFound';
@@ -21,7 +22,7 @@ import ThreatActorIndividualEditionDemographics from './ThreatActorIndividualEdi
 import ThreatActorIndividualEditionBiographics from './ThreatActorIndividualEditionBiographics';
 import { ThreatActorIndividualEditionContainerQuery } from './__generated__/ThreatActorIndividualEditionContainerQuery.graphql';
 import ThreatActorIndividualEditionDetails from './ThreatActorIndividualEditionDetails';
-import { Box, Tab, Tabs } from '@components';
+
 interface ThreatActorIndividualEditionContainerProps {
   queryRef: PreloadedQuery<ThreatActorIndividualEditionContainerQuery>;
   handleClose: () => void;

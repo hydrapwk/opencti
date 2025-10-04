@@ -1,10 +1,11 @@
 import React, { FunctionComponent, useState } from 'react';
 import SearchScopeElement from '@private/components/common/lists/SearchScopeElement';
+import { Autocomplete, TextField, Tooltip } from '@components';
 import ItemIcon from '../ItemIcon';
 import { useFormatter } from '../i18n';
 import useSearchEntities, { EntityValue } from '../../utils/filters/useSearchEntities';
 import { getOptionsFromEntities } from '../../utils/filters/SearchEntitiesUtil';
-import { Autocomplete, TextField, Tooltip } from '@components';
+
 interface EntitySelectWithTypesProps {
   label?: string,
   handleChange: (value: EntityValue) => void,

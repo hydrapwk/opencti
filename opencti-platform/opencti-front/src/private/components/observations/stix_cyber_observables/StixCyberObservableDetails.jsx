@@ -4,6 +4,7 @@ import { createFragmentContainer, graphql } from 'react-relay';
 import Grid from '@mui/material/Grid2';
 import { GetAppOutlined } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { Box, Button, Divider, Menu, MenuItem, Paper, Typography } from '@components';
 import StixCyberObservableNestedEntities from './StixCyberObservableNestedEntities';
 import { useFormatter } from '../../../../components/i18n';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
@@ -14,7 +15,6 @@ import ItemCopy from '../../../../components/ItemCopy';
 import useVocabularyCategory from '../../../../utils/hooks/useVocabularyCategory';
 import StixCyberObservableMalwareAnalyses from './StixCyberObservableMalwareAnalyses';
 import useAttributes from '../../../../utils/hooks/useAttributes';
-import { Box, Button, Divider, Menu, MenuItem, Paper, Typography } from '@components';
 
 const reorderMediaContentObservablesAttributes = (data) => {
   const desiredOrder = ['content', 'title', 'media_category', 'url', 'publication_date'];

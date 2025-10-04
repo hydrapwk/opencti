@@ -3,9 +3,9 @@ import * as PropTypes from 'prop-types';
 import { compose } from 'ramda';
 import { createFragmentContainer, graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
+import { Paper, Typography } from '@components';
 import inject18n from '../../../../components/i18n';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
-import { Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

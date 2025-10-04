@@ -1,6 +1,7 @@
 import makeStyles from '@mui/styles/makeStyles';
 import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
+import { Chip, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import { DataColumns } from '../../../../components/list_lines';
 import type { Theme } from '../../../../components/Theme';
@@ -8,7 +9,6 @@ import { NotifierLine_node$key, NotifierLine_node$data } from './__generated__/N
 import { NotifiersLinesPaginationQuery$variables } from './__generated__/NotifiersLinesPaginationQuery.graphql';
 import NotifierPopover from './NotifierPopover';
 import { chipInListBasicStyle } from '../../../../utils/chipStyle';
-import { Chip, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

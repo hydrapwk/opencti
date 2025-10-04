@@ -6,6 +6,7 @@ import {
 } from '@private/components/settings/support/__generated__/SupportPackageLinesPaginationQuery.graphql';
 import SupportPackageLines, { supportPackageLinesQuery } from '@private/components/settings/support/SupportPackageLines';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
+import { Alert, Button, Paper, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleError, MESSAGING$ } from '../../../../relay/environment';
 import { usePaginationLocalStorage } from '../../../../utils/hooks/useLocalStorage';
@@ -13,7 +14,6 @@ import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import ListLines from '../../../../components/list_lines/ListLines';
 import { insertNode } from '../../../../utils/store';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Alert, Button, Paper, Tooltip, Typography } from '@components';
 
 const LOCAL_STORAGE_KEY = 'support-packages';
 

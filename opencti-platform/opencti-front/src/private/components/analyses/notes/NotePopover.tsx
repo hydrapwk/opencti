@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import StixCoreObjectEnrollPlaybook from '@private/components/common/stix_core_objects/StixCoreObjectEnrollPlaybook';
 import StixCoreObjectEnrichment from '@private/components/common/stix_core_objects/StixCoreObjectEnrichment';
 import StixCoreObjectMenuItemUnderEE from '@private/components/common/stix_core_objects/StixCoreObjectMenuItemUnderEE';
+import { IconButton, Menu, MenuItem, ToggleButton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
 import { noteEditionQuery } from './NoteEdition';
@@ -18,7 +19,6 @@ import { StixCoreObjectOrStixCoreRelationshipNotesCardsQuery$variables } from '.
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { IconButton, Menu, MenuItem, ToggleButton } from '@components';
 
 const NotePopoverDeletionMutation = graphql`
   mutation NotePopoverDeletionMutation($id: ID!) {

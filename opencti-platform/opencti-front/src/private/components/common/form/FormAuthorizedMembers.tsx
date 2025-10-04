@@ -2,10 +2,10 @@ import { Field, Form, Formik } from 'formik';
 import React from 'react';
 import { FormikHelpers } from 'formik/dist/types';
 import AuthorizedMembersField, { AuthorizedMembersFieldValue } from '@private/components/common/form/AuthorizedMembersField';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import Transition from '../../../../components/Transition';
 import { useFormatter } from '../../../../components/i18n';
 import { Creator } from '../../../../utils/authorizedMembers';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 export interface FormAuthorizedMembersInputs {
   authorizedMembers: AuthorizedMembersFieldValue;

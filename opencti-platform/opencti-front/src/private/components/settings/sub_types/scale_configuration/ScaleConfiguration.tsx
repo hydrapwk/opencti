@@ -4,13 +4,13 @@ import * as Yup from 'yup';
 import { FormikErrors, FormikValues } from 'formik';
 import { clone } from 'ramda';
 import { Add } from '@mui/icons-material';
+import { FormControl, IconButton, InputLabel, MenuItem, Paper, Select, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import type { Theme } from '../../../../../components/Theme';
 import { allScales, customScaleName, findSelectedScaleName } from '../../../../../utils/hooks/useScale';
 import type { ScaleConfig, Tick, UndefinedTick } from './scale';
 import ScaleConfigurationLine from './ScaleConfigurationLine';
 import ScaleBar from './ScaleBar';
-import { FormControl, IconButton, InputLabel, MenuItem, Paper, Select, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

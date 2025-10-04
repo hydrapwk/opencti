@@ -5,8 +5,9 @@ import {
   StixNestedRefRelationshipCreationResolveQuery,
 } from '@private/components/common/stix_nested_ref_relationships/__generated__/StixNestedRefRelationshipCreationResolveQuery.graphql';
 import React, { FunctionComponent } from 'react';
-import { useFormatter } from '../../../../components/i18n';
 import { IconButton, Tooltip } from '@components';
+import { useFormatter } from '../../../../components/i18n';
+
 interface StixNestedRefRelationshipCreationFromKnowledgeGraphContentProps {
   queryRef: PreloadedQuery<StixNestedRefRelationshipCreationResolveQuery>,
   nestedRelationExist: boolean,

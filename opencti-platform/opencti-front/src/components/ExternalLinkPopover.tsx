@@ -1,7 +1,8 @@
 import React, { FunctionComponent } from 'react';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText } from '@components';
 import { useFormatter } from './i18n';
 import Transition from './Transition';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText } from '@components';
+
 interface ExternalLinkPopoverProps {
   displayExternalLink: boolean;
   externalLink: string | URL | undefined;

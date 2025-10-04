@@ -11,7 +11,7 @@ import {
   handleReplaceFilterValuesUtil,
   handleSwitchLocalModeUtil,
 } from './filtersManageStateUtil';
-import { Filter, FilterGroup, FilterValue, handleFilterHelpers } from './filtersHelpers-types';
+import { type Filter, type FilterGroup, type FilterValue, handleFilterHelpers } from './filtersHelpers-types';
 
 interface useFiltersStateProps {
   filters: FilterGroup,

@@ -3,11 +3,11 @@ import * as Yup from 'yup';
 import { Field, Form, Formik } from 'formik';
 import ObjectMarkingField from '@private/components/common/form/ObjectMarkingField';
 import React from 'react';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem } from '@components';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import SelectField from '../../../../components/fields/SelectField';
 import TextField from '../../../../components/TextField';
 import { useFormatter } from '../../../../components/i18n';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem } from '@components';
 
 export interface CreateFileFormInputs {
   name: string

@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { ArrowDropDownOutlined, ArrowDropUpOutlined } from '@mui/icons-material';
-import { useFormatter } from '../../../../components/i18n';
 import { Box } from '@components';
+import { useFormatter } from '../../../../components/i18n';
 
 const sortHeaderStyle: Record<string, CSSProperties> = {
   iconSort: {

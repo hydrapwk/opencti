@@ -3,9 +3,10 @@ import { graphql } from 'react-relay';
 import { FilesNativeFieldQuery$data } from '@private/components/common/form/__generated__/FilesNativeFieldQuery.graphql';
 import makeStyles from '@mui/styles/makeStyles';
 import { FileOutline } from 'mdi-material-ui';
+import { Autocomplete, TextField } from '@components';
 import { fetchQuery } from '../../../../relay/environment';
 import { truncate } from '../../../../utils/String';
-import { Autocomplete, TextField } from '@components';
+
 interface FilesFieldProps {
   stixCoreObjectId: string;
   name: string;

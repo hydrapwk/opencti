@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTheme } from '@mui/styles';
+import { Alert } from '@components';
 import useConfidenceLevel from '../utils/hooks/useConfidenceLevel';
 import { useFormatter } from './i18n';
 import type { Theme } from './Theme';
-import { Alert } from '@components';
 
 type AlertConfidenceForEntityProps = {
   entity: {

@@ -4,9 +4,9 @@ import { compose, pathOr } from 'ramda';
 import { interval } from 'rxjs';
 import { createRefetchContainer, graphql } from 'react-relay';
 import withTheme from '@mui/styles/withTheme';
+import { Grid, Paper, Typography } from '@components';
 import { FIVE_SECONDS } from '../../../../utils/Time';
 import inject18n from '../../../../components/i18n';
-import { Grid, Paper, Typography } from '@components';
 
 const interval$ = interval(FIVE_SECONDS);
 

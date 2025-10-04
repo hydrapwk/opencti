@@ -1,10 +1,11 @@
 import { PaletteOutlined } from '@mui/icons-material';
 import MenuList from '@mui/material/MenuList';
 import React, { useState } from 'react';
+import { Checkbox, IconButton, InputAdornment, ListItemText, MenuItem, Popover } from '@components';
 import useAttributes from '../../../../utils/hooks/useAttributes';
 import { displayEntityTypeForTranslation } from '../../../../utils/String';
 import { useFormatter } from '../../../../components/i18n';
-import { Checkbox, IconButton, InputAdornment, ListItemText, MenuItem, Popover } from '@components';
+
 interface EntityTypeSelectAdornmentProps {
   disabled?: boolean
   value: string[]

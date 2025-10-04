@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import { KeyboardArrowRight } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
 import { graphql, useFragment } from 'react-relay';
+import { Checkbox, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { DataColumns } from '../../../../../../components/list_lines';
 import { UseEntityToggle } from '../../../../../../utils/hooks/useEntityToggle';
 import { resolveLink } from '../../../../../../utils/Entity';
 import ItemIcon from '../../../../../../components/ItemIcon';
-import type { Theme } from '../../../../../../components/Theme';import { Checkbox, ListItemButton, ListItemIcon, ListItemText } from '@components';
-import {
+import type { Theme } from '../../../../../../components/Theme'; import {
   EntityStixCoreRelationshipsIndicatorsContextualViewLine_node$data,
   EntityStixCoreRelationshipsIndicatorsContextualViewLine_node$key,
 } from './__generated__/EntityStixCoreRelationshipsIndicatorsContextualViewLine_node.graphql';

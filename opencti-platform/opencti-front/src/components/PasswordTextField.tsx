@@ -1,10 +1,10 @@
 import React, { FunctionComponent, useState } from 'react';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { Field, useField, useFormikContext } from 'formik';
+import { IconButton } from '@components';
 import { useFormatter } from './i18n';
 import { fieldSpacingContainerStyle } from '../utils/field';
 import TextField from './TextField';
-import { IconButton } from '@components';
 
 // TODO remove any when component TextField is typescript
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

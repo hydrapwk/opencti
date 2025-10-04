@@ -3,14 +3,16 @@ import SubTypeStatusPopover from '@private/components/settings/sub_types/SubType
 import { graphql, useFragment } from 'react-relay';
 import RequestAccessConfigurationPopover from '@private/components/settings/sub_types/workflow/RequestAccessConfigurationPopover';
 import RequestAccessStatus from '@private/components/settings/sub_types/workflow/RequestAccessStatus';
-import { RequestAccessConfigurationEdition_requestAccess$key } from '@private/components/settings/sub_types/workflow/__generated__/RequestAccessConfigurationEdition_requestAccess.graphql';
+import {
+  RequestAccessConfigurationEdition_requestAccess$key,
+} from '@private/components/settings/sub_types/workflow/__generated__/RequestAccessConfigurationEdition_requestAccess.graphql';
 import { useTheme } from '@mui/styles';
+import { Paper, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import { StatusScopeEnum } from '../../../../../utils/statusConstants';
 import ItemStatusTemplate from '../../../../../components/ItemStatusTemplate';
 import { RequestAccessSettings_requestAccess$key } from './__generated__/RequestAccessSettings_requestAccess.graphql';
 import type { Theme } from '../../../../../components/Theme';
-import { Paper, Typography } from '@components';
 
 const requestAccessSettingsFragment = graphql`
   fragment RequestAccessSettings_requestAccess on SubType {

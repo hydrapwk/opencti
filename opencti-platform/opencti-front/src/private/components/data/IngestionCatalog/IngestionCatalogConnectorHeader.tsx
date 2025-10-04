@@ -5,12 +5,12 @@ import IngestionCatalogChip from '@private/components/data/IngestionCatalog/Inge
 import { IngestionConnector } from '@private/components/data/IngestionCatalog';
 import EnterpriseEditionButton from '@private/components/common/entreprise_edition/EnterpriseEditionButton';
 import { getConnectorMetadata } from '@private/components/data/IngestionCatalog/utils/ingestionConnectorTypeMetadata';
+import { Button, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import { INGESTION_SETINGESTIONS } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
 import ItemBoolean from '../../../../components/ItemBoolean';
-import { Button, Typography } from '@components';
 
 type IngestionCatalogConnectorHeaderProps = {
   connector: IngestionConnector,

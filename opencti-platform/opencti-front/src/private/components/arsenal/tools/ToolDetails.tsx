@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { ToolDetails_tool$key } from '@private/components/arsenal/tools/__generated__/ToolDetails_tool.graphql';
+import { Grid, List, ListItem, ListItemText, Paper, Tooltip, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
 import StixCoreObjectKillChainPhasesView from '../../common/stix_core_objects/StixCoreObjectKillChainPhasesView';
 import { truncate } from '../../../../utils/String';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
 import { useFormatter } from '../../../../components/i18n';
-import { Grid, List, ListItem, ListItemText, Paper, Tooltip, Typography } from '@components';
 
 const ToolDetailsFragment = graphql`
  fragment ToolDetails_tool on Tool {

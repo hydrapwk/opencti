@@ -3,6 +3,7 @@ import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { Link } from 'react-router-dom';
 import { KeyboardArrowRightOutlined } from '@mui/icons-material';
+import { Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import type { Theme } from '../../../../components/Theme';
 import { TasksLine_node$data, TasksLine_node$key } from './__generated__/TasksLine_node.graphql';
@@ -11,7 +12,6 @@ import { DataColumns } from '../../../../components/list_lines';
 import StixCoreObjectLabels from '../../common/stix_core_objects/StixCoreObjectLabels';
 import ItemStatus from '../../../../components/ItemStatus';
 import ItemDueDate from '../../../../components/ItemDueDate';
-import { Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

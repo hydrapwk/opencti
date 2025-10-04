@@ -4,6 +4,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { ChipOwnProps } from '@mui/material/Chip/Chip';
 import { WarningOutlined } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import { Box, Chip, Tooltip } from '@components';
 import { useFormatter } from '../i18n';
 import type { Theme } from '../Theme';
 import { FiltersRestrictions, isFilterEditable, isFilterGroupNotEmpty, isRegardingOfFilterWarning, useFilterDefinition } from '../../utils/filters/filtersUtils';
@@ -13,7 +14,6 @@ import { FilterRepresentative } from './FiltersModel';
 import { Filter } from '../../utils/filters/filtersHelpers-types';
 import useSchema from '../../utils/hooks/useSchema';
 import FilterValuesForDynamicSubKey from './FilterValuesForDynamicSubKey';
-import { Box, Chip, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

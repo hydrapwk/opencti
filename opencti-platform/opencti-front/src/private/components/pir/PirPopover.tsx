@@ -18,11 +18,11 @@ import MoreVert from '@mui/icons-material/MoreVert';
 import { PopoverProps } from '@mui/material';
 import { graphql, useFragment } from 'react-relay';
 import { useNavigate } from 'react-router-dom';
+import { Button, Menu, MenuItem } from '@components';
 import { PirPopoverFragment$key } from './__generated__/PirPopoverFragment.graphql';
 import { useFormatter } from '../../../components/i18n';
 import stopEvent from '../../../utils/domEvent';
 import PirDeletion from './PirDeletion';
-import { Button, Menu, MenuItem } from '@components';
 
 const popoverFragment = graphql`
   fragment PirPopoverFragment on Pir {

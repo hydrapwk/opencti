@@ -2,6 +2,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import React, { FunctionComponent, useState } from 'react';
 import { Add } from '@mui/icons-material';
 import Drawer from '@private/components/common/drawer/Drawer';
+import { IconButton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import SearchInput from '../../../../components/SearchInput';
@@ -12,7 +13,6 @@ import {
   AddAttackPatternsLinesToDataComponentQuery$variables,
 } from './__generated__/AddAttackPatternsLinesToDataComponentQuery.graphql';
 import AddAttackPatternsLines, { addAttackPatternsLinesQuery } from './AddAttackPatternsLines';
-import { IconButton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

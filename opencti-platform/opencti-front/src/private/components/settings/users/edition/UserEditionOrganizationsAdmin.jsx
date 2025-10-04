@@ -17,11 +17,11 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { AccountBalanceOutlined } from '@mui/icons-material';
+import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@components';
 import EnterpriseEdition from '../../../common/entreprise_edition/EnterpriseEdition';
 import useEnterpriseEdition from '../../../../../utils/hooks/useEnterpriseEdition';
 import { useFormatter } from '../../../../../components/i18n';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
-import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@components';
 
 const userEditionOrganizationsAdminAddMutation = graphql`
   mutation UserEditionOrganizationsAdminAddMutation(

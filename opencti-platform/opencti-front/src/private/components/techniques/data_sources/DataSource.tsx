@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useFragment } from 'react-relay';
+import { Grid } from '@components';
 import StixCoreObjectOrStixCoreRelationshipNotes from '../../analyses/notes/StixCoreObjectOrStixCoreRelationshipNotes';
 import StixDomainObjectOverview from '../../common/stix_domain_objects/StixDomainObjectOverview';
 import StixCoreObjectExternalReferences from '../../analyses/external_references/StixCoreObjectExternalReferences';
@@ -9,7 +10,6 @@ import { DataSource_dataSource$key } from './__generated__/DataSource_dataSource
 import DataSourceDetailsComponent from './DataSourceDetails';
 import StixCoreObjectOrStixRelationshipLastContainers from '../../common/containers/StixCoreObjectOrStixRelationshipLastContainers';
 import useOverviewLayoutCustomization from '../../../../utils/hooks/useOverviewLayoutCustomization';
-import { Grid } from '@components';
 
 const dataSourceFragment = graphql`
   fragment DataSource_dataSource on DataSource {

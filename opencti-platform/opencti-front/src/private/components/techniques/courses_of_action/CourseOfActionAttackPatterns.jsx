@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 import { ExpandLessOutlined, ExpandMoreOutlined, LinkOff } from '@mui/icons-material';
 import { graphql, createFragmentContainer } from 'react-relay';
 import * as R from 'ramda';
+import { Avatar, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import { truncate } from '../../../../utils/String';
 import AddAttackPatterns from './AddAttackPatterns';
 import { addAttackPatternsLinesMutationRelationDelete } from './AddAttackPatternsLines';
 import { commitMutation } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
-import { Avatar, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 const styles = (theme) => ({
   avatar: {

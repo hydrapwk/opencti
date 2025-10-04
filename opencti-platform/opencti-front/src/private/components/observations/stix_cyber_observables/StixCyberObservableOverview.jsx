@@ -7,6 +7,7 @@ import { InformationOutline } from 'mdi-material-ui';
 import { BrushOutlined, Delete } from '@mui/icons-material';
 import { graphql } from 'react-relay';
 import Slide from '@mui/material/Slide';
+import { Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, Grid, IconButton, List, ListItem, ListItemText, Paper, Tooltip, Typography } from '@components';
 import { commitMutation, MESSAGING$ } from '../../../../relay/environment';
 import ItemScore from '../../../../components/ItemScore';
 import StixCoreObjectLabelsView from '../../common/stix_core_objects/StixCoreObjectLabelsView';
@@ -17,7 +18,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import ItemCopy from '../../../../components/ItemCopy';
 import ItemMarkings from '../../../../components/ItemMarkings';
-import { Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, Grid, IconButton, List, ListItem, ListItemText, Paper, Tooltip, Typography } from '@components';
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide direction="up" ref={ref} {...props} />

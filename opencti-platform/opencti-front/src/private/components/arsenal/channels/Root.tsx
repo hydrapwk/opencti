@@ -4,6 +4,7 @@ import { graphql, useSubscription, usePreloadedQuery, PreloadedQuery } from 'rea
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Channel from './Channel';
 import ChannelKnowledge from './ChannelKnowledge';
@@ -23,7 +24,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import ChannelEdition from './ChannelEdition';
 import ChannelDeletion from './ChannelDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootChannelSubscription($id: ID!) {

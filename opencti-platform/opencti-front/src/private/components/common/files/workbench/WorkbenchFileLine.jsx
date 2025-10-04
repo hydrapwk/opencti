@@ -7,6 +7,7 @@ import { DeleteOutlined, GetAppOutlined, WarningOutlined } from '@mui/icons-mate
 import CircularProgress from '@mui/material/CircularProgress';
 import { Link } from 'react-router-dom';
 import Slide from '@mui/material/Slide';
+import { Chip, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 import { WorkbenchFileLineDeleteMutation, workbenchLineFragment } from '../../../data/import/ImportWorkbenchesContent';
 import FileWork from '../FileWork';
 import { useFormatter } from '../../../../../components/i18n';
@@ -16,7 +17,6 @@ import useAuth from '../../../../../utils/hooks/useAuth';
 import ItemMarkings from '../../../../../components/ItemMarkings';
 import DeleteDialog from '../../../../../components/DeleteDialog';
 import useDeletion from '../../../../../utils/hooks/useDeletion';
-import { Chip, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip } from '@components';
 
 const styles = (theme) => ({
   itemNested: {

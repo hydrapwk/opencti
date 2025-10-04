@@ -3,13 +3,13 @@ import { InformationOutline } from 'mdi-material-ui';
 import WidgetFilters from '@private/components/widgets/WidgetFilters';
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button, IconButton, TextField, Tooltip } from '@components';
 import { emptyFilterGroup } from '../../../utils/filters/filtersUtils';
 import { useFormatter } from '../../../components/i18n';
 import type { Theme } from '../../../components/Theme';
 import type { WidgetPerspective } from '../../../utils/widget/widget';
 import { getCurrentCategory, getCurrentDataSelectionLimit } from '../../../utils/widget/widgetUtils';
 import { useWidgetConfigContext } from './WidgetConfigContext';
-import { Button, IconButton, TextField, Tooltip } from '@components';
 
 const useStyles = makeStyles<Theme>((theme) => ({
   step_entity: {

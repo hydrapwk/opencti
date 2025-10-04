@@ -6,12 +6,12 @@ import { ExclusionListsLinesPaginationQuery$variables } from '@private/component
 import ExclusionListEdition, { exclusionListMutationFieldPatch } from '@private/components/settings/exclusion_lists/ExclusionListEdition';
 import { Link } from 'react-router-dom';
 import { APP_BASE_PATH } from 'src/relay/environment';
+import { IconButton, Menu, MenuItem } from '@components';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import { useFormatter } from '../../../../components/i18n';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import useDeletion from '../../../../utils/hooks/useDeletion';
 import { deleteNode } from '../../../../utils/store';
-import { IconButton, Menu, MenuItem } from '@components';
 
 export const exclusionListPopoverDeletionMutation = graphql`
   mutation ExclusionListPopoverDeletionMutation($id: ID!) {

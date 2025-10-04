@@ -4,11 +4,11 @@ import { useFragment } from 'react-relay';
 import ContainerStixObjectsOrStixRelationships from '@private/components/common/containers/ContainerStixObjectsOrStixRelationships';
 import StixCoreObjectLatestHistory from '@private/components/common/stix_core_objects/StixCoreObjectLatestHistory';
 import StixDomainObjectOverview from '@private/components/common/stix_domain_objects/StixDomainObjectOverview';
+import { Grid } from '@components';
 import StixCoreObjectExternalReferences from '../external_references/StixCoreObjectExternalReferences';
 import { Note_note$key } from './__generated__/Note_note.graphql';
 import NoteDetails from './NoteDetails';
 import useOverviewLayoutCustomization from '../../../../utils/hooks/useOverviewLayoutCustomization';
-import { Grid } from '@components';
 
 const NoteComponentFragment = graphql`
   fragment Note_note on Note {

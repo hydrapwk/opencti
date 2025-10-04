@@ -2,9 +2,10 @@ import React, { FunctionComponent } from 'react';
 import { AssignmentOutlined } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { StixCoreObjectFormsFormsQuery$data } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectFormsFormsQuery.graphql';
+import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import Drawer from '../drawer/Drawer';
 import { useFormatter } from '../../../../components/i18n';
-import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
+
 interface StixCoreObjectFormSelectorProps {
   data: StixCoreObjectFormsFormsQuery$data;
   open: boolean;

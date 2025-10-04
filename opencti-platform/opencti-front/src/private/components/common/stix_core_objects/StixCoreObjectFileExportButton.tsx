@@ -1,8 +1,9 @@
 import { FileExportOutline } from 'mdi-material-ui';
 import React from 'react';
+import { ToggleButton, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
-import { ToggleButton, Tooltip } from '@components';
+
 interface StixCoreObjectFileExportButtonProps {
   onOpen: () => void
   isExportPossible: boolean

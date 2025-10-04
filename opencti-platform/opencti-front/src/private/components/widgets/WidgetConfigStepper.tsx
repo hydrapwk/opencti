@@ -1,8 +1,8 @@
 import React from 'react';
+import { Step, StepButton, StepLabel, Stepper } from '@components';
 import { getCurrentCategory } from '../../../utils/widget/widgetUtils';
 import { useFormatter } from '../../../components/i18n';
 import { useWidgetConfigContext } from './WidgetConfigContext';
-import { Step, StepButton, StepLabel, Stepper } from '@components';
 
 const WidgetConfigStepper = () => {
   const { t_i18n } = useFormatter();

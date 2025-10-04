@@ -3,10 +3,11 @@ import { DateRangeOutlined } from '@mui/icons-material';
 import { useTheme } from '@mui/material/styles';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import { Link } from 'react-router-dom';
+import { Button, TextField } from '@components';
 import { useFormatter } from '../i18n';
 import { isValidDate, RELATIVE_DATE_REGEX } from '../../utils/String';
 import { Filter, handleFilterHelpers } from '../../utils/filters/filtersHelpers-types';
-import { Button, TextField } from '@components';
+
 interface RelativeDateInputProps {
   filter?: Filter;
   filterKey: string;

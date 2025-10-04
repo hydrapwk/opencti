@@ -4,6 +4,7 @@ import parse from 'html-react-parser';
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import { AutoModeOutlined, ContentCopyOutlined } from '@mui/icons-material';
 import { AISummaryContainersContainersAskAiSummaryQuery$data } from '@private/components/common/ai/__generated__/AISummaryContainersContainersAskAiSummaryQuery.graphql';
+import { Alert, Divider, FormControl, Grid, IconButton, InputLabel, MenuItem, Select, Tooltip, Typography } from '@components';
 import { AISummaryContainersSubscription, AISummaryContainersSubscription$data } from './__generated__/AISummaryContainersSubscription.graphql';
 import { useFormatter } from '../../../../components/i18n';
 import { FilterGroup, handleFilterHelpers } from '../../../../utils/filters/filtersHelpers-types';
@@ -12,7 +13,6 @@ import { fetchQuery } from '../../../../relay/environment';
 import { cleanHtmlTags, copyToClipboard } from '../../../../utils/utils';
 import { daysAgo, monthsAgo } from '../../../../utils/Time';
 import { RelayError } from '../../../../relay/relayTypes';
-import { Alert, Divider, FormControl, Grid, IconButton, InputLabel, MenuItem, Select, Tooltip, Typography } from '@components';
 
 const subscription = graphql`
     subscription AISummaryContainersSubscription($id: ID!) {

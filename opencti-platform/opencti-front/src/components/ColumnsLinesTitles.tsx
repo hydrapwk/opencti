@@ -2,9 +2,9 @@ import React, { FunctionComponent } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { ArrowDropDown, ArrowDropUp } from '@mui/icons-material';
 import { toPairs } from 'ramda';
+import { ListItem, ListItemIcon, ListItemText } from '@components';
 import { useFormatter } from './i18n';
 import { DataColumns } from './list_lines';
-import { ListItem, ListItemIcon, ListItemText } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

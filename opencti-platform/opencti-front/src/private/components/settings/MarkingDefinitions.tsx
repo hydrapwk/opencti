@@ -3,6 +3,7 @@ import { graphql } from 'react-relay';
 import { MarkingDefinitionsLine_node$data } from '@private/components/settings/__generated__/MarkingDefinitionsLine_node.graphql';
 import DangerZoneChip from '@private/components/common/danger_zone/DangerZoneChip';
 import { useTheme } from '@mui/material/styles';
+import { Tooltip } from '@components';
 import { MarkingDefinitionsLinesPaginationQuery } from './__generated__/MarkingDefinitionsLinesPaginationQuery.graphql';
 import MarkingDefinitionPopover from './marking_definitions/MarkingDefinitionPopover';
 import AccessesMenu from './AccessesMenu';
@@ -22,7 +23,6 @@ import type { DataTableColumn } from '../../../components/dataGrid/dataTableType
 import type { Theme } from '../../../components/Theme';
 import MarkingIcon from '../../../utils/MarkingIcon';
 import ItemCopy from '../../../components/ItemCopy';
-import { Tooltip } from '@components';
 
 const LOCAL_STORAGE_KEY = 'MarkingDefinitions';
 

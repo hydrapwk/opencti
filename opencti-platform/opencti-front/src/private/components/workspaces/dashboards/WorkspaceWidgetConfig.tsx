@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
 import { Widget } from 'src/utils/widget/widget';
+import { Button, MenuItem } from '@components';
 import VisuallyHiddenInput from '../../common/VisuallyHiddenInput';
 import WidgetConfig from '../../widgets/WidgetConfig';
 import Security from '../../../../utils/Security';
 import { EXPLORE_EXUPDATE } from '../../../../utils/hooks/useGranted';
 import { useFormatter } from '../../../../components/i18n';
-import { Button, MenuItem } from '@components';
 
 type WorkspaceWidgetConfigProps = {
   handleImportWidget: (widgetFile: File) => void

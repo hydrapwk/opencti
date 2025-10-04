@@ -6,13 +6,13 @@ import IngestionCsvPopover from '@private/components/data/ingestionCsv/Ingestion
 import { IngestionCsvLinesPaginationQuery$variables } from '@private/components/data/ingestionCsv/__generated__/IngestionCsvLinesPaginationQuery.graphql';
 import { IngestionCsvLine_node$key } from '@private/components/data/ingestionCsv/__generated__/IngestionCsvLine_node.graphql';
 import TableViewIcon from '@mui/icons-material/TableView';
+import { ListItem, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 import ItemBoolean from '../../../../components/ItemBoolean';
 import { useFormatter } from '../../../../components/i18n';
 import { DataColumns } from '../../../../components/list_lines';
 import type { Theme } from '../../../../components/Theme';
 import { INGESTION_SETINGESTIONS } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
-import { ListItem, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

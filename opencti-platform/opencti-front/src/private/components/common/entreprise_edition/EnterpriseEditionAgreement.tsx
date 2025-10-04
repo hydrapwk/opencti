@@ -1,9 +1,9 @@
 import React, { FunctionComponent, useState } from 'react';
 import { graphql } from 'react-relay';
+import { Alert, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormGroup, TextField } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { isEmptyField } from '../../../../utils/utils';
-import { Alert, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormGroup, TextField } from '@components';
 
 const EnterpriseEditionAgreementMutationFieldPatch = graphql`
   mutation EnterpriseEditionAgreementMutation($id: ID!, $input: [EditInput]!) {

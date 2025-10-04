@@ -5,6 +5,7 @@ import DecayChart, { DecayHistory } from '@private/components/settings/decay/Dec
 import { useParams } from 'react-router-dom';
 import { DecayRuleQuery } from '@private/components/settings/decay/__generated__/DecayRuleQuery.graphql';
 import { useTheme } from '@mui/styles';
+import { Box, Grid, Paper, Tooltip, Typography } from '@components';
 import DecayRuleEdition from './DecayRuleEdition';
 import DecayRulePopover from './DecayRulePopover';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
@@ -17,7 +18,6 @@ import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import type { Theme } from '../../../../components/Theme';
-import { Box, Grid, Paper, Tooltip, Typography } from '@components';
 
 const decayRuleQuery = graphql`
   query DecayRuleQuery($id: String!) {

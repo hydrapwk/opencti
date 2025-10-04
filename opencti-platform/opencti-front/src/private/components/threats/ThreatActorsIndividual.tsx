@@ -3,6 +3,7 @@ import { ViewListOutlined, ViewModuleOutlined } from '@mui/icons-material';
 import { ThreatActorIndividualCardFragment } from '@private/components/threats/threat_actors_individual/ThreatActorIndividualCard';
 import { ThreatActorsIndividualCards_data$data } from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorsIndividualCards_data.graphql';
 import StixCoreObjectForms from '@private/components/common/stix_core_objects/StixCoreObjectForms';
+import { Grid, ToggleButton, Tooltip } from '@components';
 import { usePaginationLocalStorage } from '../../../utils/hooks/useLocalStorage';
 import ListCards from '../../../components/list_cards/ListCards';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
@@ -24,7 +25,6 @@ import DataTable from '../../../components/dataGrid/DataTable';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
 import { KNOWLEDGE_KNUPDATE } from '../../../utils/hooks/useGranted';
 import Security from '../../../utils/Security';
-import { Grid, ToggleButton, Tooltip } from '@components';
 
 const LOCAL_STORAGE_KEY_THREAT_ACTORS_INDIVIDUAL = 'threatActorsIndividuals';
 

@@ -7,6 +7,7 @@ import withStyles from '@mui/styles/withStyles';
 import { ConnectionHandler } from 'relay-runtime';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { Field, Form, Formik } from 'formik';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, MenuItem } from '@components';
 import DraftWorkspaceViewer from './draftWorkspace/DraftWorkspaceViewer';
 import ObjectMarkingField from '../form/ObjectMarkingField';
 import FileExportViewer from './FileExportViewer';
@@ -21,7 +22,6 @@ import WorkbenchFileViewer from './workbench/WorkbenchFileViewer';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import PictureManagementViewer from './PictureManagementViewer';
 import { resolveHasUserChoiceParsedCsvMapper } from '../../../../utils/csvMapperUtils';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, MenuItem } from '@components';
 
 const styles = (theme) => ({
   container: {

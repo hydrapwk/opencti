@@ -7,6 +7,7 @@ import ValidateTermsOfUseDialog from '@private/components/settings/ValidateTerms
 import { LogoXtmOneIcon } from 'filigran-icon';
 import FiligranIcon from '@private/components/common/FiligranIcon';
 import EETooltip from '@private/components/common/entreprise_edition/EETooltip';
+import { IconButton } from '@components';
 import GradientButton, { GradientVariant } from '../../../components/GradientButton';
 import { useFormatter } from '../../../components/i18n';
 import useEnterpriseEdition from '../../../utils/hooks/useEnterpriseEdition';
@@ -17,7 +18,6 @@ import embleme from '../../../static/images/embleme_filigran_white.png';
 import useHelper from '../../../utils/hooks/useHelper';
 import useAuth from '../../../utils/hooks/useAuth';
 import useGranted, { SETTINGS_SETPARAMETERS } from '../../../utils/hooks/useGranted';
-import { IconButton } from '@components';
 
 const AskArianeButton = React.forwardRef((props, ref) => {
   const { t_i18n } = useFormatter();

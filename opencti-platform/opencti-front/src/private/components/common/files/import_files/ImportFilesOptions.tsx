@@ -5,12 +5,13 @@ import { Field, FormikContextType, FormikProvider } from 'formik';
 import StixCoreObjectsField from '@private/components/common/form/StixCoreObjectsField';
 import { useImportFilesContext } from '@private/components/common/files/import_files/ImportFilesContext';
 import { InformationOutline } from 'mdi-material-ui';
+import { Box, MenuItem, Tooltip } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import { fieldSpacingContainerStyle } from '../../../../../utils/field';
 import TextField from '../../../../../components/TextField';
 import SelectField from '../../../../../components/fields/SelectField';
 import { DraftContext } from '../../../../../utils/hooks/useDraftContext';
-import { Box, MenuItem, Tooltip } from '@components';
+
 interface ImportFilesOptionsProps {
   optionsFormikContext: FormikContextType<OptionsFormValues>;
   draftContext?: DraftContext | null;

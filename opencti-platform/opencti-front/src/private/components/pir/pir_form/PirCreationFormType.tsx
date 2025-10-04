@@ -15,9 +15,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 import React, { CSSProperties } from 'react';
 import { useFormikContext } from 'formik';
+import { Box, Card, CardActionArea, CardContent, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { PirCreationFormData } from './pir-form-utils';
-import { Box, Card, CardActionArea, CardContent, Typography } from '@components';
 
 const PirCreationFormType = () => {
   const { t_i18n } = useFormatter();

@@ -8,6 +8,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { StixCoreRelationshipCreationQuery$data } from '@private/components/common/stix_core_relationships/__generated__/StixCoreRelationshipCreationQuery.graphql';
 import { FormikConfig } from 'formik/dist/types';
 import { StixCoreRelationshipCreationMutation } from '@private/components/common/stix_core_relationships/__generated__/StixCoreRelationshipCreationMutation.graphql';
+import { Drawer, IconButton, Tooltip, Typography } from '@components';
 import { fetchQuery } from '../../../../relay/environment';
 import { itemColor } from '../../../../utils/Colors';
 import { formatDate } from '../../../../utils/Time';
@@ -23,7 +24,6 @@ import { ObjectToParse } from '../../../../components/graph/utils/useGraphParser
 import { FieldOption } from '../../../../utils/field';
 import type { Theme } from '../../../../components/Theme';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Drawer, IconButton, Tooltip, Typography } from '@components';
 
 const useStyles = makeStyles<Theme>((theme) => ({
   drawerPaper: {

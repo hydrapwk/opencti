@@ -4,6 +4,7 @@ import FormAuthorizedMembers, { FormAuthorizedMembersInputs } from '@private/com
 import { FormikHelpers } from 'formik/dist/types';
 import { GraphQLTaggedNode } from 'relay-runtime/lib/query/RelayModernGraphQLTag';
 import EETooltip from '@private/components/common/entreprise_edition/EETooltip';
+import { ToggleButton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { AuthorizedMemberOption, Creator } from '../../../../utils/authorizedMembers';
 import { handleErrorInForm } from '../../../../relay/environment';
@@ -11,7 +12,7 @@ import useDraftContext from '../../../../utils/hooks/useDraftContext';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import useAuth from '../../../../utils/hooks/useAuth';
-import { ToggleButton } from '@components';
+
 interface FormAuthorizedMembersDialogProps {
   id: string;
   mutation: GraphQLTaggedNode;

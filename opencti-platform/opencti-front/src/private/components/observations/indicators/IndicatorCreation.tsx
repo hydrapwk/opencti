@@ -8,6 +8,7 @@ import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { FormikConfig } from 'formik/dist/types';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { IndicatorsLinesPaginationQuery$variables } from '@private/components/observations/__generated__/IndicatorsLinesPaginationQuery.graphql';
+import { Button, Dialog, DialogContent, DialogTitle, Fab } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import TextField from '../../../../components/TextField';
@@ -32,7 +33,6 @@ import { useDynamicSchemaCreationValidation, useIsMandatoryAttribute, yupShapeCo
 import CustomFileUploader from '../../common/files/CustomFileUploader';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button, Dialog, DialogContent, DialogTitle, Fab } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

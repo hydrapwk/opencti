@@ -5,6 +5,7 @@ import SearchScopeElement from '@private/components/common/lists/SearchScopeElem
 import { FilterOptionValue } from '@private/components/common/lists/FilterAutocomplete';
 import { addDays, subDays } from 'date-fns';
 import { useTheme } from '@mui/material/styles';
+import { Autocomplete, Checkbox, Chip, MenuItem, Popover, Select, TextField, Tooltip } from '@components';
 import {
   DEFAULT_WITHIN_FILTER_VALUES,
   emptyFilterGroup,
@@ -32,7 +33,7 @@ import DateRangeFilter from './DateRangeFilter';
 // eslint-disable-next-line import/no-cycle
 import FilterFiltersInput from './FilterFiltersInput';
 import stopEvent from '../../utils/domEvent';
-import { Autocomplete, Checkbox, Chip, MenuItem, Popover, Select, TextField, Tooltip } from '@components';
+
 interface FilterChipMenuProps {
   handleClose: () => void;
   open: boolean;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { InformationOutline } from 'mdi-material-ui';
+import { FormControlLabel, FormGroup, Grid, Switch, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import ErrorNotFound from '../../../../../components/ErrorNotFound';
 import { SETTINGS_SETACCESSES } from '../../../../../utils/hooks/useGranted';
@@ -9,7 +10,6 @@ import Security from '../../../../../utils/Security';
 import { EntitySettingSettings_entitySetting$key } from './__generated__/EntitySettingSettings_entitySetting.graphql';
 import SettingsOrganizationEntitySettingHiddenTypesList from '../../organizations/SettingsOrganizationEntitySettingHiddenTypesList';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
-import { FormControlLabel, FormGroup, Grid, Switch, Tooltip, Typography } from '@components';
 
 export const entitySettingFragment = graphql`
   fragment EntitySettingSettings_entitySetting on EntitySetting {

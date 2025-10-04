@@ -2,12 +2,12 @@ import React, { FunctionComponent } from 'react';
 import { graphql } from 'react-relay';
 import { Link } from 'react-router-dom';
 import { InformationOutline } from 'mdi-material-ui';
+import { Tooltip } from '@components';
 import { filterValue, SELF_ID_VALUE } from '../utils/filters/filtersUtils';
 import { truncate } from '../utils/String';
 import { useFormatter } from './i18n';
 import { FilterDefinition } from '../utils/hooks/useAuth';
 import useAttributes from '../utils/hooks/useAttributes';
-import { Tooltip } from '@components';
 
 export const filterValuesContentQuery = graphql`
     query FilterValuesContentQuery($filters: FilterGroup!) {

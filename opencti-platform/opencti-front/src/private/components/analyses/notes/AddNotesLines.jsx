@@ -4,12 +4,12 @@ import * as R from 'ramda';
 import { createPaginationContainer, graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import { CheckCircle, WorkOutline } from '@mui/icons-material';
+import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { truncate } from '../../../../utils/String';
 import inject18n from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import { deleteNode, insertNode } from '../../../../utils/store';
-import { List, ListItemButton, ListItemIcon, ListItemText } from '@components';
 
 const styles = (theme) => ({
   avatar: {

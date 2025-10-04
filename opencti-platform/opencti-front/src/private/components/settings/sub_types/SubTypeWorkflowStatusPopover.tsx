@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useState } from 'react';
 import { graphql } from 'react-relay';
 import MoreVert from '@mui/icons-material/MoreVert';
+import { IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import SubTypeWorkflowStatusEdit, { statusEditQuery } from './SubTypeWorkflowStatusEdit';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
@@ -8,7 +9,6 @@ import { SubTypeWorkflowStatusEditQuery } from './__generated__/SubTypeWorkflowS
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { IconButton, Menu, MenuItem } from '@components';
 
 const workflowStatusDeletionMutation = graphql`
   mutation SubTypeWorkflowStatusPopoverDeletionMutation(

@@ -5,6 +5,7 @@ import { graphql } from 'react-relay';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { FormikConfig } from 'formik/dist/types';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import ObjectLabelField from '../../common/form/ObjectLabelField';
@@ -29,7 +30,6 @@ import ProgressBar from '../../../../components/ProgressBar';
 import BulkTextModal from '../../../../components/fields/BulkTextField/BulkTextModal';
 import BulkTextField from '../../../../components/fields/BulkTextField/BulkTextField';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button } from '@components';
 
 const ThreatActorGroupMutation = graphql`
   mutation ThreatActorGroupCreationMutation($input: ThreatActorGroupAddInput!) {

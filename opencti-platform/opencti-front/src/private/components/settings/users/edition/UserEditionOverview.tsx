@@ -5,6 +5,7 @@ import * as R from 'ramda';
 import * as Yup from 'yup';
 import { UserEditionOverview_user$data } from '@private/components/settings/users/edition/__generated__/UserEditionOverview_user.graphql';
 import { useTheme } from '@mui/styles';
+import { FormHelperText, MenuItem } from '@components';
 import TextField from '../../../../../components/TextField';
 import SelectField from '../../../../../components/fields/SelectField';
 import { SubscriptionFocus } from '../../../../../components/Subscription';
@@ -18,7 +19,6 @@ import { isOnlyOrganizationAdmin } from '../../../../../utils/hooks/useGranted';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
 import PasswordTextField from '../../../../../components/PasswordTextField';
 import type { Theme } from '../../../../../components/Theme';
-import { FormHelperText, MenuItem } from '@components';
 
 export const userMutationFieldPatch = graphql`
   mutation UserEditionOverviewFieldPatchMutation(

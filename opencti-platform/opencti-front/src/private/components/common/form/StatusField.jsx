@@ -5,12 +5,12 @@ import { Subject, timer } from 'rxjs';
 import { Field } from 'formik';
 import withStyles from '@mui/styles/withStyles';
 import { graphql } from 'react-relay';
+import { Avatar } from '@components';
 import { fetchQuery } from '../../../../relay/environment';
 import AutocompleteField from '../../../../components/AutocompleteField';
 import inject18n from '../../../../components/i18n';
 import { hexToRGB } from '../../../../utils/Colors';
 import { StatusScopeEnum } from '../../../../utils/statusConstants';
-import { Avatar } from '@components';
 
 const SEARCH$ = new Subject().pipe(debounce(() => timer(1500)));
 

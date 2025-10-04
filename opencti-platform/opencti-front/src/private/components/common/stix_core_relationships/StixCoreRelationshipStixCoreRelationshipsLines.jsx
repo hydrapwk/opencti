@@ -6,6 +6,7 @@ import { compose } from 'ramda';
 import { Link } from 'react-router-dom';
 import * as R from 'ramda';
 import { AutoFix } from 'mdi-material-ui';
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Tooltip, Typography } from '@components';
 import inject18n from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
 import StixCoreRelationshipPopover from './StixCoreRelationshipPopover';
@@ -13,7 +14,6 @@ import { resolveLink } from '../../../../utils/Entity';
 import StixCoreRelationshipCreationFromRelation from './StixCoreRelationshipCreationFromRelation';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Tooltip, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

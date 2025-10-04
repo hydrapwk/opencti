@@ -2,8 +2,8 @@ import React from 'react';
 import { BoxProps, SvgIconProps, SvgIconTypeMap, TypographyProps } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
-import type { Theme } from './Theme';
 import { Box, Typography } from '@components';
+import type { Theme } from './Theme';
 
 type GradientVariant = 'default' | 'ai';
 

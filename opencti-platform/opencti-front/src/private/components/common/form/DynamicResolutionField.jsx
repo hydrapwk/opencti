@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as R from 'ramda';
 import { useField } from 'formik';
 import { v4 as uuid } from 'uuid';
+import { Grid, List, ListItem, ListItemIcon, ListItemText, MenuItem, Select, TextField, Typography } from '@components';
 import { fetchQuery } from '../../../../relay/environment';
 import { stixDomainObjectsLinesSearchQuery } from '../stix_domain_objects/StixDomainObjectsLines';
 import ItemIcon from '../../../../components/ItemIcon';
@@ -10,7 +11,6 @@ import { convertFromStixType, convertToStixType } from '../../../../utils/String
 import { useFormatter } from '../../../../components/i18n';
 import { getMainRepresentative } from '../../../../utils/defaultRepresentatives';
 import { isEmptyField } from '../../../../utils/utils';
-import { Grid, List, ListItem, ListItemIcon, ListItemText, MenuItem, Select, TextField, Typography } from '@components';
 
 const inlineStyles = {
   type: {

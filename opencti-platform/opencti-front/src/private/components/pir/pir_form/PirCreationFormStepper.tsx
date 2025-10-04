@@ -14,8 +14,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 */
 
 import React from 'react';
-import { useFormatter } from '../../../../components/i18n';
 import { Step, StepButton, Stepper } from '@components';
+import { useFormatter } from '../../../../components/i18n';
+
 interface PirCreationFormStepperProps {
   step: number
   accessibleSteps: number[]

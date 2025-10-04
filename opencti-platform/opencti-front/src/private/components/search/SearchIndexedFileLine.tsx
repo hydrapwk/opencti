@@ -19,6 +19,7 @@ import { createFragmentContainer, graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { SearchIndexedFileLine_node$data } from '@private/components/search/__generated__/SearchIndexedFileLine_node.graphql';
 import { MoreVertOutlined, OpenInNewOutlined } from '@mui/icons-material';
+import { Box, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 import { DataColumns } from '../../../components/list_lines';
 import type { Theme } from '../../../components/Theme';
 import { useFormatter } from '../../../components/i18n';
@@ -26,7 +27,6 @@ import ItemIcon from '../../../components/ItemIcon';
 import { getFileUri } from '../../../utils/utils';
 import { resolveLink } from '../../../utils/Entity';
 import useGranted, { KNOWLEDGE_KNGETEXPORT, KNOWLEDGE_KNUPLOAD } from '../../../utils/hooks/useGranted';
-import { Box, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

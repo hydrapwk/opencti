@@ -7,6 +7,7 @@ import { InformationOutline } from 'mdi-material-ui';
 import useWidgetConfigValidateForm, { fintelTemplateVariableNameChecker } from '@private/components/widgets/useWidgetConfigValidateForm';
 import { useWidgetConfigContext } from '@private/components/widgets/WidgetConfigContext';
 import { PreloadedQuery, usePreloadedQuery } from 'react-relay';
+import { FormControl, FormHelperText, IconButton, InputAdornment, InputLabel, MenuItem, TextField as MuiTextField, Select, Tooltip } from '@components';
 import { widgetAttributesInputInstanceQuery } from './WidgetAttributesInputContainer';
 import { WidgetAttributesInputContainerInstanceQuery } from './__generated__/WidgetAttributesInputContainerInstanceQuery.graphql';
 import { useFormatter } from '../../../components/i18n';
@@ -16,7 +17,6 @@ import type { Theme } from '../../../components/Theme';
 import { toCamelCase } from '../../../utils/String';
 import DeleteDialog from '../../../components/DeleteDialog';
 import useDeletion from '../../../utils/hooks/useDeletion';
-import { FormControl, FormHelperText, IconButton, InputAdornment, InputLabel, MenuItem, TextField as MuiTextField, Select, Tooltip } from '@components';
 
 const stixCoreObjectsAvailableAttributesColumns: { attribute: string, label: string }[] = [
   { attribute: 'representative.main', label: 'Representative' },

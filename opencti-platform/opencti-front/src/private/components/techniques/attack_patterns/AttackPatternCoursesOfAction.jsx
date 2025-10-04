@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { LinkOff } from '@mui/icons-material';
 import { ProgressWrench } from 'mdi-material-ui';
 import { createFragmentContainer, graphql } from 'react-relay';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import AddCoursesOfAction from './AddCoursesOfAction';
 import { addCoursesOfActionMutationRelationDelete } from './AddCoursesOfActionLines';
 import { commitMutation } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 const AttackPatternCoursesOfActionComponent = ({ attackPattern }) => {
   const { t_i18n } = useFormatter();

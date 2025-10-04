@@ -4,12 +4,12 @@ import { compose } from 'ramda';
 import { graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import MoreVert from '@mui/icons-material/MoreVert';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 import inject18n from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
 import KillChainPhaseEdition from './KillChainPhaseEdition';
 import Transition from '../../../../components/Transition';
 import { deleteNode } from '../../../../utils/store';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 
 const styles = () => ({
   container: {

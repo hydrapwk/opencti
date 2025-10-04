@@ -11,6 +11,7 @@ import { v4 as uuid } from 'uuid';
 import FiligranIcon from '@private/components/common/FiligranIcon';
 import FeedbackCreation from '@private/components/cases/feedbacks/FeedbackCreation';
 import EnterpriseEditionAgreement from '@private/components/common/entreprise_edition/EnterpriseEditionAgreement';
+import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, IconButton, Tab, Tabs, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import useAuth from '../../../../utils/hooks/useAuth';
@@ -19,7 +20,6 @@ import useFiltersState from '../../../../utils/filters/useFiltersState';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
 import useGranted, { SETTINGS_SETPARAMETERS } from '../../../../utils/hooks/useGranted';
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, IconButton, Tab, Tabs, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

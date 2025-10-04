@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { useTheme } from '@mui/material/styles';
+import { Grid, Paper, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { useFormatter } from '../../../../components/i18n';
 import { DataComponentDetails_dataComponent$data, DataComponentDetails_dataComponent$key } from './__generated__/DataComponentDetails_dataComponent.graphql';
 import DataComponentDataSource from './DataComponentDataSource';
 import DataComponentAttackPatterns from './DataComponentAttackPatterns';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { Grid, Paper, Typography } from '@components';
 
 const DataComponentDetailsFragment = graphql`
   fragment DataComponentDetails_dataComponent on DataComponent {

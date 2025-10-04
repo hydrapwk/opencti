@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 import { graphql } from 'react-relay';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { useTheme } from '@mui/styles';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Drawer, { DrawerControlledDialProps } from '../../common/drawer/Drawer';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
@@ -13,7 +14,6 @@ import { insertNode } from '../../../../utils/store';
 import { commitMutation, defaultCommitMutation } from '../../../../relay/environment';
 import { PaginationOptions } from '../../../../components/list_lines';
 import type { Theme } from '../../../../components/Theme';
-import { Button } from '@components';
 
 const markingDefinitionMutation = graphql`
   mutation MarkingDefinitionCreationMutation(

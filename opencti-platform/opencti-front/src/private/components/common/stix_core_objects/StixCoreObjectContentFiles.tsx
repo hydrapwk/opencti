@@ -12,6 +12,7 @@ import CreateFileForm, { CreateFileFormInputs } from '@private/components/common
 import StixCoreObjectContentFilesList from '@private/components/common/stix_core_objects/StixCoreObjectContentFilesList';
 import { useSettingsMessagesBannerHeight } from '@private/components/settings/settings_messages/SettingsMessagesBanner';
 import StixCoreObjectFileExport, { BUILT_IN_FROM_TEMPLATE, BUILT_IN_HTML_TO_PDF } from '@private/components/common/stix_core_objects/StixCoreObjectFileExport';
+import { Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import FileUploader from '../files/FileUploader';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
@@ -20,7 +21,7 @@ import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { KNOWLEDGE_KNGETEXPORT, KNOWLEDGE_KNUPLOAD } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
-import { Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, Tooltip, Typography } from '@components';
+
 interface ContentBlocProps {
   title: ReactNode
   children: ReactNode

@@ -8,6 +8,7 @@ import DangerZoneBlock from '@private/components/common/danger_zone/DangerZoneBl
 import EnterpriseEditionButton from '@private/components/common/entreprise_edition/EnterpriseEditionButton';
 import { useTheme } from '@mui/styles';
 import * as Yup from 'yup';
+import { Alert, Box, Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, Grid, List, ListItem, ListItemText, Paper, Switch, Tooltip, Typography } from '@components';
 import { ExperienceQuery } from './__generated__/ExperienceQuery.graphql';
 import Transition from '../../../components/Transition';
 import useSensitiveModifications from '../../../utils/hooks/useSensitiveModifications';
@@ -23,7 +24,6 @@ import useApiMutation from '../../../utils/hooks/useApiMutation';
 import useGranted, { SETTINGS_SETPARAMETERS, SETTINGS_SUPPORT } from '../../../utils/hooks/useGranted';
 import ValidateTermsOfUseDialog from './ValidateTermsOfUseDialog';
 import useAuth from '../../../utils/hooks/useAuth';
-import { Alert, Box, Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, Grid, List, ListItem, ListItemText, Paper, Switch, Tooltip, Typography } from '@components';
 
 export enum CGUStatus {
   pending = 'pending',

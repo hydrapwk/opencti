@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { useTheme } from '@mui/material/styles';
+import { Grid, Paper, Typography } from '@components';
 import { convertMarkings } from '../../../../utils/edition';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import StixCoreObjectExternalReferences from '../../analyses/external_references/StixCoreObjectExternalReferences';
@@ -20,7 +21,6 @@ import { isFilterGroupNotEmpty, useRemoveIdAndIncorrectKeysFromFilterGroupObject
 import { FilterGroup } from '../../../../utils/filters/filtersHelpers-types';
 import useOverviewLayoutCustomization from '../../../../utils/hooks/useOverviewLayoutCustomization';
 import { CaseRfi_caseRfi$key } from './__generated__/CaseRfi_caseRfi.graphql';
-import { Grid, Paper, Typography } from '@components';
 
 const caseRfiFragment = graphql`
   fragment CaseRfi_caseRfi on CaseRfi {

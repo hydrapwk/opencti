@@ -4,6 +4,7 @@ import { FormikConfig } from 'formik/dist/types';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
@@ -14,7 +15,6 @@ import { PictureManagementUtils_node$data } from './__generated__/PictureManagem
 import { PictureManagementUtilsMutation, StixDomainObjectFileEditInput } from './__generated__/PictureManagementUtilsMutation.graphql';
 import SwitchField from '../../../../components/fields/SwitchField';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

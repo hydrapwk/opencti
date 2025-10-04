@@ -9,6 +9,7 @@ import { ImportFilesContentQuery$variables } from '@private/components/data/impo
 import { ImportActionsPopoverDeleteMutation } from '@private/components/common/files/__generated__/ImportActionsPopoverDeleteMutation.graphql';
 import { ProgressUpload } from 'mdi-material-ui';
 import ImportWorksDrawer from '@private/components/common/files/ImportWorksDrawer';
+import { IconButton, Menu, MenuItem, Tooltip } from '@components';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { APP_BASE_PATH, MESSAGING$ } from '../../../../relay/environment';
 import stopEvent from '../../../../utils/domEvent';
@@ -17,7 +18,6 @@ import { deleteNode } from '../../../../utils/store';
 import { useFormatter } from '../../../../components/i18n';
 import useDeletion from '../../../../utils/hooks/useDeletion';
 import DeleteDialog from '../../../../components/DeleteDialog';
-import { IconButton, Menu, MenuItem, Tooltip } from '@components';
 
 export const importActionsPopoverDeleteMutation = graphql`
   mutation ImportActionsPopoverDeleteMutation($fileName: String) {

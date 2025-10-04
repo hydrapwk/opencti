@@ -1,8 +1,8 @@
 import * as R from 'ramda';
-import { Dispatch, SetStateAction, SyntheticEvent, useCallback, useState } from 'react';
+import { type Dispatch, type SetStateAction, type SyntheticEvent, useCallback, useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import { type SavedFiltersSelectionData } from 'src/components/saved_filters/SavedFilterSelection';
-import { OrderMode, PaginationOptions } from '../../components/list_lines';
+import { type SavedFiltersSelectionData } from '@components/saved_filters/SavedFilterSelection';
+import { OrderMode, type PaginationOptions } from '@components/list_lines';
 import { emptyFilterGroup, findFilterFromKey, isFilterGroupNotEmpty, isUniqFilter, useFetchFilterKeysSchema } from '../filters/filtersUtils';
 import { isEmptyField, isNotEmptyField, removeEmptyFields } from '../utils';
 import { MESSAGING$ } from '../../relay/environment';
@@ -17,9 +17,9 @@ import {
   handleChangeRepresentationFilterUtil,
   handleReplaceFilterValuesUtil,
 } from '../filters/filtersManageStateUtil';
-import { LocalStorage } from './useLocalStorageModel';
+import { type LocalStorage } from './useLocalStorageModel';
 import useBus from './useBus';
-import { Filter, FilterGroup, FilterValue, handleFilterHelpers } from '../filters/filtersHelpers-types';
+import { type Filter, type FilterGroup, type FilterValue, handleFilterHelpers } from '../filters/filtersHelpers-types';
 
 export interface NumberOfElements {
   number?: number;

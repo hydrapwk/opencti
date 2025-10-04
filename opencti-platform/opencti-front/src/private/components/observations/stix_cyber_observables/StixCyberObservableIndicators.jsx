@@ -3,6 +3,22 @@ import { createFragmentContainer, graphql } from 'react-relay';
 import { Link } from 'react-router-dom';
 import { Add } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Menu,
+  MenuItem,
+  Typography,
+} from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
 import StixCyberObservableAddIndicators from './StixCyberObservableAddIndicators';
@@ -13,7 +29,6 @@ import { commitMutation } from '../../../../relay/environment';
 import ItemPatternType from '../../../../components/ItemPatternType';
 import Transition from '../../../../components/Transition';
 import { insertNode } from '../../../../utils/store';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, Typography } from '@components';
 
 const inlineStyles = {
   pattern_type: {

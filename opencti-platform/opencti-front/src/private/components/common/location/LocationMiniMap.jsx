@@ -5,6 +5,7 @@ import withTheme from '@mui/styles/withTheme';
 import withStyles from '@mui/styles/withStyles';
 import { MapContainer, TileLayer, GeoJSON, Marker } from 'react-leaflet';
 import L from 'leaflet';
+import { Paper, Typography } from '@components';
 import countries from '../../../../static/geo/countries.json';
 import inject18n from '../../../../components/i18n';
 import { UserContext } from '../../../../utils/hooks/useAuth';
@@ -13,7 +14,6 @@ import CityDark from '../../../../static/images/leaflet/city_dark.png';
 import MarkerDark from '../../../../static/images/leaflet/marker_dark.png';
 import CityLight from '../../../../static/images/leaflet/city_light.png';
 import MarkerLight from '../../../../static/images/leaflet/marker_light.png';
-import { Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

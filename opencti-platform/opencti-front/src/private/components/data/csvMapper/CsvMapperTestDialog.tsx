@@ -4,10 +4,10 @@ import CustomFileUploader from '@private/components/common/files/CustomFileUploa
 import CodeBlock from '@private/components/common/CodeBlock';
 import { CsvMapperTestDialogMutation$data } from '@private/components/data/csvMapper/__generated__/CsvMapperTestDialogMutation.graphql';
 import { InformationOutline } from 'mdi-material-ui';
+import { Box, Button, Dialog, DialogContent, DialogTitle, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { commitMutation, handleError } from '../../../../relay/environment';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { Box, Button, Dialog, DialogContent, DialogTitle, Tooltip } from '@components';
 
 const csvMapperTestQuery = graphql`
   mutation CsvMapperTestDialogMutation($configuration: String!, $file: Upload!) {

@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import WidgetConfigStepper from './WidgetConfigStepper';
 import { useWidgetConfigContext, WidgetConfigType } from './WidgetConfigContext';
 import Transition from '../../../components/Transition';
@@ -8,7 +9,7 @@ import WidgetCreationPerspective from './WidgetCreationPerspective';
 import WidgetCreationDataSelection from './WidgetCreationDataSelection';
 import WidgetCreationParameters from './WidgetCreationParameters';
 import useWidgetConfigValidateForm from './useWidgetConfigValidateForm';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
+
 interface WidgetUpsertProps {
   open: boolean,
   onCancel: () => void,

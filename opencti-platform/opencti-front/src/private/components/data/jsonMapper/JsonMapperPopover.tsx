@@ -8,6 +8,7 @@ import { JsonMapperPopoverExportQuery$data } from '@private/components/data/json
 import JsonMapperEditionContainer, { jsonMapperEditionContainerQuery } from '@private/components/data/jsonMapper/JsonMapperEditionContainer';
 import { JsonMapperEditionContainerQuery } from '@private/components/data/jsonMapper/__generated__/JsonMapperEditionContainerQuery.graphql';
 import JsonMapperCreationContainer from '@private/components/data/jsonMapper/JsonMapperCreationContainer';
+import { IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
@@ -15,7 +16,6 @@ import { deleteNode } from '../../../../utils/store';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import stopEvent from '../../../../utils/domEvent';
 import { fetchQuery } from '../../../../relay/environment';
-import { IconButton, Menu, MenuItem } from '@components';
 
 const jsonMapperPopoverDelete = graphql`
   mutation JsonMapperPopoverDeleteMutation($id: ID!) {

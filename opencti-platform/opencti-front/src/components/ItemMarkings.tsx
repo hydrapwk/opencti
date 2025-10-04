@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
+import { Badge, Chip, Grid, Tooltip } from '@components';
 import type { Theme } from './Theme';
 import stopEvent from '../utils/domEvent';
 import EnrichedTooltip from './EnrichedTooltip';
-import { Badge, Chip, Grid, Tooltip } from '@components';
+
 interface Marking {
   id: string
   definition?: string | null

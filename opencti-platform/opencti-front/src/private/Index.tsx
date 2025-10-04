@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { useTheme } from '@mui/styles';
 import { boundaryWrapper, NoMatch } from '@private/components/Error';
 import PlatformCriticalAlertDialog from '@private/components/settings/platform_alerts/PlatformCriticalAlertDialog';
+import { Box } from '@components';
 import TopBar from './components/nav/TopBar';
 import LeftBar from './components/nav/LeftBar';
 import Message from '../components/Message';
@@ -16,7 +17,6 @@ import type { Theme } from '../components/Theme';
 import { RootSettings$data } from './__generated__/RootSettings.graphql';
 import Loader from '../components/Loader';
 import useDraftContext from '../utils/hooks/useDraftContext';
-import { Box } from '@components';
 
 const Dashboard = lazy(() => import('./components/Dashboard'));
 const StixObjectOrStixRelationship = lazy(() => import('./components/StixObjectOrStixRelationship'));

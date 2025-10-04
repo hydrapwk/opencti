@@ -9,6 +9,7 @@ import {
 } from '@private/components/common/stix_core_relationships/views/indicators/__generated__/EntityStixCoreRelationshipsIndicatorsEntitiesView_data.graphql';
 import { LibraryBooksOutlined } from '@mui/icons-material';
 import { Group, RelationManyToMany } from 'mdi-material-ui';
+import { ToggleButton, Tooltip } from '@components';
 import Security from '../../../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../../../utils/hooks/useGranted';
 import StixCoreRelationshipCreationFromEntity from '../../StixCoreRelationshipCreationFromEntity';
@@ -21,7 +22,7 @@ import DataTable from '../../../../../../components/dataGrid/DataTable';
 import { useQueryLoadingWithLoadQuery } from '../../../../../../utils/hooks/useQueryLoading';
 import { UsePreloadedPaginationFragment } from '../../../../../../utils/hooks/usePreloadedPaginationFragment';
 import { useFormatter } from '../../../../../../components/i18n';
-import { ToggleButton, Tooltip } from '@components';
+
 interface EntityStixCoreRelationshipsIndicatorsEntitiesViewProps {
   entityId: string
   relationshipTypes: string[]

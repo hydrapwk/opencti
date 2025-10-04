@@ -5,6 +5,7 @@ import { FileDelimitedOutline, FileExportOutline, FilePdfBox } from 'mdi-materia
 import withTheme from '@mui/styles/withTheme';
 import withStyles from '@mui/styles/withStyles';
 import * as R from 'ramda';
+import { Dialog, Menu, MenuItem, ToggleButton, Tooltip } from '@components';
 import themeLight from './ThemeLight';
 import themeDark from './ThemeDark';
 import { commitLocalUpdate, MESSAGING$ } from '../relay/environment';
@@ -15,7 +16,6 @@ import { UserContext } from '../utils/hooks/useAuth';
 import withRouter from '../utils/compat_router/withRouter';
 import { KNOWLEDGE_KNFRONTENDEXPORT } from '../utils/hooks/useGranted';
 import Security from '../utils/Security';
-import { Dialog, Menu, MenuItem, ToggleButton, Tooltip } from '@components';
 
 const styles = () => ({
   exportButtons: {

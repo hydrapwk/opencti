@@ -7,6 +7,7 @@ import { styled } from '@mui/material';
 import Security from 'src/utils/Security';
 import useGranted, { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from 'src/utils/hooks/useGranted';
 import { useTheme } from '@mui/material/styles';
+import { Box, Button, MenuItem } from '@components';
 import StixSightingRelationshipEdition, { stixSightingRelationshipEditionDeleteMutation } from './StixSightingRelationshipEdition';
 import { commitMutation, defaultCommitMutation, QueryRenderer } from '../../../../relay/environment';
 import { StixSightingRelationshipQuery$data } from './__generated__/StixSightingRelationshipQuery.graphql';
@@ -16,7 +17,6 @@ import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
 import PopoverMenu from '../../../../components/PopoverMenu';
 import type { Theme } from '../../../../components/Theme';
-import { Box, Button, MenuItem } from '@components';
 
 const stixSightingRelationshipQuery = graphql`
   query StixSightingRelationshipQuery($id: String!) {

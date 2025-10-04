@@ -7,10 +7,11 @@ import {
 import { NodeObject } from 'react-force-graph-2d';
 import StixNestedRefRelationshipCreationFromKnowledgeGraphContent
   from '@private/components/common/stix_nested_ref_relationships/StixNestedRefRelationshipCreationFromKnowledgeGraphContent';
+import { IconButton, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { IconButton, Tooltip } from '@components';
+
 interface StixNestedRefRelationshipCreationFromKnowledgeGraphProps {
   nestedRelationExist: boolean,
   openCreateNested: boolean,

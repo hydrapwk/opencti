@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { graphql, useFragment } from 'react-relay';
+import { Checkbox, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { DataColumns } from '../../../../components/list_lines';
 import { CaseTemplateTasksLine_node$key } from './__generated__/CaseTemplateTasksLine_node.graphql';
 import ItemIcon from '../../../../components/ItemIcon';
 import { CaseTemplateTasksLinesPaginationQuery$data } from './__generated__/CaseTemplateTasksLinesPaginationQuery.graphql';
 import CaseTemplateTasksPopover from './CaseTemplateTasksPopover';
-import { Checkbox, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

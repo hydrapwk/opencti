@@ -21,6 +21,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { useNavigate } from 'react-router-dom';
 import { FileUploadOutlined } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { Button, ToggleButton } from '@components';
 import VisuallyHiddenInput from '../../common/VisuallyHiddenInput';
 import Drawer from '../../common/drawer/Drawer';
 import { commitMutation, handleError } from '../../../../relay/environment';
@@ -30,7 +31,6 @@ import { useFormatter } from '../../../../components/i18n';
 import { resolveLink } from '../../../../utils/Entity';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button, ToggleButton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

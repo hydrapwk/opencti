@@ -4,8 +4,8 @@ import { ReportGmailerrorred } from '@mui/icons-material';
 import { InformationOutline } from 'mdi-material-ui';
 import { User_user$data } from '@private/components/settings/users/__generated__/User_user.graphql';
 import UserConfidenceOverrides from '@private/components/settings/users/UserConfidenceOverrides';
-import { useFormatter } from '../../../../components/i18n';
 import { Box, Tooltip } from '@components';
+import { useFormatter } from '../../../../components/i18n';
 
 type UserConfidenceLevelProps = {
   user: Pick<User_user$data, 'effective_confidence_level'>

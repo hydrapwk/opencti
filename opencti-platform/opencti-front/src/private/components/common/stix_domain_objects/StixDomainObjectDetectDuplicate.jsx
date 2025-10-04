@@ -5,6 +5,7 @@ import withStyles from '@mui/styles/withStyles';
 import Slide from '@mui/material/Slide';
 import { VisibilityOutlined } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import { Dialog, DialogContent, DialogTitle, IconButton, List, ListItem, ListItemIcon, ListItemText } from '@components';
 import { stixDomainObjectsLinesSearchQuery } from './StixDomainObjectsLines';
 import { fetchQuery } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
@@ -12,7 +13,6 @@ import ItemIcon from '../../../../components/ItemIcon';
 import { truncate } from '../../../../utils/String';
 import { resolveLink } from '../../../../utils/Entity';
 import ItemMarkings from '../../../../components/ItemMarkings';
-import { Dialog, DialogContent, DialogTitle, IconButton, List, ListItem, ListItemIcon, ListItemText } from '@components';
 
 const styles = () => ({
   dialogPaper: {

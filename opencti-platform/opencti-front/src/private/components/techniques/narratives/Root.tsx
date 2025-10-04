@@ -6,6 +6,7 @@ import { RootNarrativeQuery } from '@private/components/techniques/narratives/__
 import { RootNarrativeSubscription } from '@private/components/techniques/narratives/__generated__/RootNarrativeSubscription.graphql';
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Narrative from './Narrative';
 import NarrativeKnowledge from './NarrativeKnowledge';
@@ -23,7 +24,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import NarrativeEdition from './NarrativeEdition';
 import NarrativeDeletion from './NarrativeDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootNarrativeSubscription($id: ID!) {

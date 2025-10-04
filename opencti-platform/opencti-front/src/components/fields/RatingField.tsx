@@ -5,7 +5,7 @@ import SentimentSatisfiedIcon from '@mui/icons-material/SentimentSatisfied';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAltOutlined';
 import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
 import Rating, { IconContainerProps } from '@mui/material/Rating';
-import { styled } from '@mui/material/styles';import { InputLabel } from '@components';
+import { styled } from '@mui/material/styles'; import { InputLabel } from '@components';
 
 type CustomIcon = {
   [index: string]: {

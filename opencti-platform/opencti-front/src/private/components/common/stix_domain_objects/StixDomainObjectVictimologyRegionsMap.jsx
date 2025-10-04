@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
 import { compose, prop, uniqBy } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
+import { Paper } from '@components';
 import inject18n from '../../../../components/i18n';
 import LocationMiniMapTargets from '../location/LocationMiniMapTargets';
-import { Paper } from '@components';
 
 const styles = (theme) => ({
   paper: {

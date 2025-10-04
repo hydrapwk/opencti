@@ -24,9 +24,9 @@ import AuditsHorizontalBars from '@private/components/common/audits/AuditsHorizo
 import AuditsDonut from '@private/components/common/audits/AuditsDonut';
 import AuditsRadar from '@private/components/common/audits/AuditsRadar';
 import AuditsList from '@private/components/common/audits/AuditsList';
+import { Grid } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
-import { Grid } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -1,11 +1,11 @@
 import React, { useCallback, useState } from 'react';
 import { and, ControlProps, isPrimitiveArrayControl, RankedTester, rankWith, schemaMatches } from '@jsonforms/core';
 import { withJsonFormsControlProps } from '@jsonforms/react';
+import { Autocomplete, Box, Chip, TextField, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import { isNotEmptyField } from '../../../../../utils/utils';
-import { Autocomplete, Box, Chip, TextField, Typography } from '@components';
 
-export const JsonFormArrayRenderer = (props: ControlProps) => {
+const JsonFormArrayRenderer = (props: ControlProps) => {
   const {
     data,
     handleChange,

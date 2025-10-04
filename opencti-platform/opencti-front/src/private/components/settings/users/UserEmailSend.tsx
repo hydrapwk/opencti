@@ -5,10 +5,10 @@ import { Form, Formik } from 'formik';
 import EETooltip from '@private/components/common/entreprise_edition/EETooltip';
 import EmailTemplateField, { EmailTemplate, EmailTemplateFieldOption } from '@private/components/common/form/EmailTemplateField';
 import { FormikConfig } from 'formik/dist/types';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, ToggleButton } from '@components';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { handleError, MESSAGING$ } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, ToggleButton } from '@components';
 
 const userEmailSendMutation = graphql`
   mutation UserEmailSendMutation($input: SendUserMailInput!) {

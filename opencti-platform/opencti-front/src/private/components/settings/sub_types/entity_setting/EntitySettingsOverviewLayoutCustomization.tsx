@@ -5,10 +5,10 @@ import { DragIndicatorOutlined } from '@mui/icons-material';
 import { Form, Formik } from 'formik';
 import { EntitySettingSettings_entitySetting$data } from '@private/components/settings/sub_types/entity_setting/__generated__/EntitySettingSettings_entitySetting.graphql';
 import { useTheme } from '@mui/styles';
+import { Switch, Table, TableBody, TableCell, TableHead, TableRow } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
 import type { Theme } from '../../../../../components/Theme';
-import { Switch, Table, TableBody, TableCell, TableHead, TableRow } from '@components';
 
 export const entitySettingsOverviewLayoutCustomizationFragment = graphql`
   fragment EntitySettingsOverviewLayoutCustomization_entitySetting on EntitySetting {

@@ -1,12 +1,13 @@
 import { useTheme } from '@mui/styles';
 import React, { FunctionComponent, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { Typography } from '@components';
 import { getDraftModeColor } from './DraftChip';
 import type { Theme } from '../../../../components/Theme';
 import { hexToRGB } from '../../../../utils/Colors';
 import { useFormatter } from '../../../../components/i18n';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
-import { Typography } from '@components';
+
 interface DraftBlockProps {
   title?: string
   body?: ReactNode

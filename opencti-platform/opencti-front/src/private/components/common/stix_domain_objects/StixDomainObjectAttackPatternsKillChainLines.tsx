@@ -7,12 +7,15 @@ import { ExpandLess, ExpandMore } from '@mui/icons-material';
 import {
   StixDomainObjectAttackPatternsKillChainContainer_data$data,
 } from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectAttackPatternsKillChainContainer_data.graphql';
-import { StixDomainObjectAttackPatternsKillChainQuery$variables } from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectAttackPatternsKillChainQuery.graphql';
+import {
+  StixDomainObjectAttackPatternsKillChainQuery$variables,
+} from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectAttackPatternsKillChainQuery.graphql';
 import { useTheme } from '@mui/material/styles';
+import { Collapse, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
 import { useFormatter } from '../../../../components/i18n';
-import { Collapse, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@components';
+
 interface StixDomainObjectAttackPatternsKillChainLinesProps {
   data: StixDomainObjectAttackPatternsKillChainContainer_data$data;
   paginationOptions: StixDomainObjectAttackPatternsKillChainQuery$variables;

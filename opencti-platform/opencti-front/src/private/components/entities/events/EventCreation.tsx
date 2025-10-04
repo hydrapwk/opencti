@@ -6,6 +6,7 @@ import { graphql } from 'react-relay';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { FormikConfig } from 'formik/dist/types';
 import ConfidenceField from '@private/components/common/form/ConfidenceField';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import CreatedByField from '../../common/form/CreatedByField';
@@ -31,7 +32,6 @@ import BulkTextModal from '../../../../components/fields/BulkTextField/BulkTextM
 import ProgressBar from '../../../../components/ProgressBar';
 import BulkTextField from '../../../../components/fields/BulkTextField/BulkTextField';
 import BulkTextModalButton from '../../../../components/fields/BulkTextField/BulkTextModalButton';
-import { Button } from '@components';
 
 const eventMutation = graphql`
   mutation EventCreationMutation($input: EventAddInput!) {

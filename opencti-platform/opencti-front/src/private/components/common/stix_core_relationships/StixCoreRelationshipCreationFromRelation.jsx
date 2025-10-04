@@ -6,6 +6,7 @@ import withStyles from '@mui/styles/withStyles';
 import { Add, Close } from '@mui/icons-material';
 import CircularProgress from '@mui/material/CircularProgress';
 import { ConnectionHandler } from 'relay-runtime';
+import { Drawer, Fab, IconButton, List, ListItem, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 import { commitMutation, QueryRenderer } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
 import { formatDate } from '../../../../utils/Time';
@@ -20,7 +21,6 @@ import StixDomainObjectCreation from '../stix_domain_objects/StixDomainObjectCre
 import SearchInput from '../../../../components/SearchInput';
 import StixCoreRelationshipCreationForm from './StixCoreRelationshipCreationForm';
 import { UserContext } from '../../../../utils/hooks/useAuth';
-import { Drawer, Fab, IconButton, List, ListItem, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 
 const styles = (theme) => ({
   drawerPaper: {

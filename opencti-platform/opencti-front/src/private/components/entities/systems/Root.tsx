@@ -7,6 +7,7 @@ import { RootSystemQuery } from '@private/components/entities/systems/__generate
 import { RootSystemsSubscription } from '@private/components/entities/systems/__generated__/RootSystemsSubscription.graphql';
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import System from './System';
 import SystemKnowledge from './SystemKnowledge';
@@ -26,7 +27,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import SystemEdition from './SystemEdition';
 import SystemDeletion from './SystemDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootSystemsSubscription($id: ID!) {

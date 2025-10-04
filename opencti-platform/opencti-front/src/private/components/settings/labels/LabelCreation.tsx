@@ -5,6 +5,7 @@ import { graphql } from 'react-relay';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { useTheme } from '@mui/styles';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import Drawer, { DrawerControlledDialProps } from '../../common/drawer/Drawer';
 import SimpleTextField from '../../../../components/SimpleTextField';
 import ColorPickerField from '../../../../components/ColorPickerField';
@@ -15,7 +16,6 @@ import CreateEntityControlledDial from '../../../../components/CreateEntityContr
 import type { Theme } from '../../../../components/Theme';
 import { PaginationOptions } from '../../../../components/list_lines';
 import { LabelAddInput, LabelCreationContextualMutation$data } from './__generated__/LabelCreationContextualMutation.graphql';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 const useStyles = makeStyles<Theme>(() => ({
   dialog: {

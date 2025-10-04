@@ -6,6 +6,7 @@ import withStyles from '@mui/styles/withStyles';
 import * as Yup from 'yup';
 import * as R from 'ramda';
 import { InformationOutline } from 'mdi-material-ui';
+import { Box, Button, InputAdornment, MenuItem, Tooltip } from '@components';
 import inject18n from '../../../../components/i18n';
 import { commitMutation, MESSAGING$ } from '../../../../relay/environment';
 import TextField from '../../../../components/TextField';
@@ -17,7 +18,6 @@ import Drawer from '../../common/drawer/Drawer';
 import useFiltersState from '../../../../utils/filters/useFiltersState';
 import SelectField from '../../../../components/fields/SelectField';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
-import { Box, Button, InputAdornment, MenuItem, Tooltip } from '@components';
 
 const styles = (theme) => ({
   header: {

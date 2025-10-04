@@ -13,6 +13,24 @@ import { FileLine_file$data } from '@private/components/common/files/__generated
 import ManageImportConnectorMessage from '@private/components/data/import/ManageImportConnectorMessage';
 import ObjectMarkingField from '@private/components/common/form/ObjectMarkingField';
 import { CsvMapperFieldOption } from '@private/components/common/form/CsvMapperField';
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  MenuItem,
+  Paper,
+  Tooltip,
+  Typography,
+} from '@components';
 import { truncate } from '../../../../utils/String';
 import { commitMutation, MESSAGING$ } from '../../../../relay/environment';
 import AddExternalReferences from './AddExternalReferences';
@@ -36,7 +54,6 @@ import { resolveHasUserChoiceParsedCsvMapper } from '../../../../utils/csvMapper
 import { NO_DATA_WIDGET_MESSAGE } from '../../../../components/dashboard/WidgetNoData';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, MenuItem, Paper, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

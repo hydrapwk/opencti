@@ -8,6 +8,7 @@ import { RetentionLinesPaginationQuery$variables } from '@private/components/set
 import { FormikConfig } from 'formik/dist/types';
 import { RetentionCreationCheckMutation$data } from '@private/components/settings/retention/__generated__/RetentionCreationCheckMutation.graphql';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
+import { Alert, Box, Button, InputAdornment, MenuItem, Tooltip } from '@components';
 import Drawer, { DrawerControlledDialProps } from '../../common/drawer/Drawer';
 import { useFormatter } from '../../../../components/i18n';
 import { commitMutation, MESSAGING$ } from '../../../../relay/environment';
@@ -22,7 +23,6 @@ import SelectField from '../../../../components/fields/SelectField';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import type { Theme } from '../../../../components/Theme';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Alert, Box, Button, InputAdornment, MenuItem, Tooltip } from '@components';
 
 const useStyles = makeStyles<Theme>((theme) => ({
   buttons: {

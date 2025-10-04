@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Add } from '@mui/icons-material';
+import { IconButton, Tooltip } from '@components';
 import InvestigationAddStixCoreObjectsLines, { investigationAddStixCoreObjectsLinesQuery } from './InvestigationAddStixCoreObjectsLines';
 import { QueryRenderer } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
@@ -9,7 +10,6 @@ import ListLines from '../../../../components/list_lines/ListLines';
 import { emptyFilterGroup } from '../../../../utils/filters/filtersUtils';
 import Drawer from '../../common/drawer/Drawer';
 import { usePaginationLocalStorage } from '../../../../utils/hooks/useLocalStorage';
-import { IconButton, Tooltip } from '@components';
 
 const InvestigationAddStixCoreObjects = (props) => {
   const {

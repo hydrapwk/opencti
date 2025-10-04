@@ -1,9 +1,10 @@
 import React from 'react';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { FormControl, InputLabel, MenuItem, Select, Typography } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import type { PublicManifestConfig } from './PublicManifest';
 import { buildDate } from '../../../utils/Time';
-import { FormControl, InputLabel, MenuItem, Select, Typography } from '@components';
+
 interface PublicDashboardHeaderProps {
   title: string
   manifestConfig: PublicManifestConfig

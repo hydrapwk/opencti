@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
 import { Handle, NodeProps, Position } from 'reactflow';
 import { makeStyles } from '@mui/styles';
+import { Typography } from '@components';
 import type { Theme } from '../../../../../../../components/Theme';
 import { useFormatter } from '../../../../../../../components/i18n';
-import { Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

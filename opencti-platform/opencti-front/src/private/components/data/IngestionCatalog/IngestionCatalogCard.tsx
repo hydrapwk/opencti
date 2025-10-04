@@ -7,12 +7,12 @@ import { IngestionConnector } from '@private/components/data/IngestionCatalog';
 import EnterpriseEditionButton from '@private/components/common/entreprise_edition/EnterpriseEditionButton';
 import { truncate } from 'src/utils/String';
 import { getConnectorMetadata } from '@private/components/data/IngestionCatalog/utils/ingestionConnectorTypeMetadata';
+import { Badge, Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import EnrichedTooltip from '../../../../components/EnrichedTooltip';
 import { INGESTION_SETINGESTIONS } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
 import type { Theme } from '../../../../components/Theme';
-import { Badge, Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Tooltip } from '@components';
 
 export interface IngestionCatalogCardProps {
   node: IngestionConnector;

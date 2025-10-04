@@ -3,6 +3,7 @@ import { graphql, useFragment } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { LockPersonOutlined, NorthEastOutlined, ShortTextOutlined } from '@mui/icons-material';
 import EEChip from '@private/components/common/entreprise_edition/EEChip';
+import { Box, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { DataColumns } from '../../../../../components/list_lines';
 import type { Theme } from '../../../../../components/Theme';
 import ErrorNotFound from '../../../../../components/ErrorNotFound';
@@ -11,7 +12,6 @@ import { EntitySettingAttributeLine_attribute$key } from './__generated__/Entity
 import { EntitySettingAttributes_entitySetting$data } from './__generated__/EntitySettingAttributes_entitySetting.graphql';
 import { INPUT_AUTHORIZED_MEMBERS } from '../../../../../utils/authorizedMembers';
 import useEnterpriseEdition from '../../../../../utils/hooks/useEnterpriseEdition';
-import { Box, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -1,8 +1,8 @@
 import { Field, FieldProps, Formik } from 'formik';
 import React from 'react';
+import { MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import SelectField from '../../../../components/fields/SelectField';
-import { MenuItem } from '@components';
 
 export type EntityMarkingDefinition = {
   id: string

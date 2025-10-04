@@ -2,9 +2,9 @@ import * as R from 'ramda';
 import React from 'react';
 import { Base64 } from 'js-base64';
 import { last } from 'ramda';
+import { Tooltip } from '@components';
 import { APP_BASE_PATH } from '../relay/environment';
 import { isNotEmptyField } from './utils';
-import { Tooltip } from '@components';
 
 // the relative date values must be: 'now' OR 'now' followed by -/+ then a number then a letter among [smhHdwMy] and eventually a / followed by a letter among [smhHdwMy]
 export const RELATIVE_DATE_REGEX = /^now([-+]\d+[smhHdwMy](\/[smhHdwMy])?)?$/;

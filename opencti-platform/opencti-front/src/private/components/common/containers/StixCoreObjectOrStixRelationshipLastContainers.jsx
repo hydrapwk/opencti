@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { graphql } from 'react-relay';
 import { makeStyles } from '@mui/styles';
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Skeleton, Tooltip, Typography } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import ItemIcon from '../../../../components/ItemIcon';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import { resolveLink } from '../../../../utils/Entity';
 import ItemEntityType from '../../../../components/ItemEntityType';
 import { useFormatter } from '../../../../components/i18n';
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Skeleton, Tooltip, Typography } from '@components';
 
 const useStyles = makeStyles((theme) => ({
   paper: {

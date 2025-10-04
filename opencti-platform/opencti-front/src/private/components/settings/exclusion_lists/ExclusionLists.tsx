@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useQueryLoader } from 'react-relay';
+import { Badge, Grid } from '@components';
 import { UsePreloadedPaginationFragment } from '../../../../utils/hooks/usePreloadedPaginationFragment';
 import { ExclusionListsLinesPaginationQuery, ExclusionListsLinesPaginationQuery$variables } from './__generated__/ExclusionListsLinesPaginationQuery.graphql';
 import { ExclusionListsLine_node$data } from './__generated__/ExclusionListsLine_node.graphql';
@@ -21,7 +22,6 @@ import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import DataTable from '../../../../components/dataGrid/DataTable';
 import EnrichedTooltip from '../../../../components/EnrichedTooltip';
 import PageContainer from '../../../../components/PageContainer';
-import { Badge, Grid } from '@components';
 
 export const exclusionListsQuery = graphql`
   query ExclusionListsLinesPaginationQuery(

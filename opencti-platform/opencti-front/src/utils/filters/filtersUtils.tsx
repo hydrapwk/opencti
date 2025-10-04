@@ -1,15 +1,15 @@
 import * as R from 'ramda';
 import { v4 as uuid } from 'uuid';
-import { FilterOptionValue } from '@private/components/common/lists/FilterAutocomplete';
+import { type FilterOptionValue } from '@private/components/common/lists/FilterAutocomplete';
 import React from 'react';
 import { subDays } from 'date-fns';
+import { type FilterRepresentative } from '@components/filters/FiltersModel';
 import { useFormatter } from '../../components/i18n';
 import type { FilterGroup as GqlFilterGroup } from './__generated__/useSearchEntitiesStixCoreObjectsSearchQuery.graphql';
-import useAuth, { FilterDefinition } from '../hooks/useAuth';
+import useAuth, { type FilterDefinition } from '../hooks/useAuth';
 import { capitalizeFirstLetter, displayEntityTypeForTranslation, isValidDate } from '../String';
-import { FilterRepresentative } from '../../components/filters/FiltersModel';
 import { uniqueArray, isEmptyField } from '../utils';
-import { Filter, FilterGroup, FilterValue, handleFilterHelpers } from './filtersHelpers-types';
+import { type Filter, type FilterGroup, type FilterValue, handleFilterHelpers } from './filtersHelpers-types';
 
 //----------------------------------------------------------------------------------------------------------------------
 

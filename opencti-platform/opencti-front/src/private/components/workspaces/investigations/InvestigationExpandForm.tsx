@@ -3,6 +3,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 import { FormikHelpers } from 'formik/dist/types';
 import { graphql, PreloadedQuery, usePreloadedQuery, useQueryLoader } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
+import { Button, DialogActions, DialogContent, DialogTitle } from '@components';
 import SwitchField from '../../../../components/fields/SwitchField';
 import { useFormatter } from '../../../../components/i18n';
 import { InvestigationExpandFormTargetsDistributionFromQuery } from './__generated__/InvestigationExpandFormTargetsDistributionFromQuery.graphql';
@@ -13,7 +14,6 @@ import Loader, { LoaderVariant } from '../../../../components/Loader';
 import useAuth from '../../../../utils/hooks/useAuth';
 import { GraphLink, GraphNode } from '../../../../components/graph/graph.types';
 import { FieldOption } from '../../../../utils/field';
-import { Button, DialogActions, DialogContent, DialogTitle } from '@components';
 
 // The number of elements targeted by the given
 // entities ids, sorted by type of entity.

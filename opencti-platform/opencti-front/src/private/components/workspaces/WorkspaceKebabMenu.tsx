@@ -8,12 +8,12 @@ import WorkspaceDuplicationDialog from '@private/components/workspaces/Workspace
 import Drawer from '@private/components/common/drawer/Drawer';
 import PublicDashboardCreationForm from '@private/components/workspaces/dashboards/public_dashboards/PublicDashboardCreationForm';
 import WorkspaceDeletion from '@private/components/workspaces/WorkspaceDeletion';
+import { Menu, MenuItem, ToggleButton } from '@components';
 import { WorkspaceKebabMenuFragment$key } from './__generated__/WorkspaceKebabMenuFragment.graphql';
 import { useGetCurrentUserAccessRight } from '../../../utils/authorizedMembers';
 import Security from '../../../utils/Security';
 import useGranted, { EXPLORE_EXUPDATE, EXPLORE_EXUPDATE_EXDELETE, EXPLORE_EXUPDATE_PUBLISH, INVESTIGATION_INUPDATE } from '../../../utils/hooks/useGranted';
 import { useFormatter } from '../../../components/i18n';
-import { Menu, MenuItem, ToggleButton } from '@components';
 
 const kebabMenuFragment = graphql`
   fragment WorkspaceKebabMenuFragment on Workspace {

@@ -8,9 +8,9 @@ import CsvMapperRepresentationDialogOption from '@private/components/data/csvMap
 import CsvMapperRepresentionAttributeSelectedConfigurations from '@private/components/data/csvMapper/representations/attributes/CsvMapperRepresentionAttributeSelectedConfigurations';
 import { CsvMapperRepresentationAttributeFormData } from '@private/components/data/csvMapper/representations/attributes/Attribute';
 import { SchemaAttribute } from '@private/components/data/csvMapper/representations/attributes/CsvMapperRepresentationAttributesForm';
+import { Autocomplete as MUIAutocomplete, TextField as MuiTextField } from '@components';
 import { useFormatter } from '../../../../../../components/i18n';
 import { isEmptyField } from '../../../../../../utils/utils';
-import { Autocomplete as MUIAutocomplete, TextField as MuiTextField } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -9,13 +9,13 @@ import {
 } from '@private/components/common/containers/__generated__/ContainerStixCoreObjectsSuggestedMappingLine_mappedEntity.graphql';
 import { Theme } from '@mui/material/styles/createTheme';
 import { DraftChip } from '@private/components/common/draft/DraftChip';
+import { Chip, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
 import { resolveLink } from '../../../../utils/Entity';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import { hexToRGB, itemColor } from '../../../../utils/Colors';
 import { DataColumns } from '../../../../components/list_lines';
-import { Chip, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

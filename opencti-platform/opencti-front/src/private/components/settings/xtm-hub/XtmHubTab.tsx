@@ -1,6 +1,7 @@
 import { graphql } from 'react-relay';
 import React, { useCallback, useContext, useMemo, useState } from 'react';
 import { useTheme } from '@mui/styles';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import GradientButton from '../../../../components/GradientButton';
 import ConfirmationDialog from './ConfirmationDialog';
@@ -12,7 +13,6 @@ import ProcessInstructions from './ProcessInstructions';
 import ProcessLoader from './ProcessLoader';
 import ProcessDialog from './ProcessDialog';
 import type { Theme } from '../../../../components/Theme';
-import { Button } from '@components';
 
 enum ProcessSteps {
   INSTRUCTIONS = 'INSTRUCTIONS',

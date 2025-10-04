@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Add } from '@mui/icons-material';
+import { Button, IconButton, List, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Drawer from '../../common/drawer/Drawer';
 import SearchInput from '../../../../components/SearchInput';
 import { QueryRenderer } from '../../../../relay/environment';
 import AddExternalReferencesLines, { addExternalReferencesLinesQuery } from './AddExternalReferencesLines';
-import { Button, IconButton, List, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const AddExternalReferences = ({
   stixCoreObjectOrStixCoreRelationshipId,

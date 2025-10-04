@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from 'react';
 import { Field } from 'formik';
 import makeStyles from '@mui/styles/makeStyles';
+import { ListItemText } from '@components';
 import AutocompleteField from '../../../../components/AutocompleteField';
 import { useFormatter } from '../../../../components/i18n';
 import ItemIcon from '../../../../components/ItemIcon';
 import type { Theme } from '../../../../components/Theme';
 import useAuth from '../../../../utils/hooks/useAuth';
-import { ListItemText } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

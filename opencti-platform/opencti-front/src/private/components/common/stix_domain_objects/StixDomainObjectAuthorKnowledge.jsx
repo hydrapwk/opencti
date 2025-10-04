@@ -7,6 +7,7 @@ import withStyles from '@mui/styles/withStyles';
 import withTheme from '@mui/styles/withTheme';
 import { DescriptionOutlined, DeviceHubOutlined } from '@mui/icons-material';
 import { HexagonMultipleOutline } from 'mdi-material-ui';
+import { Card, CardContent, Grid, Paper, Typography } from '@components';
 import Chart from '../charts/Chart';
 import { QueryRenderer } from '../../../../relay/environment';
 import { monthsAgo, now, yearsAgo } from '../../../../utils/Time';
@@ -15,7 +16,6 @@ import ItemNumberDifference from '../../../../components/ItemNumberDifference';
 import Loader from '../../../../components/Loader';
 import { areaChartOptions } from '../../../../utils/Charts';
 import { simpleNumberFormat } from '../../../../utils/Number';
-import { Card, CardContent, Grid, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   card: {

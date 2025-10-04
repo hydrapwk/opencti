@@ -1,6 +1,9 @@
 import React from 'react';
 import { graphql } from 'react-relay';
-import { VulnerabilitiesLinesPaginationQuery, VulnerabilitiesLinesPaginationQuery$variables } from '@private/components/arsenal/__generated__/VulnerabilitiesLinesPaginationQuery.graphql';
+import {
+  VulnerabilitiesLinesPaginationQuery,
+  VulnerabilitiesLinesPaginationQuery$variables,
+} from '@private/components/arsenal/__generated__/VulnerabilitiesLinesPaginationQuery.graphql';
 import { VulnerabilitiesLines_data$data } from '@private/components/arsenal/__generated__/VulnerabilitiesLines_data.graphql';
 import VulnerabilityCreation from './vulnerabilities/VulnerabilityCreation';
 import Security from '../../../utils/Security';

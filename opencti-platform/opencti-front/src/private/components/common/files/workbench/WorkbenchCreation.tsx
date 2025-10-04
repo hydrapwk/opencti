@@ -12,6 +12,7 @@ import { WorkbenchFileCreatorStixCoreObjectQuery$data } from '@private/component
 import { v4 as uuid } from 'uuid';
 import { workbenchFileCreatorStixCoreObjectQuery } from '@private/components/common/files/workbench/WorkbenchFileCreator';
 import { ImportWorkbenchesContentQuery$variables } from '@private/components/data/import/__generated__/ImportWorkbenchesContentQuery.graphql';
+import { Button } from '@components';
 import { insertNode } from '../../../../../utils/store';
 import { fetchQuery } from '../../../../../relay/environment';
 import TextField from '../../../../../components/TextField';
@@ -22,7 +23,6 @@ import ItemIcon from '../../../../../components/ItemIcon';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../../utils/field';
 import type { Theme } from '../../../../../components/Theme';
 import CreateEntityControlledDial from '../../../../../components/CreateEntityControlledDial';
-import { Button } from '@components';
 
 const workbenchCreationMutation = graphql`
   mutation WorkbenchCreationMutation(

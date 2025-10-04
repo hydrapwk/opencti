@@ -8,6 +8,7 @@ import { graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/styles';
+import { Button, Dialog, DialogContent, DialogTitle, Drawer, Fab, IconButton, List, ListItemButton, ListItemText, Typography } from '@components';
 import { handleErrorInForm, QueryRenderer } from '../../../../relay/environment';
 import TextField from '../../../../components/TextField';
 import SwitchField from '../../../../components/fields/SwitchField';
@@ -36,7 +37,6 @@ import { splitMultilines } from '../../../../utils/String';
 import ProgressBar from '../../../../components/ProgressBar';
 import useBulkCommit from '../../../../utils/hooks/useBulkCommit';
 import BulkTextField from '../../../../components/fields/BulkTextField/BulkTextField';
-import { Button, Dialog, DialogContent, DialogTitle, Drawer, Fab, IconButton, List, ListItemButton, ListItemText, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

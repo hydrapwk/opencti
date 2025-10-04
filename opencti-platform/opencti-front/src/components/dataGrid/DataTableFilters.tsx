@@ -6,10 +6,11 @@ import StixCoreRelationshipsExports from '@private/components/common/stix_core_r
 import StixCoreObjectsExports from '@private/components/common/stix_core_objects/StixCoreObjectsExports';
 import StixCyberObservablesExports from '@private/components/observations/stix_cyber_observables/StixCyberObservablesExports';
 import { useTheme } from '@mui/styles';
-import { Theme } from '@mui/material/styles/createTheme';
+import type { Theme } from '@mui/material/styles/createTheme';
+import { ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 import FilterIconButton from '../FilterIconButton';
 import { useFormatter } from '../i18n';
-import { DataTableDisplayFiltersProps, DataTableFiltersProps, DataTableVariant } from './dataTableTypes';
+import type { DataTableDisplayFiltersProps, DataTableFiltersProps, DataTableVariant } from './dataTableTypes';
 import { export_max_size } from '../../utils/utils';
 import useEntityToggle from '../../utils/hooks/useEntityToggle';
 import Security from '../../utils/Security';
@@ -18,7 +19,6 @@ import { ExportContext } from '../../utils/ExportContextProvider';
 import DataTablePagination from './DataTablePagination';
 import { isFilterGroupNotEmpty } from '../../utils/filters/filtersUtils';
 import { useDataTableContext } from './components/DataTableContext';
-import { ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 
 export const DataTableDisplayFilters = ({
   availableFilterKeys,

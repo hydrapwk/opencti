@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { graphql, PreloadedQuery } from 'react-relay';
+import { Chip, Grid, Paper, Typography } from '@components';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { useFormatter } from '../../../../components/i18n';
 import { Position_position$data } from './__generated__/Position_position.graphql';
@@ -10,7 +11,6 @@ import usePreloadedFragment from '../../../../utils/hooks/usePreloadedFragment';
 import { PositionDetails_positionRelationships$key } from './__generated__/PositionDetails_positionRelationships.graphql';
 import { isNotEmptyField } from '../../../../utils/utils';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { Chip, Grid, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

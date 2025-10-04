@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
-import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { Box, Button } from '@components';
+import Loader, { LoaderVariant } from '../../../../components/Loader';
+
 interface ProcessLoaderProps {
   onFocusTab: () => void;
   buttonText: string;

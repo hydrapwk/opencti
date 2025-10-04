@@ -9,6 +9,7 @@ import CustomFileUploader from '@private/components/common/files/CustomFileUploa
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { CoursesOfActionLinesPaginationQuery$variables } from '@private/components/techniques/__generated__/CoursesOfActionLinesPaginationQuery.graphql';
 import ConfidenceField from '@private/components/common/form/ConfidenceField';
+import { Button, Dialog, DialogContent, DialogTitle } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import TextField from '../../../../components/TextField';
@@ -25,7 +26,6 @@ import { CourseOfActionCreationMutation, CourseOfActionCreationMutation$variable
 import useDefaultValues from '../../../../utils/hooks/useDefaultValues';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button, Dialog, DialogContent, DialogTitle } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

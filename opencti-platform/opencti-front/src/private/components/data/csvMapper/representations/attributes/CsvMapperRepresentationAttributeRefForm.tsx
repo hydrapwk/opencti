@@ -11,12 +11,12 @@ import CsvMapperRepresentationAttributeOptions from '@private/components/data/cs
 import { CsvMapperRepresentationAttributeFormData } from '@private/components/data/csvMapper/representations/attributes/Attribute';
 import { CsvMapperRepresentationFormData } from '@private/components/data/csvMapper/representations/Representation';
 import { SchemaAttribute } from '@private/components/data/csvMapper/representations/attributes/CsvMapperRepresentationAttributesForm';
+import { Autocomplete as MUIAutocomplete, TextField as MuiTextField } from '@components';
 import { isEmptyField } from '../../../../../../utils/utils';
 import useAuth from '../../../../../../utils/hooks/useAuth';
 import { resolveTypesForRelationship, resolveTypesForRelationshipRef } from '../../../../../../utils/Relation';
 import { useFormatter } from '../../../../../../components/i18n';
 import { isStixCoreObjects, isStixCoreRelationships } from '../../../../../../utils/stixTypeUtils';
-import { Autocomplete as MUIAutocomplete, TextField as MuiTextField } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

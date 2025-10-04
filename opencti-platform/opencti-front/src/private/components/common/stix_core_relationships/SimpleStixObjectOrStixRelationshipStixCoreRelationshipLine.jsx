@@ -8,6 +8,7 @@ import withTheme from '@mui/styles/withTheme';
 import { MoreVertOutlined } from '@mui/icons-material';
 import { AutoFix } from 'mdi-material-ui';
 import * as R from 'ramda';
+import { Box, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 import { DraftChip, getDraftModeColor } from '../draft/DraftChip';
 import inject18n from '../../../../components/i18n';
 import ItemConfidence from '../../../../components/ItemConfidence';
@@ -17,7 +18,6 @@ import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import ItemIcon from '../../../../components/ItemIcon';
 import ItemMarkings from '../../../../components/ItemMarkings';
 import ItemEntityType from '../../../../components/ItemEntityType';
-import { Box, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 
 const styles = (theme) => ({
   item: {

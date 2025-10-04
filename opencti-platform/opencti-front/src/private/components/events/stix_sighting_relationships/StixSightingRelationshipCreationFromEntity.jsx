@@ -5,6 +5,7 @@ import { assoc, pipe, pluck } from 'ramda';
 import { Add, Close } from '@mui/icons-material';
 import CircularProgress from '@mui/material/CircularProgress';
 import makeStyles from '@mui/styles/makeStyles';
+import { Alert, Drawer, Fab, IconButton, List, ListItem, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { QueryRenderer } from '../../../../relay/environment';
 import { dayStartDate, formatDate } from '../../../../utils/Time';
@@ -20,7 +21,6 @@ import StixSightingRelationshipCreationForm from './StixSightingRelationshipCrea
 import { useFormatter } from '../../../../components/i18n';
 import { insertNode } from '../../../../utils/store';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Alert, Drawer, Fab, IconButton, List, ListItem, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

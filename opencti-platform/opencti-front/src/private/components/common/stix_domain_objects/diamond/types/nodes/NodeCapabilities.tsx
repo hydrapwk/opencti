@@ -2,10 +2,10 @@ import React, { memo } from 'react';
 import * as R from 'ramda';
 import { NodeProps, Position } from 'reactflow';
 import getFilterFromEntityTypeAndNodeType, { DiamondNodeType } from '@private/components/common/stix_domain_objects/diamond/getFilterFromEntityTypeAndNodeType';
+import { Typography } from '@components';
 import NodeContainer from './NodeContainer';
 import { useFormatter } from '../../../../../../../components/i18n';
 import { emptyFilled } from '../../../../../../../utils/String';
-import { Typography } from '@components';
 
 const NodeCapabilities = ({ data }: NodeProps) => {
   const { t_i18n } = useFormatter();

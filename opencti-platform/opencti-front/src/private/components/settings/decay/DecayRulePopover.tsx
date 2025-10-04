@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DecayRuleDeletion from '@private/components/settings/decay/DecayRuleDeletion';
+import { Box, MenuItem } from '@components';
 import { DecayRule_decayRule$data } from './__generated__/DecayRule_decayRule.graphql';
 import { decayRuleEditionMutation } from './DecayRuleEdition';
 import { useFormatter } from '../../../../components/i18n';
@@ -7,7 +8,7 @@ import { handleError } from '../../../../relay/environment';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import PopoverMenu from '../../../../components/PopoverMenu';
 import useGranted, { KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
-import { Box, MenuItem } from '@components';
+
 interface DecayRulePopoverProps {
   decayRule: DecayRule_decayRule$data;
 }

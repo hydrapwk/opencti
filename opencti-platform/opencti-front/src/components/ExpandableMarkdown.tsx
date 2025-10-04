@@ -1,8 +1,9 @@
 import React, { FunctionComponent, useState } from 'react';
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
+import { IconButton } from '@components';
 import { emptyFilled, truncate } from '../utils/String';
 import MarkdownDisplay from './MarkdownDisplay';
-import { IconButton } from '@components';
+
 interface ExpandableMarkdownProps {
   source?: string | null;
   limit: number;

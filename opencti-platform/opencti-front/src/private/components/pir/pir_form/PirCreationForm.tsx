@@ -16,6 +16,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 import React, { useState } from 'react';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
+import { Button, DialogActions, DialogContent, DialogTitle } from '@components';
 import { PirCreationFormData } from './pir-form-utils';
 import PirCreationFormGeneralSettings, { redisStreamQuery } from './PirCreationFormGeneralSettings';
 import PirCreationFormStepper from './PirCreationFormStepper';
@@ -24,7 +25,7 @@ import PirCreationFormCriteria from './PirCreationFormCriteria';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import { PirCreationFormGeneralSettingsRedisStreamQuery } from './__generated__/PirCreationFormGeneralSettingsRedisStreamQuery.graphql';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { Button, DialogActions, DialogContent, DialogTitle } from '@components';
+
 interface PirCreationFormProps {
   onCancel: () => void
   onSubmit: (data: PirCreationFormData) => void

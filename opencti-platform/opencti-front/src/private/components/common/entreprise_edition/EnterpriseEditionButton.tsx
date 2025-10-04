@@ -5,11 +5,11 @@ import { RocketLaunchOutlined } from '@mui/icons-material';
 import FeedbackCreation from '@private/components/cases/feedbacks/FeedbackCreation';
 import classNames from 'classnames';
 import { useTheme } from '@mui/styles';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useGranted, { SETTINGS_SETPARAMETERS } from '../../../../utils/hooks/useGranted';
 import useAuth from '../../../../utils/hooks/useAuth';
 import type { Theme } from '../../../../components/Theme';
-import { Button } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

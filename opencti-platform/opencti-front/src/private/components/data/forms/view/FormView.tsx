@@ -6,6 +6,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Field, FieldArray, Form, Formik, FormikHelpers } from 'formik';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { Alert, Button, Checkbox, Divider, FormControlLabel, IconButton, Paper, Typography } from '@components';
 import TextField from '../../../../../components/TextField';
 import { useFormatter } from '../../../../../components/i18n';
 import { FormViewQuery } from './__generated__/FormViewQuery.graphql';
@@ -20,7 +21,6 @@ import { convertFormSchemaToYupSchema, formatFormDataForSubmission } from './For
 import { environment } from '../../../../../relay/environment';
 import StixCoreObjectsField from '../../../common/form/StixCoreObjectsField';
 import useGranted, { INGESTION, MODULES } from '../../../../../utils/hooks/useGranted';
-import { Alert, Button, Checkbox, Divider, FormControlLabel, IconButton, Paper, Typography } from '@components';
 
 // Styles
 const useStyles = makeStyles<Theme>(() => ({

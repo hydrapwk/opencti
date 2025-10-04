@@ -3,6 +3,7 @@ import { BackupTableOutlined, CampaignOutlined, MoreVert } from '@mui/icons-mate
 import { graphql, useFragment } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { Theme } from '@mui/material/styles/createTheme';
+import { Box, Chip, IconButton, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { DataColumns } from '../../../../../components/list_lines';
 import FilterIconButton from '../../../../../components/FilterIconButton';
 import { useFormatter } from '../../../../../components/i18n';
@@ -12,7 +13,6 @@ import { AlertingPaginationQuery$variables } from './__generated__/AlertingPagin
 import AlertingPopover from './AlertingPopover';
 import { deserializeFilterGroupForFrontend } from '../../../../../utils/filters/filtersUtils';
 import { chipInListBasicStyle } from '../../../../../utils/chipStyle';
-import { Box, Chip, IconButton, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

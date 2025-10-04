@@ -2,11 +2,11 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { GroupOutlined, ReportGmailerrorred } from '@mui/icons-material';
+import { Checkbox, List, ListItem, ListItemIcon, ListItemText, Tooltip } from '@components';
 import { commitMutation, QueryRenderer } from '../../../../../relay/environment';
 import { groupsSearchQuery } from '../../Groups';
 import { isOnlyOrganizationAdmin } from '../../../../../utils/hooks/useGranted';
 import { useFormatter } from '../../../../../components/i18n';
-import { Checkbox, List, ListItem, ListItemIcon, ListItemText, Tooltip } from '@components';
 
 const userMutationRelationAdd = graphql`
   mutation UserEditionGroupsRelationAddMutation(

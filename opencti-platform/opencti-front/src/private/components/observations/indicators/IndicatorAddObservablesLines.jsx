@@ -4,6 +4,7 @@ import { createPaginationContainer, graphql } from 'react-relay';
 import { assoc, groupBy, keys, map, pipe, pluck } from 'ramda';
 import { CheckCircle, ExpandMore } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
+import { Accordion, AccordionDetails, AccordionSummary, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import { commitMutation } from '../../../../relay/environment';
 import ItemIcon from '../../../../components/ItemIcon';
 import { useFormatter } from '../../../../components/i18n';
@@ -12,7 +13,6 @@ import { deleteNodeFromEdge } from '../../../../utils/store';
 import { useIsEnforceReference, useSchemaCreationValidation } from '../../../../utils/hooks/useEntitySettings';
 import { parse } from '../../../../utils/Time';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Accordion, AccordionDetails, AccordionSummary, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

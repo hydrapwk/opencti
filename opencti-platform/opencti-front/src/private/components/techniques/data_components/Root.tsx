@@ -7,6 +7,7 @@ import { Link, Route, Routes, useParams, useLocation } from 'react-router-dom';
 import { graphql, useSubscription } from 'react-relay';
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import StixCoreObjectContentRoot from '@private/components/common/stix_core_objects/StixCoreObjectContentRoot';
+import { Box, Tab, Tabs } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import Loader from '../../../../components/Loader';
 import ErrorNotFound from '../../../../components/ErrorNotFound';
@@ -24,7 +25,6 @@ import Security from '../../../../utils/Security';
 import DataComponentEdition from './DataComponentEdition';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import DataComponentDeletion from './DataComponentDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootDataComponentSubscription($id: ID!) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
-import inject18n from './i18n';
 import { Alert, AlertTitle } from '@components';
+import inject18n from './i18n';
 
 const ErrorNotFound = (props) => {
   const { t } = props;

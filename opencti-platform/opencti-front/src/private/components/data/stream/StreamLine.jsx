@@ -5,6 +5,7 @@ import withStyles from '@mui/styles/withStyles';
 import { MoreVert, Stream } from '@mui/icons-material';
 import { compose } from 'ramda';
 import Slide from '@mui/material/Slide';
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import StreamPopover from './StreamPopover';
 import inject18n from '../../../../components/i18n';
 import FilterIconButton from '../../../../components/FilterIconButton';
@@ -14,7 +15,6 @@ import { deserializeFilterGroupForFrontend, isFilterGroupNotEmpty } from '../../
 import Security from '../../../../utils/Security';
 import { TAXIIAPI_SETCOLLECTIONS } from '../../../../utils/hooks/useGranted';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide direction="up" ref={ref} {...props} />

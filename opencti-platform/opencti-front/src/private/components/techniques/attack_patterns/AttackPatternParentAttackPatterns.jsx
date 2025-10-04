@@ -4,8 +4,8 @@ import { compose } from 'ramda';
 import { Link } from 'react-router-dom';
 import { LockPattern } from 'mdi-material-ui';
 import { graphql, createFragmentContainer } from 'react-relay';
-import inject18n from '../../../../components/i18n';
 import { List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
+import inject18n from '../../../../components/i18n';
 
 class AttackPatternParentAttackPatternsComponent extends Component {
   render() {

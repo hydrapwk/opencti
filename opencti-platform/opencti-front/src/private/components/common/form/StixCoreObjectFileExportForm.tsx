@@ -10,6 +10,24 @@ import { CONTENT_MAX_MARKINGS_HELPERTEXT, CONTENT_MAX_MARKINGS_TITLE } from '@pr
 import { FileExportOutline, FilePdfBox, InformationOutline, LanguageMarkdownOutline } from 'mdi-material-ui';
 import EETooltip from '@private/components/common/entreprise_edition/EETooltip';
 import FiligranIcon from '@private/components/common/FiligranIcon';
+import {
+  Button,
+  Card,
+  CardActionArea,
+  CardContent,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Grid,
+  MenuItem,
+  Step,
+  StepButton,
+  StepLabel,
+  Stepper,
+  Tooltip,
+  Typography,
+} from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import SelectField from '../../../../components/fields/SelectField';
@@ -19,7 +37,6 @@ import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
 import useAI from '../../../../utils/hooks/useAI';
 import { now } from '../../../../utils/Time';
 import FintelDesignField, { FintelDesignFieldOption } from './FintelDesignField';
-import { Button, Card, CardActionArea, CardContent, Dialog, DialogActions, DialogContent, DialogTitle, Grid, MenuItem, Step, StepButton, StepLabel, Stepper, Tooltip, Typography } from '@components';
 
 export type FileOption = Pick<FieldOption, 'label' | 'value'> & {
   fileMarkings: {

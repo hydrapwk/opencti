@@ -3,6 +3,7 @@ import { CheckCircle } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
 import { graphql } from 'react-relay';
 import * as R from 'ramda';
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import { deleteNodeFromEdge } from '../../../../utils/store';
 import { useFormatter } from '../../../../components/i18n';
@@ -11,7 +12,6 @@ import StixCoreRelationshipCreationForm, { stixCoreRelationshipBasicShape } from
 import { formatDate } from '../../../../utils/Time';
 import { APP_BASE_PATH } from '../../../../relay/environment';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

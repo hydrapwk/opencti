@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { LinkOff } from '@mui/icons-material';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { AutoFix } from 'mdi-material-ui';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@components';
 import { APP_BASE_PATH, commitMutation } from '../../../../relay/environment';
 import inject18n from '../../../../components/i18n';
 import { resolveLink } from '../../../../utils/Entity';
@@ -16,7 +17,6 @@ import { addLocationsThreatActorMutationRelationDelete } from './AddLocationsThr
 import AddLocationsThreatActorIndividual from './AddLocationsThreatActorIndividual';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
 import CardLabel from '../../../../components/CardLabel';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@components';
 
 class ThreatActorIndividualLocationsComponent extends Component {
   removeLocation(locationEdge) {

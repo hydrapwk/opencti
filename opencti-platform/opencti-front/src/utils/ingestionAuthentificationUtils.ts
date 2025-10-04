@@ -1,6 +1,6 @@
-import { FormikErrors } from 'formik';
-import { IngestionCsvEditionForm } from '@private/components/data/ingestionCsv/IngestionCsvEdition';
-import { IngestionJsonEditionForm } from '@private/components/data/ingestionJson/IngestionJsonEdition';
+import { type FormikErrors } from 'formik';
+import { type IngestionCsvEditionForm } from '@private/components/data/ingestionCsv/IngestionCsvEdition';
+import { type IngestionJsonEditionForm } from '@private/components/data/ingestionJson/IngestionJsonEdition';
 
 export const BASIC_AUTH = 'basic';
 export const CERT_AUTH = 'certificate';

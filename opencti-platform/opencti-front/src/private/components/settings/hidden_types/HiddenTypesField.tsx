@@ -1,5 +1,6 @@
 import React, { FunctionComponent, ReactElement, useState } from 'react';
 import { Field } from 'formik';
+import { Box, Checkbox, Chip, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import SelectField from '../../../../components/fields/SelectField';
 import { entitySettingPatch } from '../sub_types/entity_setting/EntitySettingSettings';
@@ -9,7 +10,6 @@ import Security from '../../../../utils/Security';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import HiddenTypesIndicator from './HiddenTypesIndicator';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Box, Checkbox, Chip, MenuItem } from '@components';
 
 export const groups = new Map<string, string[]>([
   ['Analysis', ['Report', 'Grouping', 'Malware-Analysis', 'Note', 'External-Reference']],

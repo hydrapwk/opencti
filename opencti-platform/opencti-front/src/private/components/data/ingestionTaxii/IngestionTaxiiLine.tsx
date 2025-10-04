@@ -5,6 +5,7 @@ import { AccessPoint } from 'mdi-material-ui';
 import makeStyles from '@mui/styles/makeStyles';
 import { IngestionTaxiiLine_node$key } from '@private/components/data/ingestionTaxii/__generated__/IngestionTaxiiLine_node.graphql';
 import { IngestionTaxiiLinesPaginationQuery$variables } from '@private/components/data/ingestionTaxii/__generated__/IngestionTaxiiLinesPaginationQuery.graphql';
+import { ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import IngestionTaxiiPopover from './IngestionTaxiiPopover';
 import { useFormatter } from '../../../../components/i18n';
 import ItemBoolean from '../../../../components/ItemBoolean';
@@ -13,7 +14,6 @@ import { INGESTION_SETINGESTIONS } from '../../../../utils/hooks/useGranted';
 import ItemCopy from '../../../../components/ItemCopy';
 import type { Theme } from '../../../../components/Theme';
 import { DataColumns } from '../../../../components/list_lines';
-import { ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {

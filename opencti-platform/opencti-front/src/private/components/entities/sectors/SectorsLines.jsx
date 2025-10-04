@@ -3,9 +3,9 @@ import * as PropTypes from 'prop-types';
 import { compose, pipe, map, pathOr, sortBy, toLower, prop, filter, join, assoc } from 'ramda';
 import { graphql, createPaginationContainer } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
+import { List } from '@components';
 import { SectorLine, SectorLineDummy } from './SectorLine';
 import inject18n from '../../../../components/i18n';
-import { List } from '@components';
 
 const styles = () => ({
   root: {

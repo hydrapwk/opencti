@@ -3,12 +3,12 @@ import { graphql, useFragment } from 'react-relay';
 import { KeyboardArrowRightOutlined, CheckCircleOutlined, DoNotDisturbOnOutlined } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import makeStyles from '@mui/styles/makeStyles';
+import { Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import { DataColumns } from '../../../../components/list_lines';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import { SubTypesLine_node$key } from './__generated__/SubTypesLine_node.graphql';
-import { Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

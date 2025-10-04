@@ -3,9 +3,10 @@ import { Stack } from '@mui/material';
 import { FilterListOffOutlined } from '@mui/icons-material';
 import { getConnectorMetadata, IngestionConnectorType } from '@private/components/data/IngestionCatalog/utils/ingestionConnectorTypeMetadata';
 import { useTheme } from '@mui/material/styles';
+import { Autocomplete, IconButton, TextField, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import SearchInput from '../../../../components/SearchInput';
-import { Autocomplete, IconButton, TextField, Tooltip } from '@components';
+
 interface Contract {
   title: string;
   use_cases: string[];

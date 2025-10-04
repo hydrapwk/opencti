@@ -19,6 +19,7 @@ import { Grid2 as Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { PirOverviewDetailsRedisFragment$key } from '@private/components/pir/pir_overview/__generated__/PirOverviewDetailsRedisFragment.graphql';
 import { InformationOutline } from 'mdi-material-ui';
+import { Chip, Tooltip, Typography } from '@components';
 import { PirOverviewDetailsFragment$key } from './__generated__/PirOverviewDetailsFragment.graphql';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { useFormatter } from '../../../../components/i18n';
@@ -29,7 +30,6 @@ import PirCriteriaDisplay from '../PirCriteriaDisplay';
 import type { Theme } from '../../../../components/Theme';
 import PaperAccordion from '../../../../components/PaperAccordion';
 import { FilterGroup } from '../../../../utils/filters/filtersHelpers-types';
-import { Chip, Tooltip, Typography } from '@components';
 
 const detailsFragment = graphql`
   fragment PirOverviewDetailsFragment on Pir {

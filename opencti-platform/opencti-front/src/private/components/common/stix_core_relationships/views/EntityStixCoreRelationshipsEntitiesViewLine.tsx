@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { KeyboardArrowRight } from '@mui/icons-material';
 import { graphql, useFragment } from 'react-relay';
 import { DraftChip } from '@private/components/common/draft/DraftChip';
+import { Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import ItemMarkings from '../../../../../components/ItemMarkings';
 import StixCoreObjectLabels from '../../stix_core_objects/StixCoreObjectLabels';
 import type { Theme } from '../../../../../components/Theme';
@@ -18,7 +19,6 @@ import {
   EntityStixCoreRelationshipsEntitiesViewLine_node$key,
 } from './__generated__/EntityStixCoreRelationshipsEntitiesViewLine_node.graphql';
 import ItemEntityType from '../../../../../components/ItemEntityType';
-import { Checkbox, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

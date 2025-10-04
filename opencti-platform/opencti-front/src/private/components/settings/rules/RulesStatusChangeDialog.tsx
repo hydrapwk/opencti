@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import { graphql } from 'react-relay';
+import { Alert, Button, Dialog, DialogActions, DialogContent } from '@components';
 import Transition from '../../../../components/Transition';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { MESSAGING$ } from '../../../../relay/environment';
-import { Alert, Button, Dialog, DialogActions, DialogContent } from '@components';
 
 const ruleActivationMutation = graphql`
   mutation RulesStatusChangeDialogActivationMutation($id: ID!, $enable: Boolean!) {

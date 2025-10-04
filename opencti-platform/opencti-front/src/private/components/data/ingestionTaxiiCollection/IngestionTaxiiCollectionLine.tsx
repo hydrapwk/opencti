@@ -7,6 +7,7 @@ import { IngestionTaxiiCollectionLine_node$key } from '@private/components/data/
 import {
   IngestionTaxiiCollectionLinesPaginationQuery$variables,
 } from '@private/components/data/ingestionTaxiiCollection/__generated__/IngestionTaxiiCollectionLinesPaginationQuery.graphql';
+import { ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import ItemBoolean from '../../../../components/ItemBoolean';
 import Security from '../../../../utils/Security';
@@ -16,7 +17,6 @@ import type { Theme } from '../../../../components/Theme';
 import { DataColumns } from '../../../../components/list_lines';
 import IngestionTaxiiCollectionPopover from './IngestionTaxiiCollectionPopover';
 import { APP_BASE_PATH } from '../../../../relay/environment';
-import { ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {

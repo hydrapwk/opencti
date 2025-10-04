@@ -3,13 +3,16 @@ import { stixCyberObservablesLinesAttributesQuery } from '@private/components/ob
 import * as R from 'ramda';
 import { InformationOutline } from 'mdi-material-ui';
 import React, { useState } from 'react';
-import { StixCyberObservablesLinesAttributesQuery$data } from '@private/components/observations/stix_cyber_observables/__generated__/StixCyberObservablesLinesAttributesQuery.graphql';
+import {
+  StixCyberObservablesLinesAttributesQuery$data,
+} from '@private/components/observations/stix_cyber_observables/__generated__/StixCyberObservablesLinesAttributesQuery.graphql';
 import WidgetColumnsCustomizationInput from '@private/components/widgets/WidgetColumnsCustomizationInput';
 import { getDefaultWidgetColumns, getWidgetColumns } from '@private/components/widgets/WidgetListsDefaultColumns';
 import { useWidgetConfigContext } from '@private/components/widgets/WidgetConfigContext';
 import useWidgetConfigValidateForm from '@private/components/widgets/useWidgetConfigValidateForm';
 import WidgetAttributesInputContainer, { widgetAttributesInputInstanceQuery } from '@private/components/widgets/WidgetAttributesInputContainer';
 import { WidgetAttributesInputContainerInstanceQuery$data } from '@private/components/widgets/__generated__/WidgetAttributesInputContainerInstanceQuery.graphql';
+import { FormControl, FormControlLabel, InputAdornment, InputLabel, MenuItem, Select, Switch, TextField, Tooltip } from '@components';
 import { QueryRenderer } from '../../../relay/environment';
 import { isNotEmptyField } from '../../../utils/utils';
 import { capitalizeFirstLetter } from '../../../utils/String';
@@ -22,7 +25,6 @@ import { getCurrentAvailableParameters, getCurrentCategory, getCurrentIsRelation
 import EntitySelectWithTypes from '../../../components/fields/EntitySelectWithTypes';
 import { FilterGroup } from '../../../utils/filters/filtersHelpers-types';
 import useAuth from '../../../utils/hooks/useAuth';
-import { FormControl, FormControlLabel, InputAdornment, InputLabel, MenuItem, Select, Switch, TextField, Tooltip } from '@components';
 
 const WidgetCreationParameters = () => {
   const { t_i18n } = useFormatter();

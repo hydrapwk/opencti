@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { graphql } from 'react-relay';
 import { PublicDashboardsListQuery$variables } from '@private/components/workspaces/dashboards/public_dashboards/__generated__/PublicDashboardsListQuery.graphql';
+import { IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
 import useDeletion from '../../../../../utils/hooks/useDeletion';
@@ -14,7 +15,7 @@ import Security from '../../../../../utils/Security';
 import { useGetCurrentUserAccessRight } from '../../../../../utils/authorizedMembers';
 import { deleteNode } from '../../../../../utils/store';
 import { copyPublicLinkUrl } from '../../../../../utils/dashboard';
-import { IconButton, Menu, MenuItem } from '@components';
+
 interface PublicDashboardLineActionsProps {
   publicDashboard: PublicDashboards_PublicDashboard$data
   paginationOptions: PublicDashboardsListQuery$variables

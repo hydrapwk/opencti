@@ -1,6 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, PreloadedQuery } from 'react-relay';
-import { IndividualsLinesPaginationQuery, IndividualsLinesPaginationQuery$variables } from '@private/components/entities/individuals/__generated__/IndividualsLinesPaginationQuery.graphql';
+import {
+  IndividualsLinesPaginationQuery,
+  IndividualsLinesPaginationQuery$variables,
+} from '@private/components/entities/individuals/__generated__/IndividualsLinesPaginationQuery.graphql';
 import { IndividualsLines_data$key } from '@private/components/entities/individuals/__generated__/IndividualsLines_data.graphql';
 import ListLinesContent from '../../../../components/list_lines/ListLinesContent';
 import { IndividualLine, IndividualLineDummy } from './IndividualLine';

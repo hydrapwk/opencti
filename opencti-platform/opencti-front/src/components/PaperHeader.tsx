@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';import { Typography } from '@components';
+import React, { ReactNode } from 'react'; import { Typography } from '@components';
 
 export interface PaperHeaderProps {
   title?: ReactNode

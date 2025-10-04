@@ -4,10 +4,10 @@ import * as R from 'ramda';
 import { graphql, createRefetchContainer } from 'react-relay';
 import { interval } from 'rxjs';
 import withStyles from '@mui/styles/withStyles';
+import { Grid, List, Paper, Typography } from '@components';
 import FileLine from './FileLine';
 import { TEN_SECONDS } from '../../../../utils/Time';
 import inject18n from '../../../../components/i18n';
-import { Grid, List, Paper, Typography } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

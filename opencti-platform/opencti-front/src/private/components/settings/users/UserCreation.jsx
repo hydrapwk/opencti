@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import { useTheme } from '@mui/styles';
 import { graphql, usePreloadedQuery } from 'react-relay';
 import { InformationOutline } from 'mdi-material-ui';
+import { Alert, Button, MenuItem, Tooltip } from '@components';
 import EmailTemplateField from '../../common/form/EmailTemplateField';
 import GroupField, { groupsQuery } from '../../common/form/GroupField';
 import UserConfidenceLevelField from './edition/UserConfidenceLevelField';
@@ -22,7 +23,6 @@ import { insertNode } from '../../../../utils/store';
 import useGranted, { SETTINGS_SETACCESSES } from '../../../../utils/hooks/useGranted';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
 import SwitchField from '../../../../components/fields/SwitchField';
-import { Alert, Button, MenuItem, Tooltip } from '@components';
 
 const userMutation = graphql`
   mutation UserCreationMutation($input: UserAddInput!) {

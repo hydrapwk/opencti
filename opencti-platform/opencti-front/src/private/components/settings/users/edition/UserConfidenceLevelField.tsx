@@ -3,12 +3,12 @@ import { Field, useFormikContext } from 'formik';
 import makeStyles from '@mui/styles/makeStyles';
 import { InformationOutline } from 'mdi-material-ui';
 import { UserEdition_user$data } from '@private/components/settings/users/__generated__/UserEdition_user.graphql';
+import { Alert, Box, Tooltip } from '@components';
 import InputSliderField from '../../../../../components/InputSliderField';
 import { useFormatter } from '../../../../../components/i18n';
 import type { Theme } from '../../../../../components/Theme';
 import SwitchField from '../../../../../components/fields/SwitchField';
 import UserConfidenceLevel from '../UserConfidenceLevel';
-import { Alert, Box, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -4,6 +4,25 @@ import { graphql, useFragment } from 'react-relay';
 import Slide from '@mui/material/Slide';
 import { Delete } from 'mdi-material-ui';
 import makeStyles from '@mui/styles/makeStyles';
+import {
+  Button,
+  Chip,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  Grid,
+  LinearProgress,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Tooltip,
+  Typography,
+} from '@components';
 import TasksFilterValueContainer from '../../../../components/TasksFilterValueContainer';
 import TaskStatus from '../../../../components/TaskStatus';
 import { useFormatter } from '../../../../components/i18n';
@@ -15,7 +34,6 @@ import TaskScope from '../../../../components/TaskScope';
 import { deserializeFilterGroupForFrontend, isFilterFormatCorrect, isFilterGroupNotEmpty } from '../../../../utils/filters/filtersUtils';
 import { convertFiltersFromOldFormat } from '../../../../utils/filters/filtersFromOldFormat';
 import { deleteNode } from '../../../../utils/store';
-import { Button, Chip, Dialog, DialogActions, DialogContent, DialogContentText, Grid, LinearProgress, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

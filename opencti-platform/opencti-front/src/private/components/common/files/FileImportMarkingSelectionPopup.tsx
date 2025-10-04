@@ -2,9 +2,9 @@ import { Formik } from 'formik';
 import React from 'react';
 import ObjectMarkingField from '@private/components/common/form/ObjectMarkingField';
 import AssociatedEntityField, { AssociatedEntityOption } from '@private/components/common/form/AssociatedEntityField';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import { useFormatter } from '../../../../components/i18n';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 type FileImportMarkingSelectionPopupProps = {
   closePopup: () => void;

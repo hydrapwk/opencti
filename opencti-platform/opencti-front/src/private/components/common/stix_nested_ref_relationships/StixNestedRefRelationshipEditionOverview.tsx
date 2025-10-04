@@ -10,6 +10,7 @@ import {
 import {
   StixNestedRefRelationshipEditionOverviewQuery,
 } from '@private/components/common/stix_nested_ref_relationships/__generated__/StixNestedRefRelationshipEditionOverviewQuery.graphql';
+import { IconButton, Typography } from '@components';
 import { buildDate } from '../../../../utils/Time';
 import { useFormatter } from '../../../../components/i18n';
 import { SubscriptionAvatars, SubscriptionFocus } from '../../../../components/Subscription';
@@ -17,7 +18,6 @@ import DateTimePickerField from '../../../../components/DateTimePickerField';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { useSchemaEditionValidation } from '../../../../utils/hooks/useEntitySettings';
 import type { Theme } from '../../../../components/Theme';
-import { IconButton, Typography } from '@components';
 
 const StixNestedRefRelationshipEditionFragment = graphql`
   fragment StixNestedRefRelationshipEditionOverview_stixRefRelationship on StixRefRelationship {

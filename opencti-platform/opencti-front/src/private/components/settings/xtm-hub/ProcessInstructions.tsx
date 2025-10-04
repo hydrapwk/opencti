@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
-import { useFormatter } from '../../../../components/i18n';
 import { Box, Button } from '@components';
+import { useFormatter } from '@components/i18n';
+
 interface ProcessInstructionsProps {
   onContinue: () => void;
   instructionKey: string;

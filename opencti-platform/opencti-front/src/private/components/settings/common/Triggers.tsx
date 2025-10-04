@@ -1,6 +1,7 @@
 import { BackupTableOutlined, CampaignOutlined } from '@mui/icons-material';
 import React, { FunctionComponent, useRef, useState } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
+import { Grid, IconButton, Paper, Tooltip, Typography } from '@components';
 import TriggerLiveCreation from '../../profile/triggers/TriggerLiveCreation';
 import ColumnsLinesTitles from '../../../../components/ColumnsLinesTitles';
 import TriggersLines, { triggersLinesQuery } from '../../profile/triggers/TriggersLines';
@@ -13,7 +14,6 @@ import { usePaginationLocalStorage } from '../../../../utils/hooks/useLocalStora
 import { LOCAL_STORAGE_KEY_TRIGGERS } from '../../profile/Triggers';
 import { TriggerLineDummy } from '../../profile/triggers/TriggerLine';
 import { GqlFilterGroup, emptyFilterGroup } from '../../../../utils/filters/filtersUtils';
-import { Grid, IconButton, Paper, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

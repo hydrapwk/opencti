@@ -5,6 +5,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import * as Yup from 'yup';
 import { EditOutlined, ExpandLessOutlined, ExpandMoreOutlined, RateReviewOutlined } from '@mui/icons-material';
 import { Field, Form, Formik } from 'formik';
+import { Accordion, AccordionDetails, AccordionSummary, Button, IconButton, Typography } from '@components';
 import { NOTE_TYPE, noteCreationUserMutation } from './NoteCreation';
 import { insertNode } from '../../../../utils/store';
 import usePreloadedFragment from '../../../../utils/hooks/usePreloadedFragment';
@@ -31,7 +32,6 @@ import { convertMarking } from '../../../../utils/edition';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import AddNotesFunctionalComponent from './AddNotesFunctionalComponent';
 import { yupShapeConditionalRequired, useDynamicSchemaCreationValidation, useIsMandatoryAttribute } from '../../../../utils/hooks/useEntitySettings';
-import { Accordion, AccordionDetails, AccordionSummary, Button, IconButton, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

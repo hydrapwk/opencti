@@ -1,10 +1,11 @@
 import { Field, FieldProps } from 'formik';
 import React, { FunctionComponent, useState } from 'react';
 import { SelectChangeEvent } from '@mui/material';
+import { FormHelperText, Grid, MenuItem, Select, Slider } from '@components';
 import SimpleTextField from './SimpleTextField';
 import { SubscriptionFocus } from './Subscription';
 import { buildScaleLevel, useLevel } from '../utils/hooks/useScale';
-import { FormHelperText, Grid, MenuItem, Select, Slider } from '@components';
+
 interface InputSliderFieldProps {
   label: string;
   variant?: string;

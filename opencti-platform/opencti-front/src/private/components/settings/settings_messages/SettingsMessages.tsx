@@ -3,6 +3,7 @@ import { makeStyles } from '@mui/styles';
 import React, { useRef, useState } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { SettingsMessagesLine_settingsMessage$data } from '@private/components/settings/settings_messages/__generated__/SettingsMessagesLine_settingsMessage.graphql';
+import { IconButton, Paper, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { DataColumns } from '../../../../components/list_lines';
 import type { Theme } from '../../../../components/Theme';
@@ -13,7 +14,6 @@ import SettingsMessagesLines from './SettingsMessagesLines';
 import ItemBoolean from '../../../../components/ItemBoolean';
 import ColumnsLinesTitles from '../../../../components/ColumnsLinesTitles';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { IconButton, Paper, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

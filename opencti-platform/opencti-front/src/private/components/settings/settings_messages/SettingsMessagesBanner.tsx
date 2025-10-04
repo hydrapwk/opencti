@@ -3,6 +3,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import * as R from 'ramda';
 import React, { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { graphql, PreloadedQuery, usePreloadedQuery, useSubscription } from 'react-relay';
+import { IconButton } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { generateBannerMessageColors } from '../../../../utils/Colors';
 import useBus, { dispatch } from '../../../../utils/hooks/useBus';
@@ -12,7 +13,6 @@ import { SettingsMessagesBannerQuery } from './__generated__/SettingsMessagesBan
 import { MessageFromLocalStorage } from '../../../../utils/hooks/useLocalStorageModel';
 import { isEmptyField } from '../../../../utils/utils';
 import { extractUrlsFromText } from '../../../../utils/String';
-import { IconButton } from '@components';
 
 export const settingsMessagesQuery = graphql`
   query SettingsMessagesBannerQuery {

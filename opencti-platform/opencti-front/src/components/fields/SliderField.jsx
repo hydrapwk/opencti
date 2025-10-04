@@ -1,8 +1,8 @@
 import React from 'react';
 import { useField } from 'formik';
 import * as R from 'ramda';
-import inject18n from '../i18n';
 import { FormHelperText, InputLabel, Slider } from '@components';
+import inject18n from '../i18n';
 
 const SliderField = ({
   form: { setFieldValue, setFieldTouched },

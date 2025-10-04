@@ -1,8 +1,8 @@
 import React from 'react';
+import { Card, CardActionArea, CardContent, Grid, Typography } from '@components';
 import { useWidgetConfigContext } from './WidgetConfigContext';
 import { useFormatter } from '../../../components/i18n';
 import { fintelTemplatesWidgetVisualizationTypes, renderWidgetIcon, workspacesWidgetVisualizationTypes } from '../../../utils/widget/widgetUtils';
-import { Card, CardActionArea, CardContent, Grid, Typography } from '@components';
 
 const WidgetCreationTypes = () => {
   const { t_i18n } = useFormatter();

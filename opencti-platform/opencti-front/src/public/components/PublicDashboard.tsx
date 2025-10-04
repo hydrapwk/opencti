@@ -3,6 +3,7 @@ import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { useNavigate, useParams } from 'react-router-dom';
 import RGL, { WidthProvider } from 'react-grid-layout';
 import { ErrorBoundary } from '@private/components/Error';
+import { Paper } from '@components';
 import Loader, { LoaderVariant } from '../../components/Loader';
 import { PublicDashboardQuery } from './__generated__/PublicDashboardQuery.graphql';
 import useQueryLoading from '../../utils/hooks/useQueryLoading';
@@ -12,7 +13,6 @@ import usePublicDashboardWidgets from './dashboard/usePublicDashboardWidgets';
 import PublicTopBar from './PublicTopBar';
 import PublicDashboardHeader from './dashboard/PublicDashboardHeader';
 import { useFormatter } from '../../components/i18n';
-import { Paper } from '@components';
 
 const publicDashboardQuery = graphql`
   query PublicDashboardQuery($uri_key: String!) {

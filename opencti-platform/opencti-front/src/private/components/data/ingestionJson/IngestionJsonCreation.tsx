@@ -17,6 +17,7 @@ import { JsonMapperFieldSearchQuery } from '@private/components/common/form/__ge
 import { HeaderFieldAdd } from '@private/components/common/form/HeaderField';
 import { QueryAttributeFieldAdd } from '@private/components/common/form/QueryAttributeField';
 import IngestionSchedulingField from '@private/components/data/IngestionSchedulingField';
+import { Alert, Box, Button, FormControlLabel, MenuItem, Switch } from '@components';
 import Drawer, { DrawerControlledDialProps } from '../../common/drawer/Drawer';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
@@ -35,7 +36,6 @@ import { BASIC_AUTH, CERT_AUTH, extractCA, extractCert, extractKey, extractPassw
 import useAuth from '../../../../utils/hooks/useAuth';
 import PasswordTextField from '../../../../components/PasswordTextField';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Alert, Box, Button, FormControlLabel, MenuItem, Switch } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

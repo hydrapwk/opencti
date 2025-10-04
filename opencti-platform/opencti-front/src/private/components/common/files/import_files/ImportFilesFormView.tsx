@@ -2,11 +2,11 @@ import React from 'react';
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { useImportFilesContext } from '@private/components/common/files/import_files/ImportFilesContext';
 import { ImportFilesFormViewQuery } from '@private/components/common/files/import_files/__generated__/ImportFilesFormViewQuery.graphql';
+import { Alert, Box } from '@components';
 import FormView from '../../../data/forms/view/FormView';
 import { useFormatter } from '../../../../../components/i18n';
 import useQueryLoading from '../../../../../utils/hooks/useQueryLoading';
 import Loader from '../../../../../components/Loader';
-import { Alert, Box } from '@components';
 
 const importFilesFormViewQuery = graphql`
   query ImportFilesFormViewQuery($id: ID!) {

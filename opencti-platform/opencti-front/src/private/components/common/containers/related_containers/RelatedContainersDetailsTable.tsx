@@ -3,8 +3,11 @@ import { graphql } from 'react-relay';
 import {
   RelatedContainersDetailsTableLinesPaginationQuery,
 } from '@private/components/common/containers/related_containers/__generated__/RelatedContainersDetailsTableLinesPaginationQuery.graphql';
-import { RelatedContainersDetailsTableLines_data$data } from '@private/components/common/containers/related_containers/__generated__/RelatedContainersDetailsTableLines_data.graphql';
+import {
+  RelatedContainersDetailsTableLines_data$data,
+} from '@private/components/common/containers/related_containers/__generated__/RelatedContainersDetailsTableLines_data.graphql';
 import { useNavigate } from 'react-router-dom';
+import { Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import DataTable from '../../../../../components/dataGrid/DataTable';
 import { usePaginationLocalStorage } from '../../../../../utils/hooks/useLocalStorage';
@@ -14,7 +17,6 @@ import { useBuildEntityTypeBasedFilterContext } from '../../../../../utils/filte
 import { FilterGroup } from '../../../../../utils/filters/filtersHelpers-types';
 import { resolveLink } from '../../../../../utils/Entity';
 import { DataTableVariant } from '../../../../../components/dataGrid/dataTableTypes';
-import { Typography } from '@components';
 
 const LOCAL_STORAGE_KEY = 'RelatedContainersDetailsTable';
 

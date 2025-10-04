@@ -12,6 +12,7 @@ import {
   LocationCreationMutation$variables,
 } from '@private/components/common/location/__generated__/LocationCreationMutation.graphql';
 import { FormikConfig } from 'formik/dist/types';
+import { Button, Dialog, DialogContent, DialogTitle, Fab, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { handleErrorInForm } from '../../../../relay/environment';
 import TextField from '../../../../components/TextField';
@@ -20,7 +21,6 @@ import MarkdownField from '../../../../components/fields/MarkdownField';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import type { Theme } from '../../../../components/Theme';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button, Dialog, DialogContent, DialogTitle, Fab, MenuItem } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -6,6 +6,7 @@ import { SubTypeQuery, SubTypeQuery$variables } from '@private/components/settin
 import { useParams } from 'react-router-dom';
 import GlobalWorkflowSettings from '@private/components/settings/sub_types/workflow/GlobalWorkflowSettings';
 import RequestAccessSettings from '@private/components/settings/sub_types/workflow/RequestAccessSettings';
+import { Divider, Grid, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import EntitySettingSettings from './entity_setting/EntitySettingSettings';
 import EntitySettingAttributes from './entity_setting/EntitySettingAttributes';
@@ -19,7 +20,6 @@ import ErrorNotFound from '../../../../components/ErrorNotFound';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader from '../../../../components/Loader';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
-import { Divider, Grid, Paper, Typography } from '@components';
 
 const entitySettingSubscription = graphql`
   subscription SubTypeEntitySettingSubscription($id: ID!) {

@@ -5,7 +5,7 @@ import SavedFilterCreateDialog from 'src/components/saved_filters/SavedFilterCre
 import { useDataTableContext } from 'src/components/dataGrid/components/DataTableContext';
 import { graphql } from 'react-relay';
 import useApiMutation from 'src/utils/hooks/useApiMutation';
-import { type SavedFiltersSelectionData } from 'src/components/saved_filters/SavedFilterSelection';import { Badge, IconButton, Tooltip } from '@components';
+import { type SavedFiltersSelectionData } from 'src/components/saved_filters/SavedFilterSelection'; import { Badge, IconButton, Tooltip } from '@components';
 
 const savedFilterButtonEditMutation = graphql`
   mutation SavedFilterButtonEditMutation($id: ID!, $input: [EditInput!]!) {

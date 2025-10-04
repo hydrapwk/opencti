@@ -1,6 +1,7 @@
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { RetentionLinesPaginationQuery, RetentionLinesPaginationQuery$variables } from '@private/components/settings/retention/__generated__/RetentionLinesPaginationQuery.graphql';
+import { Alert } from '@components';
 import { RetentionLineDummy } from './retention/RetentionLine';
 import ListLines from '../../../components/list_lines/ListLines';
 import RetentionLines, { RetentionLinesQuery } from './retention/RetentionLines';
@@ -14,7 +15,6 @@ import Breadcrumbs from '../../../components/Breadcrumbs';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
 import { DataColumns } from '../../../components/list_lines';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
-import { Alert } from '@components';
 
 const LOCAL_STORAGE_KEY = 'retention';
 

@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
+import { Chip, Divider, Grid, Paper, Typography } from '@components';
 import RelatedContainers from '../../common/containers/related_containers/RelatedContainers';
 import StixRelationshipsHorizontalBars from '../../common/stix_relationships/StixRelationshipsHorizontalBars';
 import { useFormatter } from '../../../../components/i18n';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
 import { emptyFilterGroup } from '../../../../utils/filters/filtersUtils';
-import { Chip, Divider, Grid, Paper, Typography } from '@components';
 
 const useStyles = makeStyles((theme) => ({
   paper: {

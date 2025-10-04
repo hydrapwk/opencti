@@ -4,6 +4,7 @@ import React, { FunctionComponent, useState } from 'react';
 import SearchInput from 'src/components/SearchInput';
 import { useFormatter } from 'src/components/i18n';
 import { PreloadedQuery, usePreloadedQuery } from 'react-relay';
+import { IconButton } from '@components';
 import AddIndividualsThreatActorIndividualLines, { addIndividualsThreatActorIndividualLinesQuery } from './AddIndividualsThreatActorIndividualLines';
 import {
   AddIndividualsThreatActorIndividualLinesQuery,
@@ -13,7 +14,7 @@ import { ThreatActorIndividualDetails_ThreatActorIndividual$data } from './__gen
 import IndividualCreation from '../../entities/individuals/IndividualCreation';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { IconButton } from '@components';
+
 interface AddIndividualsThreatActorIndividualComponentProps {
   threatActorIndividual: ThreatActorIndividualDetails_ThreatActorIndividual$data,
   queryRef: PreloadedQuery<AddIndividualsThreatActorIndividualLinesQuery>,

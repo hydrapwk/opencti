@@ -6,6 +6,7 @@ import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import { RootAttackPatternQuery } from '@private/components/techniques/attack_patterns/__generated__/RootAttackPatternQuery.graphql';
 import { RootAttackPatternSubscription } from '@private/components/techniques/attack_patterns/__generated__/RootAttackPatternSubscription.graphql';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import AttackPattern from './AttackPattern';
 import AttackPatternKnowledge from './AttackPatternKnowledge';
@@ -23,7 +24,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import AttackPatternEdition from './AttackPatternEdition';
 import AttackPatternDeletion from './AttackPatternDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootAttackPatternSubscription($id: ID!) {

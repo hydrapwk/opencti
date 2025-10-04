@@ -5,6 +5,7 @@ import { TextFieldsOutlined } from '@mui/icons-material';
 import { Field, Formik, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import ObjectMarkingField from '@private/components/common/form/ObjectMarkingField';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Tooltip } from '@components';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import TextField from '../../../../components/TextField';
 import { useFormatter } from '../../../../components/i18n';
@@ -13,7 +14,6 @@ import { now } from '../../../../utils/Time';
 import { isValidStixBundle } from '../../../../utils/String';
 import { KNOWLEDGE_KNUPLOAD } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Tooltip } from '@components';
 
 const freeTextUploaderGlobalMutation = graphql`
   mutation FreeTextUploaderGlobalMutation($file: Upload!, $fileMarkings: [String]) {

@@ -5,13 +5,13 @@ import * as Yup from 'yup';
 import { FormikConfig } from 'formik/dist/types';
 import { RecordSourceSelectorProxy } from 'relay-runtime';
 import { DraftsLinesPaginationQuery$variables } from '@private/components/drafts/__generated__/DraftsLinesPaginationQuery.graphql';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import TextField from '../../../../../components/TextField';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
 import { handleErrorInForm } from '../../../../../relay/environment';
 import { insertNode } from '../../../../../utils/store';
 import { DraftWorkspaceDialogCreationMutation, DraftWorkspaceDialogCreationMutation$variables } from './__generated__/DraftWorkspaceDialogCreationMutation.graphql';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@components';
 
 const draftWorkspaceDialogCreationMutation = graphql`
   mutation DraftWorkspaceDialogCreationMutation($input: DraftWorkspaceAddInput!) {

@@ -3,6 +3,7 @@ import { ClearOutlined, FileOpenOutlined, LocalOfferOutlined, VisibilityOffOutli
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import Toolbar from '@mui/material/Toolbar';
 import * as R from 'ramda';
+import { Alert, Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, FormControlLabel, FormGroup, IconButton, Switch, Tooltip, Typography } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
 import { entitySettingPatch } from './entity_setting/EntitySettingSettings';
@@ -11,7 +12,6 @@ import type { EntitySetting } from '../../../../utils/hooks/useEntitySettings';
 import { MESSAGING$ } from '../../../../relay/environment';
 import useAuth from '../../../../utils/hooks/useAuth';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Alert, Button, Dialog, DialogActions, DialogContent, DialogTitle, Drawer, FormControlLabel, FormGroup, IconButton, Switch, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

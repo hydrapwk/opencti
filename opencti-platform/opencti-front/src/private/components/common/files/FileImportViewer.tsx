@@ -2,6 +2,7 @@ import React, { FunctionComponent, useEffect } from 'react';
 import { createRefetchContainer, graphql, RelayRefetchProp } from 'react-relay';
 import { interval } from 'rxjs';
 import makeStyles from '@mui/styles/makeStyles';
+import { Grid, List, Paper, Typography } from '@components';
 import FileLine from './FileLine';
 import { TEN_SECONDS } from '../../../../utils/Time';
 import { useFormatter } from '../../../../components/i18n';
@@ -10,7 +11,6 @@ import { FileLine_file$data } from './__generated__/FileLine_file.graphql';
 import { KNOWLEDGE_KNUPLOAD } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
 import UploadImport from '../../../../components/UploadImport';
-import { Grid, List, Paper, Typography } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

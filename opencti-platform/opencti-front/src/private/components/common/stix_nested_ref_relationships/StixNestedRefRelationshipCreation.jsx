@@ -8,6 +8,7 @@ import withTheme from '@mui/styles/withTheme';
 import withStyles from '@mui/styles/withStyles';
 import CircularProgress from '@mui/material/CircularProgress';
 import { ArrowRightAlt, Close } from '@mui/icons-material';
+import { Button, Drawer, IconButton, MenuItem, Tooltip, Typography } from '@components';
 import { commitMutation, fetchQuery, QueryRenderer } from '../../../../relay/environment';
 import inject18n, { isNone } from '../../../../components/i18n';
 import { itemColor } from '../../../../utils/Colors';
@@ -19,7 +20,6 @@ import ObjectMarkingField from '../form/ObjectMarkingField';
 import ConfidenceField from '../form/ConfidenceField';
 import DateTimePickerField from '../../../../components/DateTimePickerField';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
-import { Button, Drawer, IconButton, MenuItem, Tooltip, Typography } from '@components';
 
 const styles = (theme) => ({
   drawerPaper: {

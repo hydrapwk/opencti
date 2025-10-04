@@ -6,6 +6,7 @@ import DraftProcessingStatus from '@private/components/drafts/DraftProcessingSta
 import { interval } from 'rxjs';
 import { DraftContextBannerQuery } from '@private/components/drafts/__generated__/DraftContextBannerQuery.graphql';
 import { DraftContextBanner_data$key } from '@private/components/drafts/__generated__/DraftContextBanner_data.graphql';
+import { Alert, AlertTitle, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
 import useDraftContext from '../../../utils/hooks/useDraftContext';
@@ -14,7 +15,6 @@ import { MESSAGING$ } from '../../../relay/environment';
 import Transition from '../../../components/Transition';
 import { TEN_SECONDS } from '../../../utils/Time';
 import ErrorNotFound from '../../../components/ErrorNotFound';
-import { Alert, AlertTitle, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
 
 const interval$ = interval(TEN_SECONDS * 3);
 

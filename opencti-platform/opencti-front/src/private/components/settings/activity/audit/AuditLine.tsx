@@ -4,6 +4,7 @@ import { useTheme } from '@mui/styles';
 import { graphql, useFragment } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import Drawer from '@private/components/common/drawer/Drawer';
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 import { DataColumns } from '../../../../../components/list_lines';
 import { AuditLine_node$data, AuditLine_node$key } from './__generated__/AuditLine_node.graphql';
 import type { Theme } from '../../../../../components/Theme';
@@ -11,7 +12,6 @@ import { useFormatter } from '../../../../../components/i18n';
 import ItemIcon from '../../../../../components/ItemIcon';
 import MarkdownDisplay from '../../../../../components/MarkdownDisplay';
 import { useGenerateAuditMessage } from '../../../../../utils/history';
-import { ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

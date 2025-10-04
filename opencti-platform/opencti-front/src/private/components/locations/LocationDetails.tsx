@@ -2,10 +2,10 @@ import React, { FunctionComponent } from 'react';
 import { useTheme } from '@mui/styles';
 import { LocationDetails_location$key } from '@private/components/locations/__generated__/LocationDetails_location.graphql';
 import { graphql, useFragment } from 'react-relay';
+import { Grid, Paper, Typography } from '@components';
 import ExpandableMarkdown from '../../../components/ExpandableMarkdown';
 import { useFormatter } from '../../../components/i18n';
 import type { Theme } from '../../../components/Theme';
-import { Grid, Paper, Typography } from '@components';
 
 const locationDetailsFragment = graphql`
   fragment LocationDetails_location on Location {

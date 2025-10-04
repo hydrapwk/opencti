@@ -20,6 +20,7 @@ import { graphql, usePreloadedQuery, PreloadedQuery } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { Delete } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { Alert, Grid, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 import ActivityMenu from '../../ActivityMenu';
 import type { Theme } from '../../../../../components/Theme';
 import { useFormatter } from '../../../../../components/i18n';
@@ -37,7 +38,6 @@ import { SETTINGS_SECURITYACTIVITY } from '../../../../../utils/hooks/useGranted
 import Security from '../../../../../utils/Security';
 import useConnectedDocumentModifier from '../../../../../utils/hooks/useConnectedDocumentModifier';
 import { FieldOption } from '../../../../../utils/field';
-import { Alert, Grid, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

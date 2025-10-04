@@ -1,4 +1,5 @@
-import React, { FunctionComponent } from 'react';import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
+import React, { FunctionComponent } from 'react'; import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@components';
+
 interface ConfirmationDialogProps {
   open: boolean;
   title: string;

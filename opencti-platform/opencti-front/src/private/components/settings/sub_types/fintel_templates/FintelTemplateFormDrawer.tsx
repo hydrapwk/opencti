@@ -4,7 +4,7 @@ import { FormikConfig } from 'formik/dist/types';
 import { useNavigate } from 'react-router-dom';
 import useFintelTemplateAdd from '@private/components/settings/sub_types/fintel_templates/useFintelTemplateAdd';
 import useFintelTemplateEdit from './useFintelTemplateEdit';
-import FintelTemplateForm, { FintelTemplateFormInputKeys, FintelTemplateFormInputs } from './FintelTemplateForm';
+import FintelTemplateForm, { type FintelTemplateFormInputKeys, type FintelTemplateFormInputs } from './FintelTemplateForm';
 import { useFormatter } from '../../../../../components/i18n';
 import { handleError, MESSAGING$ } from '../../../../../relay/environment';
 import { resolveLink } from '../../../../../utils/Entity';

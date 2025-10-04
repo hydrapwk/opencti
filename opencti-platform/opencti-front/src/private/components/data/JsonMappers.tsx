@@ -10,6 +10,7 @@ import { graphql } from 'react-relay';
 import JsonMapperCreationContainer from '@private/components/data/jsonMapper/JsonMapperCreationContainer';
 import { schemaAttributesQuery } from '@private/components/data/csvMapper/csvMappers.data';
 import { jsonMappers_SchemaAttributesQuery } from '@private/components/data/jsonMapper/__generated__/jsonMappers_SchemaAttributesQuery.graphql';
+import { Button, ToggleButton } from '@components';
 import ListLines from '../../../components/list_lines/ListLines';
 import { usePaginationLocalStorage } from '../../../utils/hooks/useLocalStorage';
 import Loader, { LoaderVariant } from '../../../components/Loader';
@@ -21,7 +22,6 @@ import type { Theme } from '../../../components/Theme';
 import { jsonMappers_MappersQuery, jsonMappers_MappersQuery$variables } from './jsonMapper/__generated__/jsonMappers_MappersQuery.graphql';
 import { handleError } from '../../../relay/environment';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
-import { Button, ToggleButton } from '@components';
 
 const LOCAL_STORAGE_KEY_JSON_MAPPERS = 'jsonMappers';
 

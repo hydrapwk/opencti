@@ -3,6 +3,7 @@ import React, { FunctionComponent, useRef } from 'react';
 import { useTheme } from '@mui/styles';
 import { FileUploadOutlined } from '@mui/icons-material';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
+import { ToggleButton } from '@components';
 import { FormEditionContainerQuery } from './__generated__/FormEditionContainerQuery.graphql';
 import { formEditionContainerQuery } from './FormEditionContainer';
 import { FormEditionFragment_form$data, FormEditionFragment_form$key } from './__generated__/FormEditionFragment_form.graphql';
@@ -19,7 +20,6 @@ import VisuallyHiddenInput from '../../common/VisuallyHiddenInput';
 import type { FormCreationContainerImportMutation } from './__generated__/FormCreationContainerImportMutation.graphql';
 import type { Theme } from '../../../../components/Theme';
 import { insertNode } from '../../../../utils/store';
-import { ToggleButton } from '@components';
 
 const formImportMutation = graphql`
   mutation FormCreationContainerImportMutation($file: Upload!) {
@@ -110,7 +110,7 @@ const CreateFormControlledDial = (props: CreateFormControlledDialProps) => {
   );
 };
 
-export const FormCreationContainer: FunctionComponent<FormCreationContainerProps> = ({
+const FormCreationContainer: FunctionComponent<FormCreationContainerProps> = ({
   queryRef,
   handleClose,
   open = false,

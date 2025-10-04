@@ -5,6 +5,7 @@ import { graphql } from 'react-relay';
 import { PaletteOutlined } from '@mui/icons-material';
 import MenuList from '@mui/material/MenuList';
 import makeStyles from '@mui/styles/makeStyles';
+import { Checkbox, IconButton, InputAdornment, ListItemText, MenuItem, Popover } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import { getMainRepresentative } from '../../../../utils/defaultRepresentatives';
 import { useFormatter } from '../../../../components/i18n';
@@ -12,7 +13,6 @@ import AutocompleteField from '../../../../components/AutocompleteField';
 import { fetchQuery } from '../../../../relay/environment';
 import useAttributes from '../../../../utils/hooks/useAttributes';
 import { displayEntityTypeForTranslation } from '../../../../utils/String';
-import { Checkbox, IconButton, InputAdornment, ListItemText, MenuItem, Popover } from '@components';
 
 export const stixCoreObjectsFieldSearchQuery = graphql`
   query StixCoreObjectsFieldSearchQuery($search: String, $types: [String]) {

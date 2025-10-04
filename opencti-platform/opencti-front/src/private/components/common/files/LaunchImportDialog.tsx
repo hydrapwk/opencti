@@ -9,13 +9,14 @@ import { ImportWorksDrawerQuery, ImportWorksDrawerQuery$data } from '@private/co
 import { fileWorksQuery } from '@private/components/common/files/ImportWorksDrawer';
 import { ImportWorkbenchesContentFileLine_file$data } from '@private/components/data/import/__generated__/ImportWorkbenchesContentFileLine_file.graphql';
 import { ImportFilesContentFileLine_file$data } from '@private/components/data/import/__generated__/ImportFilesContentFileLine_file.graphql';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem } from '@components';
 import { commitMutation, defaultCommitMutation } from '../../../../relay/environment';
 import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field';
 import { resolveHasUserChoiceParsedCsvMapper } from '../../../../utils/csvMapperUtils';
 import SelectField from '../../../../components/fields/SelectField';
 import { useFormatter } from '../../../../components/i18n';
 import stopEvent from '../../../../utils/domEvent';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem } from '@components';
+
 interface LaunchImportDialogProps {
   file: ImportWorkbenchesContentFileLine_file$data | ImportFilesContentFileLine_file$data;
   open: boolean;

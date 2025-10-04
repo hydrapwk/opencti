@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import InvestigationExpandForm, { InvestigationExpandFormProps } from '@private/components/workspaces/investigations/InvestigationExpandForm';
 import { useInvestigationState } from '@private/components/workspaces/investigations/utils/useInvestigationState';
 import InvestigationRollBackExpandDialog from '@private/components/workspaces/investigations/dialog/InvestigationRollBackExpandDialog';
+import { Dialog } from '@components';
 import GraphToolbarItem from './GraphToolbarItem';
 import { useFormatter } from '../../i18n';
 import { useGraphContext } from '../GraphContext';
@@ -12,7 +13,6 @@ import useGraphInteractions from '../utils/useGraphInteractions';
 import { fetchQuery } from '../../../relay/environment';
 import { GraphToolbarExpandToolsRelationshipsQuery$data } from './__generated__/GraphToolbarExpandToolsRelationshipsQuery.graphql';
 import { ObjectToParse } from '../utils/useGraphParser';
-import { Dialog } from '@components';
 
 const expandRelationshipsQuery = graphql`
   query GraphToolbarExpandToolsRelationshipsQuery($filters: FilterGroup) {

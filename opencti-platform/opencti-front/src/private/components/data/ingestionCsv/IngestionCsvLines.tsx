@@ -1,6 +1,9 @@
 import { graphql, PreloadedQuery } from 'react-relay';
 import React, { FunctionComponent } from 'react';
-import { IngestionCsvLinesPaginationQuery, IngestionCsvLinesPaginationQuery$variables } from '@private/components/data/ingestionCsv/__generated__/IngestionCsvLinesPaginationQuery.graphql';
+import {
+  IngestionCsvLinesPaginationQuery,
+  IngestionCsvLinesPaginationQuery$variables,
+} from '@private/components/data/ingestionCsv/__generated__/IngestionCsvLinesPaginationQuery.graphql';
 import { IngestionCsvLines_data$key } from '@private/components/data/ingestionCsv/__generated__/IngestionCsvLines_data.graphql';
 import { IngestionCsvLineComponent, IngestionCsvLineDummy } from '@private/components/data/ingestionCsv/IngestionCsvLine';
 import { UseLocalStorageHelpers } from '../../../../utils/hooks/useLocalStorage';

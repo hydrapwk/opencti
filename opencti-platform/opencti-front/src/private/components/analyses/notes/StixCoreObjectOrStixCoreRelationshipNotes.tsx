@@ -1,11 +1,12 @@
 import React, { FunctionComponent } from 'react';
+import { Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import StixCoreObjectOrStixCoreRelationshipNotesCards, { stixCoreObjectOrStixCoreRelationshipNotesCardsQuery } from './StixCoreObjectOrStixCoreRelationshipNotesCards';
 import { NotesOrdering, OrderingMode, StixCoreObjectOrStixCoreRelationshipNotesCardsQuery } from './__generated__/StixCoreObjectOrStixCoreRelationshipNotesCardsQuery.graphql';
 import { GqlFilterGroup } from '../../../../utils/filters/filtersUtils';
 import { useIsHiddenEntities } from '../../../../utils/hooks/useEntitySettings';
-import { Typography } from '@components';
+
 interface StixCoreObjectOrStixCoreRelationshipNotesProps {
   stixCoreObjectOrStixCoreRelationshipId: string;
   marginTop?: number;

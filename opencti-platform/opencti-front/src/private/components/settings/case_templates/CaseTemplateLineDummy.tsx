@@ -1,9 +1,9 @@
 import { KeyboardArrowRightOutlined } from '@mui/icons-material';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { FunctionComponent } from 'react';
+import { Checkbox, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 import { DataColumns } from '../../../../components/list_lines';
 import type { Theme } from '../../../../components/Theme';
-import { Checkbox, ListItem, ListItemIcon, ListItemText, Skeleton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

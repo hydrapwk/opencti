@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import GroupWithNullConfidenceLevelAlertContent from '@private/components/settings/platform_alerts/GroupWithNullConfidenceLevelAlertContent';
+import { Dialog, DialogContent, DialogTitle } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { RootSettings$data } from '../../../__generated__/RootSettings.graphql';
 import Transition from '../../../../components/Transition';
 import useGranted, { SETTINGS_SETACCESSES } from '../../../../utils/hooks/useGranted';
-import { Dialog, DialogContent, DialogTitle } from '@components';
 
 type PlatformCriticalAlertDialogProps = {
   alerts: RootSettings$data['platform_critical_alerts']

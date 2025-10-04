@@ -3,8 +3,9 @@ import { useTheme } from '@mui/styles';
 import { Link } from 'react-router-dom';
 import { Handle, Position } from 'reactflow';
 import { useFormatter } from 'src/components/i18n';
-import type { Theme } from '../../../../../../../components/Theme';
 import { Button } from '@components';
+import type { Theme } from '../../../../../../../components/Theme';
+
 interface NodeContainerProps {
   children: ReactNode;
   height?: number;

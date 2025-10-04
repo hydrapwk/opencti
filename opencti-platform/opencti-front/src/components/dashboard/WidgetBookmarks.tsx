@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { useTheme } from '@mui/styles';
+import { Avatar, Card, CardActionArea, CardHeader, Grid } from '@components';
 import ItemIcon from '../ItemIcon';
 import { resolveLink } from '../../utils/Entity';
 import { useFormatter } from '../i18n';
 import type { Theme } from '../Theme';
-import { Avatar, Card, CardActionArea, CardHeader, Grid } from '@components';
+
 interface WidgetBookmarksProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   bookmarks: any[]

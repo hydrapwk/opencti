@@ -1,7 +1,7 @@
-import { PreloadedQuery, usePaginationFragment, usePreloadedQuery } from 'react-relay';
+import { type PreloadedQuery, usePaginationFragment, usePreloadedQuery } from 'react-relay';
 import { useEffect } from 'react';
-import { FragmentType, GraphQLTaggedNode, OperationType } from 'relay-runtime';
-import { UseLocalStorageHelpers } from './useLocalStorage';
+import { type FragmentType, type GraphQLTaggedNode, type OperationType } from 'relay-runtime';
+import { type UseLocalStorageHelpers } from './useLocalStorage';
 import { numberFormat } from '../Number';
 
 type KeyType<TData = unknown> = Readonly<{

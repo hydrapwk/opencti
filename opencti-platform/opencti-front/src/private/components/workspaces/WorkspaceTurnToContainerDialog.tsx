@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { WorkspaceTurnToContainerDialogMutation } from '@private/components/workspaces/__generated__/WorkspaceTurnToContainerDialogMutation.graphql';
 import type { FilterOption } from '@private/components/common/lists/FilterAutocomplete';
 import { useTheme } from '@mui/styles';
+import { Autocomplete, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, TextField } from '@components';
 import Transition from '../../../components/Transition';
 import { useFormatter } from '../../../components/i18n';
 import ItemIcon from '../../../components/ItemIcon';
@@ -14,7 +15,7 @@ import { handleError } from '../../../relay/environment';
 import useSearchEntities, { EntityValue } from '../../../utils/filters/useSearchEntities';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
 import type { Theme } from '../../../components/Theme';
-import { Autocomplete, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, TextField } from '@components';
+
 interface WorkspaceTurnToContainerDialogProps {
   workspace: { id: string | null };
   open: boolean;

@@ -25,6 +25,7 @@ import {
   ImportFilesDialogEntityMutation$variables,
 } from '@private/components/common/files/import_files/__generated__/ImportFilesDialogEntityMutation.graphql';
 import { Close } from '@mui/icons-material';
+import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import Transition from '../../../../../components/Transition';
 import { handleErrorInForm, MESSAGING$ } from '../../../../../relay/environment';
@@ -36,7 +37,6 @@ import { RelayError } from '../../../../../relay/relayTypes';
 import { KNOWLEDGE_KNASKIMPORT } from '../../../../../utils/hooks/useGranted';
 import Security from '../../../../../utils/Security';
 import { FieldOption } from '../../../../../utils/field';
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Typography } from '@components';
 
 export const CSV_MAPPER_NAME = '[FILE] CSV Mapper import';
 

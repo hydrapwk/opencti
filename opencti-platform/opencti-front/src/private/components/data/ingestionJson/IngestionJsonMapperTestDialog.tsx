@@ -3,12 +3,12 @@ import React, { FunctionComponent, useState } from 'react';
 import CodeBlock from '@private/components/common/CodeBlock';
 import { IngestionJsonMapperTestDialogMutation$data } from '@private/components/data/ingestionJson/__generated__/IngestionJsonMapperTestDialogMutation.graphql';
 import { IngestionJsonAddInput } from '@private/components/data/ingestionJson/IngestionJsonCreation';
+import { Alert, Box, Button, Dialog, DialogContent, DialogTitle } from '@components';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { useFormatter } from '../../../../components/i18n';
 import { handleError } from '../../../../relay/environment';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { getAuthenticationValue } from '../../../../utils/ingestionAuthentificationUtils';
-import { Alert, Box, Button, Dialog, DialogContent, DialogTitle } from '@components';
 
 const ingestionJsonMapperTestMutation = graphql`
   mutation IngestionJsonMapperTestDialogMutation($input: IngestionJsonAddInput!) {

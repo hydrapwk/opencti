@@ -3,11 +3,11 @@ import * as PropTypes from 'prop-types';
 import { compose } from 'ramda';
 import { createFragmentContainer, graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
+import { Chip, Grid, Paper, Typography } from '@components';
 import inject18n from '../../../../components/i18n';
 import ItemLikelihood from '../../../../components/ItemLikelihood';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { Chip, Grid, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   paper: {

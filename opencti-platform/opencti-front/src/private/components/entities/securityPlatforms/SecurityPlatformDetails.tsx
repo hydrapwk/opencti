@@ -2,11 +2,11 @@ import React, { FunctionComponent } from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { SecurityPlatformDetails_securityPlatform$data } from '@private/components/entities/securityPlatforms/__generated__/SecurityPlatformDetails_securityPlatform.graphql';
+import { Chip, Grid, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import type { Theme } from '../../../../components/Theme';
-import { Chip, Grid, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

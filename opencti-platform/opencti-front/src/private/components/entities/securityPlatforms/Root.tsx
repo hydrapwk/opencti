@@ -9,6 +9,7 @@ import { RootSecurityPlatformQuery } from '@private/components/entities/security
 import SecurityPlatformKnowledge from '@private/components/entities/securityPlatforms/SecurityPlatformKnowledge';
 import SecurityPlatformEdition from '@private/components/entities/securityPlatforms/SecurityPlatformEdition';
 import SecurityPlatformAnalysis from '@private/components/entities/securityPlatforms/SecurityPlatformAnalysis';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import SecurityPlatform from './SecurityPlatform';
 import StixDomainObjectHeader from '../../common/stix_domain_objects/StixDomainObjectHeader';
@@ -23,7 +24,6 @@ import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import SecurityPlatformDeletion from './SecurityPlatformDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootSecurityPlatformSubscription($id: ID!) {

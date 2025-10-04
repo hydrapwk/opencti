@@ -7,6 +7,7 @@ import * as Yup from 'yup';
 import { createFragmentContainer, graphql } from 'react-relay';
 import * as R from 'ramda';
 import { InformationOutline } from 'mdi-material-ui';
+import { Alert, AlertTitle, Box, Button, FormControl, Grid, IconButton, InputAdornment, InputLabel, MenuItem, TextField as MuiTextField, Select, Tooltip } from '@components';
 import Drawer from '../../common/drawer/Drawer';
 import inject18n from '../../../../components/i18n';
 import { commitMutation, QueryRenderer } from '../../../../relay/environment';
@@ -30,7 +31,6 @@ import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import { convertAuthorizedMembers } from '../../../../utils/edition';
 import useFiltersState from '../../../../utils/filters/useFiltersState';
 import useAttributes from '../../../../utils/hooks/useAttributes';
-import { Alert, AlertTitle, Box, Button, FormControl, Grid, IconButton, InputAdornment, InputLabel, MenuItem, TextField as MuiTextField, Select, Tooltip } from '@components';
 
 const styles = (theme) => ({
   header: {

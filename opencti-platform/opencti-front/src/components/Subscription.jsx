@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import * as PropTypes from 'prop-types';
 import withStyles from '@mui/styles/withStyles';
 import { compose, filter, insert, pipe } from 'ramda';
+import { Avatar, Tooltip } from '@components';
 import inject18n from './i18n';
 import { stringToColour } from '../utils/Colors';
 import { UserContext } from '../utils/hooks/useAuth';
-import { Avatar, Tooltip } from '@components';
 
 const SubscriptionAvatarsStyles = () => ({
   avatars: {

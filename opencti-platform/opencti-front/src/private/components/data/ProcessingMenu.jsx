@@ -2,12 +2,12 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import MenuList from '@mui/material/MenuList';
 import makeStyles from '@mui/styles/makeStyles';
+import { Drawer, ListItemText, MenuItem } from '@components';
 import EEMenu from '../common/entreprise_edition/EEMenu';
 import { useFormatter } from '../../../components/i18n';
 import useAuth from '../../../utils/hooks/useAuth';
 import { useSettingsMessagesBannerHeight } from '../settings/settings_messages/SettingsMessagesBanner';
 import useGranted, { CSVMAPPERS, KNOWLEDGE_KNUPDATE, SETTINGS_SETACCESSES } from '../../../utils/hooks/useGranted';
-import { Drawer, ListItemText, MenuItem } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

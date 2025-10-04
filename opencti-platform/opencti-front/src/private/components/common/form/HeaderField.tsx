@@ -1,9 +1,10 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 import { Field, FieldArray } from 'formik';
 import { AddOutlined, DeleteOutlined } from '@mui/icons-material';
+import { Button, IconButton, Paper } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
-import { Button, IconButton, Paper } from '@components';
+
 interface HeaderFieldAddProps {
   id: string;
   name: string;

@@ -1,19 +1,19 @@
-import React, { FunctionComponent, useMemo, useState, useRef } from 'react';
 import LoadingButton from '@mui/lab/LoadingButton';
-import { graphql, useSubscription } from 'react-relay';
-import { GraphQLSubscriptionConfig } from 'relay-runtime';
+import React, { type FunctionComponent, useMemo, useRef, useState } from 'react';
 import ReactMde from 'react-mde';
+import { graphql, useSubscription } from 'react-relay';
+import { type GraphQLSubscriptionConfig } from 'relay-runtime';
 // As we can ask AI after and follow up, there is a dependency lifecycle here that can be accepted
 // TODO: Cleanup a bit in upcoming version
 // eslint-disable-next-line import/no-cycle
-import TextFieldAskAI from '../../private/components/common/form/TextFieldAskAI';
-import { ResponseDialogAskAISubscription, ResponseDialogAskAISubscription$data } from './__generated__/ResponseDialogAskAISubscription.graphql';
-import { useFormatter } from '../../components/i18n';
-import MarkdownDisplay from '../../components/MarkdownDisplay';
-import { isNotEmptyField } from '../utils';
-import CKEditor from '../../components/CKEditor';
-import useAI from '../hooks/useAI';
 import { Alert, Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@components';
+import CKEditor from '@components/CKEditor';
+import { useFormatter } from '@components/i18n';
+import MarkdownDisplay from '@components/MarkdownDisplay';
+import TextFieldAskAI from '@private/components/common/form/TextFieldAskAI';
+import useAI from '../hooks/useAI';
+import { isNotEmptyField } from '../utils';
+import type { ResponseDialogAskAISubscription, ResponseDialogAskAISubscription$data } from './__generated__/ResponseDialogAskAISubscription.graphql';
 
 // region types
 interface ResponseDialogProps {

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MutationParameters, SelectorStoreUpdater } from 'relay-runtime';
 import { UseMutationConfig, VariablesOf } from 'react-relay';
-import { useFormatter } from '../../components/i18n';
 import { Alert, List, ListItem, Tooltip, Typography } from '@components';
+import { useFormatter } from '../../components/i18n';
 
 type ObjectType = 'entities' | 'observables' | 'files';
 

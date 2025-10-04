@@ -1,7 +1,8 @@
 import { FieldProps } from 'formik';
 import React, { ReactNode } from 'react';
-import { useFormatter } from '../i18n';
 import { FormControl, FormLabel, ToggleButton, ToggleButtonGroup } from '@components';
+import { useFormatter } from '../i18n';
+
 interface ToggleButtonFieldProps extends FieldProps<boolean> {
   items: Item[]
 }

@@ -1,7 +1,8 @@
 import { CheckOutlined, CloseOutlined } from '@mui/icons-material';
 import React from 'react';
-import { useFormatter } from '../../../../../components/i18n';
 import { Tooltip } from '@components';
+import { useFormatter } from '../../../../../components/i18n';
+
 interface AttackPatternsMatrixShouldCoverIconProps {
   isOverlapping: boolean;
 }

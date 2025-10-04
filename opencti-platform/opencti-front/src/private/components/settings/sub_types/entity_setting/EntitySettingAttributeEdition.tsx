@@ -6,6 +6,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { FormikConfig } from 'formik/dist/types';
 import Drawer from '@private/components/common/drawer/Drawer';
 import DefaultValueField from '@private/components/common/form/DefaultValueField';
+import { Button } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import type { Theme } from '../../../../../components/Theme';
 import SwitchField from '../../../../../components/fields/SwitchField';
@@ -19,7 +20,6 @@ import { useComputeDefaultValues } from '../../../../../utils/hooks/useDefaultVa
 import { handleErrorInForm } from '../../../../../relay/environment';
 import { DefaultValues, defaultValuesToStringArray } from '../../../../../utils/defaultValues';
 import useApiMutation from '../../../../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -23,6 +23,7 @@ import {
 } from '@private/components/data/ingestionJson/__generated__/IngestionJsonLinesPaginationQuery.graphql';
 import { IngestionJsonLineDummy } from '@private/components/data/ingestionJson/IngestionJsonLine';
 import { IngestionJsonCreationContainer } from '@private/components/data/ingestionJson/IngestionJsonCreation';
+import { Alert } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import useAuth from '../../../utils/hooks/useAuth';
 import { usePaginationLocalStorage } from '../../../utils/hooks/useLocalStorage';
@@ -33,7 +34,6 @@ import { INGESTION_SETINGESTIONS } from '../../../utils/hooks/useGranted';
 import Security from '../../../utils/Security';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
-import { Alert } from '@components';
 
 const LOCAL_STORAGE_KEY = 'ingestionJsons';
 

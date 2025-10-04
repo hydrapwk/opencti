@@ -7,6 +7,7 @@ import { graphql, usePreloadedQuery } from 'react-relay';
 import * as Yup from 'yup';
 import { useTheme } from '@mui/styles';
 import makeStyles from '@mui/styles/makeStyles';
+import { Alert, Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem, Tooltip, Typography } from '@components';
 import Drawer from '../drawer/Drawer';
 import Chart from '../charts/Chart';
 import EEChip from '../entreprise_edition/EEChip';
@@ -28,7 +29,6 @@ import { emptyFilterGroup } from '../../../../utils/filters/filtersUtils';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
 import useXTM from '../../../../utils/hooks/useXTM';
 import useAI from '../../../../utils/hooks/useAI';
-import { Alert, Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem, Tooltip, Typography } from '@components';
 
 const stixCoreObjectSimulationResultObasStixCoreObjectSimulationsResultQuery = graphql`
   query StixCoreObjectSimulationResultObasStixCoreObjectSimulationsResultQuery($id: ID!) {

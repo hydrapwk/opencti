@@ -2,10 +2,10 @@ import React, { ChangeEvent, useState } from 'react';
 import { Stack } from '@mui/material';
 import { FilterListOffOutlined } from '@mui/icons-material';
 import { useTheme } from '@mui/material/styles';
+import { Autocomplete, IconButton, TextField, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import SearchInput from '../../../../components/SearchInput';
 import useEnterpriseEdition from '../../../../utils/hooks/useEnterpriseEdition';
-import { Autocomplete, IconButton, TextField, Tooltip } from '@components';
 
 export interface ConnectorsStatusFilterState {
   search: string;

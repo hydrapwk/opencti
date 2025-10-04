@@ -4,10 +4,10 @@ import CustomFileUploader from '@private/components/common/files/CustomFileUploa
 import CodeBlock from '@private/components/common/CodeBlock';
 import { InformationOutline } from 'mdi-material-ui';
 import { JsonMapperTestDialogMutation$data } from '@private/components/data/jsonMapper/__generated__/JsonMapperTestDialogMutation.graphql';
+import { Box, Button, Dialog, DialogContent, DialogTitle, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { commitMutation, handleError } from '../../../../relay/environment';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { Box, Button, Dialog, DialogContent, DialogTitle, Tooltip } from '@components';
 
 const jsonMapperTestQuery = graphql`
   mutation JsonMapperTestDialogMutation($configuration: String!, $file: Upload!) {

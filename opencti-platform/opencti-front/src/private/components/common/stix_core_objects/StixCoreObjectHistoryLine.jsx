@@ -8,12 +8,29 @@ import { AddOutlined, DeleteOutlined, EditOutlined, HelpOutlined, LinkOffOutline
 import { LinkVariantPlus, LinkVariantRemove, Merge } from 'mdi-material-ui';
 import { Link } from 'react-router-dom';
 import withTheme from '@mui/styles/withTheme';
+import {
+  Avatar,
+  Badge,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Paper,
+  Tooltip,
+} from '@components';
 import { truncate } from '../../../../utils/String';
 import inject18n from '../../../../components/i18n';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
 import Transition from '../../../../components/Transition';
 import ItemIcon from '../../../../components/ItemIcon';
-import { Avatar, Badge, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Tooltip } from '@components';
 
 const styles = () => ({
   container: {

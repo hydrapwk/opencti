@@ -1,11 +1,11 @@
 import React from 'react';
 import SubTypeStatusPopover from '@private/components/settings/sub_types/SubTypeWorkflowPopover';
 import { graphql, useFragment } from 'react-relay';
+import { Typography } from '@components';
 import { useFormatter } from '../../../../../components/i18n';
 import { StatusScopeEnum } from '../../../../../utils/statusConstants';
 import ItemStatusTemplate from '../../../../../components/ItemStatusTemplate';
 import { GlobalWorkflowSettings_global$key } from './__generated__/GlobalWorkflowSettings_global.graphql';
-import { Typography } from '@components';
 
 const globalWorkflowSettingsFragment = graphql`
     fragment GlobalWorkflowSettings_global on SubType {

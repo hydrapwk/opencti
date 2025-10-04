@@ -1,11 +1,11 @@
 import React, { type Dispatch, type SetStateAction, Suspense, useCallback, useEffect } from 'react';
 import { ArrowLeft, ArrowRight } from '@mui/icons-material';
 import { TableTuneIcon } from 'filigran-icon';
+import { Box, Button, ButtonGroup, Tooltip, Typography } from '@components';
 import { useFormatter } from '../i18n';
 import { NumberOfElements } from '../../utils/hooks/useLocalStorage';
 import NestedMenuButton from '../nested_menu/NestedMenuButton';
 import { useDataTableContext } from './components/DataTableContext';
-import { Box, Button, ButtonGroup, Tooltip, Typography } from '@components';
 
 const DataTablePagination = ({
   page,

@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import { graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
 import { FormikConfig } from 'formik/dist/types';
+import { Button } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import StixCoreObjectsField from '../../common/form/StixCoreObjectsField';
@@ -20,7 +21,6 @@ import CustomFileUploader from '../../common/files/CustomFileUploader';
 import SimpleMarkdownField from '../../../../components/SimpleMarkdownField';
 import Drawer from '../../common/drawer/Drawer';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

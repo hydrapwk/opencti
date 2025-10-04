@@ -2,7 +2,9 @@ import React, { FunctionComponent, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { graphql } from 'react-relay';
 import { createSearchParams, useNavigate } from 'react-router-dom';
-import { StixCoreObjectMappableContentFieldPatchMutation } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectMappableContentFieldPatchMutation.graphql';
+import {
+  StixCoreObjectMappableContentFieldPatchMutation,
+} from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectMappableContentFieldPatchMutation.graphql';
 import {
   StixCoreObjectAskAIContainerReportMutation,
   StixCoreObjectAskAIContainerReportMutation$data,
@@ -11,6 +13,23 @@ import type {
   StixCoreObjectContentFilesUploadStixCoreObjectMutation,
   StixCoreObjectContentFilesUploadStixCoreObjectMutation$data,
 } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectContentFilesUploadStixCoreObjectMutation.graphql';
+import {
+  Alert,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  FormControl,
+  InputLabel,
+  List,
+  ListItem,
+  ListItemText,
+  MenuItem,
+  Radio,
+  Select,
+  TextField,
+} from '@components';
 import { stixCoreObjectContentFilesUploadStixCoreObjectMutation } from './StixCoreObjectContentFiles';
 import { stixCoreObjectMappableContentFieldPatchMutation } from './StixCoreObjectMappableContent';
 import FilesNativeField from '../form/FilesNativeField';
@@ -23,7 +42,6 @@ import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { MESSAGING$ } from '../../../../relay/environment';
 import { aiLanguage } from '../../../../components/AppIntlProvider';
 import { getDefaultAiLanguage } from '../../../../utils/ai/Common';
-import { Alert, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, InputLabel, List, ListItem, ListItemText, MenuItem, Radio, Select, TextField } from '@components';
 
 // region types
 interface StixCoreObjectAskAiProps {

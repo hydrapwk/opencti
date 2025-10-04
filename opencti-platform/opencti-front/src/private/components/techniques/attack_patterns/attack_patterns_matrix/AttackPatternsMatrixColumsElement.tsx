@@ -7,8 +7,9 @@ import {
   MinimalAttackPattern,
 } from '@private/components/techniques/attack_patterns/attack_patterns_matrix/AttackPatternsMatrixColumns';
 import { useTheme } from '@mui/material/styles';
-import type { Theme } from '../../../../../components/Theme';
 import { Box, Typography } from '@components';
+import type { Theme } from '../../../../../components/Theme';
+
 interface AttackPatternsMatrixColumnsElementProps {
   attackPattern: FilteredAttackPattern | FilteredSubAttackPattern;
   handleOpen: (element: MinimalAttackPattern, event: React.MouseEvent) => void;

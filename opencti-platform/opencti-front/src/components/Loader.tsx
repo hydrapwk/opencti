@@ -4,10 +4,10 @@ import makeStyles from '@mui/styles/makeStyles';
 import { FiligranLoader } from 'filigran-icon';
 import { useTheme } from '@mui/styles';
 import { interval } from 'rxjs';
+import { Typography } from '@components';
 import { UserContext } from '../utils/hooks/useAuth';
 import type { Theme } from './Theme';
 import { TEN_SECONDS } from '../utils/Time';
-import { Typography } from '@components';
 
 const interval$ = interval(TEN_SECONDS);
 

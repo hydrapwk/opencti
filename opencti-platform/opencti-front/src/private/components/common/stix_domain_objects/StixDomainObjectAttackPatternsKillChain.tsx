@@ -23,6 +23,7 @@ import EntitySelect, { EntityOption } from '@private/components/common/form/Enti
 import {
   StixDomainObjectAttackPatternsKillChainOverlapQuery$data,
 } from '@private/components/common/stix_domain_objects/__generated__/StixDomainObjectAttackPatternsKillChainOverlapQuery.graphql';
+import { Box, FormControl, IconButton, InputLabel, MenuItem, ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 import StixCoreObjectsExports from '../stix_core_objects/StixCoreObjectsExports';
 import SearchInput from '../../../../components/SearchInput';
 import Security from '../../../../utils/Security';
@@ -40,7 +41,6 @@ import { UseLocalStorageHelpers } from '../../../../utils/hooks/useLocalStorage'
 import usePreloadedFragment from '../../../../utils/hooks/usePreloadedFragment';
 import { fetchQuery } from '../../../../relay/environment';
 import { containerTypes } from '../../../../utils/hooks/useAttributes';
-import { Box, FormControl, IconButton, InputLabel, MenuItem, ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 
 export const stixDomainObjectAttackPatternsKillChainQuery = graphql`
   query StixDomainObjectAttackPatternsKillChainQuery(

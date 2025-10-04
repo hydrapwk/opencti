@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, useFragment } from 'react-relay';
 import { makeStyles } from '@mui/styles';
+import { Chip, Grid, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
 import type { Theme } from '../../../../components/Theme';
 import { IncidentDetails_incident$data, IncidentDetails_incident$key } from './__generated__/IncidentDetails_incident.graphql';
 import StixCoreObjectsDonut from '../../common/stix_core_objects/StixCoreObjectsDonut';
 import ItemOpenVocab from '../../../../components/ItemOpenVocab';
-import { Chip, Grid, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

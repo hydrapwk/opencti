@@ -5,11 +5,11 @@ import { graphql } from 'react-relay';
 import withStyles from '@mui/styles/withStyles';
 import Slide from '@mui/material/Slide';
 import { MoreVertOutlined } from '@mui/icons-material';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 import inject18n from '../../../../components/i18n';
 import { commitMutation } from '../../../../relay/environment';
 import StixSightingRelationshipEdition from './StixSightingRelationshipEdition';
 import { deleteNode } from '../../../../utils/store';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Menu, MenuItem } from '@components';
 
 const styles = (theme) => ({
   container: {

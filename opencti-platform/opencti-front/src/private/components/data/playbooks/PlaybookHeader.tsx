@@ -19,6 +19,22 @@ import { createRefetchContainer, graphql, RelayRefetchProp } from 'react-relay';
 import { interval } from 'rxjs';
 import { useTheme } from '@mui/material';
 import PlaybookEdition from '@private/components/data/playbooks/PlaybookEdition';
+import {
+  Badge,
+  Chip,
+  Collapse,
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  ToggleButton,
+  ToggleButtonGroup,
+  Tooltip,
+  Typography,
+} from '@components';
 import Drawer from '../../common/drawer/Drawer';
 import { PlaybookHeader_playbook$data } from './__generated__/PlaybookHeader_playbook.graphql';
 import { useFormatter } from '../../../../components/i18n';
@@ -26,7 +42,6 @@ import PlaybookPopover from './PlaybookPopover';
 import { FIVE_SECONDS } from '../../../../utils/Time';
 import Transition from '../../../../components/Transition';
 import ItemIcon from '../../../../components/ItemIcon';
-import { Badge, Chip, Collapse, Dialog, DialogContent, DialogTitle, List, ListItemButton, ListItemIcon, ListItemText, ToggleButton, ToggleButtonGroup, Tooltip, Typography } from '@components';
 
 const interval$ = interval(FIVE_SECONDS);
 

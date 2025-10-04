@@ -3,11 +3,11 @@ import React, { FunctionComponent } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { DeleteOutline } from '@mui/icons-material';
 import { ObjectSchema } from 'yup';
+import { Grid, IconButton } from '@components';
 import TextField from '../../../../../components/TextField';
 import ColorPickerField from '../../../../../components/ColorPickerField';
 import { useFormatter } from '../../../../../components/i18n';
 import type { Tick, UndefinedTick } from './scale';
-import { Grid, IconButton } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

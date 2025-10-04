@@ -2,9 +2,10 @@ import React, { FunctionComponent } from 'react';
 import { InformationOutline } from 'mdi-material-ui';
 import { CheckCircleOutlined } from '@mui/icons-material';
 import { ContainerStixCoreObjectsSuggestedMappingQuery$data } from '@private/components/common/containers/__generated__/ContainerStixCoreObjectsSuggestedMappingQuery.graphql';
+import { Box, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControlLabel, FormGroup, Switch, Tooltip } from '@components';
 import Transition from '../../../../components/Transition';
 import { useFormatter } from '../../../../components/i18n';
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControlLabel, FormGroup, Switch, Tooltip } from '@components';
+
 interface ContainerStixCoreObjectsMappingHeaderProps {
   suggestedMappingData: ContainerStixCoreObjectsSuggestedMappingQuery$data;
   validateDisabled: boolean,

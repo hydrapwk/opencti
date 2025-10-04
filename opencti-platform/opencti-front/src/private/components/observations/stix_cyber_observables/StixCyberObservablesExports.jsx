@@ -3,9 +3,9 @@ import * as PropTypes from 'prop-types';
 import { compose } from 'ramda';
 import withStyles from '@mui/styles/withStyles';
 import Slide from '@mui/material/Slide';
+import { Drawer } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import StixCyberObservablesExportsContent, { stixCyberObservablesExportsContentQuery } from './StixCyberObservablesExportsContent';
-import { Drawer } from '@components';
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide direction="up" ref={ref} {...props} />

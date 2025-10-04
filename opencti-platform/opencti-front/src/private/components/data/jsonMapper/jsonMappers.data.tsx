@@ -1,7 +1,10 @@
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import React, { createContext, ReactNode, useContext } from 'react';
 import { jsonMappers_MappersQuery, jsonMappers_MappersQuery$data } from '@private/components/data/jsonMapper/__generated__/jsonMappers_MappersQuery.graphql';
-import { jsonMappers_SchemaAttributesQuery, jsonMappers_SchemaAttributesQuery$data } from '@private/components/data/jsonMapper/__generated__/jsonMappers_SchemaAttributesQuery.graphql';
+import {
+  jsonMappers_SchemaAttributesQuery,
+  jsonMappers_SchemaAttributesQuery$data,
+} from '@private/components/data/jsonMapper/__generated__/jsonMappers_SchemaAttributesQuery.graphql';
 
 export const mappersQuery = graphql`
   query jsonMappers_MappersQuery(

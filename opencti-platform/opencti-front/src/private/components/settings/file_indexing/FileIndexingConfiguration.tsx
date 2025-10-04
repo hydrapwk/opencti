@@ -20,6 +20,7 @@ import { FileIndexingConfigurationQuery$data } from '@private/components/setting
 import { FormikConfig } from 'formik/dist/types';
 import { fileIndexingConfigurationFieldPatch } from '@private/components/settings/file_indexing/FileIndexing';
 import * as Yup from 'yup';
+import { Checkbox, List, ListItem, ListItemText, Paper, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import { handleErrorInForm } from '../../../../relay/environment';
@@ -29,7 +30,6 @@ import ItemIcon from '../../../../components/ItemIcon';
 import TextField from '../../../../components/TextField';
 import useAttributes from '../../../../utils/hooks/useAttributes';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Checkbox, List, ListItem, ListItemText, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

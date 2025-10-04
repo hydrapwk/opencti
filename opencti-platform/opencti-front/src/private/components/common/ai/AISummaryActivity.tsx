@@ -4,12 +4,12 @@ import parse from 'html-react-parser';
 import { GraphQLSubscriptionConfig } from 'relay-runtime';
 import { AutoModeOutlined, ContentCopyOutlined, HistoryOutlined } from '@mui/icons-material';
 import { AISummaryActivityStixCoreObjectAskAiActivityQuery$data } from '@private/components/common/ai/__generated__/AISummaryActivityStixCoreObjectAskAiActivityQuery.graphql';
+import { Alert, AlertTitle, Divider, IconButton, Tooltip, Typography } from '@components';
 import { AISummaryActivitySubscription, AISummaryActivitySubscription$data } from './__generated__/AISummaryActivitySubscription.graphql';
 import { useFormatter } from '../../../../components/i18n';
 import { getDefaultAiLanguage } from '../../../../utils/ai/Common';
 import { fetchQuery } from '../../../../relay/environment';
 import { copyToClipboard, cleanHtmlTags } from '../../../../utils/utils';
-import { Alert, AlertTitle, Divider, IconButton, Tooltip, Typography } from '@components';
 
 const subscription = graphql`
   subscription AISummaryActivitySubscription($id: ID!) {

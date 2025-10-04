@@ -3,9 +3,9 @@ import { compose } from 'ramda';
 import * as PropTypes from 'prop-types';
 import withStyles from '@mui/styles/withStyles';
 import withTheme from '@mui/styles/withTheme';
+import { Chip } from '@components';
 import inject18n from './i18n';
 import { chipInListBasicStyle } from '../utils/chipStyle';
-import { Chip } from '@components';
 
 const styles = () => ({
   chip: {

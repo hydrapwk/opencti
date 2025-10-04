@@ -4,6 +4,7 @@ import { createFragmentContainer, graphql } from 'react-relay';
 import { MoreVert } from '@mui/icons-material';
 import { AutoFix } from 'mdi-material-ui';
 import makeStyles from '@mui/styles/makeStyles';
+import { Checkbox, Chip, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import ContainerStixCoreObjectPopover from './ContainerStixCoreObjectPopover';
 import StixCoreObjectLabels from '../stix_core_objects/StixCoreObjectLabels';
@@ -14,7 +15,6 @@ import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
 import ItemEntityType from '../../../../components/ItemEntityType';
 import { DraftChip } from '../draft/DraftChip';
-import { Checkbox, Chip, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

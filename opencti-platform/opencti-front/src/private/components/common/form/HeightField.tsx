@@ -6,6 +6,7 @@ import {
   ThreatActorIndividualEditionBiographics_ThreatActorIndividual$data,
 } from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorIndividualEditionBiographics_ThreatActorIndividual.graphql';
 import { MeasureInput } from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorIndividualCreationMutation.graphql';
+import { Button, IconButton } from '@components';
 import { GenericContext } from '../model/GenericContextModel';
 import { useFormatter } from '../../../../components/i18n';
 import { SubscriptionFocus } from '../../../../components/Subscription';
@@ -14,7 +15,6 @@ import { commitMutation, defaultCommitMutation } from '../../../../relay/environ
 import useUserMetric from '../../../../utils/hooks/useUserMetric';
 import DateTimePickerField from '../../../../components/DateTimePickerField';
 import { isNotEmptyField } from '../../../../utils/utils';
-import { Button, IconButton } from '@components';
 
 export const individualHeightMutation = graphql`
   mutation HeightFieldIndividualMutation($id: ID!, $input: [EditInput]!) {

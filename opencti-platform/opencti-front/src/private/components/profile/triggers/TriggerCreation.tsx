@@ -1,13 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { FunctionComponent, useState } from 'react';
 import { useTheme } from '@mui/styles';
+import { Button } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
 import { TriggersLinesPaginationQuery$variables } from './__generated__/TriggersLinesPaginationQuery.graphql';
 import TriggerDigestCreation from './TriggerDigestCreation';
 import TriggerLiveCreation from './TriggerLiveCreation';
 import { TriggerLiveCreationKnowledgeMutation$data } from './__generated__/TriggerLiveCreationKnowledgeMutation.graphql';
-import { Button } from '@components';
+
 interface TriggerCreationProps {
   contextual?: boolean;
   hideSpeedDial?: boolean;

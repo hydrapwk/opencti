@@ -6,12 +6,12 @@ import IngestionJsonEditionContainer, { ingestionJsonEditionContainerQuery } fro
 import { IngestionJsonCreationContainer } from '@private/components/data/ingestionJson/IngestionJsonCreation';
 import { IngestionJsonLinesPaginationQuery$variables } from '@private/components/data/ingestionJson/__generated__/IngestionJsonLinesPaginationQuery.graphql';
 import { IngestionJsonEditionContainerQuery } from '@private/components/data/ingestionJson/__generated__/IngestionJsonEditionContainerQuery.graphql';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem } from '@components';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { deleteNode } from '../../../../utils/store';
 import { useFormatter } from '../../../../components/i18n';
 import Transition from '../../../../components/Transition';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem } from '@components';
 
 export const ingestionJsonPopoverEditionPatch = graphql`
   mutation IngestionJsonPopoverPatchMutation($id: ID!, $input: [EditInput!]!) {

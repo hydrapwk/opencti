@@ -5,10 +5,11 @@ import { useTheme } from '@mui/material/styles';
 import { SubNarrativeNode } from '@private/components/techniques/narratives/NarrativesWithSubnarrativesLines';
 import { useFragment } from 'react-relay';
 import { NarrativeLine_node$data, NarrativeLine_node$key } from '@private/components/techniques/narratives/__generated__/NarrativeLine_node.graphql';
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
 import ItemIcon from '../../../../components/ItemIcon';
 import { emptyFilled } from '../../../../utils/String';
 import { narrativeLineFragment } from './NarrativeLine';
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Skeleton } from '@components';
+
 interface NarrativeWithSubnarrativeLineProps {
   isSubNarrative?: boolean;
   subNarratives?: SubNarrativeNode[];

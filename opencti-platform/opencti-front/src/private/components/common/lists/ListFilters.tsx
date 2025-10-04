@@ -4,11 +4,11 @@ import { RayEndArrow, RayStartArrow } from 'mdi-material-ui';
 import makeStyles from '@mui/styles/makeStyles';
 import { type handleFilterHelpers } from 'src/utils/filters/filtersHelpers-types';
 import { type SavedFiltersSelectionData } from 'src/components/saved_filters/SavedFilterSelection';
+import { Button, IconButton, Autocomplete as MUIAutocomplete, Popover, TextField, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { useBuildFilterKeysMapFromEntityType, getDefaultFilterObject, getFilterDefinitionFromFilterKeysMap } from '../../../../utils/filters/filtersUtils';
 import SavedFilters from '../../../../components/saved_filters/SavedFilters';
 import SavedFilterButton from '../../../../components/saved_filters/SavedFilterButton';
-import { Button, IconButton, Autocomplete as MUIAutocomplete, Popover, TextField, Tooltip } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

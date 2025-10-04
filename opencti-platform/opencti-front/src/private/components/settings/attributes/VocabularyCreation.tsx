@@ -5,6 +5,7 @@ import { graphql } from 'react-relay';
 import * as Yup from 'yup';
 import Drawer, { DrawerControlledDialProps } from '@private/components/common/drawer/Drawer';
 import { VocabulariesLinesPaginationQuery$variables } from '@private/components/settings/__generated__/VocabulariesLinesPaginationQuery.graphql';
+import { Button } from '@components';
 import TextField from '../../../../components/TextField';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
@@ -14,7 +15,7 @@ import { FieldOption, fieldSpacingContainerStyle } from '../../../../utils/field
 import AutocompleteFreeSoloField from '../../../../components/AutocompleteFreeSoloField';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import CreateEntityControlledDial from '../../../../components/CreateEntityControlledDial';
-import { Button } from '@components';
+
 interface VocabularyCreationProps {
   paginationOptions: VocabulariesLinesPaginationQuery$variables;
   category: VocabularyCategory;

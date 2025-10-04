@@ -7,6 +7,7 @@ import { Add, InfoOutlined } from '@mui/icons-material';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Fab, MenuItem, Tooltip } from '@components';
 import ObjectMarkingField from '../form/ObjectMarkingField';
 import inject18n from '../../../../components/i18n';
 import { commitMutation, MESSAGING$ } from '../../../../relay/environment';
@@ -14,7 +15,6 @@ import SelectField from '../../../../components/fields/SelectField';
 import { ExportContext } from '../../../../utils/ExportContextProvider';
 import { fieldSpacingContainerStyle } from '../../../../utils/field';
 import { CONTENT_MAX_MARKINGS_HELPERTEXT, CONTENT_MAX_MARKINGS_TITLE } from '../files/FileManager';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Fab, MenuItem, Tooltip } from '@components';
 
 const Transition = React.forwardRef((props, ref) => (
   <Slide direction="up" ref={ref} {...props} />

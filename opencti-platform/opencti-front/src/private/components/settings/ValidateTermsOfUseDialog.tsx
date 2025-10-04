@@ -1,11 +1,11 @@
 import React from 'react';
 import { CGUStatus, experienceFieldPatch } from '@private/components/settings/Experience';
 import { Close } from '@mui/icons-material';
+import { Button, Checkbox, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, IconButton, Typography } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import useApiMutation from '../../../utils/hooks/useApiMutation';
 import { FieldOption } from '../../../utils/field';
 import useAuth from '../../../utils/hooks/useAuth';
-import { Button, Checkbox, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, IconButton, Typography } from '@components';
 
 type ValidateTermsOfUseDialogProps = {
   open: boolean;

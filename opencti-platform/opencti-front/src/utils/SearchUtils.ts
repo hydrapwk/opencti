@@ -1,7 +1,7 @@
-import { NavigateFunction } from 'react-router/dist/lib/hooks';
+import { UseNavigate } from 'react-router-dom';
 import { emptyFilterGroup } from './filters/filtersUtils';
 
-export const handleSearchByKeyword = (searchKeyword: string, searchScope: string, navigate: NavigateFunction) => {
+export const handleSearchByKeyword = (searchKeyword: string, searchScope: string, navigate: UseNavigate) => {
   const encodeKey = encodeURIComponent(searchKeyword);
   navigate(`/dashboard/search/${searchScope}/${encodeKey}?sortBy=_score&orderAsc=false`);
 };
@@ -9,7 +9,7 @@ export const handleSearchByKeyword = (searchKeyword: string, searchScope: string
 export const handleSearchByFilter = (
   searchKeyword: string,
   searchScope: string,
-  navigate: NavigateFunction,
+  navigate: UseNavigate,
   stringFilters?: string | null,
 ) => {
   const link = `/dashboard/search/${searchScope}/${encodeURIComponent(stringFilters ?? JSON.stringify(emptyFilterGroup))}/${searchKeyword}`;

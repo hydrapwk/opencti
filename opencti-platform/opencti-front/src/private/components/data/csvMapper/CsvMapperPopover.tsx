@@ -8,6 +8,7 @@ import { csvMappers_MappersQuery$variables } from '@private/components/data/csvM
 import CsvMapperCreationContainer from '@private/components/data/csvMapper/CsvMapperCreationContainer';
 import fileDownload from 'js-file-download';
 import { CsvMapperPopoverExportQuery$data } from '@private/components/data/csvMapper/__generated__/CsvMapperPopoverExportQuery.graphql';
+import { IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
@@ -15,7 +16,6 @@ import { deleteNode } from '../../../../utils/store';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import stopEvent from '../../../../utils/domEvent';
 import { fetchQuery } from '../../../../relay/environment';
-import { IconButton, Menu, MenuItem } from '@components';
 
 const csvMapperPopoverDelete = graphql`
   mutation CsvMapperPopoverDeleteMutation($id: ID!) {

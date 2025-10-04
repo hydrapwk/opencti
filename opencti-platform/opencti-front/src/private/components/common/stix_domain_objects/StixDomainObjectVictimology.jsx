@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import * as PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
+import { Divider, Grid } from '@components';
 import StixDomainObjectVictimologySectors, { stixDomainObjectVictimologySectorsStixCoreRelationshipsQuery } from './StixDomainObjectVictimologySectors';
 import { useFormatter } from '../../../../components/i18n';
 import { QueryRenderer } from '../../../../relay/environment';
 import EntityStixCoreRelationships from '../stix_core_relationships/EntityStixCoreRelationships';
 import EntityStixCoreRelationshipsHorizontalBars from '../stix_core_relationships/EntityStixCoreRelationshipsHorizontalBars';
 import StixDomainObjectVictimologyMap from './StixDomainObjectVictimologyMap';
-import { Divider, Grid } from '@components';
 
 const StixDomainObjectVictimology = ({
   stixDomainObjectId,

@@ -11,13 +11,13 @@ import {
   AttackPatternsMatrixColumns_data$data,
   AttackPatternsMatrixColumns_data$key,
 } from '@private/components/techniques/attack_patterns/attack_patterns_matrix/__generated__/AttackPatternsMatrixColumns_data.graphql';
+import { Box, ListItemIcon, ListItemText, Menu, MenuItem, Typography } from '@components';
 import { truncate } from '../../../../../utils/String';
 import { MESSAGING$ } from '../../../../../relay/environment';
 import { UserContext } from '../../../../../utils/hooks/useAuth';
 import { hexToRGB } from '../../../../../utils/Colors';
 import type { Theme } from '../../../../../components/Theme';
 import { containerTypes } from '../../../../../utils/hooks/useAttributes';
-import { Box, ListItemIcon, ListItemText, Menu, MenuItem, Typography } from '@components';
 
 export type AttackPatternsOfPhase = NonNullable<NonNullable<AttackPatternsMatrixColumns_data$data['attackPatternsMatrix']>['attackPatternsOfPhases']>[number];
 export type AttackPattern = NonNullable<AttackPatternsOfPhase['attackPatterns']>[number];

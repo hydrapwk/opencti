@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MoreVert from '@mui/icons-material/MoreVert';
 import { graphql, useQueryLoader } from 'react-relay';
 import Drawer from '@private/components/common/drawer/Drawer';
+import { IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { deleteNode } from '../../../../utils/store';
 import { NotifierLine_node$data } from './__generated__/NotifierLine_node.graphql';
@@ -12,7 +13,6 @@ import { NotifierEditionQuery } from './__generated__/NotifierEditionQuery.graph
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { IconButton, Menu, MenuItem } from '@components';
 
 export const notifierPopoverDeletionMutation = graphql`
   mutation NotifierPopoverDeletionMutation($id: ID!) {

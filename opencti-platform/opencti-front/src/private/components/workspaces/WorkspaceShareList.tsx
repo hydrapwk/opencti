@@ -3,13 +3,13 @@ import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { WorkspaceShareListQuery } from '@private/components/workspaces/__generated__/WorkspaceShareListQuery.graphql';
 import { ContentCopy, Delete, DoNotDisturbAlt, Done, ReportGmailerrorred } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { Paper, ToggleButton, ToggleButtonGroup, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import type { Theme } from '../../../components/Theme';
 import ItemMarkings from '../../../components/ItemMarkings';
 import ItemBoolean from '../../../components/ItemBoolean';
 import useAuth from '../../../utils/hooks/useAuth';
 import { copyPublicLinkUrl } from '../../../utils/dashboard';
-import { Paper, ToggleButton, ToggleButtonGroup, Tooltip, Typography } from '@components';
 
 export const workspaceShareListQuery = graphql`
   query WorkspaceShareListQuery($filters: FilterGroup) {

@@ -5,13 +5,13 @@ import Drawer from '@private/components/common/drawer/Drawer';
 import { ConnectorWorks_data$data, State } from '@private/components/data/connectors/__generated__/ConnectorWorks_data.graphql';
 import parseWorkErrors, { ParsedWorkMessage } from '@private/components/data/connectors/parseWorkErrors';
 import { connectorWorksWorkDeletionMutation } from '@private/components/data/connectors/ConnectorWorks';
+import { Alert, Button, Grid, LinearProgress, Paper, Tab, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tabs, Tooltip, Typography } from '@components';
 import { MODULES_MODMANAGE } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
 import TaskStatus from '../../../../components/TaskStatus';
 import { useFormatter } from '../../../../components/i18n';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { MESSAGING$ } from '../../../../relay/environment';
-import { Alert, Button, Grid, LinearProgress, Paper, Tab, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tabs, Tooltip, Typography } from '@components';
 
 type WorkMessages = NonNullable<NonNullable<NonNullable<ConnectorWorks_data$data['works']>['edges']>[0]>['node']['errors'];
 interface ConnectorWorkLineProps {

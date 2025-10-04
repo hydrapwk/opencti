@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useContext } from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
 import makeStyles from '@mui/styles/makeStyles';
+import { List, Paper, Typography } from '@components';
 import { QueryRenderer } from '../../../../relay/environment';
 import ContainerStixObjectsOrStixRelationshipsLines, { ContainerStixObjectsOrStixRelationshipsLinesQuery } from './ContainerStixObjectsOrStixRelationshipsLines';
 import { useFormatter } from '../../../../components/i18n';
@@ -11,7 +12,6 @@ import { ContainerStixObjectsOrStixRelationships_container$data } from './__gene
 import useAuth, { UserContext } from '../../../../utils/hooks/useAuth';
 import useGranted, { KNOWLEDGE_KNPARTICIPATE, KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import { ContainerStixObjectOrStixRelationshipLineDummy } from './ContainerStixObjectOrStixRelationshipLine';
-import { List, Paper, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

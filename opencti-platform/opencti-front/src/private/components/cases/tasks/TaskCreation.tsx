@@ -7,6 +7,7 @@ import { RecordSourceSelectorProxy } from 'relay-runtime';
 import * as Yup from 'yup';
 import Drawer, { DrawerVariant } from '@private/components/common/drawer/Drawer';
 import { TasksLinesPaginationQuery$variables } from '@private/components/cases/__generated__/TasksLinesPaginationQuery.graphql';
+import { Button } from '@components';
 import DateTimePickerField from '../../../../components/DateTimePickerField';
 import { useFormatter } from '../../../../components/i18n';
 import MarkdownField from '../../../../components/fields/MarkdownField';
@@ -21,7 +22,6 @@ import ObjectMarkingField from '../../common/form/ObjectMarkingField';
 import { TaskCreationMutation, TaskCreationMutation$variables } from './__generated__/TaskCreationMutation.graphql';
 import { insertNode } from '../../../../utils/store';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
-import { Button } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { DifferenceOutlined, DriveFileRenameOutlineOutlined, NewspaperOutlined } from '@mui/icons-material';
+import { ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
-import { ToggleButton, ToggleButtonGroup, Tooltip } from '@components';
+
 interface StixCoreObjectContentHeaderProps {
   currentMode?: string;
   modes: string[];

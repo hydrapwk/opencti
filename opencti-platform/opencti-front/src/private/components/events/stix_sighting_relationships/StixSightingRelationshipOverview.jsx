@@ -6,6 +6,7 @@ import withStyles from '@mui/styles/withStyles';
 import withTheme from '@mui/styles/withTheme';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { ArrowRightAlt } from '@mui/icons-material';
+import { Button, Chip, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Grid, Paper, Typography } from '@components';
 import StixCoreRelationshipInference from '../../common/stix_core_relationships/StixCoreRelationshipInference';
 import withRouter from '../../../../utils/compat_router/withRouter';
 import { itemColor } from '../../../../utils/Colors';
@@ -29,7 +30,6 @@ import StixSightingRelationshipLabelsView from './StixSightingRelationshipLabels
 import Transition from '../../../../components/Transition';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
 import { stixSightingRelationshipEditionDeleteMutation } from './StixSightingRelationshipEdition';
-import { Button, Chip, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Grid, Paper, Typography } from '@components';
 
 const styles = (theme) => ({
   container: {

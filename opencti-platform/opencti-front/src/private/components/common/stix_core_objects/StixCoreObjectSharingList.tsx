@@ -2,13 +2,13 @@ import { graphql, useFragment } from 'react-relay';
 import { AccountBalanceOutlined } from '@mui/icons-material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Chip, Tooltip } from '@components';
 import { truncate } from '../../../../utils/String';
 import { StixCoreObjectSharingListFragment$key } from './__generated__/StixCoreObjectSharingListFragment.graphql';
 import { StixCoreObjectSharingListDeleteMutation } from './__generated__/StixCoreObjectSharingListDeleteMutation.graphql';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { useFormatter } from '../../../../components/i18n';
-import { Chip, Tooltip } from '@components';
 
 const objectOrganizationFragment = graphql`
   fragment StixCoreObjectSharingListFragment on StixCoreObject {

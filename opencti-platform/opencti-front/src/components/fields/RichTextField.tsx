@@ -5,12 +5,13 @@ import { useTheme } from '@mui/styles';
 import { CloseOutlined, FullscreenOutlined } from '@mui/icons-material';
 import TextFieldAskAI from '@private/components/common/form/TextFieldAskAI';
 import { isNil } from 'ramda';
+import { Dialog, FormHelperText, IconButton, InputLabel, Typography } from '@components';
 import type { Theme } from '../Theme';
 import { getHtmlTextContent } from '../../utils/html';
 import CKEditor from '../CKEditor';
 import { useFormatter } from '../i18n';
 import useAI from '../../utils/hooks/useAI';
-import { Dialog, FormHelperText, IconButton, InputLabel, Typography } from '@components';
+
 interface RichTextFieldProps extends FieldProps<string> {
   disabled?: boolean
   onFocus?: (name: string) => void

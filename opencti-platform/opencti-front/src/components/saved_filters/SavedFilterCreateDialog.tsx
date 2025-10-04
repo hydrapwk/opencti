@@ -5,9 +5,9 @@ import { useDataTableContext } from 'src/components/dataGrid/components/DataTabl
 import { insertNode } from 'src/utils/store';
 import { type SavedFiltersSelectionData } from 'src/components/saved_filters/SavedFilterSelection';
 import { SavedFilterCreateDialogMutation$data } from 'src/components/saved_filters/__generated__/SavedFilterCreateDialogMutation.graphql';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@components';
 import useApiMutation from '../../utils/hooks/useApiMutation';
 import getSavedFilterScopeFilter from './getSavedFilterScopeFilter';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@components';
 
 const savedFilterCreateDialogMutation = graphql`
   mutation SavedFilterCreateDialogMutation($input: SavedFilterAddInput!) {

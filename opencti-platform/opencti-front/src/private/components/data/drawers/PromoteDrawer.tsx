@@ -1,9 +1,9 @@
 import React from 'react';
 import Drawer from '@private/components/common/drawer/Drawer';
 import { useTheme } from '@mui/styles';
+import { Alert, Button, Checkbox, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
-import { Alert, Button, Checkbox, Typography } from '@components';
 
 type DrawerContainerPropsType = {
   isOpen: boolean;

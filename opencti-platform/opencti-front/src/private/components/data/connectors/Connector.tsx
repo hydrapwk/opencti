@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import UpdateIcon from '@mui/icons-material/Update';
 import ConnectorPopover from '@private/components/data/connectors/ConnectorPopover';
 import ConnectorStatusChip from '@private/components/data/connectors/ConnectorStatusChip';
+import { Alert, Box, Button, Chip, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Tab, Tabs, Tooltip, Typography } from '@components';
 import Filters from '../../common/lists/Filters';
 import ItemBoolean from '../../../../components/ItemBoolean';
 import { useFormatter } from '../../../../components/i18n';
@@ -35,7 +36,6 @@ import { Connector_connector$data } from './__generated__/Connector_connector.gr
 import { ConnectorUpdateTriggerMutation, EditInput } from './__generated__/ConnectorUpdateTriggerMutation.graphql';
 import { ConnectorUpdateStatusMutation } from './__generated__/ConnectorUpdateStatusMutation.graphql';
 import { ConnectorWorksQuery$data, ConnectorWorksQuery$variables } from './__generated__/ConnectorWorksQuery.graphql';
-import { Alert, Box, Button, Chip, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Tab, Tabs, Tooltip, Typography } from '@components';
 
 // Type extension for organization node with authorized_authorities
 interface OrganizationNodeWithAuthorities {

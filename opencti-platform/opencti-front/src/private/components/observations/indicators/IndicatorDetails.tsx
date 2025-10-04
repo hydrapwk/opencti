@@ -5,6 +5,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { IndicatorDetails_indicator$data } from '@private/components/observations/indicators/__generated__/IndicatorDetails_indicator.graphql';
 import { InformationOutline } from 'mdi-material-ui';
 import DecayDialogContent from '@private/components/observations/indicators/DecayDialog';
+import { Box, Button, Chip, Dialog, DialogActions, DialogTitle, Divider, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Tooltip, Typography } from '@components';
 import ItemScore from '../../../../components/ItemScore';
 import IndicatorObservables from './IndicatorObservables';
 import ExpandableMarkdown from '../../../../components/ExpandableMarkdown';
@@ -15,7 +16,6 @@ import { useFormatter } from '../../../../components/i18n';
 import type { Theme } from '../../../../components/Theme';
 import Transition from '../../../../components/Transition';
 import FieldOrEmpty from '../../../../components/FieldOrEmpty';
-import { Box, Button, Chip, Dialog, DialogActions, DialogTitle, Divider, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

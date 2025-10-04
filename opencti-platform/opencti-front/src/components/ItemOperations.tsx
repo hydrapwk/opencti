@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { useTheme } from '@mui/styles';
+import { Chip } from '@components';
 import type { Theme } from './Theme';
 import { useFormatter } from './i18n';
 import { chipInListBasicStyle } from '../utils/chipStyle';
-import { Chip } from '@components';
+
 interface ItemOperationsProps {
   draftOperation?: string
 }

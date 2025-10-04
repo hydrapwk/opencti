@@ -6,6 +6,7 @@ import { LinkVariantPlus, LinkVariantRemove, Merge, VectorRadius } from 'mdi-mat
 import { v4 as uuid } from 'uuid';
 import { deepOrange, green, indigo, lightGreen, orange, pink, red, teal, yellow } from '@mui/material/colors';
 import { useTheme } from '@mui/styles';
+import { Avatar, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Tooltip } from '@components';
 import { UserHistoryTab_user$key } from './__generated__/UserHistoryTab_user.graphql';
 import DataTable from '../../../../components/dataGrid/DataTable';
 import { emptyFilterGroup, GqlFilterGroup } from '../../../../utils/filters/filtersUtils';
@@ -23,7 +24,6 @@ import ItemIcon from '../../../../components/ItemIcon';
 import type { Theme } from '../../../../components/Theme';
 import { UserHistoryLine_node$data } from './__generated__/UserHistoryLine_node.graphql';
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
-import { Avatar, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Tooltip } from '@components';
 
 const LOCAL_STORAGE_KEY = 'audits';
 

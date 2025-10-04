@@ -6,6 +6,7 @@ import { RootEventQuery } from '@private/components/entities/events/__generated_
 import { RootEventsSubscription } from '@private/components/entities/events/__generated__/RootEventsSubscription.graphql';
 import useQueryLoading from 'src/utils/hooks/useQueryLoading';
 import useForceUpdate from '@private/components/common/bulk/useForceUpdate';
+import { Box, Tab, Tabs } from '@components';
 import StixCoreObjectContentRoot from '../../common/stix_core_objects/StixCoreObjectContentRoot';
 import Event from './Event';
 import EventKnowledge from './EventKnowledge';
@@ -24,7 +25,6 @@ import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE, KNOWLEDGE_KNUPDATE_KNDELETE } from '../../../../utils/hooks/useGranted';
 import EventEdition from './EventEdition';
 import EventDeletion from './EventDeletion';
-import { Box, Tab, Tabs } from '@components';
 
 const subscription = graphql`
   subscription RootEventsSubscription($id: ID!) {

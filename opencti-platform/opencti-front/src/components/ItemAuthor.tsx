@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { resolveLink } from '../utils/Entity';
 import { Button } from '@components';
+import { resolveLink } from '../utils/Entity';
+
 interface ItemAuthorProps {
   createdBy: {
     id: string,

@@ -2,6 +2,7 @@ import React, { FunctionComponent, Suspense, useState } from 'react';
 import { PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { Add } from '@mui/icons-material';
 import { useTheme } from '@mui/styles';
+import { Button, IconButton, Tooltip, Typography } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import Drawer from '../drawer/Drawer';
 import StixDomainObjectCreation from '../stix_domain_objects/StixDomainObjectCreation';
@@ -18,7 +19,7 @@ import StixCyberObservableCreation from '../../observations/stix_cyber_observabl
 import type { Theme } from '../../../../components/Theme';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import { DataColumns } from '../../../../components/list_lines';
-import { Button, IconButton, Tooltip, Typography } from '@components';
+
 interface ControlledDialProps {
   onOpen: () => void
   title: string

@@ -1,10 +1,12 @@
 import { graphql, useFragment } from 'react-relay';
 import React, { FunctionComponent } from 'react';
-import { RequestAccessConfigurationEdition_requestAccess$key } from '@private/components/settings/sub_types/workflow/__generated__/RequestAccessConfigurationEdition_requestAccess.graphql';
+import {
+  RequestAccessConfigurationEdition_requestAccess$key,
+} from '@private/components/settings/sub_types/workflow/__generated__/RequestAccessConfigurationEdition_requestAccess.graphql';
+import { Chip, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 import ItemIcon from '../../../../../components/ItemIcon';
 import { hexToRGB } from '../../../../../utils/Colors';
 import { useFormatter } from '../../../../../components/i18n';
-import { Chip, ListItemButton, ListItemIcon, ListItemText, Typography } from '@components';
 
 export const requestAccessFragment = graphql`
   fragment RequestAccessStatusFragment_requestAccess on RequestAccessConfiguration {

@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import { Dialog, DialogContent, DialogTitle, IconButton } from '@components';
+
 interface ProcessDialogProps {
   open: boolean;
   title: string;

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { graphql } from 'react-relay';
 import { SendOutline } from 'mdi-material-ui';
+import { ToggleButton, Tooltip } from '@components';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import { handleError, MESSAGING$ } from '../../../../relay/environment';
 import { useFormatter } from '../../../../components/i18n';
 import useAuth from '../../../../utils/hooks/useAuth';
-import { ToggleButton, Tooltip } from '@components';
 
 const emailTemplateTestSendMutation = graphql`
     mutation EmailTemplateTestSendMutation($id: ID!) {

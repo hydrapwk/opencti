@@ -5,6 +5,7 @@ import { IngestionTaxiiLinesPaginationQuery$variables } from '@private/component
 import { PopoverProps } from '@mui/material/Popover';
 import IngestionTaxiiEditionContainer, { ingestionTaxiiEditionContainerQuery } from '@private/components/data/ingestionTaxii/IngestionTaxiiEditionContainer';
 import { IngestionTaxiiEditionContainerQuery } from '@private/components/data/ingestionTaxii/__generated__/IngestionTaxiiEditionContainerQuery.graphql';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import { ingestionTaxiiMutationFieldPatch } from './IngestionTaxiiEdition';
 import { deleteNode } from '../../../../utils/store';
@@ -12,7 +13,6 @@ import useApiMutation from '../../../../utils/hooks/useApiMutation';
 import Transition from '../../../../components/Transition';
 import DeleteDialog from '../../../../components/DeleteDialog';
 import useDeletion from '../../../../utils/hooks/useDeletion';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, IconButton, Menu, MenuItem } from '@components';
 
 const ingestionTaxiiPopoverDeletionMutation = graphql`
   mutation IngestionTaxiiPopoverDeletionMutation($id: ID!) {

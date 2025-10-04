@@ -10,12 +10,12 @@ import classNames from 'classnames';
 import { JsonMapperProvider } from '@private/components/data/jsonMapper/JsonMapperContext';
 import { formDataToJsonMapper } from '@private/components/data/jsonMapper/JsonMapperUtils';
 import JsonMapperTestDialog from '@private/components/data/jsonMapper/JsonMapperTestDialog';
+import { Button, IconButton, Typography } from '@components';
 import type { Theme } from '../../../../components/Theme';
 import { useFormatter } from '../../../../components/i18n';
 import TextField from '../../../../components/TextField';
 import useAuth from '../../../../utils/hooks/useAuth';
-import { representationInitialization } from './representations/RepresentationUtils';import { Button, IconButton, Typography } from '@components';
-import {
+import { representationInitialization } from './representations/RepresentationUtils'; import {
   JsonMapperRepresentationAttributesForm_allSchemaAttributes$data,
 } from './representations/attributes/__generated__/JsonMapperRepresentationAttributesForm_allSchemaAttributes.graphql';
 

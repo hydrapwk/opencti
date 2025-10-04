@@ -1,5 +1,7 @@
 import React, { FunctionComponent, useState } from 'react';
-import { ThreatActorIndividual_ThreatActorIndividual$data } from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorIndividual_ThreatActorIndividual.graphql';
+import {
+  ThreatActorIndividual_ThreatActorIndividual$data,
+} from '@private/components/threats/threat_actors_individual/__generated__/ThreatActorIndividual_ThreatActorIndividual.graphql';
 import { Add } from '@mui/icons-material';
 import Drawer from '@private/components/common/drawer/Drawer';
 import CountryCreation from '@private/components/locations/countries/CountryCreation';
@@ -11,10 +13,11 @@ import {
   AddThreatActorIndividualDemographicLinesQuery$variables,
 } from '@private/components/threats/threat_actors_individual/__generated__/AddThreatActorIndividualDemographicLinesQuery.graphql';
 import { PreloadedQuery, usePreloadedQuery } from 'react-relay';
+import { IconButton } from '@components';
 import SearchInput from '../../../../components/SearchInput';
 import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
-import { IconButton } from '@components';
+
 interface AddThreatActorIndividualDemographicComponentProps {
   threatActorIndividual: ThreatActorIndividual_ThreatActorIndividual$data,
   relType: string,

@@ -5,6 +5,7 @@ import { FormLinesPaginationQuery, FormLinesPaginationQuery$variables } from '@p
 import FormLines, { formLinesQuery } from '@private/components/data/forms/FormLines';
 import FormCreationContainer from '@private/components/data/forms/FormCreationContainer';
 import { FormLineDummy } from '@private/components/data/forms/FormLine';
+import { Alert } from '@components';
 import { useFormatter } from '../../../components/i18n';
 import useAuth from '../../../utils/hooks/useAuth';
 import { usePaginationLocalStorage } from '../../../utils/hooks/useLocalStorage';
@@ -14,7 +15,6 @@ import Security from '../../../utils/Security';
 import { INGESTION_SETINGESTIONS } from '../../../utils/hooks/useGranted';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import useConnectedDocumentModifier from '../../../utils/hooks/useConnectedDocumentModifier';
-import { Alert } from '@components';
 
 const useStyles = makeStyles(() => ({
   container: {

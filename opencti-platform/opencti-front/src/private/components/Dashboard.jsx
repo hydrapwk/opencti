@@ -4,6 +4,7 @@ import { Biohazard, ShieldSearch } from 'mdi-material-ui';
 import { assoc, head, last, map, pluck } from 'ramda';
 import React, { Suspense } from 'react';
 import { graphql, useFragment, usePreloadedQuery } from 'react-relay';
+import { Card, CardContent, Grid, Paper, Typography } from '@components';
 import { PLATFORM_DASHBOARD } from './DashboardSettings';
 import StixRelationshipsDistributionList from './common/stix_relationships/StixRelationshipsDistributionList';
 import StixRelationshipsPolarArea from './common/stix_relationships/StixRelationshipsPolarArea';
@@ -23,7 +24,6 @@ import StixRelationshipsHorizontalBars from './common/stix_relationships/StixRel
 import DashboardView from './workspaces/dashboards/Dashboard';
 import useQueryLoading from '../../utils/hooks/useQueryLoading';
 import useConnectedDocumentModifier from '../../utils/hooks/useConnectedDocumentModifier';
-import { Card, CardContent, Grid, Paper, Typography } from '@components';
 
 // region styles
 // Deprecated - https://mui.com/system/styles/basics/

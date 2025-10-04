@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
+import { Tooltip, Typography } from '@components';
 import { useFormatter } from '../../i18n';
 import useQueryLoading from '../../../utils/hooks/useQueryLoading';
 import { RelationShipFromAndToQuery } from './__generated__/RelationShipFromAndToQuery.graphql';
 import { truncate } from '../../../utils/String';
 import { getMainRepresentative } from '../../../utils/defaultRepresentatives';
-import { Tooltip, Typography } from '@components';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.

@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useState } from 'react';
 import { PrecisionManufacturingOutlined } from '@mui/icons-material';
 import { StixCoreObjectEnrollPlaybookLinesQuery$data } from '@private/components/common/stix_core_objects/__generated__/StixCoreObjectEnrollPlaybookLinesQuery.graphql';
+import { ToggleButton } from '@components';
 import EETooltip from '../entreprise_edition/EETooltip';
 import Drawer from '../drawer/Drawer';
 import { QueryRenderer } from '../../../../relay/environment';
@@ -9,7 +10,7 @@ import { useFormatter } from '../../../../components/i18n';
 import useDraftContext from '../../../../utils/hooks/useDraftContext';
 import { SETTINGS_SETACCESSES } from '../../../../utils/hooks/useGranted';
 import Security from '../../../../utils/Security';
-import { ToggleButton } from '@components';
+
 interface StixCoreObjectEnrollPlaybookLinesProps {
   stixCoreObjectId: string,
   handleClose?: () => void,

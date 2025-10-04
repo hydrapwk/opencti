@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
+import { Box } from '@components';
 import { useFormatter } from '../../../../components/i18n';
 import useGranted, { CSVMAPPERS } from '../../../../utils/hooks/useGranted';
-import { Box } from '@components';
+
 interface ManageImportConnectorMessageProps {
   name: string | undefined
 }
